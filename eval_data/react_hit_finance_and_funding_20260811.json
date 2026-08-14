@@ -1,0 +1,1018 @@
+{
+  "case_id": "HIT",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "finance_and_funding",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00011",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "六、主要会计数据和财务指标\n公司是否需追溯调整或重述以前年度会计数据\n□ 是 √ 否\n2021 年 2020 年 本年比上年增减 2019 年\n营业收入（元） 1,722,458,685.91 1,617,874,773.03 6.46% 1,736,701,249.52\n归属于上市公司股东的净利润\n（元）\n-587,919,025.58 5,704,910.02 -10,405.49% 40,934,848.59\n归属于上市公司股东的扣除非\n经常性损益的净利润（元）\n-622,904,450.31 -84,771,439.46 -634.80% 9,763,597.04\n经营活动产生的现金流量净额\n（元）\n-41,674,403.96 953,118.40 -4,472.43% -162,470,585.86\n基本每股收益（元/股） -0.7727 0.0085 -9,190.59% 0.0667\n稀释每股收益（元/股） -0.7727 0.0085 -9,190.59% 0.0667\n加权平均净资产收益率 -27.85% 0.28% -28.13% 2.39%\n2021 年末 2020 年末\n本年末比上年末增\n减\n2019 年末\n总资产（元） 4,805,334,428.52 5,016,498,223.62 -4.21% 4,534,081,049.86\n归属于上市公司股东的净资产\n（元）\n1,822,551,806.03 2,398,315,591.61 -24.01% 1,731,178,783.51\n公司最近三个会计年度扣除非经常性损益前后净利润孰低者均为负值， 且最近一年审计报告显示公司持续经营能力存在不确\n定性\n□ 是 √ 否\n扣除非经常损益前后的净利润孰低者为负值\n√ 是 □ 否\n项目 2021 年 2020 年 备注\n营业收入（元） 1,722,458,685.91 1,617,874,773.03 营业收入合计\n营业收入扣除金额（元） 3,360,716.54 21,529,079.01\n主要为销售材料、 房屋租赁、\n技术服务费和其他销售服务\n产生的收入。\n营业收入扣除后金额（元） 1,719,097,969.37 1,596,345,694.02 -",
+          "location": {
+            "kind": "pdf",
+            "page_start": 9,
+            "page_end": 10
+          },
+          "metadata": {
+            "title": "六、主要会计数据和财务指标",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第二节 公司简介和主要财务指标",
+              "六、主要会计数据和财务指标"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 9
+          },
+          "source_date": null,
+          "content_hash": "6dd6b1f95a5c1242720cb1430985a5d5b300da38f00ea051ac5e4c39fd26b453"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "汽车及一般工业的自动化设备领域进一步开拓。为做大做强公司的工业机器人维修保养业务，2021年3月，\n子公司上海我耀参股投资设立了苏州哈工凯尔机器人技术服务有限公司， 该公司的主营业务主要系工业机\n器人的备改造、维修、保养及备件业务。目前该公司已取得库卡机器人、库卡工业、伦茨、伊维莱、哈工\n现代等公司的售后服务/业务授权服务（经销）商，已为开能健康、燕京啤酒、宝钢集团、中船重工、合众\n新能源、零跑汽车、牛创新能源、上海空间电源研究所、天津福臻、江苏北人、先惠技术、星云股份、成\n焊宝玛、广州中设、广州明珞、柯马工程、吉利、长城、比亚迪、宝马等客户提供了工业机器人的维护保\n养。2021年上海我耀实现主营业务收入11,537.93万元（单体口径） ，相较上年同期增长约2.57%，毛利也相\n较去年同期增加约342.60万元。\n5）持续加大研发投入，以技术引领创新发展\n2021年公司围绕工业智能化， 聚焦AI视觉及应用、 数字化技术、 军工非标自动化、 机器人应用等领域，\n不断探索机器人与AI、5G、视觉、医疗、军工、防务、有色金属等领域的技术结合与产业应用，为客户提\n供全方位综合解决方案服务，为公司产品和技术向高端制造、军工、防务、航空航天等新的人工智能应用\n领域进行拓展、延伸奠定基础。\n报告期内公司持续加强研发投入， 累计实现研发投入8,566.35万元， 研发投入占营业收入比重达4.97%，\n公司报告期内新增实用新型专利41件、软件著作权6件。公司在高端智能装备制造板块针对新能源汽车市\n场突破性完成了新能源的电池包和电池模组项目， 开发了数字信息化的智能生产管理系统和柔性门洞包边\n系统； 一般工业领域哈工易科则由焊接工作站逐步向焊接产线过渡， 通过拓展前后道自动化以提高竞争力，\n通过快速离线编程技术和焊接技术等技术研发进一步提升公司技术水平。\n报告期内， 哈工智能中央研究院还与战略合作伙伴中铝智能科技发展有限公司在有色金属行业的矿石\n开采、金属冶炼、型材加工等生产流程中的智能化设备开发及推广应用方面展开深度合作，共同推动人工\n智能与机器人技术针对有色金属行业不同应用场景的落地，在实现传统生产工艺和装备的数字化、智能化\n和无人化等方面取得积极进展。\n2021年6月，公司对2020年非公开发行募投项目进行了变更，拟由公司全资子公司海宁哈工我耀实施\n“研发中心建设项目”，利用公司在浙江省海宁经济开发区现有土地，建设约26,000平米研发及实验场地，\n主要实施内容为厂房建设、设备投资、软件投资等，项目计划总投资为21,340.73万元，全部使用结余募集\n资金。本项目的建设周期为2年。研发中心项目的研发内容和方向为AI融合技术、数字化工厂传感技术、\n军工非标自动化技术和机器人应用技术。\n6）持续推进公司向军工智能化领域业务转型\n报告期内公司继续主动积极进行战略和研发方向的调整，不断探索机器人与AI、5G、视觉、军工、防\n务、有色金属等领域的技术结合与产业应用，重点布局现金流、利润率更好的与工业机器人能够有机结合\n的军工、防务领域。2021年1月25日，公司与航天新通科技有限公司（以下简称“航天新通”）签署了《战略\n合作框架协议》 ，以进一步加强双方产品、技术、市场以及人员对接交流，共同推动5G、人工智能、大数\n据、高端智能制造、机器人等技术在国有工业企业的普及和商用，共同推动国有重点企业的技术改造和产\n业升级。公司子公司浙江瑞弗机电目前已开展了多个军工产品的自动化生产线项目，通过工序全自动化作\n业、物流转运自动识别跟踪定位、整体生产远程监控、全过程数字化质量检测跟踪等技术，有效提升军工\n产品的表面整型及自动化工艺能力，以及生产过程的一体化集成制造水平。瑞弗机电子公司浙江瑞弗航空\n航天技术装备有限公司一直致力于发展军民融合业务，为军品生产企业提供智能化自动化生产线，报告期\n内瑞弗机电和某军工企业签订了销售合同、意向协议、获取了客户的项目确认书等，由于目前军工生产企\n业产品生产自动化水平偏低，自动化改造需求明显，未来仍具有较强的业务拓展潜力。\n2021年公司还启动了对江机民科的收购工作。江机民科主要从事武器装备系统用光电产品、航材、热\n电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中\n核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目\n前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。\n7）研发孵化项目获得创投市场受认可，三家参股子公司实现证券化/完成市场化融资\n自2018年起公司加大研发投入，为充分释放组织创新活力，激发研发人员积极性，哈工智能对内部研\n发团队推行共享孵化机制，实现创新成果“前期研发有依靠、中期成效有辅导、后期证券化有保障”，项目\n研发团队可以让自己的研发成果从自主研发，走向独立运营，再到自负盈亏、接受市场的考验。截至本报\n告期末，公司通过研发创新促业务，共孵化了三家高质量子公司。\n柯灵自动化设立于2019年1月，立足于工业清洗领域，是哈工智能设立研发孵化机制后，成功孵化的\n第一家公司。近几年，柯灵实业基于机器人技术，开发应用于汽车精密零部件的全自动机器人清洗系统。\n系统实现了多项技术创新： 运用机器视觉识别技术， 实现精准定位； 运用机器人技术， 实现多项清洗工艺。\n2020年底， 公司启动了收购柯灵实业股权的程序， 柯灵实业的核心管理团队与公司签订了 《股份购买协议》\n和《业绩补偿协议》 。2021年柯灵实业订单充沛，最终实现收入4,357.04万元，净利润798.33万元，扣非后\n净利润825.93万元，完成了业绩承诺，并同一汽解放、春风动力、太平洋精锻、爱柯迪、宁波旭升、凌云\n工业达成合作，业务快速增长。\n2018年下半年，哈工智能中央研究院启动了医疗手术机器人的设计与研发，运用医学图像处理、微控\n技术、多模态传感技术及AI算法、机器人技术，直至成功完成了肿瘤介入等多个穿刺机器人样机的设计开\n发。2019年4月，磅客策设立完成。设立后磅客策先后同与中国人民解放军总医院、上海交通大学附属瑞\n金医院、上海第一人民医院、上海六院、上海九院、复旦大学附属华山医院、中山医院、海军军医大学第\n一附属医院等国内十余家知名医院进行交流合作。在哈工智能的助推下，磅客策陆续取得了联想创投、金\n沙江创投等知名机构的天使轮投资，开始走向独立运营。2021年2月，哈工智能、磅客策与中国医用超声\n的发源地上海超声研究所开展了全面战略合作并建立了医工联合实验室， 同年下旬磅客策也与上海高端医\n疗装备创新中心达成了战略合作关系， 并入围2021年上海市最具投资潜力50佳， 入围全球创新项目TOP20。\n2022年磅客策启动了新一轮的融资。\n基于天津福臻、瑞弗机电过往的实施的项目所积累的项目库，出于降本增效的目的，2019年，哈工智\n能组建了一支以AI技术应用为核心，擅长运用规则推理算法、案例推理算法、快速随机搜索树算法、图像\n算法、深度学习算法、视觉算法等的研发团队，致力于研究工业生产制造过程中涉及有痛点需求的工业设\n计领域的智能化设计。2020年8月设序科技成立，其核心竞争能力在于将AI技术融合入工业CAD设计的软\n件中， 通过积累大量的工业数据、 工业设计行业知识和深度学习算法能力， 实现大幅提升工业设计、 仿真、\n工艺规划和制造等设计生产环节的效率，将原有的数十小时级的设计工作量缩短至分钟级。成立当年设序\n科技即完成了险峰长青、高榕资本、联想创投等知名机构出资的天使轮融资，哈工智能助力其服务第一批",
+          "location": {
+            "kind": "pdf",
+            "page_start": 23,
+            "page_end": 25
+          },
+          "metadata": {
+            "title": "1、概述",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "1、概述"
+            ],
+            "chunk_index_in_section": 1,
+            "heading_level": 5,
+            "page": 23
+          },
+          "source_date": null,
+          "content_hash": "72148dff47fee4d5eef9eb50e04d1f129945ab4073e49e6b27aaf62512a46ce6"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00043",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "5、现金流\n单位：元\n项目 2021 年 2020 年 同比增减\n经营活动现金流入小计 1,339,663,837.44 1,411,784,053.44 -5.11%\n经营活动现金流出小计 1,381,338,241.40 1,410,830,935.04 -2.09%\n经营活动产生的现金流量净\n额\n-41,674,403.96 953,118.40 -4,472.43%\n投资活动现金流入小计 189,157,999.86 11,055,089.28 1,611.05%\n投资活动现金流出小计 438,877,957.11 454,609,964.21 -3.46%\n投资活动产生的现金流量净\n额\n-249,719,957.25 -443,554,874.93 43.70%\n筹资活动现金流入小计 859,421,958.31 1,248,534,071.00 -31.17%\n筹资活动现金流出小计 701,183,411.76 742,926,326.07 -5.62%\n筹资活动产生的现金流量净\n额\n158,238,546.55 505,607,744.93 -68.70%\n现金及现金等价物净增加额 -134,530,958.40 62,376,852.54 -315.67%\n相关数据同比发生重大变动的主要影响因素说明\n√ 适用 □ 不适用",
+          "location": {
+            "kind": "pdf",
+            "page_start": 32,
+            "page_end": 32
+          },
+          "metadata": {
+            "title": "5、现金流",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "5、现金流"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 32
+          },
+          "source_date": null,
+          "content_hash": "08eddd98897e6bc8d4038c3915ffd226775995bb6e8e3da3395b4af2d98eb351"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00041",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "3、费用\n单位：元\n2021 年 2020 年 同比增减 重大变动说明\n销售费用 53,047,453.03 36,339,085.17 45.98%\n主要系本期职工薪酬等费用的增加\n所致\n管理费用 151,350,159.20 116,006,999.13 30.47%\n主要系本期中介机构费及职工薪酬\n等费用的增加所致\n财务费用 63,520,112.17 71,310,812.07 -10.92%\n研发费用 85,663,473.52 89,334,209.65 -4.11%",
+          "location": {
+            "kind": "pdf",
+            "page_start": 32,
+            "page_end": 32
+          },
+          "metadata": {
+            "title": "3、费用",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "3、费用"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 32
+          },
+          "source_date": null,
+          "content_hash": "c7fdc75fa52069bb9183a123a4517fd36d293be6240ff4a19648de86b905b436"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00180",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "2、重大担保\n√ 适用 □ 不适用\n单位：万元\n公司及其子公司对外担保情况（不包括对子公司的担保）\n担保对象\n名称\n担保额\n度相关\n公告披\n露日期\n担保额\n度\n实际发\n生日期\n实际担\n保金额\n担保类\n型\n担保物\n（如有）\n反担\n保情\n况\n（如\n有）\n担保期\n是否履\n行完毕\n是否为\n关联方\n担保\n公司对子公司的担保情况\n担保对象\n名称\n担保额\n度相关\n公告披\n露日期\n担保额\n度\n实际发\n生日期\n实际担\n保金额\n担保类\n型\n担保物\n（如有）\n反担\n保情\n况\n（如\n有）\n担保期\n是否履\n行完毕\n是否为\n关联方\n担保\n嘉兴大直\n机器人产\n业股权投\n资合伙企\n业（有限\n合伙）\n2017 年\n12 月 13\n日\n40,800\n2018 年\n02 月 28\n日\n40,800\n一般保\n证\n自基金\n成立日\n起至优\n先级合\n伙人足\n额获得\n全部投\n资本金\n否 否\n及优先\n回报之\n日止\n天津福臻\n工业装备\n有限公司\n2021 年\n12 月 16\n日\n5,000\n2021 年\n12 月 13\n日\n5,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n天津福臻\n工业装备\n有限公司\n2020 年\n01 月 22\n日\n4,000\n2020 年\n04 月 10\n日\n4,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n天津福臻\n工业装备\n有限公司\n2020 年\n01 月 22\n日\n8,000\n2020 年\n05 月 25\n日\n8,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n天津福臻\n工业装备\n有限公司\n2021 年\n11 月 12\n日\n8,000\n2021 年\n11 月 09\n日\n8,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n天津福臻\n工业装备\n有限公司\n2020 年\n01 月 22\n日\n5,000\n2020 年\n09 月 24\n日\n5,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n天津福臻\n工业装备\n有限公司\n2020 年\n01 月 22\n日\n5,000\n2020 年\n09 月 30\n日\n5,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n天津福臻\n工业装备\n有限公司\n2021 年\n04 月 29\n日\n5,000\n2021 年\n04 月 26\n日\n5,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n上海奥特\n博格汽车\n工程有限\n公司\n2021 年\n02 月 23\n日\n5,000\n2020 年\n03 月 24\n日\n5,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n上海奥特\n博格汽车\n工程有限\n公司\n2020 年\n01 月 22\n日\n4,000\n2020 年\n12 月 25\n日\n4,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n上海我耀\n机器人有\n2021 年\n12 月 16\n3,000 2021 年\n12 月 10\n3,000\n连带责\n任保证\n以担保\n协议约\n否 否\n限公司 日 日 定期限\n为准\n上海我耀\n机器人有\n限公司\n2021 年\n11 月 23\n日\n2,000\n2021 年\n11 月 22\n日\n2,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n浙江哈工\n机器人有\n限公司\n2019 年\n09 月 16\n日\n20,000\n2019 年\n09 月 26\n日\n20,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n海宁哈工\n我耀机器\n人有限公\n司\n2020 年\n01 月 22\n日\n2,000\n2020 年\n09 月 15\n日\n2,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n海宁哈工\n我耀机器\n人有限公\n司\n2020 年\n01 月 22\n日\n5,000\n2020 年\n11 月 19\n日\n5,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n海宁哈工\n我耀机器\n人有限公\n司\n2020 年\n05 月 13\n日\n47,000\n2020 年\n05 月 27\n日\n22,300.3\n3\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n浙江瑞弗\n航空航天\n技术装备\n有限公司\n2020 年\n11 月 21\n日\n1,600\n2020 年\n12 月 21\n日\n1,600\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n浙江瑞弗\n机电有限\n公司\n2021 年\n04 月 10\n日\n5,000\n2021 年\n04 月 09\n日\n5,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n浙江瑞弗\n机电有限\n公司\n2021 年\n02 月 23\n日\n2,967\n2020 年\n06 月 24\n日\n2,967\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n浙江瑞弗\n机电有限\n公司\n2021 年\n12 月 16\n日\n2,400\n2021 年\n12 月 13\n日\n2,400\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n上海柯灵\n实业发展\n有限公司\n2021 年\n03 月 20\n日\n600\n2021 年\n03 月 16\n日\n600\n连带责\n任保证\n以担保\n协议约\n定期限\n否 否\n为准\nRiver\nMachine\nFrance\n2021 年\n12 月 25\n日\n1,000\n2021 年\n12 月 25\n日\n1,000\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n报告期内审批对子公\n司担保额度合计\n（B1）\n39,967\n报告期内对子公司担\n保实际发生额合计\n（B2）\n32,195.54\n报告期末已审批的对\n子公司担保额度合计\n（B3）\n182,367\n报告期末对子公司实\n际担保余额合计\n（B4）\n75,834.41\n子公司对子公司的担保情况\n担保对象\n名称\n担保额\n度相关\n公告披\n露日期\n担保额\n度\n实际发\n生日期\n实际担\n保金额\n担保类\n型\n担保物\n（如有）\n反担\n保情\n况\n（如\n有）\n担保期\n是否履\n行完毕\n是否为\n关联方\n担保\n浙江瑞弗\n机电有限\n公司\n2019 年\n08 月 13\n日\n3,586\n2019 年\n04 月 03\n日\n2,720 抵押\n以担保\n协议约\n定期限\n为准\n否 否\n上海柯灵\n实业发展\n有限公司\n2021 年\n03 月 20\n日\n600\n2021 年\n03 月 16\n日\n600\n连带责\n任保证\n以担保\n协议约\n定期限\n为准\n否 否\n报告期内审批对子公\n司担保额度合计\n（C1）\n600\n报告期内对子公司担\n保实际发生额合计\n（C2）\n600\n报告期末已审批的对\n子公司担保额度合计\n（C3）\n4,186\n报告期末对子公司实\n际担保余额合计\n（C4）\n2,257.45\n公司担保总额（即前三大项的合计）\n报告期内审批担保额度合计\n（A1+B1+C1）\n40,567\n报告期内担保实际发\n生额合计\n（A2+B2+C2）\n32,795.54\n报告期末已审批的担保额度\n合计（A3+B3+C3）\n186,553\n报告期末实际担保余\n额合计（A4+B4+C4）\n78,091.86\n实际担保总额 （即A4+B4+C4） 占公司净资产\n的比例\n42.85%\n其中：\n为股东、 实际控制人及其关联方提供担保的余\n额（D）\n0\n直接或间接为资产负债率超过 70%的被担保\n对象提供的债务担保余额（E）\n7,389.39\n对未到期担保合同， 报告期内已发生担保责任\n或有证据表明有可能承担连带清偿责任的情\n况说明（如有）\n不适用\n违反规定程序对外提供担保的说明（如有） 不适用\n采用复合方式担保的具体情况说明",
+          "location": {
+            "kind": "pdf",
+            "page_start": 103,
+            "page_end": 107
+          },
+          "metadata": {
+            "title": "2、重大担保",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十五、重大合同及其履行情况",
+              "2、重大担保"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 103
+          },
+          "source_date": null,
+          "content_hash": "127ffb7f1d1743656c1f94a2da5b108ccb0f7a1f58a33091eefdec2e1d63c5b6"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00014",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "八、分季度主要财务指标\n单位：元\n第一季度 第二季度 第三季度 第四季度\n营业收入 503,696,132.40 407,861,054.13 268,201,821.49 542,699,677.89\n归属于上市公司股东的净利润 -10,743,787.40 -45,138,487.67 -31,973,551.38 -500,063,199.13\n归属于上市公司股东的扣除非\n经常性损益的净利润\n-17,333,768.45 -45,254,514.33 -57,709,603.89 -502,606,563.64\n经营活动产生的现金流量净额 -66,120,864.32 -46,801,820.23 -39,811,604.78 111,059,885.37\n上述财务指标或其加总数是否与公司已披露季度报告、半年度报告相关财务指标存在重大差异\n□ 是 √ 否",
+          "location": {
+            "kind": "pdf",
+            "page_start": 10,
+            "page_end": 11
+          },
+          "metadata": {
+            "title": "八、分季度主要财务指标",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第二节 公司简介和主要财务指标",
+              "八、分季度主要财务指标"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 10
+          },
+          "source_date": null,
+          "content_hash": "9a7024db81581e807980c589533105d1f561c5d1bf7a18d8f9800e84bc228074"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "item_001",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.operating_revenue",
+            "value": 1722458685.91,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00011"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00011",
+                "excerpt": "营业收入（元） 1,722,458,685.91"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "item_002",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.net_profit_attributable_to_parent",
+            "value": -587919025.58,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00011"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00011",
+                "excerpt": "归属于上市公司股东的净利润（元） -587,919,025.58"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "item_004",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.operating_cash_flow",
+            "value": -41674403.96,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00011",
+              "src_8c28d5fe0b5a3392:eu_00043"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00011",
+                "excerpt": "经营活动产生的现金流量净额（元） -41,674,403.96"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00043",
+                "excerpt": "经营活动产生的现金流量净额 -41,674,403.96"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "item_005",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.research_expense",
+            "value": 85663473.52,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00041"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00041",
+                "excerpt": "研发费用 85,663,473.52"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "item_006",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.research_expense_ratio",
+            "value": 0.0497,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "enterprise_claim",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "累计实现研发投入8,566.35万元， 研发投入占营业收入比重达4.97%"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          }
+        ],
+        "profile_relations": [],
+        "information_gaps": [
+          "期末现金及现金等价物余额未在证据中直接披露，仅有现金及现金等价物净增加额。",
+          "有息负债余额未在证据中直接披露，仅有担保余额等或有负债信息。",
+          "未披露期末现金及现金等价物余额。",
+          "未披露有息负债余额。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [],
+        "consistency_warnings": [],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": [
+          {
+            "kind": "profile_items",
+            "index": 5,
+            "candidate_id": "item_003",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00011"
+            ],
+            "candidate": {
+              "item_id": "item_003",
+              "subject": "the_enterprise",
+              "section_id": "finance_capital",
+              "field_id": "finance.adjusted_net_profit_attributable_to_parent",
+              "value": -622904450.31,
+              "value_type": "money",
+              "information_status": "confirmed",
+              "content_role": "audited_information",
+              "unit": "元",
+              "reporting_period": "2021",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00011"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00011",
+                  "excerpt": "归属于上市公司股东的扣除非经常性损益的净利润（元） -622,904,450.31"
+                }
+              ]
+            },
+            "reason": "扣非归母净利润字段必须同时引用归母和扣非口径。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 6,
+            "candidate_id": "item_007",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00043"
+            ],
+            "candidate": {
+              "item_id": "item_007",
+              "subject": "the_enterprise",
+              "section_id": "finance_capital",
+              "field_id": "finance.cash_balance",
+              "value": null,
+              "value_type": "money",
+              "information_status": "insufficient_evidence",
+              "content_role": "business_record",
+              "unit": "元",
+              "reporting_period": "2021",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00043"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00043",
+                  "excerpt": "现金及现金等价物净增加额 -134,530,958.40"
+                }
+              ]
+            },
+            "reason": "直接数值必须逐字出现在至少一条证据摘录中。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 7,
+            "candidate_id": "item_008",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00180"
+            ],
+            "candidate": {
+              "item_id": "item_008",
+              "subject": "the_enterprise",
+              "section_id": "finance_capital",
+              "field_id": "finance.interest_bearing_debt",
+              "value": null,
+              "value_type": "money",
+              "information_status": "insufficient_evidence",
+              "content_role": "business_record",
+              "unit": "元",
+              "reporting_period": "2021",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00180"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00180",
+                  "excerpt": "报告期末实际担保余额合计（A4+B4+C4） 78,091.86"
+                }
+              ]
+            },
+            "reason": "直接数值必须逐字出现在至少一条证据摘录中。"
+          }
+        ]
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00011",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "六、主要会计数据和财务指标",
+          "section_path": [
+            "第二节 公司简介和主要财务指标",
+            "六、主要会计数据和财务指标"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 9,
+            "page_end": 10
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "营业收入",
+            "净利润",
+            "现金流",
+            "主要会计数据"
+          ],
+          "content_chars": 953
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00014",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "八、分季度主要财务指标",
+          "section_path": [
+            "第二节 公司简介和主要财务指标",
+            "八、分季度主要财务指标"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 10,
+            "page_end": 11
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "财务指标",
+            "营业收入",
+            "净利润",
+            "现金流"
+          ],
+          "content_chars": 385
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00663",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "60、营业收入和营业成本",
+          "section_path": [
+            "第十节 财务报告",
+            "二、将重分类进损益的其他综",
+            "60、营业收入和营业成本"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 247,
+            "page_end": 247
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "营业收入",
+            "净利润"
+          ],
+          "content_chars": 518
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00185",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、对江苏哈工海渡教育科技集团有限公司（曾用名“江苏哈工海渡工业机器人有限公司”）股权相关",
+          "section_path": [
+            "第六节 重要事项",
+            "十六、其他重大事项的说明",
+            "1、对江苏哈工海渡教育科技集团有限公司（曾用名“江苏哈工海渡工业机器人有限公司”）股权相关"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 107,
+            "page_end": 108
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "净利润"
+          ],
+          "content_chars": 844
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00043",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "5、现金流",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "5、现金流"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 32,
+            "page_end": 32
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "现金流"
+          ],
+          "content_chars": 577
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00041",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "3、费用",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "3、费用"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 32,
+            "page_end": 32
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "研发费用"
+          ],
+          "content_chars": 242
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00765",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）应收项目",
+          "section_path": [
+            "第十节 财务报告",
+            "十二、关联方及关联交易",
+            "6、关联方应收应付款项",
+            "（1）应收项目"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 296,
+            "page_end": 298
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "应收账款"
+          ],
+          "content_chars": 1711
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00180",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、重大担保",
+          "section_path": [
+            "第六节 重要事项",
+            "十五、重大合同及其履行情况",
+            "2、重大担保"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 103,
+            "page_end": 107
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "担保"
+          ],
+          "content_chars": 3139
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00003",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "一、公司信息",
+          "section_path": [
+            "第二节 公司简介和主要财务指标",
+            "一、公司信息"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 7,
+            "page_end": 7
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "财务指标"
+          ],
+          "content_chars": 455
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00033",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）营业收入构成",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "2、收入与成本",
+            "（1）营业收入构成"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 26,
+            "page_end": 26
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "营业收入"
+          ],
+          "content_chars": 799
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、概述",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "1、概述"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 23,
+            "page_end": 25
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "营业收入",
+            "研发投入",
+            "净利润",
+            "现金流"
+          ],
+          "content_chars": 3153
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（一）公司主要业务、主要产品及其用途",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "（一）公司主要业务、主要产品及其用途"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 14,
+            "page_end": 16
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "研发投入"
+          ],
+          "content_chars": 2546
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00186",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、对哈尔滨工大特种机器人有限公司股权相关事项",
+          "section_path": [
+            "第六节 重要事项",
+            "十六、其他重大事项的说明",
+            "2、对哈尔滨工大特种机器人有限公司股权相关事项"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 108,
+            "page_end": 108
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "净利润"
+          ],
+          "content_chars": 492
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00441",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "31、长期资产减值",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "（二）出售极可能发生，即企业已经就一项出售计划作出决议且获得确定的购买承诺，预计出售将在",
+            "31、长期资产减值"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 171,
+            "page_end": 172
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "现金流"
+          ],
+          "content_chars": 843
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_8c28d5fe0b5a3392:eu_00011",
+        "src_8c28d5fe0b5a3392:eu_00031",
+        "src_8c28d5fe0b5a3392:eu_00043",
+        "src_8c28d5fe0b5a3392:eu_00041",
+        "src_8c28d5fe0b5a3392:eu_00180",
+        "src_8c28d5fe0b5a3392:eu_00014"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "最近三个会计年度 主要会计数据 财务指标",
+            "keyword_count": 9,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00011",
+              "src_8c28d5fe0b5a3392:eu_00014",
+              "src_8c28d5fe0b5a3392:eu_00663",
+              "src_8c28d5fe0b5a3392:eu_00185",
+              "src_8c28d5fe0b5a3392:eu_00043",
+              "src_8c28d5fe0b5a3392:eu_00041",
+              "src_8c28d5fe0b5a3392:eu_00765",
+              "src_8c28d5fe0b5a3392:eu_00180",
+              "src_8c28d5fe0b5a3392:eu_00003",
+              "src_8c28d5fe0b5a3392:eu_00033"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "年报主要会计数据 营业收入 归母净利润 经营现金流 研发投入",
+            "keyword_count": 11,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00663",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00185",
+              "src_8c28d5fe0b5a3392:eu_00043",
+              "src_8c28d5fe0b5a3392:eu_00041",
+              "src_8c28d5fe0b5a3392:eu_00011",
+              "src_8c28d5fe0b5a3392:eu_00765",
+              "src_8c28d5fe0b5a3392:eu_00180",
+              "src_8c28d5fe0b5a3392:eu_00033",
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00011",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00043",
+              "src_8c28d5fe0b5a3392:eu_00041",
+              "src_8c28d5fe0b5a3392:eu_00180",
+              "src_8c28d5fe0b5a3392:eu_00014"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00011",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00043",
+              "src_8c28d5fe0b5a3392:eu_00041",
+              "src_8c28d5fe0b5a3392:eu_00180",
+              "src_8c28d5fe0b5a3392:eu_00014"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 8449
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "-622904450.31",
+            "keyword_count": 8,
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00663",
+              "src_8c28d5fe0b5a3392:eu_00185",
+              "src_8c28d5fe0b5a3392:eu_00043",
+              "src_8c28d5fe0b5a3392:eu_00041",
+              "src_8c28d5fe0b5a3392:eu_00011",
+              "src_8c28d5fe0b5a3392:eu_00765",
+              "src_8c28d5fe0b5a3392:eu_00180",
+              "src_8c28d5fe0b5a3392:eu_00033",
+              "src_8c28d5fe0b5a3392:eu_00186",
+              "src_8c28d5fe0b5a3392:eu_00441"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00011",
+              "src_8c28d5fe0b5a3392:eu_00043"
+            ],
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00011",
+              "src_8c28d5fe0b5a3392:eu_00043"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 1530
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 716,
+          "output_tokens": 331,
+          "total_tokens": 1047,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4809,
+          "output_tokens": 996,
+          "total_tokens": 5805,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 12029,
+          "output_tokens": 507,
+          "total_tokens": 12536,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "finance_and_funding",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 10199,
+              "completion_tokens": 1809,
+              "total_tokens": 12008,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00011",
+                "src_8c28d5fe0b5a3392:eu_00031",
+                "src_8c28d5fe0b5a3392:eu_00043",
+                "src_8c28d5fe0b5a3392:eu_00041",
+                "src_8c28d5fe0b5a3392:eu_00180",
+                "src_8c28d5fe0b5a3392:eu_00014"
+              ]
+            }
+          ],
+          "prompt_tokens": 10199,
+          "completion_tokens": 1809,
+          "total_tokens": 12008
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 1130,
+          "output_tokens": 1255,
+          "total_tokens": 2385,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4296,
+          "output_tokens": 1151,
+          "total_tokens": 5447,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "stage": "profile_extraction_recovery",
+          "domain": "finance_and_funding",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 10601,
+              "completion_tokens": 528,
+              "total_tokens": 11129,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00011",
+                "src_8c28d5fe0b5a3392:eu_00031",
+                "src_8c28d5fe0b5a3392:eu_00043",
+                "src_8c28d5fe0b5a3392:eu_00041",
+                "src_8c28d5fe0b5a3392:eu_00180",
+                "src_8c28d5fe0b5a3392:eu_00014"
+              ]
+            }
+          ],
+          "prompt_tokens": 10601,
+          "completion_tokens": 528,
+          "total_tokens": 11129
+        }
+      ]
+    }
+  ]
+}

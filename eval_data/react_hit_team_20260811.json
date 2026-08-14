@@ -1,0 +1,1204 @@
+{
+  "case_id": "HIT",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "team",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00212",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "3、公司实际控制人及其一致行动人\n实际控制人性质：境内自然人\n实际控制人类型：自然人\n实际控制人姓名\n与实际控制人关\n系\n国籍 是否取得其他国家或地区居留权\n乔徽 本人 中国 否\n艾迪\n一致行动（含协\n议、亲属、同一控\n制）\n中国 否\n主要职业及职务\n乔徽，男，1981 年 6 月出生，中国国籍，无境外居留权，汉族。2005 年毕业于哈尔\n滨工业大学，机电工程专业硕士。2011 年 9 月至 2012 年 2 月在光达光电技术有限公\n司任研发总监，2013 年至 2016 年 9 月期间，在哈工大张家港智能装备研究院任副院\n长；2015 年至 2016 年 9 月期间，在哈尔滨工大服务机器人有限公司、哈尔滨博勤教\n育机器人有限公司、 哈工大机器人集团合肥有限公司、 哈工大机器人集团上海有限公\n司、 上海哈工大智能机器人有限公司担任董事职务， 并在前述部分企业中担任总经理\n和法定代表人。2016 年 9 月至今，投资创立马鞍山哲方智能机器人投资管理有限公\n司、无锡哲方哈工智能机器人投资企业（有限合伙） 。2017 年 2 月至 2020 年 2 月，\n任公司第十届董事会董事、副董事长、总经理；2020 年 2 月至 2021 年 1 月，任公司\n第十一届董事会董事、董事长、总经理，2021 年 1 月至今任第十一届董事会董事、\n董事长。                                            艾迪，女，1969 年 8 月\n出生， 中国国籍， 无境外永久居留权， 蒙古族， 硕士研究生学历。1995 年至 1999 年，\nTasman 网络发展有限公司总经理；2000 年至 2007 年， 北京高能投资管理有限公司总\n经理；2007 年至 2011 年，上海永宣创业投资管理公司副总经理；2011 年至 2015 年，\n北京联创永金投资管理有限公司法定代表人、执行董事、总经理；2015 年至今，联\n创投资集团股份有限公司法定代表人、董事长、总经理。2016 年 10 月至今担任无锡\n联创人工智能投资企业(有限合伙)执行事务合伙人委派代表。2021 年 9 月至今任武汉\n天喻信息产业股份有限公司董事。2017 年 2 月至 2020 年 2 月，任公司第十届董事会\n董事长。2020 年 2 月，经公司 2020 年第一次临时股东大会选举当选公司第十一届董\n事会董事。\n过去 10 年曾控股的境内外上市\n公司情况\n报告期内， 艾迪女士为上市公司武汉天喻信息产业股份有限公司 （300205） 实际控制\n人之一。除此之外，乔徽先生、艾迪女士不存在过去10 年控股其他境内外上市公司\n的情况。\n实际控制人报告期内变更\n□ 适用 √ 不适用\n公司报告期实际控制人未发生变更。\n公司与实际控制人之间的产权及控制关系的方框图\n实际控制人通过信托或其他资产管理方式控制公司\n□ 适用 √ 不适用",
+          "location": {
+            "kind": "pdf",
+            "page_start": 122,
+            "page_end": 123
+          },
+          "metadata": {
+            "title": "3、公司实际控制人及其一致行动人",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第七节 股份变动及股东情况",
+              "三、股东和实际控制人情况",
+              "3、公司实际控制人及其一致行动人"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 122
+          },
+          "source_date": null,
+          "content_hash": "00cd25ff373d438daecbd81148244ca088bb2ed15406649394e195698be8a78a"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00110",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "一、公司第十一届董事会董事：\n1、公司董事长乔徽先生\n乔徽，男，1981年6月出生，中国国籍，无境外居留权，汉族。2005年毕业于哈尔滨工业大学，机电\n工程专业硕士。2011年9月至2012年2月在光达光电技术有限公司任研发总监，2013年至2016年9月期间，\n在哈工大张家港智能装备研究院任副院长；2015年至2016年9月期间，在哈尔滨工大服务机器人有限公司、\n哈尔滨博勤教育机器人有限公司、哈工大机器人集团合肥有限公司、哈工大机器人集团上海有限公司、上\n海哈工大智能机器人有限公司担任董事职务，并在前述部分企业中担任总经理和法定代表人。2016年9月\n至今， 投资创立马鞍山哲方智能机器人投资管理有限公司、 无锡哲方哈工智能机器人投资企业 （有限合伙） 。\n2017年2月至2020年2月，任公司第十届董事会董事、副董事长、总经理；2020年2月至2021年1月，任公司\n第十一届董事会董事、董事长、总经理，2021年1月至今任第十一届董事会董事、董事长。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 67,
+            "page_end": 67
+          },
+          "metadata": {
+            "title": "1、公司董事长乔徽先生",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "一、公司第十一届董事会董事：",
+              "1、公司董事长乔徽先生"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 67
+          },
+          "source_date": null,
+          "content_hash": "6348671e50d93d9da56cb5713f65bae09981f8fd5de4b8b88cccde227655f7a3"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00111",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "2、公司副董事长于振中先生\n于振中，男，1980年3月生，中国国籍，无境外居留权，汉族，最高学历博士研究生。2010年10月毕\n业于哈尔滨工业大学机械电子工程专业工业机器人方向，获工学博士学位。2012年至2018年6月，曾任台\n州海川机器人有限公司副总、重庆哈工顶能机器人有限公司执行董事、重庆哈工中浙复合材料装备有限公\n司董事、南通荣益自动化科技有限公司执行董事。2014年12月至2021年2月在哈工大机器人集团股份有限\n公司担任高级副总裁，2021年3月至今在哈工大机器人集团股份有限公司担任联席总裁。并任哈工大机器\n人集团部分子公司的法人代表、董事或执行董事或董事长。2017年8月至2020年9月，任哈工大机器人（合\n肥）国际创新研究院执行院长。2019年3月起，任香港未来世界金融执行董事兼副主席。2019年7月至今任\n公司副董事长。2020年10月起，任哈工大机器人（合肥）国际创新研究院院长。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 67,
+            "page_end": 68
+          },
+          "metadata": {
+            "title": "2、公司副董事长于振中先生",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "一、公司第十一届董事会董事：",
+              "2、公司副董事长于振中先生"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 67
+          },
+          "source_date": null,
+          "content_hash": "08fa7225839b73377b7513a843708327c0b68500d3f03308f3c9ca131bc06454"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00127",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "9、公司财务总监徐振雨先生\n徐振雨，男，1986年出生，中国国籍，汉族，本科学历，中级管理会计师，无境外居留权，有超过十\n二年的企业财务管理工作经验。2008年至2015年期间，历任洮南市海鑫粮油加工有限公司会计、雨润集团\n主办会计、汇源果汁集团财务经理、黑龙江大庄园肉业集团有限公司财务经理、宾西牛业集团有限公司财\n务经理。2015年7月至2017年12 月在哈工大机器人集团任财务副部长职务。2018年1月至2021年5月在哈工\n大机器人集团股份有限公司任财务部长职务。 2021年6月至今任公司财务总监。\n在股东单位任职情况\n√ 适用 □ 不适用\n任职人员姓\n名\n股东单位名称\n在股东单\n位担任的\n职务\n任期起始日\n期\n任期终止日期\n在股东单位是否\n领取报酬津贴\n艾迪 无锡联创人工智能投资企业(有限合伙)\n执行事务\n合伙人委\n派代表\n2016 年 10 月\n01 日\n否\n在其他单位任职情况\n√ 适用 □ 不适用\n任职人员姓\n名\n其他单位名称\n在其他单\n位担任的\n职务\n任期起始日\n期\n任期终止日期\n在其他单位是\n否领取报酬津\n贴\n艾迪 联创投资集团股份有限公司\n董事长,董\n事,代董事\n会秘书,总\n经理\n艾迪 北京零贰壹创业投资管理有限公司\n经理,执行\n董事\n艾迪 北京来自星的创业投资管理有限公司\n经理,执行\n董事\n艾迪 西藏联创永源股权投资有限公司\n总经理,执\n行董事\n艾迪 济南联创股权投资基金管理有限公司\n执行董事\n兼总经理\n艾迪 北京联创永瀛投资管理有限公司\n经理,执行\n董事\n艾迪 西藏宣源创业投资管理有限公司\n执行董事\n兼总经理\n艾迪 上海云食商贸有限公司 董事\n艾迪 海湾环境科技（北京）股份有限公司 董事\n艾迪 内蒙古彤力矿业有限公司 董事\n艾迪 北京易连忆生科技有限公司 董事\n艾迪 宁波联创永浚投资管理有限公司 董事长\n艾迪 武汉天喻信息产业股份有限公司 董事\n艾迪 新疆鑫川股权投资有限公司 监事\n于振中 合肥贰伍贰零智能科技有限公司\n执行董事\n兼总经理\n于振中 海宁哈工联昌投资合伙企业 （有限合伙）\n执行事务\n合伙人,股\n东\n于振中 安徽哈工智能制造检测技术有限公司\n执行董事\n兼总经理\n于振中\n严格科创产业发展集团合肥创新研究院\n有限公司\n董事长兼\n总经理\n于振中 合肥名湖智能机器人有限公司 董事长\n于振中 哈工大机器人（合肥）国际创新研究院 院长\n于振中 重庆德新机器人检测中心有限公司 监事\n于振中 合肥哈工智灵智能科技有限公司 董事长\n于振中 合肥哈工威达智能装备有限公司 执行董事\n于振中\n苏州工业园区哈工海渡职业培训学校有\n限公司\n总经理,董\n事\n于振中 严格科创产业发展集团有限公司 董事\n于振中 合肥哈工海渡职业培训学校有限公司 董事\n于振中\n未來世界控股有限公司 （香港上市公司，\n00572.HK）\n执行董事、\n副主席\n于振中 哈工大机器人集团股份有限公司 联席总裁\n赵亮 湖州哈工鼎新自动化科技有限公司\n董事长兼\n总经理\n赵亮 江苏哈工药机科技股份有限公司\n董事长兼\n总经理\n赵亮 南昌益硕智能装备有限公司\n总经理,执\n行董事\n赵亮 深圳市哈工机器人有限公司 监事\n赵亮 哈尔滨博勤教育机器人有限公司 监事\n赵亮 哈尔滨赵联亮智投资企业（有限合伙）\n执行事务\n合伙人\n赵亮 上海同新服材新材料科技有限公司 董事\n陈佩 门孟华（上海）实业有限公司 执行董事\n陈佩 上海丞俊商务咨询有限公司 执行董事\n陈佩 上海门孟华企业发展集团有限公司 总经理\n陈佩 云创智行科技（苏州）有限公司 董事\n陈佩 上海哲方商务咨询有限公司 监事\n陈佩 南京哈工科技投资管理有限公司 董事\n陈佩\n未來世界控股有限公司 （香港上市公司，\n00572.HK）\n独立非执\n行董事\n姜延滨 太原溪涵智能科技合伙企业 （有限合伙）\n执行事务\n合伙人,股\n东\n姜延滨 上海溪涵智能科技合伙企业 （有限合伙）\n执行事务\n合伙人,股\n东\n姜延滨 太原加爱塔科技有限公司 董事长\n姜延滨 上海溪印智能科技合伙企业 （有限合伙）\n执行事务\n合伙人,股\n东\n姜延滨 成都广泰威达数控技术股份有限公司 董事\n姜延滨\n严格系统科技（太原）集团有限责任公\n司\n董事\n丁亮 合肥哈工热气球数字科技有限公司 董事长\n丁亮 紫勋智能科技（北京）有限公司 董事\n丁亮 合肥哈工图南智控机器人有限公司 执行董事\n丁亮 合肥哈工轩辕智能科技有限公司 执行董事\n蔡少河 汕头市丰业会计师事务所有限公司 董事长\n蔡少河 雅安正兴汉白玉股份有限公司 独立董事\n何杰  北京市柯杰律师事务所\n管理合伙\n人\n何杰 柯杰咨询有限公司 董事\n高强 上海何熠智能科技有限公司 执行董事\n高强 海宁宏易智能科技有限公司\n总经理,执\n行董事\n杨骏\n上海浚秋安企业管理合伙企业（有限合\n伙）\n执行事务\n合伙人\n杨骏 宁波联创永浚投资管理有限公司\n董事兼总\n经理\n杨骏 联创投资集团股份有限公司 董事\n李皓\n泰州市方鑫智能机器人投资合伙企业\n（有限合伙）\n执行事务\n合伙人\n李皓 广州丰源股权投资管理有限公司 执行董事\n李皓 萍乡哈工科技产业发展有限公司 董事\n李皓 马鞍山哲方智能机器人投资管理有限公 执行董事、\n司 总经理\n李皓 哈尔滨工大智慧工厂有限公司 董事\n公司现任及报告期内离任董事、监事和高级管理人员近三年证券监管机构处罚的情况\n□ 适用 √ 不适用",
+          "location": {
+            "kind": "pdf",
+            "page_start": 71,
+            "page_end": 75
+          },
+          "metadata": {
+            "title": "9、公司财务总监徐振雨先生",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "三、公司现任高级管理人员",
+              "9、公司财务总监徐振雨先生"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 71
+          },
+          "source_date": null,
+          "content_hash": "8830816d5b52e6e8576805739a92d691560dbb7fff7dcb068f1acbbe83f90f15"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00124",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "6、公司副总经理杨骏先生\n杨骏，男，1978年1月生，中国国籍，无境外居留权，汉族，英国利兹大学金融与会计硕士。杨骏先\n生在加入本公司前在国内知名投资银行及投资公司有多年并购及投资相关经验。2007年8月至2011年9月任\n中银国际投行副总经理，主导中文传媒、浙报传媒、华泽镍钴、百视通等多起并购及借壳上市业务；2011\n年9月至2015年6月任国内最大规模的能源基金涛石基金高管，主导多起大型能源投资业务；2015年6月至\n2017年5月作为联创永宣合伙人负责并购及投资基金相关业务。2017年8月至今任公司副总经理。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 71,
+            "page_end": 71
+          },
+          "metadata": {
+            "title": "6、公司副总经理杨骏先生",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "三、公司现任高级管理人员",
+              "6、公司副总经理杨骏先生"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 71
+          },
+          "source_date": null,
+          "content_hash": "42046821b14222c5ef02e103d7f5a81bfc42da47f80d0b2fb7eb5e13df69746b"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00145",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "十一、公司股权激励计划、员工持股计划或其他员工激励措施的实施情况\n□ 适用 √ 不适用\n公司报告期无股权激励计划、员工持股计划或其他员工激励措施及其实施情况。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 93,
+            "page_end": 93
+          },
+          "metadata": {
+            "title": "十一、公司股权激励计划、员工持股计划或其他员工激励措施的实施情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "十一、公司股权激励计划、员工持股计划或其他员工激励措施的实施情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 93
+          },
+          "source_date": null,
+          "content_hash": "62e67276814e5e92fff445f9626d62763755cfdcc10463e54fb9e53883c740bd"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00109",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "2、任职情况\n公司现任董事、监事、高级管理人员专业背景、主要工作经历以及目前在公司的主要职责",
+          "location": {
+            "kind": "pdf",
+            "page_start": 67,
+            "page_end": 67
+          },
+          "metadata": {
+            "title": "2、任职情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "五、董事、监事和高级管理人员情况",
+              "2、任职情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 67
+          },
+          "source_date": null,
+          "content_hash": "baae0369ee97321ebe9f0f3925d39d6cc51f670177f82d1a7de1add5872d5f08"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00376",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "三、公司基本情况\n江苏哈工智能机器人股份有限公司（以下简称“公司”或“本公司”）前身为成立于1980年6月11日的\n“成都市工业展销信托股份公司”，1991年更名为“成都蜀都大厦股份有限公司”，2004年5月更名为“四\n川舒卡特种纤维股份有限公司”，2009年5月更名为“四川友利投资控股股份有限公司”，2014年10月更名\n为“江苏友利投资控股股份有限公司”，2017年8月更名为“江苏哈工智能机器人股份有限公司”。公司原\n总股本和注册资本均为111,423,133.00元；1992年8月公司经批准在北京中国证券市场研究设计中心按1：\n3.5溢价募集法人股本30,000,000.00元，并于1992年8月24日在北京STAQ系统挂牌流通；公司总股本和注\n册资本变更为141,423,133.00元。1993年公司通过股份制试点的规范和完善后报经国家体改委审批确认为\n继续进行股份制的公众公司。1994年7月8日经临时股东大会审议决定，经北京STAQ系统（企）字〔94〕第\n26号批复，将公司已在该系统流通的2460万股法人股正式停牌。1995年公司个人股股本35,360,000.00元\n报经中国证监会审批，于1995年11月28日在深圳证券交易所挂牌上市, 1996年5月公司股东大会决议以送\n股形式分配94、95年度红利，送股42,426,900股；1998年6月股东大会决议，实施每10股送1股分配方案，\n送股18,385,005股, 2004 年8 月本公司2004 年第一次临时股东大会审议决议向全体股东每 10 股转增5\n股，实施转增后总股本增至303,352,615 股。\n2007年4月，经中国证券监督管理委员会证监发行字[2007]70号文批准，公司向江苏双良科技有限公\n司发行人民币普通股42,530,278股。发行后公司股本变更为345,882,893.00元。\n2008年1月，经中国证券监督管理委员会证监发行字[2008]53号文批准，公司向社会非公开发行人民\n币普通股（A股）股票6,300万股。发行后公司股本变更为408,882,893.00元。\n2014年3月28日，经公司2013年度股东大会审议通过，以公司总股本408,882,893股为基数，以资本公\n积金向全体股东每10股转增5股，实施转增后总股本增至613,324,339股。公司股本变更为613,324,339.00\n元。\n2017年1月20日， 公司原股东江苏双良科技有限公司将其持有的公司114,078,327股转让给无锡哲方哈\n工智能机器人投资公司 （有限合伙） ； 将其持有的公司69,305,650股转让给无锡联创人工智能投资公司 （有\n限合伙） 。无锡哲方哈工智能机器人投资公司（有限合伙）和无锡联创人工智能投资公司（有限合伙）为\n公司一致行动人。无锡哲方哈工智能机器人投资公司（有限合伙）的最终实际控制人乔徽先生和无锡联创\n人工智能投资公司（有限合伙）的最终实际控制人艾迪女士成为公司的共同实际控制人。\n2017年8月22日，公司换领了统一社会信用代码为913202002019651838的营业执照。\n根据公司第十届董事会第三十八次会议决议、第十届董事会第四十三次会议决议、2019年度第三次临\n时股东大会决议、2019年度第六次临时股东大会决议、第十一届董事会第一次会议决议、2020年第二次临\n时股东大会决议，并收到中国证券监督管理委员会出具的《关于核准江苏哈工智能机器人股份有限公司非\n公开发行股票的批复》 （证监许可【2020】1177号）文件核准及天衡验字（2020）00080号验资报告验证，\n公司以非公开方式向25名特定对象发行人民币普通股（A股）147,613,238股，每股面值人民币1元，每股\n发行价格4.68元，均为现金认购。扣除发行费用后新增注册资本人民币147,613,238.00元，资本公积人民\n币530,277,743.86元。本次发行完毕后公司股本变更为 760,937,577.00股，注册资本变更为人民币\n760,937,577.00元。\n公司经营范围：机器人系统、智能生产线及人工智能的研发、技术咨询、技术服务；工业机器人、工\n业自动控制系统装置研发、技术咨询、技术服务、技术转让、制造、销售与维修；信息系统集成服务；软\n件的开发、技术咨询、技术服务、技术转让、销售及维护；利用自有资金对宾馆、旅游、餐饮、娱乐行业\n进行投资；自有房屋租赁；国内贸易（不含国家限制及禁止类项目） ；自营和代理各类商品及技术的进出\n口业务（国家限定企业经营或禁止进出口的商品除外） 。 （依法须经批准的项目，经相关部门批准后方可开\n展经营活动）\n本财务报表经本公司董事会于2022年4月13日决议批准报出。\n本公司2021年度纳入合并范围的子公司共33户，详见本附注九“在其他主体中权益”。本公司本年度合\n并范围较上年度发生变更，详见本附注八“合并范围",
+          "location": {
+            "kind": "pdf",
+            "page_start": 154,
+            "page_end": 155
+          },
+          "metadata": {
+            "title": "三、公司基本情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "三、公司基本情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 154
+          },
+          "source_date": null,
+          "content_hash": "70654f037bce60ff4f7aa267b34c108228c17215404be861255489255f31eebc"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00128",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "3、董事、监事、高级管理人员报酬情况\n董事、监事、高级管理人员报酬的决策程序、确定依据、实际支付情况\n在公司任职的董事、监事和高级管理人员按其行政岗位及职务，根据公司现行的工资制度和业绩考核\n规定领取薪酬。公司董事、监事的津贴经董事会、监事会审议批准后，提交股东大会审议通过后实施。董\n事、监事和高级管理人员的报酬按照公司董事会《薪酬与考核委员会工作细则》等规定，依据公司经营业\n绩并结合其绩效评价、工作能力、岗位职责等因素确定并发放。 董事、监事和高级管理人员的薪酬均已\n实际支付。\n公司报告期内董事、监事和高级管理人员报酬情况\n单位：万元\n姓名 职务 性别 年龄 任职状态\n从公司获得的\n税前报酬总额\n是否在公司关\n联方获取报酬\n艾迪 董事 女 53 现任 0 是\n乔徽 董事长 男 41 现任 103.73 否\n于振中 副董事长 男 42 现任 0 是\n赵亮 董事、总经理 男 38 现任 87.27 否\n陈佩\n董事、常务副\n总经理\n男 38 任免 87.1 否\n姜延滨\n董事、副总经\n理\n男 35 现任 29.98 否\n丁亮 独立董事 男 42 现任 3.75 否\n蔡少河 独立董事 男 61 现任 5 否\n何杰 独立董事 男 48 现任 5 否\n奚海艇 监事会主席 男 39 现任 62.06 否\n王宇航\n非职工代表监\n事\n男 35 现任 0 是\n刘少伟 职工代表监事 男 35 现任 72.23 否\n高强 副总经理 男 42 任免 85.61 否\n王妍\n副总经理、董\n事会秘书\n女 41 现任 77.81 否\n杨骏 副总经理 男 44 现任 52.24 否\n王雪晴 副总经理 女 43 现任 88.71 否\n李皓 副总经理 男 32 现任 58.75 否\n徐振雨 财务总监 男 36 现任 25.25 否\n刘劼 独立董事 男 50 离任 1.25 否\n夏玮  财务总监 女 38 离任 27.36 否\n李昊\n董事、副总经\n理\n男 40 离任 124.25 否\n合计 -- -- -- -- 997.35 --",
+          "location": {
+            "kind": "pdf",
+            "page_start": 75,
+            "page_end": 76
+          },
+          "metadata": {
+            "title": "3、董事、监事、高级管理人员报酬情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "三、公司现任高级管理人员",
+              "3、董事、监事、高级管理人员报酬情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 75
+          },
+          "source_date": null,
+          "content_hash": "5221f532de3995668e4f4f3bca1014c2aed706ef79427eafd81e41552f9db245"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00136",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "七、董事会下设专门委员会在报告期内的情况\n委员会名称 成员情况\n召开会议次\n数\n召开日期 会议内容\n提出的重要\n意见和建议\n其他履行职\n责的情况\n异议事项具\n体情况（如\n有）\n第十一届董\n事会战略委\n员会\n乔徽、丁亮、\n于振中、刘\n劼\n1\n2021 年 05 月\n27 日\n关于现金收\n购吉林市江\n机民科实业\n有限公司\n70%股权的\n议案\n战略委员会\n根据公司现\n有业务布\n局，综合公\n司发展战\n略、业务发\n展需要管理\n等考量因\n素，审议通\n过相关议案\n第十一届董 丁亮、何杰、 3 2021 年 01 月 关于聘任赵 赵亮先生未\n事会提名委\n员会\n于振中、刘\n劼\n13 日 亮先生为公\n司总经理的\n提名审查意\n见、关于聘\n任李皓先生\n为公司副总\n经理的提名\n审查意见。\n受过中国证\n监会及其他\n有关部门的\n处罚和证券\n交易所惩\n戒，没有因\n涉嫌犯罪被\n司法机关立\n案侦查或涉\n嫌违法违规\n被中国证监\n会立案稽查\n尚未有明确\n结论，不属\n于“失信被\n执行人”的\n情形，亦不\n存在其他不\n得担任高级\n管理人员的\n情形，符合\n《公司法》\n等有关法\n律、法规及\n《公司章\n程》要求的\n任职条件。\n赵亮先生具\n备担任公司\n总经理的资\n格，本次提\n名程序符合\n国家法律、\n法规及规范\n性文件和\n《公司章\n程》的相关\n规定。\n李皓先生未\n受过中国证\n监会及其他\n有关部门的\n处罚和证券\n交易所惩\n戒，没有因\n涉嫌犯罪被\n司法机关立\n案侦查或涉\n嫌违法违规\n被中国证监\n会立案稽查\n尚未有明确\n结论，不属\n于“失信被\n执行人”的\n情形，亦不\n存在其他不\n得担任高级\n管理人员的\n情形，符合\n《公司法》\n等有关法\n律、法规及\n《公司章\n程》要求的\n任职条件。\n李皓先生具\n备担任公司\n副总经理的\n资格，本次\n提名程序符\n合国家法\n律、法规及\n规范性文件\n和《公司章\n程》的相关\n规定。\n2021 年 03 月\n19 日\n关于独立董\n事候选人的\n提名审查意\n见。\n丁亮先生具\n备法律、法\n规、规范性\n文件规定的\n上市公司独\n立董事任职\n资格，具备\n履行独立董\n事职责所必\n需的工作经\n验，亦未有\n被中国证监\n会确定为市\n场禁入者且\n禁入尚未解\n除的情形，\n符合《公司\n章程》规定\n的其他条\n件。\n2021 年 06 月\n01 日\n关于聘任徐\n振雨先生为\n公司财务总\n监的提名审\n查意见\n徐振雨先生\n未受过中国\n证监会及其\n他有关部门\n的处罚和证\n券交易所惩\n戒，没有因\n涉嫌犯罪被\n司法机关立\n案侦查或涉\n嫌违法违规\n被中国证监\n会立案稽查\n尚未有明确\n结论，不属\n于“失信被\n执行人”的\n情形，亦不\n存在其他不\n得担任高级\n管理人员的\n情形，符合\n《公司法》\n等有关法\n律、法规及\n《公司章\n程》要求的\n任职条件。\n徐振雨先生\n具备担任公\n司财务总监\n的资格，本\n次提名程序\n符合国家法\n律、法规及\n规范性文件\n和《公司章\n程》的相关\n规定。\n2021 年 07 月\n28 日\n关于聘任高\n级管理人\n员、提名董\n事候选人的\n提名审查意\n见\n陈佩先生具\n备担任公司\n常务副总经\n理的资格，\n亦未有被中\n国证监会确\n定为市场禁\n入者且禁入\n尚未解除的\n情形，其任\n职资格符合\n担任上市公\n司高级管理\n人员的条\n件；其提名\n及聘任程序\n符合国家法\n律法规、规\n范性文件和\n《公司章\n程》的相关\n规定。\n高强先生、\n姜延滨先生\n具备担任公\n司副总经理\n的资格，亦\n未有被中国\n证监会确定\n为市场禁入\n者且禁入尚\n未解除的情\n形，其任职\n资格符合担\n任上市公司\n高级管理人\n员的条件；\n其提名及聘\n任程序符合\n国家法律法\n规、规范性\n文件和《公\n司章程》的\n相关规定。\n我们同意公\n司董事会聘\n任陈佩先生\n为公司常务\n副总经理，\n高强先生、\n姜延滨先生\n为公司副总\n经理。\n根据《公司\n法》 、 《公司\n章程》等的\n有关规定，\n结合本公司\n实际情况，\n为公司更好\n经营管理，\n完成公司董\n事会的目标\n和要求，由\n公司董事会\n提名，拟提\n名姜延滨先\n生为公司第\n十一届董事\n会非独立董\n事候选人。\n经审阅姜延\n滨先生个人\n履历及相关\n资料，我们\n认为：姜延\n滨先生具备\n担任公司董\n事的资格，\n亦未有被中\n国证监会确\n定为市场禁\n入者且禁入\n尚未解除的\n情形，其任\n职资格符合\n担任上市公\n司董事的条\n件。\n第十一届董\n事会审计委\n员会\n蔡少河、丁\n亮、艾迪、\n刘劼\n5\n2021 年 01 月\n13 日\n《关于对参\n股公司会计\n核算方法变\n更的议案》 。\n鉴于参股公\n司设序科技\n完成天使轮\n融资，导致\n公司持股比\n例下降至\n20%以下； 同\n时，根据公\n司项目孵化\n所处阶段及\n客观因素限\n制，后续公\n司不再参与\n其经营活\n动，实质上\n失去对设序\n科技的重大\n影响；根据\n《企业会计\n准则第 2 号\n——长期股\n权投资》 、\n《企业会计\n准则第 22 号\n——金融工\n具确认和计\n量》相关规\n定，公司本\n次变更对设\n序科技的会\n计核算方法\n是合理的，\n能够更加真\n实、准确地\n反映公司对\n其股权投资\n的会计核算\n情况。综上，\n我们同意本\n次对参股公\n司设序科技\n会计核算方\n法变更的议\n案。\n2021 年 01 月\n30 日\n《关于对参\n股公司会计\n核算方法变\n更的议案》\n鉴于参股公\n司磅客策完\n成天使轮融\n资，导致公\n司持股比例\n下降至 20%\n以下；同时，\n根据公司项\n目孵化所处\n阶段及客观\n因素限制，\n实质上失去\n对磅客策的\n重大影响；\n根据《企业\n会计准则第\n2 号——长\n期股权投\n资》 、 《企业\n会计准则第\n22 号——金\n融工具确认\n和计量》相\n关规定，公\n司本次变更\n对磅客策的\n会计核算方\n法是合理\n的，能够更\n加真实、准\n确地反映公\n司对其股权\n投资的会计\n核算情况。\n综上，我们\n同意本次对\n参股公司磅\n客策会计核\n算方法变更\n的议案。\n2021 年 04 月\n27 日",
+          "location": {
+            "kind": "pdf",
+            "page_start": 81,
+            "page_end": 89
+          },
+          "metadata": {
+            "title": "七、董事会下设专门委员会在报告期内的情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "七、董事会下设专门委员会在报告期内的情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 81
+          },
+          "source_date": null,
+          "content_hash": "6a3aad267b8b485deaed63564d6698cba183134496ff14e811d3c5896494f0c0"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "team_key_person_qiao_hui",
+            "subject": "乔徽",
+            "section_id": "ownership_governance_team",
+            "field_id": "team.key_person",
+            "value": "乔徽",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00212",
+              "src_8c28d5fe0b5a3392:eu_00110"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00212",
+                "excerpt": "乔徽，男，1981 年 6 月出生，中国国籍，无境外居留权，汉族。2005 年毕业于哈尔滨工业大学，机电工程专业硕士。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00110",
+                "excerpt": "乔徽，男，1981年6月出生，中国国籍，无境外居留权，汉族。2005年毕业于哈尔滨工业大学，机电工程专业硕士。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00212",
+                "excerpt": "乔徽 本人 中国 否"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00110",
+                "excerpt": "1、公司董事长乔徽先生"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "team_key_person_ai_di",
+            "subject": "艾迪",
+            "section_id": "ownership_governance_team",
+            "field_id": "team.key_person",
+            "value": "艾迪",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00212"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00212",
+                "excerpt": "艾迪，女，1969 年 8 月出生， 中国国籍， 无境外永久居留权， 蒙古族， 硕士研究生学历。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00212",
+                "excerpt": "艾迪"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "team_key_person_yu_zhenzhong",
+            "subject": "于振中",
+            "section_id": "ownership_governance_team",
+            "field_id": "team.key_person",
+            "value": "于振中",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00111"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00111",
+                "excerpt": "于振中，男，1980年3月生，中国国籍，无境外居留权，汉族，最高学历博士研究生。2010年10月毕业于哈尔滨工业大学机械电子工程专业工业机器人方向，获工学博士学位。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00111",
+                "excerpt": "2、公司副董事长于振中先生"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "team_key_person_zhao_liang",
+            "subject": "赵亮",
+            "section_id": "ownership_governance_team",
+            "field_id": "team.key_person",
+            "value": "赵亮",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00128"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00128",
+                "excerpt": "赵亮 董事、总经理 男 38 现任 87.27 否"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "team_key_person_xu_zhenyu",
+            "subject": "徐振雨",
+            "section_id": "ownership_governance_team",
+            "field_id": "team.key_person",
+            "value": "徐振雨",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00127"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00127",
+                "excerpt": "徐振雨，男，1986年出生，中国国籍，汉族，本科学历，中级管理会计师，无境外居留权，有超过十二年的企业财务管理工作经验。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00127",
+                "excerpt": "9、公司财务总监徐振雨先生"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "team_key_person_yang_jun",
+            "subject": "杨骏",
+            "section_id": "ownership_governance_team",
+            "field_id": "team.key_person",
+            "value": "杨骏",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00124"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00124",
+                "excerpt": "杨骏，男，1978年1月生，中国国籍，无境外居留权，汉族，英国利兹大学金融与会计硕士。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00124",
+                "excerpt": "6、公司副总经理杨骏先生"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "team_education_structure",
+            "subject": "the_enterprise",
+            "section_id": "ownership_governance_team",
+            "field_id": "team.education_structure",
+            "value": "核心团队学历涵盖硕士、博士及本科，专业涉及机电工程、机械电子工程、金融与会计等。",
+            "value_type": "text",
+            "information_status": "supported",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00212",
+              "src_8c28d5fe0b5a3392:eu_00111",
+              "src_8c28d5fe0b5a3392:eu_00124",
+              "src_8c28d5fe0b5a3392:eu_00127"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00212",
+                "excerpt": "2005 年毕业于哈尔滨工业大学，机电工程专业硕士。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00111",
+                "excerpt": "最高学历博士研究生。2010年10月毕业于哈尔滨工业大学机械电子工程专业工业机器人方向，获工学博士学位。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00124",
+                "excerpt": "英国利兹大学金融与会计硕士。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00127",
+                "excerpt": "本科学历，中级管理会计师"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "team_professional_background",
+            "subject": "the_enterprise",
+            "section_id": "ownership_governance_team",
+            "field_id": "team.professional_background",
+            "value": "核心团队及实际控制人具有在机器人、投资、财务、企业管理等领域的任职经历，包括担任公司董事长、副董事长、总经理、财务总监等职务。",
+            "value_type": "text",
+            "information_status": "supported",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00212",
+              "src_8c28d5fe0b5a3392:eu_00111",
+              "src_8c28d5fe0b5a3392:eu_00124",
+              "src_8c28d5fe0b5a3392:eu_00127"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00212",
+                "excerpt": "2017 年 2 月至 2020 年 2 月，任公司第十届董事会董事、副董事长、总经理；2020 年 2 月至 2021 年 1 月，任公司第十一届董事会董事、董事长、总经理，2021 年 1 月至今任第十一届董事会董事、董事长。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00111",
+                "excerpt": "2019年7月至今任公司副董事长。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00124",
+                "excerpt": "2017年8月至今任公司副总经理。"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00127",
+                "excerpt": "2021年6月至今任公司财务总监。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "governance_equity_incentive_plan_status",
+            "subject": "the_enterprise",
+            "section_id": "ownership_governance_team",
+            "field_id": "governance.equity_incentive_plan_status",
+            "value": "not_applicable",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00145"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00145",
+                "excerpt": "公司报告期无股权激励计划、员工持股计划或其他员工激励措施及其实施情况。"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          }
+        ],
+        "profile_relations": [
+          {
+            "relation_id": "rel_controls_qiao_hui",
+            "relation_type": "controls",
+            "source_id": "乔徽",
+            "source_type": "Person",
+            "target_id": "the_enterprise",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00376"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00376",
+                "excerpt": "无锡哲方哈工智能机器人投资公司（有限合伙）的最终实际控制人乔徽先生和无锡联创人工智能投资公司（有限合伙）的最终实际控制人艾迪女士成为公司的共同实际控制人。"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_controls_ai_di",
+            "relation_type": "controls",
+            "source_id": "艾迪",
+            "source_type": "Person",
+            "target_id": "the_enterprise",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00376"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00376",
+                "excerpt": "无锡哲方哈工智能机器人投资公司（有限合伙）的最终实际控制人乔徽先生和无锡联创人工智能投资公司（有限合伙）的最终实际控制人艾迪女士成为公司的共同实际控制人。"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_holds_position_qiao_hui",
+            "relation_type": "holds_position_in",
+            "source_id": "乔徽",
+            "source_type": "Person",
+            "target_id": "the_enterprise",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00110"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00110",
+                "excerpt": "2021年1月至今任第十一届董事会董事、董事长。"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_holds_position_yu_zhenzhong",
+            "relation_type": "holds_position_in",
+            "source_id": "于振中",
+            "source_type": "Person",
+            "target_id": "the_enterprise",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00111"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00111",
+                "excerpt": "2019年7月至今任公司副董事长。"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_holds_position_zhao_liang",
+            "relation_type": "holds_position_in",
+            "source_id": "赵亮",
+            "source_type": "Person",
+            "target_id": "the_enterprise",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00128"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00128",
+                "excerpt": "赵亮 董事、总经理 男 38 现任 87.27 否"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_holds_position_xu_zhenyu",
+            "relation_type": "holds_position_in",
+            "source_id": "徐振雨",
+            "source_type": "Person",
+            "target_id": "the_enterprise",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00127"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00127",
+                "excerpt": "2021年6月至今任公司财务总监。"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_holds_position_yang_jun",
+            "relation_type": "holds_position_in",
+            "source_id": "杨骏",
+            "source_type": "Person",
+            "target_id": "the_enterprise",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00124"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00124",
+                "excerpt": "2017年8月至今任公司副总经理。"
+              }
+            ]
+          }
+        ],
+        "information_gaps": [
+          "未披露核心团队中技术或研发负责人的具体技术背景细节。",
+          "未披露核心团队成员的年龄、性别等基本信息之外的详细履历。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [],
+        "consistency_warnings": [],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": []
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00212",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "3、公司实际控制人及其一致行动人",
+          "section_path": [
+            "第七节 股份变动及股东情况",
+            "三、股东和实际控制人情况",
+            "3、公司实际控制人及其一致行动人"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 122,
+            "page_end": 123
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "董事",
+            "实际控制人",
+            "董事长",
+            "学历"
+          ],
+          "content_chars": 1218
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00136",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "七、董事会下设专门委员会在报告期内的情况",
+          "section_path": [
+            "第四节 公司治理",
+            "七、董事会下设专门委员会在报告期内的情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 81,
+            "page_end": 89
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "任职"
+          ],
+          "content_chars": 2437
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00079",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "4、充分借助资本市场平台提升士气，助推企业转型发展",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "十一、公司未来发展的展望",
+            "（二）2022年经营计划",
+            "4、充分借助资本市场平台提升士气，助推企业转型发展"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 54,
+            "page_end": 54
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "董事",
+            "股权激励"
+          ],
+          "content_chars": 314
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00081",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "6、加强人才队伍建设",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "十一、公司未来发展的展望",
+            "（二）2022年经营计划",
+            "6、加强人才队伍建设"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 54,
+            "page_end": 54
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "核心技术人员"
+          ],
+          "content_chars": 230
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00127",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "9、公司财务总监徐振雨先生",
+          "section_path": [
+            "第四节 公司治理",
+            "三、公司现任高级管理人员",
+            "9、公司财务总监徐振雨先生"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 71,
+            "page_end": 75
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "董事",
+            "董事长",
+            "学历"
+          ],
+          "content_chars": 2219
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00111",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、公司副董事长于振中先生",
+          "section_path": [
+            "第四节 公司治理",
+            "一、公司第十一届董事会董事：",
+            "2、公司副董事长于振中先生"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 67,
+            "page_end": 68
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "董事",
+            "董事长",
+            "学历"
+          ],
+          "content_chars": 405
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00109",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、任职情况",
+          "section_path": [
+            "第四节 公司治理",
+            "五、董事、监事和高级管理人员情况",
+            "2、任职情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 67,
+            "page_end": 67
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "董事",
+            "主要工作经历"
+          ],
+          "content_chars": 46
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00376",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "三、公司基本情况",
+          "section_path": [
+            "第十节 财务报告",
+            "三、公司基本情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 154,
+            "page_end": 155
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "实际控制人"
+          ],
+          "content_chars": 2044
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00128",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "3、董事、监事、高级管理人员报酬情况",
+          "section_path": [
+            "第四节 公司治理",
+            "三、公司现任高级管理人员",
+            "3、董事、监事、高级管理人员报酬情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 75,
+            "page_end": 76
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "任职",
+            "董事长"
+          ],
+          "content_chars": 860
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00145",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "十一、公司股权激励计划、员工持股计划或其他员工激励措施的实施情况",
+          "section_path": [
+            "第四节 公司治理",
+            "十一、公司股权激励计划、员工持股计划或其他员工激励措施的实施情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 93,
+            "page_end": 93
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "股权激励"
+          ],
+          "content_chars": 79
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00087",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "5、企业经营与管理风险",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "十一、公司未来发展的展望",
+            "（三）公司面临的风险和应对措施：",
+            "5、企业经营与管理风险"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 57,
+            "page_end": 57
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "高管"
+          ],
+          "content_chars": 408
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00110",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、公司董事长乔徽先生",
+          "section_path": [
+            "第四节 公司治理",
+            "一、公司第十一届董事会董事：",
+            "1、公司董事长乔徽先生"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 67,
+            "page_end": 67
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "董事",
+            "董事长"
+          ],
+          "content_chars": 432
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00124",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "6、公司副总经理杨骏先生",
+          "section_path": [
+            "第四节 公司治理",
+            "三、公司现任高级管理人员",
+            "6、公司副总经理杨骏先生"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 71,
+            "page_end": 71
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "高管"
+          ],
+          "content_chars": 260
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00129",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、本报告期董事会情况",
+          "section_path": [
+            "第四节 公司治理",
+            "六、报告期内董事履行职责的情况",
+            "1、本报告期董事会情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 76,
+            "page_end": 79
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "董事"
+          ],
+          "content_chars": 3198
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_8c28d5fe0b5a3392:eu_00212",
+        "src_8c28d5fe0b5a3392:eu_00110",
+        "src_8c28d5fe0b5a3392:eu_00111",
+        "src_8c28d5fe0b5a3392:eu_00127",
+        "src_8c28d5fe0b5a3392:eu_00124",
+        "src_8c28d5fe0b5a3392:eu_00145",
+        "src_8c28d5fe0b5a3392:eu_00109",
+        "src_8c28d5fe0b5a3392:eu_00376",
+        "src_8c28d5fe0b5a3392:eu_00128",
+        "src_8c28d5fe0b5a3392:eu_00136"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "实际控制人 关键人员 任职 股权激励",
+            "keyword_count": 9,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00212",
+              "src_8c28d5fe0b5a3392:eu_00136",
+              "src_8c28d5fe0b5a3392:eu_00079",
+              "src_8c28d5fe0b5a3392:eu_00081",
+              "src_8c28d5fe0b5a3392:eu_00127",
+              "src_8c28d5fe0b5a3392:eu_00111",
+              "src_8c28d5fe0b5a3392:eu_00109",
+              "src_8c28d5fe0b5a3392:eu_00376",
+              "src_8c28d5fe0b5a3392:eu_00128",
+              "src_8c28d5fe0b5a3392:eu_00145"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "教育背景 职业经历 高管 董事",
+            "keyword_count": 11,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00087",
+              "src_8c28d5fe0b5a3392:eu_00127",
+              "src_8c28d5fe0b5a3392:eu_00081",
+              "src_8c28d5fe0b5a3392:eu_00212",
+              "src_8c28d5fe0b5a3392:eu_00110",
+              "src_8c28d5fe0b5a3392:eu_00111",
+              "src_8c28d5fe0b5a3392:eu_00109",
+              "src_8c28d5fe0b5a3392:eu_00079",
+              "src_8c28d5fe0b5a3392:eu_00124",
+              "src_8c28d5fe0b5a3392:eu_00129"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00212",
+              "src_8c28d5fe0b5a3392:eu_00110",
+              "src_8c28d5fe0b5a3392:eu_00111",
+              "src_8c28d5fe0b5a3392:eu_00127",
+              "src_8c28d5fe0b5a3392:eu_00124",
+              "src_8c28d5fe0b5a3392:eu_00145",
+              "src_8c28d5fe0b5a3392:eu_00109",
+              "src_8c28d5fe0b5a3392:eu_00376",
+              "src_8c28d5fe0b5a3392:eu_00128",
+              "src_8c28d5fe0b5a3392:eu_00136"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00212",
+              "src_8c28d5fe0b5a3392:eu_00110",
+              "src_8c28d5fe0b5a3392:eu_00111",
+              "src_8c28d5fe0b5a3392:eu_00127",
+              "src_8c28d5fe0b5a3392:eu_00124",
+              "src_8c28d5fe0b5a3392:eu_00145",
+              "src_8c28d5fe0b5a3392:eu_00109",
+              "src_8c28d5fe0b5a3392:eu_00376",
+              "src_8c28d5fe0b5a3392:eu_00128",
+              "src_8c28d5fe0b5a3392:eu_00136"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 10000
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 630,
+          "output_tokens": 215,
+          "total_tokens": 845,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4679,
+          "output_tokens": 1181,
+          "total_tokens": 5860,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 13735,
+          "output_tokens": 179,
+          "total_tokens": 13914,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "team",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 11909,
+              "completion_tokens": 3844,
+              "total_tokens": 15753,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00212",
+                "src_8c28d5fe0b5a3392:eu_00110",
+                "src_8c28d5fe0b5a3392:eu_00111",
+                "src_8c28d5fe0b5a3392:eu_00127",
+                "src_8c28d5fe0b5a3392:eu_00124",
+                "src_8c28d5fe0b5a3392:eu_00145",
+                "src_8c28d5fe0b5a3392:eu_00109",
+                "src_8c28d5fe0b5a3392:eu_00376",
+                "src_8c28d5fe0b5a3392:eu_00128",
+                "src_8c28d5fe0b5a3392:eu_00136"
+              ]
+            }
+          ],
+          "prompt_tokens": 11909,
+          "completion_tokens": 3844,
+          "total_tokens": 15753
+        }
+      ]
+    }
+  ]
+}

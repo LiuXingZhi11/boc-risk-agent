@@ -1,0 +1,1105 @@
+{
+  "case_id": "Saiwei",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "finance_and_funding",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00008",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "五、主要会计数据和财务指标\n公司是否需追溯调整或重述以前年度会计数据\n□是 否\n2024 年 2023 年 本年比上年增减 2022 年\n营业收入（元） 143,282,608.30 448,173,325.71 -68.03% 386,221,710.80\n归属于上市公司股东\n的净利润（元） -507,315,796.03 -160,773,659.22 -215.55% -226,477,059.88\n归属于上市公司股东\n的扣除非经常性损益\n的净利润（元）\n-217,834,364.82 -204,103,749.56 -6.73% -290,646,607.21\n经营活动产生的现金\n流量净额（元） -38,698,546.97 -24,343,476.44 -58.97% 106,836,607.69\n基本每股收益（元/\n股） -0.6641 -0.2088 -218.06% -0.2941\n稀释每股收益（元/\n股） -0.6641 -0.2088 -218.06% -0.2941\n加权平均净资产收益\n率 -133.13% -22.57% -110.56% -24.59%\n2024 年末 2023 年末 本年末比上年末增减 2022 年末\n资产总额（元） 1,173,894,569.45 1,615,626,623.93 -27.34% 1,957,506,161.77\n归属于上市公司股东\n的净资产（元） 122,439,944.14 634,734,628.28 -80.71% 802,626,855.41\n公司最近三个会计年度扣除非经常性损益前后净利润孰低者均为负值，且最近一年审计报告显示公司持续经营能力存在不\n确定性\n是 □否\n扣除非经常损益前后的净利润孰低者为负值\n是 □否\n项目 2024 年 2023 年 备注\n营业收入（元） 143,282,608.30 448,173,325.71 /\n营业收入扣除金额\n（元） 6,566,400.41 65,233,547.54\n投资性房地产出租收入、水\n电费收入及其他收入、系统\n开发收入\n营业收入扣除后金额 136,716,207.89 382,939,778.17 /\n（元）",
+          "location": {
+            "kind": "pdf",
+            "page_start": 8,
+            "page_end": 9
+          },
+          "metadata": {
+            "title": "五、主要会计数据和财务指标",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第二节 公司简介和主要财务指标",
+              "五、主要会计数据和财务指标"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 8
+          },
+          "source_date": null,
+          "content_hash": "bde9666f8b34f887acbe014436c56e9e9d8efff858a94c1455f931acc557d2bd"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00074",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "5、现金流\n单位：元\n项目 2024 年 2023 年 同比增减\n经营活动现金流入小计 229,866,146.42 429,788,295.65 -46.52%\n经营活动现金流出小计 268,564,693.39 454,131,772.09 -40.86%\n经营活动产生的现金流量净\n额 -38,698,546.97 -24,343,476.44 -58.97%\n投资活动现金流入小计 90,504,648.54 96,201,598.71 -5.92%\n投资活动现金流出小计 989,561.03 3,408,755.71 -70.97%\n投资活动产生的现金流量净\n额 89,515,087.51 92,792,843.00 -3.53%\n筹资活动现金流入小计 6,876,000.01 33,684,496.58 -79.59%\n筹资活动现金流出小计 50,616,235.80 136,177,254.33 -62.83%\n筹资活动产生的现金流量净\n额 -43,740,235.79 -102,492,757.75 57.32%\n现金及现金等价物净增加额 7,707,570.95 -33,599,050.77 122.94%\n相关数据同比发生重大变动的主要影响因素说明\n适用 □不适用\n2024年度公司现金及等价物净增加额为770.76万元，较上年同期增加了4,130.66万元，增加了122.94%，主要原因\n为：\n1、2024 年度公司经营活动产出的现金流量净额为负 3,869.85 万元，较上年同期减少了 58.97%。表现为销售商品、\n提供劳务收到的现金20,487.03万元，较上年同期减少了49.48%；收到其他与经营活动有关的现金2,379.95万元，较上年\n同期增加了 0.75%；购买商品、接受劳务支付的现金 15,265.26 万元，较上年同期减少了 45.03%；支付给职工以及为职工\n支付的现金 7,303.02 万元，较上年同期减少了20.66%；支付的各项税费640.74 万元，较上年同期减少了73.44%；支付的\n其他与经营活动有关的现金 3,647.45 万元，较上年同期减少了39.49%。\n2、2024 年度公司投资活动产生的现金流量净额为 8,951.51 万元，较上年同期减少了 3.53%。处置固定资产、无形\n资产和其他长期资产收回的现金净额 0.46 万元，较上年同期减少了 100%；收到其他与投资活动有关的现金 9,050.00 万元，\n较上年同期增加了14079.89%；购建固定资产、无形资产和其他长期资产支付的现金74.44万元，较上年同期减少了78.16%。\n3、2024 年度公司筹资活动产生的现金流量净额为负 4,374.02 万元，较上年同期增加了 57.32%。表现为取得借款收\n到的现金 380.00 万元，较上年同期增加了 90.00%；收到其他与筹资活动有关的现金 307.60 万元，较上年同期减少了\n90.29%；偿还债务支付的现金2,215.99万元，较上年同期减少了60.66%；分配股利、利润或偿付利息支付的现金1,276.26\n万元，较上年同期减少了 55.72%；支付其他与筹资活动有关的现金1,659.37 万元，较上年同期减少了68.87%。\n报告期内公司经营活动产生的现金净流量与本年度净利润存在重大差异的原因说明\n适用 □不适用\n报告期公司经营活动产生的现金净流量为负 3,869.85 万元，本年度净利润为负51,118.66万元，存在重大差异的主\n要原因是计提资产减值损失和信用减值损失、债务重组确认投资损失以及计提预计负债所致。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 33,
+            "page_end": 34
+          },
+          "metadata": {
+            "title": "5、现金流",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "5、现金流"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 33
+          },
+          "source_date": null,
+          "content_hash": "181fea1f309f1a4ca7c47237d42b94e5af180493e6b09262e2c1309466f1762c"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "4、研发投入\n适用 □不适用\n主要研发项\n目名称 项目目的 项目进展 拟达到的目标 预计对公司未来\n发展的影响\n工业巡检机\n器人产品系\n列迭代研发\n项目\n巡检机器人\n产品系列迭\n代优化，巩\n固在售产品\n先进性和竞\n争力。\n项目已结项。\n针对在售配电房巡检机器人、室内 AGV 巡检机器\n人隧道巡检机器人等产品进行技术迭代开发，提\n高稳定性，降低成本，优化识别率，增强集控集\n管功能，集成其他物联网传感终端，形成综合性\n安全生产、减能增效运维平台。\n持续提高产品竞\n争力，巩固技术\n壁垒，满足客户\n多样化需求，提\n高市占率和利润\n率。\n工业巡检机\n器人产品系\n列迭代研发\n项目 2.0\n巡检机器人\n产品系列迭\n代优化，巩\n固在售产品\n先进性和竞\n争力。\n项目已结项。\n本项目目的在于针对在售机器人产品，根据市场\n反馈的问题，进一步解决客户痛点需求，改善现\n存问题，降低生产和部署成本，加快服务流程，\n并拓展行业应用领域。\n提高工业巡检在\n售产品竞争力，\n巩固技术壁垒，\n继续降低生产和\n部署成本，满足\n不同场景客户需\n求，提高市占率\n和利润率。\n一统天下 增加公司营\n业利润。\n项目处于稳定运\n营阶段。\n本项目是一款以“实时国战”为核心玩法的大型\n三国题材 SLG 游戏。游戏中画风精美写实，地图\n场景贴合史实，武将设计丰富多样，为玩家营造\n出超强的三国代入感。\n持续为公司带来\n收益。\n三国群英传 增加公司营\n业利润。\n项目处于稳定运\n营阶段。\n本项目是一款三国题材的 SLG手机游戏产品，拟\n在还原宇峻奥汀《三国群英传》经典战斗的基础\n上，结合 MMORPG 战斗特点，打造出半开放战场\n中实时操作的策略玩法，让用户在体验《三国群\n英传》经典玩法的同时，获得更新鲜的玩法体\n验。\n持续为公司带来\n收益。\n装甲联队\nonline\n增加公司营\n业利润。\n项目处于稳定运\n营阶段。\n本项目是一款现代军事反恐题材的 SLG 手游产\n品，玩家通过扮演一名军事指挥官，募集著名将\n领，编组自己的海陆空部队，对邪恶势力进行打\n击。玩家可以在战斗过程中实时指挥作战部队，\n并可使用远程导弹等技能支援前线作战，获得逼\n真的军事战争游戏体验。\n持续为公司带来\n收益。\n赛为智能轨\n道交通智慧\n运维管理系\n统 V1.0\n根据行业发\n展趋势进行\n研发，拓展\n新市场，提\n升综合解决\n方案能力。\n项目已结项。\n本系统是为了最大限度提高地铁行业运营管理部\n门工作效率和数字化、智能化管理水平而设计研\n发的系统。该系统建立以设备为中心、预防性维\n护为主导、工单为主线的管理方式，实现各项运\n维业务全面覆盖、各项业务工作闭环处置、各级\n指令准确无误上传下达。通过该系统，将地铁运\n维相关的人、物、事进行统一的管理和协调，使\n地铁运维管理工作更加规范化。\n提升公司核心竞\n争力和提升盈利\n能力。\n基于智能视\n频图像分析\n技术的列车\n客流统计分\n析管理系统\n关键核心客\n户群需求响\n应，通过 AI\n赋能增加车\n载 PIS 产品\n市场竞争\n力。\n项目已结项，对\n应的合肥市科研\n项目已验收通\n过。申请 1 项实\n用新型专利，1 项\n发明专利，发表 2\n篇论文。获得 1\n项软件著作权。\n本项目基于智能视频分析技术的列车客流统计分\n析管理技术的研究，综合采用视频图像分析和重\n力感应互相结合的技术手段，依据数据互补算法\n有效实现列车内部客流数据的精准统计和分析，\n以列车客流密度作为重要的衡量指标，通过量化\n的实时客流数据联动多个系统协作运行，能够有\n效为组织列车运营工作提供科学支撑，为乘客提\n供舒适的乘车环境。依据客流数据组织列车运营\n管理工作，可以有效提升列车运营服务水平，提\n升乘客乘车出行的满意度，同时提升运营管理效\n率并降低运营管理成本。\n提高传统 PIS 产\n品竞争力，通过\n产品差异化抢占\n市场份额，增加\n利润率。\n综合视频管\n理平台\n关键核心客\n户群需求响\n应，增加在\n售产品拓展\n性，提升核\n心算法产品\n产业化能\n力。\n项目处于研发阶\n段\n本项目目的在于研发一款综合性监控设备、视频\n流、图像视频算法和相关物联网设备综合管理应\n用平台。分为视频管理服务、算法服务、数据和\n接入服务、业务服务四大 SaaS 子平台。子平台\n间充分解耦有机融合，可以快速适配诸如工业运\n维、安防安监、智能制造、鸟情防控等场景。通\n过算法服务的灵活配置，增强其行业赋能的产业\n化能力和演进速度。通过数据和接入的全面管\n理，使数据增值服务具备基础条件。\n提高工业巡检和\n安防平台产品竞\n争力，加强拓展\n性和快速响应不\n同领域客户需求\n的能力，提升盈\n利能力。\n公司研发人员情况\n2024 年 2023 年 变动比例\n研发人员数量（人） 70 119 -41.18%\n研发人员数量占比 36.65% 43.91% -7.26%\n研发人员学历\n本科 41 74 -44.59%\n硕士 7 10 -30.00%\n研发人员年龄构成\n30 岁以下 12 32 -62.50%\n30~40 岁 58 87 -33.33%\n近三年公司研发投入金额及占营业收入的比例\n2024 年 2023 年 2022 年\n研发投入金额（元） 51,931,092.54 61,221,907.05 76,841,125.88\n研发投入占营业收入比例 36.24% 13.66% 19.90%\n研发支出资本化的金额\n（元） 11,763,867.74 7,809,446.47 24,154,207.08\n资本化研发支出占研发投入\n的比例 22.65% 12.76% 31.43%\n资本化研发支出占当期净利\n润的比重 -2.30% -4.69% -10.47%\n公司研发人员构成发生重大变化的原因及影响\n□适用 不适用\n研发投入总额占营业收入的比重较上年发生显著变化的原因\n适用 □不适用\n研发投入总额占营业收入的比重较上年增加 22.58%，主要原因是本年度营业收入较上年相比下降了68.03%。\n研发投入资本化率大幅变动的原因及其合理性说明\n研发投入资本化率大幅变动的原因及其合理性说明\n□适用 不适用\n公司需遵守《深圳证券交易所上市公司自律监管指引第 3 号——行业信息披露》中的“软件与信息技术服务业”的披露要\n求\n单位：元\n项目名称 研发资本化金\n额 相关项目的基本情况 实施\n进度\n车站运维\n智能 AI 应\n用系统\n2,183,774.62\n本项目主要运用人工智能技术赋能城市轨道交通车站的运维管理，并基于大数\n据、云计算、无线通信、健康管理等新兴技术，研究开发城市轨道交通智慧运维\n系统相关产品，探索城市轨道交通智慧运维创新模式，提升城市轨道交通保障运\n营安全、提高服务质量和降低运营成本。\n项目\n处于\n研发\n阶段\n工业巡检\n机器人产\n品系列迭\n代研发项\n目 3.0\n3,144,175.87\n针对在售配电房巡检机器人、室内 AGV 巡检机器人隧道巡检机器人等产品进行技\n术迭代开发，提高稳定性，降低成本，优化识别率，增强集控集管功能，集成其\n他物联网传感终端，形成综合性安全生产、减能增效运维平台。\n项目\n处于\n研发\n阶段\nAI 鸟情自\n动化探驱\n防范\n1,931,719.85\n项目拟开发面向机场跑道的鸟情管理用户交互系统，系统覆盖了鸟情分析、鸟情\n查询、驱鸟设备管理、实时视频监控、3D 地图操作平台、日志管理、人员管理、\n系统配置等功能。云平台管理子系统是一套轻量化的管理平台系统软件，它包含\n一套基于 Web 方式访问的应用程序，包含的完整管理和控制功能，符合《民用机\n场运行安全管理规定》管理标准，最大限度优化机场驱鸟的操作流程和工作量。\n云平台管理系统采用前端鸟情检测联动控制系统进行数据传输，可与驱鸟设备进",
+          "location": {
+            "kind": "pdf",
+            "page_start": 31,
+            "page_end": 33
+          },
+          "metadata": {
+            "title": "4、研发投入",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "4、研发投入"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 31
+          },
+          "source_date": null,
+          "content_hash": "0351c05acc9831ac812735fae2443f939afa4eaa4cc51988658368ebdf3204d8"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00210",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "2、重大担保\n适用 □不适用\n单位：万元\n公司及其子公司对外担保情况（不包括对子公司的担保）\n担保对\n象名称\n担保额\n度相关\n公告披\n露日期\n担保额\n度\n实际发\n生日期\n实际担\n保金额\n担保类\n型\n担保物\n（如\n有）\n反担保\n情况\n（如\n有）\n担保期 是否履\n行完毕\n是否为\n关联方\n担保\n马鞍山\n学院\n44,200\n2018 年\n05 月11\n日\n35,000 连带责\n任保证\n2024 年\n11 月20\n日\n是 否\n2020 年\n12 月01\n日\n3,000 连带责\n任保证\n2024 年\n2 月 1\n日\n是 否\n报告期内审批的对\n外担保额度合计\n（A1）\n0\n报告期内对外担保\n实际发生额合计\n（A2）\n0\n报告期末已审批的\n对外担保额度合计\n（A3）\n44,200\n报告期末实际对外\n担保余额合计\n（A4）\n0\n公司对子公司的担保情况\n担保对\n象名称\n担保额\n度相关\n公告披\n露日期\n担保额\n度\n实际发\n生日期\n实际担\n保金额\n担保类\n型\n担保物\n（如\n有）\n反担保\n情况\n（如\n有）\n担保期 是否履\n行完毕\n是否为\n关联方\n担保\n子公司对子公司的担保情况\n担保对\n象名称\n担保额\n度相关\n公告披\n露日期\n担保额\n度\n实际发\n生日期\n实际担\n保金额\n担保类\n型\n担保物\n（如\n有）\n反担保\n情况\n（如\n有）\n担保期 是否履\n行完毕\n是否为\n关联方\n担保\n公司担保总额（即前三大项的合计）\n报告期内审批担保\n额度合计\n（A1+B1+C1）\n0\n报告期内担保实际\n发生额合计\n（A2+B2+C2）\n0\n报告期末已审批的\n担保额度合计\n（A3+B3+C3）\n44,200\n报告期末实际担保\n余额合计\n（A4+B4+C4）\n0\n其中：\n为股东、实际控制人及其关联方提供担保\n的余额（D） 0\n直接或间接为资产负债率超过 70%的被担\n保对象提供的债务担保余额（E） 0\n担保总额超过净资产 50%部分的金额（F） 0\n上述三项担保金额合计（D+E+F） 0\n采用复合方式担保的具体情况说明",
+          "location": {
+            "kind": "pdf",
+            "page_start": 72,
+            "page_end": 72
+          },
+          "metadata": {
+            "title": "2、重大担保",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十五、重大合同及其履行情况",
+              "2、重大担保"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 72
+          },
+          "source_date": null,
+          "content_hash": "e66ed84a492d098cf69a5b2b0a96826c08a4c31be6eb19eaf32663fef245e764"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00623",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "3.流动风险\n流动风险，是指企业在履行以交付现金或其他金融资产的方式结算的义务时发生资金短缺的风险。流动性风险由本公\n司的财务部门集中控制。财务部门通过监控现金余额、可随时变现的有价证券以及对未来 12 个月现金流量的滚动预测，确\n保公司在所有合理预测的情况下拥有充足的资金偿还债务，满足本公司经营需要，并降低现金流量波动的影响。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 181,
+            "page_end": 181
+          },
+          "metadata": {
+            "title": "3.流动风险",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第十节 财务报告",
+              "十二、与金融工具相关的风险",
+              "3.流动风险"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 181
+          },
+          "source_date": null,
+          "content_hash": "04da2c9e26c4ad63b67e7bbaf54e8cf4dd008eac656c3ab051a56db5457ec02e"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00063",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "2、收入与成本\n（1） 营业收入构成\n营业收入整体情况\n单位：元\n2024 年 2023 年\n同比增减\n金额 占营业收入比重 金额 占营业收入比重\n营业收入合计 143,282,608.30 100% 448,173,325.71 100% -68.03%\n分行业\n人工智能领域 3,320,792.96 2.32% 34,399,247.18 7.68% -90.35%\n智慧城市领域 88,839,371.86 62.00% 300,963,659.47 67.15% -70.48%\n其他领域 51,122,443.48 35.68% 112,810,419.06 25.17% -54.68%\n分产品\n人工智能 3,320,792.96 2.32% 34,399,247.18 7.68% -90.35%\n智慧城市 88,839,371.86 62.00% 300,963,659.47 67.15% -70.48%\n其他 51,122,443.48 35.68% 112,810,419.06 25.17% -54.68%\n主要游戏分季度运营数据\n单位：元\n游戏名称 季度 用户数量 活跃用户数 付费用户数量 ARPU 值 充值流水\n游戏 1 第一季度 17,058,737 114,453 17,941 1,193.99 21,421,420.00\n游戏 1 第二季度 17,085,768 59,852 9,251 1,592.15 14,728,963.00\n游戏 1 第三季度 17,113,185 50,352 7,318 2,036.31 14,901,729.00\n游戏 1 第四季度 17,370,852 102,456 14,907 1,152.04 17,173,391.00\n游戏 2 第一季度 10,508,352 19,313 4,332 3,033.58 13,141,482.00\n游戏 2 第二季度 10,522,413 18,356 4,449 2,735.27 12,169,238.00\n游戏 2 第三季度 10,536,562 18,063 4,507 2,592.92 11,686,302.00\n游戏 2 第四季度 10,546,278 16,496 4,261 2,878.15 12,263,803.00\n游戏 3 第一季度 8,024,652 26,712 4,378 1,767.32 7,737,338.00\n游戏 3 第二季度 8,098,013 24,724 4,111 1,962.16 8,066,444.00\n游戏 3 第三季度 8,165,933 23,092 3,609 1,892.56 6,830,254.00\n游戏 3 第四季度 8,220,064 20,793 3,355 1,988.18 6,670,333.00",
+          "location": {
+            "kind": "pdf",
+            "page_start": 27,
+            "page_end": 29
+          },
+          "metadata": {
+            "title": "（1） 营业收入构成",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "2、收入与成本",
+              "（1） 营业收入构成"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 27
+          },
+          "source_date": null,
+          "content_hash": "3884d45dc97fd3ea123cea1a92956665abcc47d4861d3b3460f01561ae0594f2"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00288",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "一、经营活动产生的现金流量：\n销售商品、提供劳务收到的现金 204,870,312.25 405,528,369.52\n客户存款和同业存放款项净增加额\n向中央银行借款净增加额\n向其他金融机构拆入资金净增加额\n收到原保险合同保费取得的现金\n收到再保业务现金净额\n保户储金及投资款净增加额\n收取利息、手续费及佣金的现金\n拆入资金净增加额\n回购业务资金净增加额\n代理买卖证券收到的现金净额\n收到的税费返还 1,196,366.96 637,258.09\n收到其他与经营活动有关的现金 23,799,467.21 23,622,668.04\n经营活动现金流入小计 229,866,146.42 429,788,295.65\n购买商品、接受劳务支付的现金 152,652,602.51 277,677,369.77\n客户贷款及垫款净增加额\n存放中央银行和同业款项净增加额\n支付原保险合同赔付款项的现金\n拆出资金净增加额\n支付利息、手续费及佣金的现金\n支付保单红利的现金\n支付给职工以及为职工支付的现金 73,030,198.43 92,051,305.13\n支付的各项税费 6,407,416.91 24,120,842.29\n支付其他与经营活动有关的现金 36,474,475.54 60,282,254.90\n经营活动现金流出小计 268,564,693.39 454,131,772.09\n经营活动产生的现金流量净额 -38,698,546.97 -24,343,476.44",
+          "location": {
+            "kind": "pdf",
+            "page_start": 93,
+            "page_end": 93
+          },
+          "metadata": {
+            "title": "一、经营活动产生的现金流量：",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第十节 财务报告",
+              "一、经营活动产生的现金流量："
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 93
+          },
+          "source_date": null,
+          "content_hash": "ef9db6c3f8abf85cb5ca5965dd301de6c34324496af947d61a57218460091595"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "item_001",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.operating_revenue",
+            "value": 143282608.3,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00008"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00008",
+                "excerpt": "营业收入（元） 143,282,608.30 448,173,325.71 -68.03% 386,221,710.80"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "item_002",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.net_profit_attributable_to_parent",
+            "value": -507315796.03,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00008"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00008",
+                "excerpt": "归属于上市公司股东的净利润（元） -507,315,796.03 -160,773,659.22 -215.55% -226,477,059.88"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "item_004",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.operating_cash_flow",
+            "value": -38698546.97,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00008",
+              "src_d08e0e930385d696:eu_00074"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00008",
+                "excerpt": "经营活动产生的现金流量净额（元） -38,698,546.97 -24,343,476.44 -58.97% 106,836,607.69"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00074",
+                "excerpt": "经营活动产生的现金流量净额 -38,698,546.97 -24,343,476.44 -58.97%"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "item_005",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.research_expense",
+            "value": 51931092.54,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "研发投入金额（元） 51,931,092.54 61,221,907.05 76,841,125.88"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "item_006",
+            "subject": "the_enterprise",
+            "section_id": "finance_capital",
+            "field_id": "finance.research_expense_ratio",
+            "value": 0.3624,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "研发投入占营业收入比例 36.24% 13.66% 19.90%"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2024"
+          }
+        ],
+        "profile_relations": [],
+        "information_gaps": [
+          "未披露期末现金及现金等价物余额的具体数值，仅披露了现金及现金等价物净增加额。",
+          "未披露有息负债的具体余额，仅披露了对外担保余额为0。",
+          "未在证据中发现明确的期末现金及现金等价物余额，仅有现金及现金等价物净增加额，无法确认期末余额。",
+          "未在证据中发现明确的有息负债余额或组成项目，无法确认有息负债金额。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [],
+        "consistency_warnings": [],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": [
+          {
+            "kind": "profile_items",
+            "index": 5,
+            "candidate_id": "item_003",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00008"
+            ],
+            "candidate": {
+              "item_id": "item_003",
+              "subject": "the_enterprise",
+              "section_id": "finance_capital",
+              "field_id": "finance.adjusted_net_profit_attributable_to_parent",
+              "value": -217834364.82,
+              "value_type": "money",
+              "information_status": "confirmed",
+              "content_role": "audited_information",
+              "unit": "元",
+              "reporting_period": "2024",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00008"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00008",
+                  "excerpt": "归属于上市公司股东的扣除非经常性损益的净利润（元） -217,834,364.82 -204,103,749.56 -6.73% -290,646,607.21"
+                }
+              ]
+            },
+            "reason": "扣非归母净利润字段必须同时引用归母和扣非口径。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 6,
+            "candidate_id": "item_007",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00074"
+            ],
+            "candidate": {
+              "item_id": "item_007",
+              "subject": "the_enterprise",
+              "section_id": "finance_capital",
+              "field_id": "finance.cash_balance",
+              "value": 7707570.95,
+              "value_type": "money",
+              "information_status": "confirmed",
+              "content_role": "audited_information",
+              "unit": "元",
+              "reporting_period": "2024",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00074"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00074",
+                  "excerpt": "现金及现金等价物净增加额 7,707,570.95 -33,599,050.77 122.94%"
+                }
+              ]
+            },
+            "reason": "现金余额字段只接受期末现金及现金等价物余额。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 7,
+            "candidate_id": "item_008",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00210"
+            ],
+            "candidate": {
+              "item_id": "item_008",
+              "subject": "the_enterprise",
+              "section_id": "finance_capital",
+              "field_id": "finance.interest_bearing_debt",
+              "value": 0,
+              "value_type": "money",
+              "information_status": "confirmed",
+              "content_role": "audited_information",
+              "unit": "元",
+              "reporting_period": "2024",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00210"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00210",
+                  "excerpt": "报告期末实际对外担保余额合计（A4） 0"
+                }
+              ]
+            },
+            "reason": "有息负债字段必须引用明确的债务余额或组成项目。"
+          }
+        ]
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00574",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "37、营业收入和营业成本",
+          "section_path": [
+            "第十节 财务报告",
+            "二、将重分",
+            "37、营业收入和营业成本"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 164,
+            "page_end": 164
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "收入",
+            "净利润",
+            "营业收入"
+          ],
+          "content_chars": 476
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00008",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "五、主要会计数据和财务指标",
+          "section_path": [
+            "第二节 公司简介和主要财务指标",
+            "五、主要会计数据和财务指标"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 8,
+            "page_end": 9
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "营业收入",
+            "净利润",
+            "主要会计数据"
+          ],
+          "content_chars": 936
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00074",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "5、现金流",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "5、现金流"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 33,
+            "page_end": 34
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "净利润",
+            "现金流"
+          ],
+          "content_chars": 1523
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00071",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "3、费用",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "3、费用"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 31,
+            "page_end": 31
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "研发费用"
+          ],
+          "content_chars": 272
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00623",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "3.流动风险",
+          "section_path": [
+            "第十节 财务报告",
+            "十二、与金融工具相关的风险",
+            "3.流动风险"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 181,
+            "page_end": 181
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "现金流",
+            "现金余额"
+          ],
+          "content_chars": 165
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00063",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1） 营业收入构成",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "2、收入与成本",
+            "（1） 营业收入构成"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 27,
+            "page_end": 29
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "营业收入"
+          ],
+          "content_chars": 1201
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00089",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（3）应收账款余额较大的风险。公司 2024 年 12 月31 日的应收账款净额为277,985,673.11 元。如果公司对应收账",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "十一、公司未来发展的展望",
+            "4、公司可能面临的风险",
+            "（3）应收账款余额较大的风险。公司 2024 年 12 月31 日的应收账款净额为277,985,673.11 元。如果公司对应收账"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 39,
+            "page_end": 39
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "现金流",
+            "应收账款"
+          ],
+          "content_chars": 176
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00210",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、重大担保",
+          "section_path": [
+            "第六节 重要事项",
+            "十五、重大合同及其履行情况",
+            "2、重大担保"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 72,
+            "page_end": 72
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "担保"
+          ],
+          "content_chars": 845
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00577",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "二、不具备商业实质的收入",
+          "section_path": [
+            "第十节 财务报告",
+            "二、不具备商业实质的收入"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 164,
+            "page_end": 165
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "收入",
+            "营业收入"
+          ],
+          "content_chars": 1188
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00009",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "六、分季度主要财务指标",
+          "section_path": [
+            "第二节 公司简介和主要财务指标",
+            "六、分季度主要财务指标"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 9,
+            "page_end": 9
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "营业收入",
+            "净利润"
+          ],
+          "content_chars": 375
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00353",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（4）金融资产转移的确认依据和计量方法",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "11、金融工具",
+            "（4）金融资产转移的确认依据和计量方法"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 112,
+            "page_end": 113
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "融资",
+            "现金流"
+          ],
+          "content_chars": 693
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00349",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "③以公允价值计量且其变动计入当期损益的金融资产",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "11、金融工具",
+            "（2）金融资产的确认和计量",
+            "③以公允价值计量且其变动计入当期损益的金融资产"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 112,
+            "page_end": 112
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "融资"
+          ],
+          "content_chars": 203
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00635",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1） 关联担保情况",
+          "section_path": [
+            "第十节 财务报告",
+            "十四、关联方及关联交易",
+            "4、关联交易情况",
+            "（1） 关联担保情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 182,
+            "page_end": 182
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "担保"
+          ],
+          "content_chars": 176
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "4、研发投入",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "4、研发投入"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 31,
+            "page_end": 33
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "营业收入"
+          ],
+          "content_chars": 3186
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00288",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "一、经营活动产生的现金流量：",
+          "section_path": [
+            "第十节 财务报告",
+            "一、经营活动产生的现金流量："
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 93,
+            "page_end": 93
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "现金流"
+          ],
+          "content_chars": 636
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00253",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "3、合并利润表",
+          "section_path": [
+            "第十节 财务报告",
+            "二、财务报表",
+            "3、合并利润表"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 89,
+            "page_end": 90
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "营业收入",
+            "研发费用"
+          ],
+          "content_chars": 833
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_d08e0e930385d696:eu_00008",
+        "src_d08e0e930385d696:eu_00074",
+        "src_d08e0e930385d696:eu_00072",
+        "src_d08e0e930385d696:eu_00210",
+        "src_d08e0e930385d696:eu_00623",
+        "src_d08e0e930385d696:eu_00063",
+        "src_d08e0e930385d696:eu_00288"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "收入 净利润 现金流 研发费用 现金余额",
+            "keyword_count": 9,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00574",
+              "src_d08e0e930385d696:eu_00008",
+              "src_d08e0e930385d696:eu_00074",
+              "src_d08e0e930385d696:eu_00071",
+              "src_d08e0e930385d696:eu_00623",
+              "src_d08e0e930385d696:eu_00063",
+              "src_d08e0e930385d696:eu_00089",
+              "src_d08e0e930385d696:eu_00210",
+              "src_d08e0e930385d696:eu_00577",
+              "src_d08e0e930385d696:eu_00009"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "有息负债 融资 担保 资金依赖",
+            "keyword_count": 10,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00353",
+              "src_d08e0e930385d696:eu_00210",
+              "src_d08e0e930385d696:eu_00063",
+              "src_d08e0e930385d696:eu_00008",
+              "src_d08e0e930385d696:eu_00074",
+              "src_d08e0e930385d696:eu_00071",
+              "src_d08e0e930385d696:eu_00089",
+              "src_d08e0e930385d696:eu_00349",
+              "src_d08e0e930385d696:eu_00635",
+              "src_d08e0e930385d696:eu_00072"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00008",
+              "src_d08e0e930385d696:eu_00074",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00210",
+              "src_d08e0e930385d696:eu_00623",
+              "src_d08e0e930385d696:eu_00063"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00008",
+              "src_d08e0e930385d696:eu_00074",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00210",
+              "src_d08e0e930385d696:eu_00623",
+              "src_d08e0e930385d696:eu_00063"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 7856
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "-217834364.82",
+            "keyword_count": 8,
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00063",
+              "src_d08e0e930385d696:eu_00008",
+              "src_d08e0e930385d696:eu_00074",
+              "src_d08e0e930385d696:eu_00071",
+              "src_d08e0e930385d696:eu_00089",
+              "src_d08e0e930385d696:eu_00210",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00009",
+              "src_d08e0e930385d696:eu_00288",
+              "src_d08e0e930385d696:eu_00253"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00008",
+              "src_d08e0e930385d696:eu_00288",
+              "src_d08e0e930385d696:eu_00074"
+            ],
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00008",
+              "src_d08e0e930385d696:eu_00288"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 1572
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 642,
+          "output_tokens": 150,
+          "total_tokens": 792,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4501,
+          "output_tokens": 1243,
+          "total_tokens": 5744,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 11405,
+          "output_tokens": 166,
+          "total_tokens": 11571,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "finance_and_funding",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 9566,
+              "completion_tokens": 1857,
+              "total_tokens": 11423,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00008",
+                "src_d08e0e930385d696:eu_00074",
+                "src_d08e0e930385d696:eu_00072",
+                "src_d08e0e930385d696:eu_00210",
+                "src_d08e0e930385d696:eu_00623",
+                "src_d08e0e930385d696:eu_00063"
+              ]
+            }
+          ],
+          "prompt_tokens": 9566,
+          "completion_tokens": 1857,
+          "total_tokens": 11423
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 1159,
+          "output_tokens": 218,
+          "total_tokens": 1377,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 3228,
+          "output_tokens": 970,
+          "total_tokens": 4198,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "stage": "profile_extraction_recovery",
+          "domain": "finance_and_funding",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 10475,
+              "completion_tokens": 551,
+              "total_tokens": 11026,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00008",
+                "src_d08e0e930385d696:eu_00074",
+                "src_d08e0e930385d696:eu_00072",
+                "src_d08e0e930385d696:eu_00210",
+                "src_d08e0e930385d696:eu_00623",
+                "src_d08e0e930385d696:eu_00063",
+                "src_d08e0e930385d696:eu_00288"
+              ]
+            }
+          ],
+          "prompt_tokens": 10475,
+          "completion_tokens": 551,
+          "total_tokens": 11026
+        }
+      ]
+    }
+  ]
+}

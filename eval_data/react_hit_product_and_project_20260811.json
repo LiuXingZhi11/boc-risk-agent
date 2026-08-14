@@ -1,0 +1,2679 @@
+{
+  "case_id": "HIT",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "product_and_project",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "二、报告期内公司从事的主要业务\n（一）公司主要业务、主要产品及其用途\n报告期内，公司从事的主要业务为智能制造业务。\n公司智能制造业务围绕工业机器人进行全产业链布局，目前涵盖工业机器人本体的制造和销售（工业\n机器人本体） 、高端智能装备制造（工业机器人应用）及工业机器人一站式服务平台（工业机器人服务）\n三个子板块。\n工业机器人本体方面，公司与现代重工的合资公司哈工现代专注于工业机器人本体的研发、制造及销\n售。 其生产的工业机器人以六轴通用机器人等为主， 目前产品包含四个型号， 负载6kg-600kg， 可广泛应用\n于汽车整车、汽车部件、轨道客车、家电、电子、机加工、食品、建筑材料、工程机械、军工等行业。\n2020年底哈工现代智能工厂建成， 智能工厂按照现代重工大邱工厂的产能规模和智慧工厂标准进行建\n设，设计产能10,000台机器人/年。2021年投产后，哈工现代、海宁哈工我耀、上海我耀均积极进行机器人\n本体产品的推广和销售。凭借公司工业机器人全产业链布局优势，工业机器人本体业务板块与下游系统集\n成子公司充分发挥协同效应，有效拓展了销售渠道和订单规模，形成了良好的应用案例和示范效应。哈工\n现代机器人本体产品在投产首年便成功应用于对产品稳定性、质量、服务等具有高标准要求的汽车行业，\n与上汽通用五菱汽车股份有限公司开展直接合作并受到了来自客户的较高认可。\n公司参股公司上海昇视唯盛科技有限公司（以下简称“昇视唯盛”）致力于打造细分领域的智能工业机\n器人，将基于AI的3D视觉技术融合进传统的工业机器人，以智能制造、 智慧物流为切入点，向客户提供工\n业机器人3D视觉解决方案。\n在工业机器人应用方面， 公司专注于智能自动化装备、 焊接/连接机器人系统集成核心技术的研发、 相\n关产品的生产和销售，专业为汽车、汽车零部件、医疗设备等行业客户提供先进的智能化柔性生产线，是\n高端智能自动化装备系统集成供应商。公司高端智能装备制造业务主要由下属天津福臻、上海奥特博格、\n瑞弗机电、哈工易科、柯灵实业等子公司实施。子公司天津福臻、上海奥特博格主要从事工业智能化柔性\n生产线和工业机器人焊接/连接系统应用的研发、 设计、 制造和销售。 汽车车身智能化柔性生产线以工业机\n器人本体作为基础，以结构化的智能总线技术、自动化控制管理技术、电子检测传感技术和机器人应用技\n术等为纽带，将原本相互隔离独立的硬件设备、软件控制信息系统和彼此独立的应用功能进行有机结合、\n融合优化与系统集成， 形成彼此关联、 智能控制、 协同作业的有机整体， 实现生产过程的智能化、 自动化，\n并从客户需求出发，优化设计定制，可以帮助客户更为科学、合理地安排生产计划，可以有效实现优化车\n身生产线的数据采集、多任务混产、自动检测故障等目标、有利于客户生产的智能化改造和转型升级。经\n过多年发展，天津福臻在智能柔性总拼、高速传输和柔性切换系统、夹具高速柔性切换技术、激光技术、\n包边技术、 冲铆技术、 车身轻量化技术及机器人门盖自动智能装配技术等领域形成了较强的竞争力。 目前，\n天津福臻、上海奥特博格的主要客户包括中国第一汽车集团有限公司、奇瑞捷豹路虎汽车有限公司、长安\n福特汽车有限公司、沃尔沃汽车集团、上海蔚来汽车有限公司、上海大众汽车有限公司、广汽本田汽车有\n限公司、华晨宝马汽车有限公司、重庆长安汽车股份有限公司、东风柳州汽车有限公司、北京汽车集团有\n限公司、安徽江淮汽车集团股份有限公司、宝能汽车有限公司、北京奔驰汽车有限公司等国内外众多知名\n汽车制造厂商及卡斯马、海斯坦普等国际一线汽车零部件供应商，有较强的市场竞争力和行业号召力。控\n股公司瑞弗机电专注于白车身焊装主线、 地板线、 侧围线等自动化要求高的工业机器人焊接/连接系统应用\n装备制造和服务领域。在汽车领域，瑞弗机电主要提供汽车研发同步工程技术服务，工业机器人焊装设备\n在汽车白车身领域的设计与制造，白车身质量保证技术咨询服务等，以实现汽车白车身焊接总成及各分总\n成的焊接定位、夹紧及工位间的输送等功能。基于客户产品多样化、设备投入经济性的要求，瑞弗机电提\n供柔性工艺设备， 多车种共线的项目是瑞弗机电的特长与研发重心。 此外， 基于成熟的机器人焊接/连接系\n统应用技术与经验，瑞弗机电亦致力于工业机器人焊接/连接系统在航空航天、军工领域的各类技术应用/\n自动化装备的研发，参与多种技术改造项目。瑞弗机电主要客户包括法国雷诺汽车（RENAULT） 、法国标\n致汽车（PEUGEOT） 、俄罗斯拉达汽车（LADA） 、比亚迪、南宁宁达新能源汽车、吉利PMA、宇通汽车、\n合众新能源汽车等国内外知名汽车整车制造厂商。\n控股公司哈工易科则致力于为一般工业领域客户提供机器人自动焊接综合解决方案，其已为特殊车\n辆、医疗设备、工程机械、船舶、压力容器、钢结构、新能源、制药装备、农用机械、海工装备、特种变\n压器和钢结构等行业客户提供服务，为安徽合力叉车、湖南楚天科技、安徽国风塑业、徐工集团、南通勺\n海车辆部件有限公司、山东安车检测技术有限公司、哈尔滨第一机械集团等公司提供了相关服务。报告期\n内， 哈工易科坚持以中厚板焊接自动化为主，通过持续技术研发投入实现了快速离线编程技术和焊接技术，\n有效提升了公司技术水平，围绕一般工业领域开拓了特变电工、中联农机、三一重工、惠生海工、中驰集\n团等国内优质企业客户。\n柯灵实业是精密工业清洗解决方案提供者， 专注于为汽车行业及其配套供应商提供定制解决方案和服\n务，满足客户对于汽车发动机、变速箱、新能源汽车电池、变速器壳体、一般工业装备等产品在机加工、\n装配生产中，对产品清洁度、颗粒度等方面的要求，保障及提升产品质量。\n公司的工业机器人服务业务是由我耀机器人----“51ROBOT”平台负责开展相关业务，“51ROBOT”着眼\n新兴的机器人售后市场，致力于打造“工业机器人本体-操作编程培训-机器人标准系统-系统集成-实时监控\n软件-维护保养-二手机器人回收-翻新再制造”的可循环式工业机器人全生命周期生态链，基于大数据和云\n计算的应用以及5G+AI+云的互通、互联、共融，为工业机器人提供更加先进的工业互联网服务。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 14,
+            "page_end": 16
+          },
+          "metadata": {
+            "title": "（一）公司主要业务、主要产品及其用途",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "二、报告期内公司从事的主要业务",
+              "（一）公司主要业务、主要产品及其用途"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 4,
+            "page": 14
+          },
+          "source_date": null,
+          "content_hash": "13622e97cbcd34e9e6e5ffe23e9d3e405daae178a3efd136e48445cc48d1e1cd"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "汽车及一般工业的自动化设备领域进一步开拓。为做大做强公司的工业机器人维修保养业务，2021年3月，\n子公司上海我耀参股投资设立了苏州哈工凯尔机器人技术服务有限公司， 该公司的主营业务主要系工业机\n器人的备改造、维修、保养及备件业务。目前该公司已取得库卡机器人、库卡工业、伦茨、伊维莱、哈工\n现代等公司的售后服务/业务授权服务（经销）商，已为开能健康、燕京啤酒、宝钢集团、中船重工、合众\n新能源、零跑汽车、牛创新能源、上海空间电源研究所、天津福臻、江苏北人、先惠技术、星云股份、成\n焊宝玛、广州中设、广州明珞、柯马工程、吉利、长城、比亚迪、宝马等客户提供了工业机器人的维护保\n养。2021年上海我耀实现主营业务收入11,537.93万元（单体口径） ，相较上年同期增长约2.57%，毛利也相\n较去年同期增加约342.60万元。\n5）持续加大研发投入，以技术引领创新发展\n2021年公司围绕工业智能化， 聚焦AI视觉及应用、 数字化技术、 军工非标自动化、 机器人应用等领域，\n不断探索机器人与AI、5G、视觉、医疗、军工、防务、有色金属等领域的技术结合与产业应用，为客户提\n供全方位综合解决方案服务，为公司产品和技术向高端制造、军工、防务、航空航天等新的人工智能应用\n领域进行拓展、延伸奠定基础。\n报告期内公司持续加强研发投入， 累计实现研发投入8,566.35万元， 研发投入占营业收入比重达4.97%，\n公司报告期内新增实用新型专利41件、软件著作权6件。公司在高端智能装备制造板块针对新能源汽车市\n场突破性完成了新能源的电池包和电池模组项目， 开发了数字信息化的智能生产管理系统和柔性门洞包边\n系统； 一般工业领域哈工易科则由焊接工作站逐步向焊接产线过渡， 通过拓展前后道自动化以提高竞争力，\n通过快速离线编程技术和焊接技术等技术研发进一步提升公司技术水平。\n报告期内， 哈工智能中央研究院还与战略合作伙伴中铝智能科技发展有限公司在有色金属行业的矿石\n开采、金属冶炼、型材加工等生产流程中的智能化设备开发及推广应用方面展开深度合作，共同推动人工\n智能与机器人技术针对有色金属行业不同应用场景的落地，在实现传统生产工艺和装备的数字化、智能化\n和无人化等方面取得积极进展。\n2021年6月，公司对2020年非公开发行募投项目进行了变更，拟由公司全资子公司海宁哈工我耀实施\n“研发中心建设项目”，利用公司在浙江省海宁经济开发区现有土地，建设约26,000平米研发及实验场地，\n主要实施内容为厂房建设、设备投资、软件投资等，项目计划总投资为21,340.73万元，全部使用结余募集\n资金。本项目的建设周期为2年。研发中心项目的研发内容和方向为AI融合技术、数字化工厂传感技术、\n军工非标自动化技术和机器人应用技术。\n6）持续推进公司向军工智能化领域业务转型\n报告期内公司继续主动积极进行战略和研发方向的调整，不断探索机器人与AI、5G、视觉、军工、防\n务、有色金属等领域的技术结合与产业应用，重点布局现金流、利润率更好的与工业机器人能够有机结合\n的军工、防务领域。2021年1月25日，公司与航天新通科技有限公司（以下简称“航天新通”）签署了《战略\n合作框架协议》 ，以进一步加强双方产品、技术、市场以及人员对接交流，共同推动5G、人工智能、大数\n据、高端智能制造、机器人等技术在国有工业企业的普及和商用，共同推动国有重点企业的技术改造和产\n业升级。公司子公司浙江瑞弗机电目前已开展了多个军工产品的自动化生产线项目，通过工序全自动化作\n业、物流转运自动识别跟踪定位、整体生产远程监控、全过程数字化质量检测跟踪等技术，有效提升军工\n产品的表面整型及自动化工艺能力，以及生产过程的一体化集成制造水平。瑞弗机电子公司浙江瑞弗航空\n航天技术装备有限公司一直致力于发展军民融合业务，为军品生产企业提供智能化自动化生产线，报告期\n内瑞弗机电和某军工企业签订了销售合同、意向协议、获取了客户的项目确认书等，由于目前军工生产企\n业产品生产自动化水平偏低，自动化改造需求明显，未来仍具有较强的业务拓展潜力。\n2021年公司还启动了对江机民科的收购工作。江机民科主要从事武器装备系统用光电产品、航材、热\n电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中\n核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目\n前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。\n7）研发孵化项目获得创投市场受认可，三家参股子公司实现证券化/完成市场化融资\n自2018年起公司加大研发投入，为充分释放组织创新活力，激发研发人员积极性，哈工智能对内部研\n发团队推行共享孵化机制，实现创新成果“前期研发有依靠、中期成效有辅导、后期证券化有保障”，项目\n研发团队可以让自己的研发成果从自主研发，走向独立运营，再到自负盈亏、接受市场的考验。截至本报\n告期末，公司通过研发创新促业务，共孵化了三家高质量子公司。\n柯灵自动化设立于2019年1月，立足于工业清洗领域，是哈工智能设立研发孵化机制后，成功孵化的\n第一家公司。近几年，柯灵实业基于机器人技术，开发应用于汽车精密零部件的全自动机器人清洗系统。\n系统实现了多项技术创新： 运用机器视觉识别技术， 实现精准定位； 运用机器人技术， 实现多项清洗工艺。\n2020年底， 公司启动了收购柯灵实业股权的程序， 柯灵实业的核心管理团队与公司签订了 《股份购买协议》\n和《业绩补偿协议》 。2021年柯灵实业订单充沛，最终实现收入4,357.04万元，净利润798.33万元，扣非后\n净利润825.93万元，完成了业绩承诺，并同一汽解放、春风动力、太平洋精锻、爱柯迪、宁波旭升、凌云\n工业达成合作，业务快速增长。\n2018年下半年，哈工智能中央研究院启动了医疗手术机器人的设计与研发，运用医学图像处理、微控\n技术、多模态传感技术及AI算法、机器人技术，直至成功完成了肿瘤介入等多个穿刺机器人样机的设计开\n发。2019年4月，磅客策设立完成。设立后磅客策先后同与中国人民解放军总医院、上海交通大学附属瑞\n金医院、上海第一人民医院、上海六院、上海九院、复旦大学附属华山医院、中山医院、海军军医大学第\n一附属医院等国内十余家知名医院进行交流合作。在哈工智能的助推下，磅客策陆续取得了联想创投、金\n沙江创投等知名机构的天使轮投资，开始走向独立运营。2021年2月，哈工智能、磅客策与中国医用超声\n的发源地上海超声研究所开展了全面战略合作并建立了医工联合实验室， 同年下旬磅客策也与上海高端医\n疗装备创新中心达成了战略合作关系， 并入围2021年上海市最具投资潜力50佳， 入围全球创新项目TOP20。\n2022年磅客策启动了新一轮的融资。\n基于天津福臻、瑞弗机电过往的实施的项目所积累的项目库，出于降本增效的目的，2019年，哈工智\n能组建了一支以AI技术应用为核心，擅长运用规则推理算法、案例推理算法、快速随机搜索树算法、图像\n算法、深度学习算法、视觉算法等的研发团队，致力于研究工业生产制造过程中涉及有痛点需求的工业设\n计领域的智能化设计。2020年8月设序科技成立，其核心竞争能力在于将AI技术融合入工业CAD设计的软\n件中， 通过积累大量的工业数据、 工业设计行业知识和深度学习算法能力， 实现大幅提升工业设计、 仿真、\n工艺规划和制造等设计生产环节的效率，将原有的数十小时级的设计工作量缩短至分钟级。成立当年设序\n科技即完成了险峰长青、高榕资本、联想创投等知名机构出资的天使轮融资，哈工智能助力其服务第一批",
+          "location": {
+            "kind": "pdf",
+            "page_start": 23,
+            "page_end": 25
+          },
+          "metadata": {
+            "title": "1、概述",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "1、概述"
+            ],
+            "chunk_index_in_section": 1,
+            "heading_level": 5,
+            "page": 23
+          },
+          "source_date": null,
+          "content_hash": "72148dff47fee4d5eef9eb50e04d1f129945ab4073e49e6b27aaf62512a46ce6"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00021",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "2、高端智能装备制造\n（1）采购模式\n公司主要依据客户需求进行定制化采购，最终产品的零部件需求差异较大。因此，公司主要根据客户\n订单安排及相关技术要求，采取“以产定购”的采购模式。公司产品所需原材料主要包括螺柱焊机、工业机\n器人本体、焊枪、涂胶设备等标准设备，其他采购原材料包括电气元件、钢材及外协件等。具体采购流程\n中，采购部门根据项目使用方的最终需求制作采购需求订单，审核并确认无误后生成请购单，经审批后对\n外采购原材料，原材料经验收后入库。\n为减少因原材料供货不及时或质量、价格等发生变化而对公司正常生产造成不利影响，公司建立了一\n套科学规范的采购管理模式。供应商选择方面，公司已逐步建立了健全的供应商管理体系及完善的合格供\n应商名录。其中一类为客户指定的供应商，对于此类供应商，公司直接将其纳入合格供应商名录；另一种\n为新进供应商，公司会从产品质量、技术参数、产品价格等多个维度对供应商进行初选和评价，符合条件\n的进入合格供应商名录。供应商采购方面，若客户已指定特定供应商及产品，公司按照客户的要求直接进\n行采购；若客户未指定原材料及外购件的品牌或型号，采购部门会根据需求部门提交的采购申请，从合格\n供应商名单中选择3家以上供应商进行比价，并将比价结果上报总经理进行审批。供应商管理方面，采购\n部将会定期对供应商进行评审，组织生产、采购、质量管理等部门对供应商的技术水平、产品质量、供货\n时间、产品价格和服务态度等方面进行考核，实时对合格供应商名录进行更新。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 16,
+            "page_end": 17
+          },
+          "metadata": {
+            "title": "（1）采购模式",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "二、报告期内公司从事的主要业务",
+              "（二）公司主要经营模式",
+              "2、高端智能装备制造",
+              "（1）采购模式"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 16
+          },
+          "source_date": null,
+          "content_hash": "0d05005845742c4e51c3eae4a2133f3895dcacf17427b0e685acffed45ddd313"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00022",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "（2）生产模式\n公司主要产品包括多车型柔性车身生产解决方案和汽车白车身焊装自动化装备。 由于客户需求不同产\n品差异化较大，公司在生产过程中，主要根据客户销售合同或订单的要求进行定制化设计、开发、生产、\n装配与调试。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 17,
+            "page_end": 17
+          },
+          "metadata": {
+            "title": "（2）生产模式",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "二、报告期内公司从事的主要业务",
+              "（二）公司主要经营模式",
+              "2、高端智能装备制造",
+              "（2）生产模式"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 17
+          },
+          "source_date": null,
+          "content_hash": "a5fbaea9bb536f8561925e22c20b4e397b04f449f78c8b1cc0e126ceca0ad8af"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00065",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "2、上市公司拟布局军工领域\n上市公司拟进入市场前景广阔和具有一定准入壁垒的军用光电产品、军用非标准仪器设备、航空\n器材等军用产品领域。上市公司已经在高端智能制造领域累积了深厚经验，本次交易是上市公司\n积极顺应产业政策导向，强化人工智能和机器人技术赋能军工制造的战略选择。\n子项目二、轻量化材料连接及人工智能技术研发中心建设项目\n根据市场、技术变化及国内区域经济发展情况，公司对研发方向进行适当调整，公司拟将原“轻\n量化材料连接及人工智能技术研发中心建设项目”调整为“研发中心建设项目”， 实施主体调整为\n全资子公司“海宁哈工我耀机器人有限公司”，实施地点调整到“浙江省海宁经济开发区”。研发\n中心将聚焦于高端装备制造和人工智能领域， 把研发中心建设成为以机器人应用技术创新为核心，\n推动产业技术进步和高水平技术成果输送，打造高水平研发和高级人才聚集的公共创新平台。\n项目二、偿还银行借款\n本项目已经完成 99%，99%的资金已经用于偿还银行借款，剩余少量尾款不便于支付银行大额款\n项，且其他项目需要更多资金。\n超募资金的金额、 用\n途及使用进展情况\n不适用\n募集资金投资项目\n实施地点变更情况\n不适用\n募集资金投资项目\n实施方式调整情况\n不适用\n募集资金投资项目\n先期投入及置换情\n况\n适用\n2020 年 7 月 29 日，经第十一届董事会第六次会议和第十一届监事会第三次会议审议，公司通过\n了 《关于使用募集资金置换预先投入募集资金投资项目自筹资金的议案》 ， 同意公司使用募集资金\n置换预先投入募投项目的自筹资金，置换资金总额为4,283.68 万元。\n用闲置募集资金暂\n时补充流动资金情\n况\n适用\n2020 年 8 月 21 日，经第十一届董事会第七次会议和第十一届监事会第四次会议审议，公司通过\n了 《关于使用部分闲置募集资金暂时补充流动资金的议案》 ， 同意公司使用不超过人民币30,000.00\n万元（含本数）的部分闲置募集资金暂时补充流动资金，使用期限为董事会审议通过该议案之日\n起不超过 12 个月，到期前归还至募集资金专用账户。\n2021 年 8 月，公司已将用于暂时补充流动资金的募集资金30,000 万元全部归还至募集资金专用\n账户，同时公司已将上述资金的归还情况通知保荐机构和保荐代表人。\n公司于 2021 年 8 月 17 日召开的第十一届董事会第二十九次会议和第十一届监事会第十九次会议，\n审议通过了 《关于使用部分闲置募集资金暂时补充流动资金的议案》 ， 同意公司使用不超过人民币\n15,000.00 万元（含本数）的部分闲置募集资金暂时补充流动资金，使用期限为董事会审议通过该\n议案之日起不超过 12 个月，到期前归还至募集资金专用账户。\n项目实施出现募集\n资金结余的金额及\n原因\n不适用\n尚未使用的募集资\n金用途及去向\n截至 2021 年 12 月 31 日尚未使用的募集资金余额1,400.39 万元 （含募集资金产生的利息） 全部存\n放于募集资金专户。\n募集资金使用及披\n露中存在的问题或\n其他情况\n用闲置募集资金进行现金管理，投资相关产品情况：2020 年 8 月 21 日，经第十一届董事会第七\n次会议和第十一届监事会第四次会议审议，公司通过了《关于使用部分闲置募集资金进行现金管\n理的议案》 ，公司使用不超过人民币15,000 万元（含本数）的暂时闲置募集资金进行现金管理，\n在上述额度内，资金可以滚动使用。投资期限自公司董事会审议通过该项议案之日起 12 个月内\n有效。2020 年 9 月， 公司使用闲置募集资金10,000.00 万元购买了中国农业银行股份有限公司“汇\n利丰”2020 年第 6124 期对公定制人民币结构性存款产品。2021 年 4 月， 公司赎回理财产品。2021\n年 4 月，公司继续使用闲置募集资金10,600.00 万元购买了中国农业银行股份有限公司“汇利丰”\n2021 年第 4597 期对公定制人民币结构性存款产品。 截至2021 年 12 月 31 日， 理财产品已全部赎\n回。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 41,
+            "page_end": 42
+          },
+          "metadata": {
+            "title": "2、上市公司拟布局军工领域",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "七、投资状况分析",
+              "2、上市公司拟布局军工领域"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 41
+          },
+          "source_date": null,
+          "content_hash": "1e87bce674d4e5967d6d855e9c7b27d3758152e754806146c5a435b472f3e1a1"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00068",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "(3)=(2)/(1\n)\n项目达到\n预定可使\n用状态日\n期\n本报告期\n实现的效\n益\n是否达到\n预计效益\n变更后的\n项目可行\n性是否发\n生重大变\n化\n现金收购\n吉林市江\n机民科实\n业有 限\n公司 70%\n股权项目\n工业机器\n人智能装\n备制造及\n人工智能\n技术研发\n与产业化\n项目\n27,518.24 26,999.99 26,999.99 98.12%   不适用 否\n研发中心\n建设项目\n工业机器\n人智能装\n备制造及\n21,340.73 5,565.16 5,565.16 26.08%   不适用 否\n人工智能\n技术研发\n与产业化\n项目\n合计 -- 48,858.97 32,565.15 32,565.15 -- -- 0 -- --\n变更原因、 决策程序及信息披露情\n况说明(分具体项目)\n受终端市场波动影响， 原募投项目市场前景发生变化,如若继续推进原募投项目， 将\n不利于提高募投资金使用效益。另外上市公司拟进入市场前景广阔和具有一定准入\n壁垒的军用光电产品、军用非标准仪器设备、航空器材等军用产品领域。因此，为\n维护上市公司及股东利益，提高募投资金使用效益，公司拟将原募投项目的剩余募\n集资金及其他部分项目的结余资金及相关利息收入调整投资到具有广阔前景且具有\n一定准入壁垒的军工领域。\n公司于 2021 年 5 月 27 日召开了第十一届董事会第二十五次会议、第十一届监事会\n第十六次会议，分别审议通过了《关于终止部分募投项目并变更结余募集资金用途\n的议案》 ，2021 年 6 月 29 日召开了 2021 年第四次临时股东大会审议通过了 《关于\n终止部分募投项目并变更结余募集资金用途的议案》 。 《关于终止部分募投项目并变\n更结余募集资金用途的公告》 于2021 年 5 月 29 日在 《中国证券报》 、 《上海证券报》 、\n《证券时报》刊登及在巨潮资讯网（www.cninfo.com.cn）上披露。\n未达到计划进度或预计收益的情\n况和原因(分具体项目)\n不适用\n变更后的项目可行性发生重大变\n化的情况说明\n不适用",
+          "location": {
+            "kind": "pdf",
+            "page_start": 42,
+            "page_end": 43
+          },
+          "metadata": {
+            "title": "(3)=(2)/(1",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "七、投资状况分析",
+              "2、上市公司拟布局军工领域",
+              "(3)=(2)/(1"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 42
+          },
+          "source_date": null,
+          "content_hash": "af0d85bde4397b0b1e11b6402baa26f4fe906bb350a14153df88fafb6527b78e"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00190",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "6、关于终止部分募投项目并变更结余募集资金用途的事项\n为提高公司非公开发行股票募集资金的使用效率， 提升募集资金投资回报， 充分发挥募集资金对公司\n业务发展带来的积极作用，公司董事会、股东大会同意公司拟终止全资子公司天津哈工福臻机器人有限公\n司 （以下简称“天津哈工”） 目前实施的“工业机器人智能装备制造及人工智能技术研发与产业化项目” 以\n及哈工智能实施的“偿还银行借款”，并将结余募集资金48,858.969043万元（最终剩余募集资金金额以资\n金转出当日专户余额以及募集资金本金利息之和为准）变更使用用途，拟将27,518.237615万元结余募集\n资金用于由哈工智能实施现金收购吉林市江机民科实业有限公司70%股权项目，收购完成后，公司将持有\n吉林市江机民科实业有限公司（以下简称“江机民科”）70%的股权；拟将21,340.731428万元结余募集资\n金用于由公司全资子公司海宁哈工我耀机器人有限公司实施研发中心建设项目。 具体内容详见公司于2021\n年5月29日在《中国证券报》 、 《上海证券报》 、 《证券时报》刊登及在巨潮资讯网（www.cninfo.com.cn）披\n露的《关于终止部分募投项目并变更结余募集资金用途的公告》 （公告编号：2021-072）。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 111,
+            "page_end": 111
+          },
+          "metadata": {
+            "title": "6、关于终止部分募投项目并变更结余募集资金用途的事项",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十六、其他重大事项的说明",
+              "6、关于终止部分募投项目并变更结余募集资金用途的事项"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 111
+          },
+          "source_date": null,
+          "content_hash": "1dc5908d2e33ab5807da4d03874e1484e2f811be4d4efff256d670f4fa1e4224"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00077",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "2、处置盈利能力不佳的子公司股权，回流资金，保障公司的现金流，为公司减轻负担、降低风险\n由于2021年部分子公司为公司带来了较大的现金流等风险，为了减轻公司的负担、降低公司的风险，\n2022年公司将处置部分盈利能力不佳的子公司股权，回流资金，保障公司的现金流，以用于公司主营业务\n等的发展及研发项目。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 54,
+            "page_end": 54
+          },
+          "metadata": {
+            "title": "2、处置盈利能力不佳的子公司股权，回流资金，保障公司的现金流，为公司减轻负担、降低风险",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "十一、公司未来发展的展望",
+              "（二）2022年经营计划",
+              "2、处置盈利能力不佳的子公司股权，回流资金，保障公司的现金流，为公司减轻负担、降低风险"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 54
+          },
+          "source_date": null,
+          "content_hash": "73c3b792c6211f6dd3f66b4fbe2726e454c4ca2cc90b6a2117ac4c684385c2ee"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00456",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "（二）本公司收入的具体确认原则\n（1）销售商品收入\nA、一般商品销售收入\n一般商品销售收入分为普通商品的国外销售、国内销售；汽车焊装生产线涉及的商品销售。\n本公司将商品按照协议合同规定运至约定交货地点，由购买方确认接收后，确认收入，属于在某一时\n点履行的履约义务。内销产品收入确认需满足以下条件：公司已根据合同约定将产品交付给客户且客户已\n接受该商品，已经收回货款或取得了收款凭证且相关的经济利益很可能流入，商品所有权上的主要风险和\n报酬已转移，商品的法定所有权已转移。外销产品收入确认需满足以下条件：公司已根据合同约定将产品\n报关，取得提单，已经收回货款或取得了收款凭证且相关的经济利益很可能流入，商品所有权上的主要风\n险和报酬已转移，商品的法定所有权已转移。\nB、汽车白车身焊装自动化装备销售收入\n公司的产品完工后由客户对产品进行终验收， 依据企业会计准则的有关规定并结合公司的实际经营特\n点，公司的项目销售以终验收合格作为收入确认时点。当项目合同由多个子项目构成且由客户对各子项目\n分别进行终验收时，以客户对各子项目分别进行终验收合格的时点，分别作为各子项目收入确认时点。\n对于无需为客户提供安装、调试的自动化装备项目，一般分为国内销售和国外销售；对于国内销售，\n公司在产品发出、客户签收后确认销售收入；对于国外销售，本公司将商品发给客户，取得出口报关单、\n客户签收后确认销售收入。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 175,
+            "page_end": 176
+          },
+          "metadata": {
+            "title": "（1）销售商品收入",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "五、重要会计政策及会计估计",
+              "（二）本公司收入的具体确认原则",
+              "（1）销售商品收入"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 175
+          },
+          "source_date": null,
+          "content_hash": "9e782e44b1b98ac35cb064a03c442d4ef88fdcd23ee68809b58a44e1c069eee0"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "（1）在建工程情况\n单位：元\n项目\n期末余额 期初余额\n账面余额 减值准备 账面价值 账面余额 减值准备 账面价值\n机器人铆接工\n作站\n1,135,104.81  1,135,104.81\n北汽实验岛项\n目\n3,975,070.00  3,975,070.00\n工业机器人智\n能装备制造及\n人工智能技术\n研发与产业化\n项目\n45,380,083.01  45,380,083.01\n福臻智能产业\n园项目\n7,247,498.05  7,247,498.05\n信息化系统搭\n建项目\n2,239,386.73  2,239,386.73\n数据库升级    569,905.65  569,905.65\n厂房基建工程 160,466,486.09  160,466,486.09 73,085,607.52  73,085,607.52\n智能制造网络\n平台\n1,311,458.99  1,311,458.99\n合计 169,025,443.13  169,025,443.13 126,385,157.72  126,385,157.72",
+          "location": {
+            "kind": "pdf",
+            "page_start": 213,
+            "page_end": 213
+          },
+          "metadata": {
+            "title": "（1）在建工程情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "四、账面价值",
+              "21、在建工程",
+              "（1）在建工程情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 213
+          },
+          "source_date": null,
+          "content_hash": "60ae9eb2172a8aaffcbb78c060a740d2dcd075f42057c3bd294d234d07c9293c"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00189",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "5、关于放弃参股公司上海设序科技有限公司同比例增资权及转让部分股权的事项\n公司持有参股公司上海设序科技有限公司（以下简称 “设序科技”）15.75%股权，为进一步推进设序\n科技做大做强， 公司放弃同比例增资权， 并转让公司持有的设序科技全部的股权， 交易价格合计2,488.4996\n万元人民币。本次设序科技部分股权转让完成后，公司不再持有设序科技的股份。2021年8月，公司收到\n设序科技的通知，已办理完毕股权变更工商登记手续。2021年10月，公司收到了受让方支付的剩余的全部\n股权转让款项。具体内容详见公司于2021年5月27日、2021年6月17日、2021年7月16日、2021年8月10日、\n2021年10月16日刊载于《中国证券报》 、 《上海证券报》 、 《证券时报》和巨潮资讯网（www.cninfo.com.cn）\n的《关于放弃参股公司同比例增资权及转让部分股权的公告》 （公告编号：2021-068） 、 《关于转让参股公\n司部分股权的公告》 （公告编号：2021-084） 、 《关于放弃参股公司同比例增资权及转让部分股权的进展公\n告》 （公告编号：2021-094） 、 《关于转让参股公司部分股权的进展公告》 （公告编号：2021-103） 、 《关于转\n让参股公司部分股权的进展公告》 （公告编号：2021-122）。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 110,
+            "page_end": 111
+          },
+          "metadata": {
+            "title": "5、关于放弃参股公司上海设序科技有限公司同比例增资权及转让部分股权的事项",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十六、其他重大事项的说明",
+              "5、关于放弃参股公司上海设序科技有限公司同比例增资权及转让部分股权的事项"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 110
+          },
+          "source_date": null,
+          "content_hash": "2b85ee2f06f3d005ca8d69e0aeaa8cf13e97475fa70b5fb5f0a8ed65705da41c"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "item_1",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "工业机器人本体",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "工业机器人本体方面，公司与现代重工的合资公司哈工现代专注于工业机器人本体的研发、制造及销售。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_2",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "高端智能装备制造",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "公司智能制造业务围绕工业机器人进行全产业链布局，目前涵盖工业机器人本体的制造和销售（工业机器人本体） 、高端智能装备制造（工业机器人应用）及工业机器人一站式服务平台（工业机器人服务）三个子板块。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_3",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "工业机器人一站式服务平台",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "公司智能制造业务围绕工业机器人进行全产业链布局，目前涵盖工业机器人本体的制造和销售（工业机器人本体） 、高端智能装备制造（工业机器人应用）及工业机器人一站式服务平台（工业机器人服务）三个子板块。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_4",
+            "subject": "哈工现代",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "六轴通用机器人",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "其生产的工业机器人以六轴通用机器人等为主， 目前产品包含四个型号， 负载6kg-600kg， 可广泛应用于汽车整车、汽车部件、轨道客车、家电、电子、机加工、食品、建筑材料、工程机械、军工等行业。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_5",
+            "subject": "天津福臻",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "汽车车身智能化柔性生产线",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "汽车车身智能化柔性生产线以工业机器人本体作为基础，以结构化的智能总线技术、自动化控制管理技术、电子检测传感技术和机器人应用技术等为纽带，将原本相互隔离独立的硬件设备、软件控制信息系统和彼此独立的应用功能进行有机结合、融合优化与系统集成， 形成彼此关联、 智能控制、 协同作业的有机整体， 实现生产过程的智能化、 自动化，并从客户需求出发，优化设计定制，可以帮助客户更为科学、合理地安排生产计划，可以有效实现优化车身生产线的数据采集、多任务混产、自动检测故障等目标、有利于客户生产的智能化改造和转型升级。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_6",
+            "subject": "瑞弗机电",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "白车身焊装主线",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "控股公司瑞弗机电专注于白车身焊装主线、 地板线、 侧围线等自动化要求高的工业机器人焊接/连接系统应用装备制造和服务领域。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_7",
+            "subject": "瑞弗机电",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "地板线",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "控股公司瑞弗机电专注于白车身焊装主线、 地板线、 侧围线等自动化要求高的工业机器人焊接/连接系统应用装备制造和服务领域。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_8",
+            "subject": "瑞弗机电",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "侧围线",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "控股公司瑞弗机电专注于白车身焊装主线、 地板线、 侧围线等自动化要求高的工业机器人焊接/连接系统应用装备制造和服务领域。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_9",
+            "subject": "哈工易科",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "机器人自动焊接综合解决方案",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "控股公司哈工易科则致力于为一般工业领域客户提供机器人自动焊接综合解决方案，其已为特殊车辆、医疗设备、工程机械、船舶、压力容器、钢结构、新能源、制药装备、农用机械、海工装备、特种变压器和钢结构等行业客户提供服务，为安徽合力叉车、湖南楚天科技、安徽国风塑业、徐工集团、南通勺海车辆部件有限公司、山东安车检测技术有限公司、哈尔滨第一机械集团等公司提供了相关服务。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_10",
+            "subject": "柯灵实业",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "精密工业清洗解决方案",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "柯灵实业是精密工业清洗解决方案提供者， 专注于为汽车行业及其配套供应商提供定制解决方案和服务，满足客户对于汽车发动机、变速箱、新能源汽车电池、变速器壳体、一般工业装备等产品在机加工、装配生产中，对产品清洁度、颗粒度等方面的要求，保障及提升产品质量。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_11",
+            "subject": "51ROBOT",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "工业机器人全生命周期生态链",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "公司的工业机器人服务业务是由我耀机器人----“51ROBOT”平台负责开展相关业务，“51ROBOT”着眼新兴的机器人售后市场，致力于打造“工业机器人本体-操作编程培训-机器人标准系统-系统集成-实时监控软件-维护保养-二手机器人回收-翻新再制造”的可循环式工业机器人全生命周期生态链，基于大数据和云计算的应用以及5G+AI+云的互通、互联、共融，为工业机器人提供更加先进的工业互联网服务。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_12",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "多车型柔性车身生产解决方案",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00022"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00022",
+                "excerpt": "公司主要产品包括多车型柔性车身生产解决方案和汽车白车身焊装自动化装备。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_13",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "汽车白车身焊装自动化装备",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00022"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00022",
+                "excerpt": "公司主要产品包括多车型柔性车身生产解决方案和汽车白车身焊装自动化装备。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_14",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "全自动机器人清洗系统",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "近几年，柯灵实业基于机器人技术，开发应用于汽车精密零部件的全自动机器人清洗系统。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_15",
+            "subject": "磅客策",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "穿刺机器人样机",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "2018年下半年，哈工智能中央研究院启动了医疗手术机器人的设计与研发，运用医学图像处理、微控技术、多模态传感技术及AI算法、机器人技术，直至成功完成了肿瘤介入等多个穿刺机器人样机的设计开发。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_17",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "红外瞄具产品",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_18",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "光电产品",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_19",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "热电池",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_20",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "引信",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_21",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "航材",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_22",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "非标检测设备",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_23",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "射孔",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_24",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "石油射孔弹及射孔枪",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_27",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "机器人铆接工作站",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "机器人铆接工作站"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_28",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "北汽实验岛项目",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "北汽实验岛项目"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_29",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "福臻智能产业园项目",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "福臻智能产业园项目"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_30",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "信息化系统搭建项目",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "信息化系统搭建项目"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_31",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "数据库升级",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "数据库升级"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_32",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "厂房基建工程",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "厂房基建工程"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_33",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "智能制造网络平台",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "智能制造网络平台"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_34",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.commercialization_stage",
+            "value": "已投产",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                "excerpt": "2020年底哈工现代智能工厂建成， 智能工厂按照现代重工大邱工厂的产能规模和智慧工厂标准进行建设，设计产能10,000台机器人/年。2021年投产后，哈工现代、海宁哈工我耀、上海我耀均积极进行机器人本体产品的推广和销售。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_35",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.commercialization_stage",
+            "value": "已批量生产供货",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "其中核心产品红外瞄具产品已批量生产供货"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_36",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.commercialization_stage",
+            "value": "样机开发完成",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "直至成功完成了肿瘤介入等多个穿刺机器人样机的设计开发。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_37",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.commercialization_stage",
+            "value": "已成立并运营",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "2020年8月设序科技成立，其核心竞争能力在于将AI技术融合入工业CAD设计的软件中"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_38",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.commercialization_stage",
+            "value": "已终止",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00190"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00190",
+                "excerpt": "公司董事会、股东大会同意公司拟终止全资子公司天津哈工福臻机器人有限公司 （以下简称“天津哈工”） 目前实施的“工业机器人智能装备制造及人工智能技术研发与产业化项目”"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_39",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.commercialization_stage",
+            "value": "在建",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "机器人铆接工作站"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "北汽实验岛项目"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "福臻智能产业园项目"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "信息化系统搭建项目"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "数据库升级"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "厂房基建工程"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "智能制造网络平台"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                "excerpt": "工业机器人智能装备制造及人工智能技术研发与产业化项目"
+              }
+            ],
+            "extraction_method": "llm"
+          }
+        ],
+        "profile_relations": [
+          {
+            "relation_id": "rel_11",
+            "relation_type": "develops",
+            "source_id": "item_1",
+            "source_type": "Enterprise",
+            "target_id": "item_14",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "近几年，柯灵实业基于机器人技术，开发应用于汽车精密零部件的全自动机器人清洗系统。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_12",
+            "relation_type": "develops",
+            "source_id": "item_1",
+            "source_type": "Enterprise",
+            "target_id": "item_15",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "2018年下半年，哈工智能中央研究院启动了医疗手术机器人的设计与研发，运用医学图像处理、微控技术、多模态传感技术及AI算法、机器人技术，直至成功完成了肿瘤介入等多个穿刺机器人样机的设计开发。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_15",
+            "relation_type": "develops",
+            "source_id": "item_1",
+            "source_type": "Enterprise",
+            "target_id": "item_18",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_16",
+            "relation_type": "develops",
+            "source_id": "item_1",
+            "source_type": "Enterprise",
+            "target_id": "item_19",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_18",
+            "relation_type": "develops",
+            "source_id": "item_1",
+            "source_type": "Enterprise",
+            "target_id": "item_21",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_20",
+            "relation_type": "develops",
+            "source_id": "item_1",
+            "source_type": "Enterprise",
+            "target_id": "item_23",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_21",
+            "relation_type": "develops",
+            "source_id": "item_1",
+            "source_type": "Enterprise",
+            "target_id": "item_24",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+              }
+            ],
+            "extraction_method": "llm"
+          }
+        ],
+        "information_gaps": [
+          "未披露各主要产品的具体商业化阶段（如研发、试产、量产）的明确划分。",
+          "未披露各主要产品的具体销售收入或产量数据。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [
+          "工业机器人本体、高端智能装备制造、工业机器人一站式服务平台等业务板块名称，虽在原文中作为业务分类出现，但未明确称为产品，故未映射为产品。",
+          "智能总线技术、自动化控制管理技术、电子检测传感技术、机器人应用技术、快速离线编程技术、焊接技术、AI视觉、数字化技术、军工非标自动化、机器人应用技术等，原文未明确称为产品，故未映射为产品。",
+          "研发中心建设项目、工业机器人智能装备制造及人工智能技术研发与产业化项目等募投项目，虽在在建工程中列示，但属于建设项目而非产品，故未映射为产品。"
+        ],
+        "consistency_warnings": [
+          {
+            "item_id": "item_34",
+            "field_id": "product.commercialization_stage",
+            "information_gap": "未披露各主要产品的具体商业化阶段（如研发、试产、量产）的明确划分。",
+            "reason": "该字段已有明确候选值，但信息缺口同时表示其证据仍不充分。"
+          },
+          {
+            "item_id": "item_35",
+            "field_id": "product.commercialization_stage",
+            "information_gap": "未披露各主要产品的具体商业化阶段（如研发、试产、量产）的明确划分。",
+            "reason": "该字段已有明确候选值，但信息缺口同时表示其证据仍不充分。"
+          },
+          {
+            "item_id": "item_36",
+            "field_id": "product.commercialization_stage",
+            "information_gap": "未披露各主要产品的具体商业化阶段（如研发、试产、量产）的明确划分。",
+            "reason": "该字段已有明确候选值，但信息缺口同时表示其证据仍不充分。"
+          },
+          {
+            "item_id": "item_37",
+            "field_id": "product.commercialization_stage",
+            "information_gap": "未披露各主要产品的具体商业化阶段（如研发、试产、量产）的明确划分。",
+            "reason": "该字段已有明确候选值，但信息缺口同时表示其证据仍不充分。"
+          },
+          {
+            "item_id": "item_38",
+            "field_id": "product.commercialization_stage",
+            "information_gap": "未披露各主要产品的具体商业化阶段（如研发、试产、量产）的明确划分。",
+            "reason": "该字段已有明确候选值，但信息缺口同时表示其证据仍不充分。"
+          },
+          {
+            "item_id": "item_39",
+            "field_id": "product.commercialization_stage",
+            "information_gap": "未披露各主要产品的具体商业化阶段（如研发、试产、量产）的明确划分。",
+            "reason": "该字段已有明确候选值，但信息缺口同时表示其证据仍不充分。"
+          }
+        ],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": [
+          {
+            "kind": "profile_items",
+            "index": 36,
+            "candidate_id": "item_16",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "candidate": {
+              "item_id": "item_16",
+              "subject": "设序科技",
+              "section_id": "product_research_commercialization",
+              "field_id": "product.name",
+              "value": "AI融合工业CAD设计软件",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00031"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                  "excerpt": "2020年8月设序科技成立，其核心竞争能力在于将AI技术融合入工业CAD设计的软件中， 通过积累大量的工业数据、 工业设计行业知识和深度学习算法能力， 实现大幅提升工业设计、 仿真、 工艺规划和制造等设计生产环节的效率，将原有的数十小时级的设计工作量缩短至分钟级。"
+                }
+              ]
+            },
+            "reason": "实体名称必须直接出现在至少一条证据摘录中。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 37,
+            "candidate_id": "item_25",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00068",
+              "src_8c28d5fe0b5a3392:eu_00190"
+            ],
+            "candidate": {
+              "item_id": "item_25",
+              "subject": "the_enterprise",
+              "section_id": "product_research_commercialization",
+              "field_id": "product.name",
+              "value": "工业机器人智能装备制造及人工智能技术研发与产业化项目",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00068",
+                "src_8c28d5fe0b5a3392:eu_00190"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00068",
+                  "excerpt": "工业机器人智能装备制造及人工智能技术研发与产业化项目"
+                },
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00190",
+                  "excerpt": "公司董事会、股东大会同意公司拟终止全资子公司天津哈工福臻机器人有限公司 （以下简称“天津哈工”） 目前实施的“工业机器人智能装备制造及人工智能技术研发与产业化项目” 以及哈工智能实施的“偿还银行借款”，并将结余募集资金48,858.969043万元（最终剩余募集资金金额以资金转出当日专户余额以及募集资金本金利息之和为准）变更使用用途"
+                }
+              ]
+            },
+            "reason": "技术或零部件必须被原文明确称为产品、型号或系列。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 38,
+            "candidate_id": "item_26",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00068",
+              "src_8c28d5fe0b5a3392:eu_00190"
+            ],
+            "candidate": {
+              "item_id": "item_26",
+              "subject": "the_enterprise",
+              "section_id": "product_research_commercialization",
+              "field_id": "product.name",
+              "value": "研发中心建设项目",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00068",
+                "src_8c28d5fe0b5a3392:eu_00190"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00068",
+                  "excerpt": "研发中心建设项目"
+                },
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00190",
+                  "excerpt": "拟将21,340.731428万元结余募集资金用于由公司全资子公司海宁哈工我耀机器人有限公司实施研发中心建设项目。"
+                }
+              ]
+            },
+            "reason": "客户、供应商和研发或建设项目不得作为产品名称。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 39,
+            "candidate_id": "item_47",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "candidate": {
+              "item_id": "item_47",
+              "subject": "the_enterprise",
+              "section_id": "product_research_commercialization",
+              "field_id": "product.commercialization_stage",
+              "value": "在建",
+              "value_type": "enum",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00555"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                  "excerpt": "研发中心建设项目"
+                }
+              ]
+            },
+            "reason": "每条证据摘录都必须逐字来自对应的 EvidenceUnit。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 7,
+            "candidate_id": "rel_1",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "relation_id": "rel_1",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_4",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "公司与现代重工的合资公司哈工现代专注于工业机器人本体的研发、制造及销售。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 8,
+            "candidate_id": "rel_2",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "relation_id": "rel_2",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_2",
+              "target_id": "item_5",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "汽车车身智能化柔性生产线以工业机器人本体作为基础，以结构化的智能总线技术、自动化控制管理技术、电子检测传感技术和机器人应用技术等为纽带，将原本相互隔离独立的硬件设备、软件控制信息系统和彼此独立的应用功能进行有机结合、融合优化与系统集成， 形成彼此关联、 智能控制、 协同作业的有机整体， 实现生产过程的智能化、 自动化，并从客户需求出发，优化设计定制，可以帮助客户更为科学、合理地安排生产计划，可以有效实现优化车身生产线的数据采集、多任务混产、自动检测故障等目标、有利于客户生产的智能化改造和转型升级。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 9,
+            "candidate_id": "rel_3",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "relation_id": "rel_3",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_2",
+              "target_id": "item_6",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "控股公司瑞弗机电专注于白车身焊装主线、 地板线、 侧围线等自动化要求高的工业机器人焊接/连接系统应用装备制造和服务领域。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 10,
+            "candidate_id": "rel_4",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "relation_id": "rel_4",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_2",
+              "target_id": "item_7",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "控股公司瑞弗机电专注于白车身焊装主线、 地板线、 侧围线等自动化要求高的工业机器人焊接/连接系统应用装备制造和服务领域。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 11,
+            "candidate_id": "rel_5",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "relation_id": "rel_5",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_2",
+              "target_id": "item_8",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "控股公司瑞弗机电专注于白车身焊装主线、 地板线、 侧围线等自动化要求高的工业机器人焊接/连接系统应用装备制造和服务领域。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 12,
+            "candidate_id": "rel_6",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "relation_id": "rel_6",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_2",
+              "target_id": "item_9",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "控股公司哈工易科则致力于为一般工业领域客户提供机器人自动焊接综合解决方案，其已为特殊车辆、医疗设备、工程机械、船舶、压力容器、钢结构、新能源、制药装备、农用机械、海工装备、特种变压器和钢结构等行业客户提供服务，为安徽合力叉车、湖南楚天科技、安徽国风塑业、徐工集团、南通勺海车辆部件有限公司、山东安车检测技术有限公司、哈尔滨第一机械集团等公司提供了相关服务。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 13,
+            "candidate_id": "rel_7",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "relation_id": "rel_7",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_2",
+              "target_id": "item_10",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "柯灵实业是精密工业清洗解决方案提供者， 专注于为汽车行业及其配套供应商提供定制解决方案和服务，满足客户对于汽车发动机、变速箱、新能源汽车电池、变速器壳体、一般工业装备等产品在机加工、装配生产中，对产品清洁度、颗粒度等方面的要求，保障及提升产品质量。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 14,
+            "candidate_id": "rel_8",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "relation_id": "rel_8",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_3",
+              "target_id": "item_11",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "公司的工业机器人服务业务是由我耀机器人----“51ROBOT”平台负责开展相关业务，“51ROBOT”着眼新兴的机器人售后市场，致力于打造“工业机器人本体-操作编程培训-机器人标准系统-系统集成-实时监控软件-维护保养-二手机器人回收-翻新再制造”的可循环式工业机器人全生命周期生态链，基于大数据和云计算的应用以及5G+AI+云的互通、互联、共融，为工业机器人提供更加先进的工业互联网服务。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 15,
+            "candidate_id": "rel_9",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00022"
+            ],
+            "candidate": {
+              "relation_id": "rel_9",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00022"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_12",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00022",
+                  "excerpt": "公司主要产品包括多车型柔性车身生产解决方案和汽车白车身焊装自动化装备。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 16,
+            "candidate_id": "rel_10",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00022"
+            ],
+            "candidate": {
+              "relation_id": "rel_10",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00022"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_13",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00022",
+                  "excerpt": "公司主要产品包括多车型柔性车身生产解决方案和汽车白车身焊装自动化装备。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 17,
+            "candidate_id": "rel_13",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "candidate": {
+              "relation_id": "rel_13",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00031"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_16",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                  "excerpt": "2020年8月设序科技成立，其核心竞争能力在于将AI技术融合入工业CAD设计的软件中， 通过积累大量的工业数据、 工业设计行业知识和深度学习算法能力， 实现大幅提升工业设计、 仿真、 工艺规划和制造等设计生产环节的效率，将原有的数十小时级的设计工作量缩短至分钟级。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 18,
+            "candidate_id": "rel_14",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "candidate": {
+              "relation_id": "rel_14",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00031"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_17",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                  "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 19,
+            "candidate_id": "rel_17",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "candidate": {
+              "relation_id": "rel_17",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00031"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_20",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                  "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 20,
+            "candidate_id": "rel_19",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "candidate": {
+              "relation_id": "rel_19",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00031"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_22",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                  "excerpt": "江机民科主要从事武器装备系统用光电产品、航材、热电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 21,
+            "candidate_id": "rel_24",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "candidate": {
+              "relation_id": "rel_24",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00555"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_27",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                  "excerpt": "机器人铆接工作站"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 22,
+            "candidate_id": "rel_25",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "candidate": {
+              "relation_id": "rel_25",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00555"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_28",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                  "excerpt": "北汽实验岛项目"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 23,
+            "candidate_id": "rel_26",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "candidate": {
+              "relation_id": "rel_26",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00555"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_29",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                  "excerpt": "福臻智能产业园项目"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 24,
+            "candidate_id": "rel_27",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "candidate": {
+              "relation_id": "rel_27",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00555"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_30",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                  "excerpt": "信息化系统搭建项目"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 25,
+            "candidate_id": "rel_28",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "candidate": {
+              "relation_id": "rel_28",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00555"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_31",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                  "excerpt": "数据库升级"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 26,
+            "candidate_id": "rel_29",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "candidate": {
+              "relation_id": "rel_29",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00555"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_32",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                  "excerpt": "厂房基建工程"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 27,
+            "candidate_id": "rel_30",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "candidate": {
+              "relation_id": "rel_30",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00555"
+              ],
+              "extraction_method": "llm",
+              "source_id": "item_1",
+              "target_id": "item_33",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+                  "excerpt": "智能制造网络平台"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          }
+        ]
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00077",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、处置盈利能力不佳的子公司股权，回流资金，保障公司的现金流，为公司减轻负担、降低风险",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "十一、公司未来发展的展望",
+            "（二）2022年经营计划",
+            "2、处置盈利能力不佳的子公司股权，回流资金，保障公司的现金流，为公司减轻负担、降低风险"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 54,
+            "page_end": 54
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "研发",
+            "项目",
+            "研发项目"
+          ],
+          "content_chars": 150
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（一）公司主要业务、主要产品及其用途",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "（一）公司主要业务、主要产品及其用途"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 14,
+            "page_end": 16
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "工业机器人",
+            "产品",
+            "研发",
+            "六轴",
+            "生产线",
+            "项目",
+            "主要产品"
+          ],
+          "content_chars": 2546
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00068",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "(3)=(2)/(1",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "七、投资状况分析",
+            "2、上市公司拟布局军工领域",
+            "(3)=(2)/(1"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 42,
+            "page_end": 43
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "研发",
+            "项目",
+            "产业化"
+          ],
+          "content_chars": 868
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、概述",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "1、概述"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 23,
+            "page_end": 25
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "设序科技",
+            "工业机器人",
+            "产品",
+            "研发",
+            "生产线",
+            "项目",
+            "主要产品"
+          ],
+          "content_chars": 3153
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00022",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（2）生产模式",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "（二）公司主要经营模式",
+            "2、高端智能装备制造",
+            "（2）生产模式"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 17,
+            "page_end": 17
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "主要产品"
+          ],
+          "content_chars": 107
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00190",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "6、关于终止部分募投项目并变更结余募集资金用途的事项",
+          "section_path": [
+            "第六节 重要事项",
+            "十六、其他重大事项的说明",
+            "6、关于终止部分募投项目并变更结余募集资金用途的事项"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 111,
+            "page_end": 111
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产业化"
+          ],
+          "content_chars": 540
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00021",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）采购模式",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "（二）公司主要经营模式",
+            "2、高端智能装备制造",
+            "（1）采购模式"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 16,
+            "page_end": 17
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品"
+          ],
+          "content_chars": 633
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00555",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）在建工程情况",
+          "section_path": [
+            "第十节 财务报告",
+            "四、账面价值",
+            "21、在建工程",
+            "（1）在建工程情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 213,
+            "page_end": 213
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产业化"
+          ],
+          "content_chars": 467
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00065",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、上市公司拟布局军工领域",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "七、投资状况分析",
+            "2、上市公司拟布局军工领域"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 41,
+            "page_end": 42
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品"
+          ],
+          "content_chars": 1680
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00558",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（4）工程物资",
+          "section_path": [
+            "第十节 财务报告",
+            "四、账面价值",
+            "21、在建工程",
+            "（4）工程物资"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 215,
+            "page_end": 215
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产业化"
+          ],
+          "content_chars": 177
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00456",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）销售商品收入",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "（二）本公司收入的具体确认原则",
+            "（1）销售商品收入"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 175,
+            "page_end": 176
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品"
+          ],
+          "content_chars": 594
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00189",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "5、关于放弃参股公司上海设序科技有限公司同比例增资权及转让部分股权的事项",
+          "section_path": [
+            "第六节 重要事项",
+            "十六、其他重大事项的说明",
+            "5、关于放弃参股公司上海设序科技有限公司同比例增资权及转让部分股权的事项"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 110,
+            "page_end": 111
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "设序科技"
+          ],
+          "content_chars": 574
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00585",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "26、开发支出",
+          "section_path": [
+            "第十节 财务报告",
+            "四、账面价值",
+            "26、开发支出"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 218,
+            "page_end": 222
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "研发",
+            "生产线",
+            "项目"
+          ],
+          "content_chars": 2269
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00722",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）企业集团的构成",
+          "section_path": [
+            "第十节 财务报告",
+            "九、在其他主体中的权益",
+            "1、在子公司中的权益",
+            "（1）企业集团的构成"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 275,
+            "page_end": 278
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "工业机器人",
+            "产品",
+            "研发",
+            "生产线"
+          ],
+          "content_chars": 2234
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00036",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（4）公司已签订的重大销售合同、重大采购合同截至本报告期的履行情况",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "2、收入与成本",
+            "（4）公司已签订的重大销售合同、重大采购合同截至本报告期的履行情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 27,
+            "page_end": 30
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "生产线",
+            "项目"
+          ],
+          "content_chars": 1075
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00788",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（2）股权转让事项",
+          "section_path": [
+            "第十节 财务报告",
+            "十六、其他重要事项",
+            "7、其他对投资者决策有影响的重要交易和事项",
+            "（2）股权转让事项"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 303,
+            "page_end": 303
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "设序科技"
+          ],
+          "content_chars": 274
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_8c28d5fe0b5a3392:eu_00019",
+        "src_8c28d5fe0b5a3392:eu_00031",
+        "src_8c28d5fe0b5a3392:eu_00021",
+        "src_8c28d5fe0b5a3392:eu_00022",
+        "src_8c28d5fe0b5a3392:eu_00065",
+        "src_8c28d5fe0b5a3392:eu_00068",
+        "src_8c28d5fe0b5a3392:eu_00190",
+        "src_8c28d5fe0b5a3392:eu_00077",
+        "src_8c28d5fe0b5a3392:eu_00456",
+        "src_8c28d5fe0b5a3392:eu_00555",
+        "src_8c28d5fe0b5a3392:eu_00189"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "研发项目",
+            "keyword_count": 4,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00077",
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00068",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00022",
+              "src_8c28d5fe0b5a3392:eu_00190",
+              "src_8c28d5fe0b5a3392:eu_00021",
+              "src_8c28d5fe0b5a3392:eu_00555",
+              "src_8c28d5fe0b5a3392:eu_00065",
+              "src_8c28d5fe0b5a3392:eu_00558"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "产品",
+            "keyword_count": 4,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00077",
+              "src_8c28d5fe0b5a3392:eu_00068",
+              "src_8c28d5fe0b5a3392:eu_00021",
+              "src_8c28d5fe0b5a3392:eu_00022",
+              "src_8c28d5fe0b5a3392:eu_00190",
+              "src_8c28d5fe0b5a3392:eu_00065",
+              "src_8c28d5fe0b5a3392:eu_00555",
+              "src_8c28d5fe0b5a3392:eu_00456"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00021",
+              "src_8c28d5fe0b5a3392:eu_00022",
+              "src_8c28d5fe0b5a3392:eu_00065",
+              "src_8c28d5fe0b5a3392:eu_00068",
+              "src_8c28d5fe0b5a3392:eu_00190",
+              "src_8c28d5fe0b5a3392:eu_00077",
+              "src_8c28d5fe0b5a3392:eu_00456",
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00021",
+              "src_8c28d5fe0b5a3392:eu_00022",
+              "src_8c28d5fe0b5a3392:eu_00065",
+              "src_8c28d5fe0b5a3392:eu_00068",
+              "src_8c28d5fe0b5a3392:eu_00190",
+              "src_8c28d5fe0b5a3392:eu_00077",
+              "src_8c28d5fe0b5a3392:eu_00456",
+              "src_8c28d5fe0b5a3392:eu_00555"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 10738
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "设序科技 工业机器人 产品 研发 自研 六轴 生产线 项目",
+            "keyword_count": 11,
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00189",
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00585",
+              "src_8c28d5fe0b5a3392:eu_00722",
+              "src_8c28d5fe0b5a3392:eu_00036",
+              "src_8c28d5fe0b5a3392:eu_00022",
+              "src_8c28d5fe0b5a3392:eu_00077",
+              "src_8c28d5fe0b5a3392:eu_00068",
+              "src_8c28d5fe0b5a3392:eu_00788"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00189",
+              "src_8c28d5fe0b5a3392:eu_00022"
+            ],
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00189",
+              "src_8c28d5fe0b5a3392:eu_00022"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 6380
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 622,
+          "output_tokens": 208,
+          "total_tokens": 830,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4736,
+          "output_tokens": 1063,
+          "total_tokens": 5799,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 13589,
+          "output_tokens": 211,
+          "total_tokens": 13800,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "product_and_project",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 11547,
+              "completion_tokens": 16845,
+              "total_tokens": 28392,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019",
+                "src_8c28d5fe0b5a3392:eu_00031",
+                "src_8c28d5fe0b5a3392:eu_00021",
+                "src_8c28d5fe0b5a3392:eu_00022",
+                "src_8c28d5fe0b5a3392:eu_00065",
+                "src_8c28d5fe0b5a3392:eu_00068",
+                "src_8c28d5fe0b5a3392:eu_00190",
+                "src_8c28d5fe0b5a3392:eu_00077",
+                "src_8c28d5fe0b5a3392:eu_00456",
+                "src_8c28d5fe0b5a3392:eu_00555"
+              ]
+            }
+          ],
+          "prompt_tokens": 11547,
+          "completion_tokens": 16845,
+          "total_tokens": 28392
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 7828,
+          "output_tokens": 671,
+          "total_tokens": 8499,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 10556,
+          "output_tokens": 431,
+          "total_tokens": 10987,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "stage": "profile_extraction_recovery",
+          "domain": "product_and_project",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 16113,
+              "completion_tokens": 36,
+              "total_tokens": 16149,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019",
+                "src_8c28d5fe0b5a3392:eu_00031",
+                "src_8c28d5fe0b5a3392:eu_00021",
+                "src_8c28d5fe0b5a3392:eu_00022",
+                "src_8c28d5fe0b5a3392:eu_00065",
+                "src_8c28d5fe0b5a3392:eu_00068",
+                "src_8c28d5fe0b5a3392:eu_00190",
+                "src_8c28d5fe0b5a3392:eu_00077",
+                "src_8c28d5fe0b5a3392:eu_00456",
+                "src_8c28d5fe0b5a3392:eu_00555",
+                "src_8c28d5fe0b5a3392:eu_00189"
+              ]
+            }
+          ],
+          "prompt_tokens": 16113,
+          "completion_tokens": 36,
+          "total_tokens": 16149
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,842 @@
+{
+  "case_id": "HIT",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "authoritative_findings",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00153",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "第五节 环境和社会责任\n一、重大环保问题\n上市公司及其子公司是否属于环境保护部门公布的重点排污单位\n□ 是 √ 否\n报告期内因环境问题受到行政处罚的情况\n公司或子公司名\n称\n处罚原因 违规情形 处罚结果\n对上市公司生产\n经营的影响\n公司的整改措施\n不适用 不适用  不适用 不适用  不适用  不适用\n参照重点排污单位披露的其他环境信息\n公司及其子公司不属于重点排污单位。公司及其子公司在日常生产经营中认真执行《中华人民共和国\n环境保护法》 《中华人民共和国水污染防治法》 《中华人民共和国大气污染防治法》 《中华人民共和国环境\n噪声污染防治法》 《中华人民共和国固体废物污染防治法》等环保方面的法律法规，报告期内未出现因违\n法违规而受到处罚的情况。\n在报告期内为减少其碳排放所采取的措施及效果\n□ 适用 √ 不适用\n未披露其他环境信息的原因\n不适用",
+          "location": {
+            "kind": "pdf",
+            "page_start": 96,
+            "page_end": 96
+          },
+          "metadata": {
+            "title": "一、重大环保问题",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第五节 环境和社会责任",
+              "一、重大环保问题"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 96
+          },
+          "source_date": null,
+          "content_hash": "2c109ddece948d1410c8067dcaa2261b38784947a1d2253f4d5c8dd32abfd1fd"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00192",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "8、控股子公司诉讼补偿事项\n2020年6月4日，法院作出（2020）冀0534破申1号《民事裁定书》 ，裁定受理领途汽车有限公司重整，\n并作出（2020）冀0534破1号《决定书》 ，指定河北博海清算事务有限公司担任领途公司管理人。公司子公\n司浙江瑞弗机电有限公司（以下简称“瑞弗机电”）已申报普通债权金额27,595,590.90元。根据（2020）\n博重管字第11-80号，第二次债权人会议再次表决通过了《领途公司重整计划草案》 ，普通债权调整为按照\n30.76%的比例进行清偿。截至报告日，破产程序正在进行中。根据瑞弗机电与洪金祥、洪群妹、吴淳、周\n昊、刘芳、朱宇、海宁瑞兴投资合伙企业（有限合伙）签订的诉讼补偿协议，瑞弗机电及其下属公司发生\n的诉讼事项可能导致瑞弗机电损失的，洪金祥、洪群妹、吴淳、周昊、刘芳、朱宇、海宁瑞兴投资合伙企\n业（有限合伙）无条件且不可撤销地同意按协议约定的条款和条件对瑞弗机电及其下属公司进行补偿。\n截至目前，鉴于瑞弗机电已发生的诉讼及项目损失金额为人民币44,040,993.98元；其中，领途汽车\n有限公司及其无锡分公司项目所占金额为人民币10,189,675.74元，湖南长丰猎豹汽车有限公司项目所占\n金额为人民币3,858,254.62元，华晨雷诺金杯汽车有限公司项目所占金额为29,791,357.31元（其中可归\n属于瑞弗机电损失计19,742,463.33元、浙江海可姆瑞弗机电有限公司损失计10,039,193.98元、上海瑞弗\n机电有限公司损失计9,700元） ，华晨汽车集团控股有限公司项目所占金额为201,706.31元。对于瑞弗机电\n及其下属公司发生的诉讼事项给公司造成的损失， 经浙江哈工、 瑞弗机电与瑞弗机电原股东积极协商沟通，\n公司控股公司浙江哈工拟与瑞弗机电原股东签署《浙江瑞弗机电有限公司诉讼补偿协议之补充协议》 ，瑞\n弗机电及其下属公司发生的诉讼事项导致瑞弗机电损失的，洪金祥、洪群妹、吴淳、周昊、刘芳、朱宇、\n海宁瑞兴投资合伙企业（有限合伙）无条件且不可撤销地同意按协议约定的条款和条件对瑞弗机电及其下\n属公司进行补偿。具体内容详见公司于2022年4月8日在《中国证券报》 、 《证券时报》 、 《上海证券报》 、刊\n登及在巨潮资讯网（www.cninfo.com.cn）披露的《关于签署<浙江瑞弗机电有限公司诉讼补偿协议之补充\n协议>的公告》 （公告编号：2022-025）。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 112,
+            "page_end": 112
+          },
+          "metadata": {
+            "title": "8、控股子公司诉讼补偿事项",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十六、其他重大事项的说明",
+              "8、控股子公司诉讼补偿事项"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 112
+          },
+          "source_date": null,
+          "content_hash": "010d0b791b6cd2cab423ba5f2cecd70e9488be53a7f45a6a79963ae8bec29589"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00169",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "十三、公司及其控股股东、实际控制人的诚信状况\n√ 适用 □ 不适用\n报告期内，公司及其控股股东、实际控制人不存在未履行法院生效判决、所负数额较大的债务到期未清偿等情况。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 101,
+            "page_end": 101
+          },
+          "metadata": {
+            "title": "十三、公司及其控股股东、实际控制人的诚信状况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十三、公司及其控股股东、实际控制人的诚信状况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 101
+          },
+          "source_date": null,
+          "content_hash": "d0d645e7e25f83929b29d71c39a1b62cc9de4db4a2630048145805989f5e0707"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00631",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "（2）本公司受到中国证监会行政处罚、或者受到证券交易所公开谴责；\n（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意\n见；",
+          "location": {
+            "kind": "pdf",
+            "page_start": 239,
+            "page_end": 239
+          },
+          "metadata": {
+            "title": "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "二、离职后福利-设定",
+              "43、其他流动负债",
+              "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 239
+          },
+          "source_date": null,
+          "content_hash": "c3338da7f55466d99cecbb74e2d01f263014ce0c3d75f16135e1805798e0c878"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00630",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究\n法律责任，并对本公司经营造成重大不利影响；",
+          "location": {
+            "kind": "pdf",
+            "page_start": 239,
+            "page_end": 239
+          },
+          "metadata": {
+            "title": "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "二、离职后福利-设定",
+              "43、其他流动负债",
+              "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 239
+          },
+          "source_date": null,
+          "content_hash": "8dfe83d513fd1ba198cb51ce32d705f1140739ec0def8ceb251ecffb2cdfa0c1"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00636",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "（2）本公司受到中国证监会行政处罚、或者受到证券交易所公开谴责；\n（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意\n见；",
+          "location": {
+            "kind": "pdf",
+            "page_start": 240,
+            "page_end": 240
+          },
+          "metadata": {
+            "title": "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "二、离职后福利-设定",
+              "43、其他流动负债",
+              "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意"
+            ],
+            "chunk_index_in_section": 1,
+            "heading_level": 6,
+            "page": 240
+          },
+          "source_date": null,
+          "content_hash": "c3338da7f55466d99cecbb74e2d01f263014ce0c3d75f16135e1805798e0c878"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00635",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究\n法律责任，并对本公司经营造成重大不利影响；",
+          "location": {
+            "kind": "pdf",
+            "page_start": 240,
+            "page_end": 240
+          },
+          "metadata": {
+            "title": "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "二、离职后福利-设定",
+              "43、其他流动负债",
+              "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究"
+            ],
+            "chunk_index_in_section": 1,
+            "heading_level": 6,
+            "page": 240
+          },
+          "source_date": null,
+          "content_hash": "8dfe83d513fd1ba198cb51ce32d705f1140739ec0def8ceb251ecffb2cdfa0c1"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "authoritative_findings_001",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "报告期内因环境问题受到行政处罚的情况：不适用",
+            "value_type": "entity_ref",
+            "information_status": "not_applicable",
+            "content_role": "regulatory_finding",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00153",
+                "excerpt": "报告期内因环境问题受到行政处罚的情况\n公司或子公司名\n称\n处罚原因 违规情形 处罚结果\n对上市公司生产\n经营的影响\n公司的整改措施\n不适用 不适用  不适用 不适用  不适用  不适用"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "authoritative_findings_004",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意见",
+            "value_type": "entity_ref",
+            "information_status": "pending_verification",
+            "content_role": "regulatory_finding",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00631",
+              "src_8c28d5fe0b5a3392:eu_00636"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00631",
+                "excerpt": "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意\n见；"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00636",
+                "excerpt": "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意\n见；"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "authoritative_findings_006",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "本公司受到中国证监会行政处罚、或者受到证券交易所公开谴责",
+            "value_type": "entity_ref",
+            "information_status": "pending_verification",
+            "content_role": "regulatory_finding",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00631",
+              "src_8c28d5fe0b5a3392:eu_00636"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00631",
+                "excerpt": "（2）本公司受到中国证监会行政处罚、或者受到证券交易所公开谴责；"
+              },
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00636",
+                "excerpt": "（2）本公司受到中国证监会行政处罚、或者受到证券交易所公开谴责；"
+              }
+            ],
+            "extraction_method": "llm"
+          }
+        ],
+        "profile_relations": [],
+        "information_gaps": [
+          "未发现监管、行政或司法材料明确认定的具体事实，除环保处罚不适用和诚信状况无未履行判决外，其他事项均为条件性描述，缺乏明确认定。",
+          "未发现监管、行政或司法材料明确认定的具体事实，如行政处罚、立案调查、法院判决等。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [
+          {
+            "item_id": "unmapped_001",
+            "content": "2020年6月4日，法院作出（2020）冀0534破申1号《民事裁定书》，裁定受理领途汽车有限公司重整，并作出（2020）冀0534破1号《决定书》，指定河北博海清算事务有限公司担任领途公司管理人。公司子公司浙江瑞弗机电有限公司已申报普通债权金额27,595,590.90元。根据（2020）博重管字第11-80号，第二次债权人会议再次表决通过了《领途公司重整计划草案》，普通债权调整为按照30.76%的比例进行清偿。截至报告日，破产程序正在进行中。",
+            "reason": "该事项为控股子公司涉及的破产重整程序，属于经营事件，无监管或司法机关对企业的明确认定，不符合authoritative_findings领域要求。"
+          },
+          {
+            "candidate_id": "authoritative_findings_002",
+            "reason": "证据表述为否定性陈述，非监管认定事实，不符合 authoritative_findings 领域要求。",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ]
+          },
+          {
+            "candidate_id": "authoritative_findings_003",
+            "reason": "证据表述为否定性陈述，非监管认定事实，不符合 authoritative_findings 领域要求。",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00169"
+            ]
+          },
+          {
+            "candidate_id": "authoritative_findings_005",
+            "reason": "证据为风险提示条款，非已发生的监管认定事实，不符合 authoritative_findings 领域要求。",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00630",
+              "src_8c28d5fe0b5a3392:eu_00635"
+            ]
+          }
+        ],
+        "consistency_warnings": [],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": [
+          {
+            "kind": "profile_items",
+            "index": 3,
+            "candidate_id": "authoritative_findings_002",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ],
+            "candidate": {
+              "item_id": "authoritative_findings_002",
+              "subject": "the_enterprise",
+              "section_id": "compliance_legal_risk",
+              "field_id": "risk.matter",
+              "value": "报告期内未出现因违法违规而受到处罚的情况",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "regulatory_finding",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00153"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00153",
+                  "excerpt": "公司及其子公司不属于重点排污单位。公司及其子公司在日常生产经营中认真执行《中华人民共和国\n环境保护法》 《中华人民共和国水污染防治法》 《中华人民共和国大气污染防治法》 《中华人民共和国环境\n噪声污染防治法》 《中华人民共和国固体废物污染防治法》等环保方面的法律法规，报告期内未出现因违\n法违规而受到处罚的情况。"
+                }
+              ]
+            },
+            "reason": "监管认定必须引用监管、行政处罚或决定事实。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 4,
+            "candidate_id": "authoritative_findings_003",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00169"
+            ],
+            "candidate": {
+              "item_id": "authoritative_findings_003",
+              "subject": "the_enterprise",
+              "section_id": "compliance_legal_risk",
+              "field_id": "risk.matter",
+              "value": "报告期内，公司及其控股股东、实际控制人不存在未履行法院生效判决、所负数额较大的债务到期未清偿等情况",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "regulatory_finding",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00169"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00169",
+                  "excerpt": "报告期内，公司及其控股股东、实际控制人不存在未履行法院生效判决、所负数额较大的债务到期未清偿等情况。"
+                }
+              ]
+            },
+            "reason": "监管认定必须引用监管、行政处罚或决定事实。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 5,
+            "candidate_id": "authoritative_findings_005",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00630",
+              "src_8c28d5fe0b5a3392:eu_00635"
+            ],
+            "candidate": {
+              "item_id": "authoritative_findings_005",
+              "subject": "the_enterprise",
+              "section_id": "compliance_legal_risk",
+              "field_id": "risk.matter",
+              "value": "本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究法律责任，并对本公司经营造成重大不利影响",
+              "value_type": "entity_ref",
+              "information_status": "pending_verification",
+              "content_role": "regulatory_finding",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00630",
+                "src_8c28d5fe0b5a3392:eu_00635"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00630",
+                  "excerpt": "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究\n法律责任，并对本公司经营造成重大不利影响；"
+                },
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00635",
+                  "excerpt": "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究\n法律责任，并对本公司经营造成重大不利影响；"
+                }
+              ]
+            },
+            "reason": "监管认定必须引用监管、行政处罚或决定事实。"
+          }
+        ]
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00153",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "一、重大环保问题",
+          "section_path": [
+            "第五节 环境和社会责任",
+            "一、重大环保问题"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 96,
+            "page_end": 96
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "行政处罚"
+          ],
+          "content_chars": 375
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00192",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "8、控股子公司诉讼补偿事项",
+          "section_path": [
+            "第六节 重要事项",
+            "十六、其他重大事项的说明",
+            "8、控股子公司诉讼补偿事项"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 112,
+            "page_end": 112
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "法院"
+          ],
+          "content_chars": 1026
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00631",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意",
+          "section_path": [
+            "第十节 财务报告",
+            "二、离职后福利-设定",
+            "43、其他流动负债",
+            "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 239,
+            "page_end": 239
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "行政处罚"
+          ],
+          "content_chars": 80
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00169",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "十三、公司及其控股股东、实际控制人的诚信状况",
+          "section_path": [
+            "第六节 重要事项",
+            "十三、公司及其控股股东、实际控制人的诚信状况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 101,
+            "page_end": 101
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "法院"
+          ],
+          "content_chars": 84
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00630",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究",
+          "section_path": [
+            "第十节 财务报告",
+            "二、离职后福利-设定",
+            "43、其他流动负债",
+            "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 239,
+            "page_end": 239
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "法院"
+          ],
+          "content_chars": 66
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00636",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意",
+          "section_path": [
+            "第十节 财务报告",
+            "二、离职后福利-设定",
+            "43、其他流动负债",
+            "（3）本公司因涉嫌犯罪被司法机关立案侦查或涉嫌违规被中国证监会立案调查，尚未有明确结论意"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 240,
+            "page_end": 240
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "行政处罚"
+          ],
+          "content_chars": 80
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00635",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究",
+          "section_path": [
+            "第十节 财务报告",
+            "二、离职后福利-设定",
+            "43、其他流动负债",
+            "（1）本公司实际控制人变更、发生重大违法行为、个人诚信或财务问题被法院或其他行政机关追究"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 240,
+            "page_end": 240
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "法院"
+          ],
+          "content_chars": 66
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_8c28d5fe0b5a3392:eu_00153",
+        "src_8c28d5fe0b5a3392:eu_00192",
+        "src_8c28d5fe0b5a3392:eu_00169",
+        "src_8c28d5fe0b5a3392:eu_00631",
+        "src_8c28d5fe0b5a3392:eu_00630",
+        "src_8c28d5fe0b5a3392:eu_00636",
+        "src_8c28d5fe0b5a3392:eu_00635"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "权威认定",
+            "keyword_count": 5,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 7,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153",
+              "src_8c28d5fe0b5a3392:eu_00192",
+              "src_8c28d5fe0b5a3392:eu_00631",
+              "src_8c28d5fe0b5a3392:eu_00169",
+              "src_8c28d5fe0b5a3392:eu_00630",
+              "src_8c28d5fe0b5a3392:eu_00636",
+              "src_8c28d5fe0b5a3392:eu_00635"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "监管处罚 行政认定 司法裁判",
+            "keyword_count": 7,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 7,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153",
+              "src_8c28d5fe0b5a3392:eu_00192",
+              "src_8c28d5fe0b5a3392:eu_00631",
+              "src_8c28d5fe0b5a3392:eu_00169",
+              "src_8c28d5fe0b5a3392:eu_00630",
+              "src_8c28d5fe0b5a3392:eu_00636",
+              "src_8c28d5fe0b5a3392:eu_00635"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153",
+              "src_8c28d5fe0b5a3392:eu_00192",
+              "src_8c28d5fe0b5a3392:eu_00169",
+              "src_8c28d5fe0b5a3392:eu_00631",
+              "src_8c28d5fe0b5a3392:eu_00630",
+              "src_8c28d5fe0b5a3392:eu_00636",
+              "src_8c28d5fe0b5a3392:eu_00635"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153",
+              "src_8c28d5fe0b5a3392:eu_00192",
+              "src_8c28d5fe0b5a3392:eu_00169",
+              "src_8c28d5fe0b5a3392:eu_00631",
+              "src_8c28d5fe0b5a3392:eu_00630",
+              "src_8c28d5fe0b5a3392:eu_00636",
+              "src_8c28d5fe0b5a3392:eu_00635"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 1777
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "报告期内未出现因违法违规而受到处罚的情况",
+            "keyword_count": 5,
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "catalog_count": 7,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153",
+              "src_8c28d5fe0b5a3392:eu_00192",
+              "src_8c28d5fe0b5a3392:eu_00631",
+              "src_8c28d5fe0b5a3392:eu_00169",
+              "src_8c28d5fe0b5a3392:eu_00630",
+              "src_8c28d5fe0b5a3392:eu_00636",
+              "src_8c28d5fe0b5a3392:eu_00635"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00169",
+              "src_8c28d5fe0b5a3392:eu_00630",
+              "src_8c28d5fe0b5a3392:eu_00631",
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ],
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00169",
+              "src_8c28d5fe0b5a3392:eu_00630",
+              "src_8c28d5fe0b5a3392:eu_00631",
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 605
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 620,
+          "output_tokens": 130,
+          "total_tokens": 750,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 3648,
+          "output_tokens": 658,
+          "total_tokens": 4306,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 6481,
+          "output_tokens": 218,
+          "total_tokens": 6699,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "authoritative_findings",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 5900,
+              "completion_tokens": 1906,
+              "total_tokens": 7806,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00153",
+                "src_8c28d5fe0b5a3392:eu_00192",
+                "src_8c28d5fe0b5a3392:eu_00169",
+                "src_8c28d5fe0b5a3392:eu_00631",
+                "src_8c28d5fe0b5a3392:eu_00630",
+                "src_8c28d5fe0b5a3392:eu_00636",
+                "src_8c28d5fe0b5a3392:eu_00635"
+              ]
+            }
+          ],
+          "prompt_tokens": 5900,
+          "completion_tokens": 1906,
+          "total_tokens": 7806
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 1371,
+          "output_tokens": 248,
+          "total_tokens": 1619,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 3114,
+          "output_tokens": 754,
+          "total_tokens": 3868,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "stage": "profile_extraction_recovery",
+          "domain": "authoritative_findings",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 6435,
+              "completion_tokens": 314,
+              "total_tokens": 6749,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00153",
+                "src_8c28d5fe0b5a3392:eu_00192",
+                "src_8c28d5fe0b5a3392:eu_00169",
+                "src_8c28d5fe0b5a3392:eu_00631",
+                "src_8c28d5fe0b5a3392:eu_00630",
+                "src_8c28d5fe0b5a3392:eu_00636",
+                "src_8c28d5fe0b5a3392:eu_00635"
+              ]
+            }
+          ],
+          "prompt_tokens": 6435,
+          "completion_tokens": 314,
+          "total_tokens": 6749
+        }
+      ]
+    }
+  ]
+}

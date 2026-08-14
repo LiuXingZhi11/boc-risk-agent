@@ -1,0 +1,132 @@
+"""同行比较与分方向审批报告基础能力。"""
+
+from .mappings import DOMAIN_INDUSTRY_DIMENSIONS, validate_domain_industry_mapping
+from .models import (
+    ApprovalPoint,
+    ApprovalPointDefinition,
+    ComparableMetricDefinition,
+    ComparableMetricValue,
+    CompositeApprovalReport,
+    DomainApprovalReport,
+    EnterpriseOverallAssessment,
+    FinalDirectionResult,
+    MetricProfileFieldBinding,
+    OverallAssessmentRationale,
+    PeerCohort,
+    RankingResult,
+)
+from .candidates import build_metric_value_candidates
+from .guideline_definitions import (
+    GUIDELINE_POINT_DEFINITIONS,
+    GUIDELINE_SECTION_DEFINITIONS,
+    GuidelineApprovalPointDefinition,
+    GuidelineSectionDefinition,
+    get_guideline_point_definitions,
+    validate_guideline_definitions,
+)
+from .guideline_context import (
+    GuidelinePointContext,
+    GuidelineSectionContext,
+    build_guideline_metric_comparisons,
+    build_guideline_section_context,
+)
+from .guideline_reporting import (
+    build_guideline_section_report_messages,
+    generate_guideline_section_report,
+)
+from .direction_ranking import (
+    DirectionComparisonCard,
+    DirectionPointCard,
+    DirectionRankPoint,
+    DirectionRankingGroup,
+    DirectionRankingResult,
+    approve_direction_ranking,
+    build_direction_comparison_card,
+    build_direction_ranking_messages,
+    direction_ranking_to_markdown,
+    generate_direction_ranking,
+)
+from .context import (
+    DomainApprovalContext,
+    MetricComparison,
+    build_domain_approval_context,
+)
+from .ranking import rank_metric_values
+from .repository import ApprovalRepository
+from .overall_assessment import (
+    approve_overall_assessment,
+    build_overall_assessment_messages,
+    build_overall_assessment_package,
+    generate_overall_assessment,
+    overall_assessment_to_markdown,
+    validate_overall_assessment_output,
+)
+from .reporting import (
+    approve_composite_approval_report,
+    approve_domain_approval_report,
+    build_composite_approval_report_messages,
+    build_domain_approval_report_messages,
+    composite_approval_report_to_markdown,
+    domain_approval_report_to_markdown,
+    generate_composite_approval_report,
+    generate_domain_approval_report,
+)
+
+__all__ = [
+    "ApprovalPoint",
+    "ApprovalPointDefinition",
+    "ApprovalRepository",
+    "ComparableMetricDefinition",
+    "ComparableMetricValue",
+    "CompositeApprovalReport",
+    "EnterpriseOverallAssessment",
+    "FinalDirectionResult",
+    "OverallAssessmentRationale",
+    "DOMAIN_INDUSTRY_DIMENSIONS",
+    "DomainApprovalReport",
+    "DomainApprovalContext",
+    "MetricProfileFieldBinding",
+    "MetricComparison",
+    "PeerCohort",
+    "RankingResult",
+    "rank_metric_values",
+    "build_metric_value_candidates",
+    "GuidelineApprovalPointDefinition",
+    "GuidelineSectionDefinition",
+    "GUIDELINE_POINT_DEFINITIONS",
+    "GUIDELINE_SECTION_DEFINITIONS",
+    "get_guideline_point_definitions",
+    "validate_guideline_definitions",
+    "GuidelinePointContext",
+    "GuidelineSectionContext",
+    "build_guideline_metric_comparisons",
+    "build_guideline_section_context",
+    "build_guideline_section_report_messages",
+    "generate_guideline_section_report",
+    "DirectionComparisonCard",
+    "DirectionPointCard",
+    "DirectionRankPoint",
+    "DirectionRankingGroup",
+    "DirectionRankingResult",
+    "build_direction_comparison_card",
+    "build_direction_ranking_messages",
+    "generate_direction_ranking",
+    "approve_direction_ranking",
+    "direction_ranking_to_markdown",
+    "build_domain_approval_context",
+    "build_domain_approval_report_messages",
+    "build_composite_approval_report_messages",
+    "generate_domain_approval_report",
+    "generate_composite_approval_report",
+    "approve_domain_approval_report",
+    "approve_composite_approval_report",
+    "domain_approval_report_to_markdown",
+    "composite_approval_report_to_markdown",
+    "build_overall_assessment_package",
+    "build_overall_assessment_messages",
+    "generate_overall_assessment",
+    "validate_overall_assessment_output",
+    "approve_overall_assessment",
+    "overall_assessment_to_markdown",
+    "validate_domain_industry_mapping",
+]

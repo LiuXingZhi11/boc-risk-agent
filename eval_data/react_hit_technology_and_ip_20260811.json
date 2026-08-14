@@ -1,0 +1,1343 @@
+{
+  "case_id": "HIT",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "technology_and_ip",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "二、报告期内公司从事的主要业务\n（一）公司主要业务、主要产品及其用途\n报告期内，公司从事的主要业务为智能制造业务。\n公司智能制造业务围绕工业机器人进行全产业链布局，目前涵盖工业机器人本体的制造和销售（工业\n机器人本体） 、高端智能装备制造（工业机器人应用）及工业机器人一站式服务平台（工业机器人服务）\n三个子板块。\n工业机器人本体方面，公司与现代重工的合资公司哈工现代专注于工业机器人本体的研发、制造及销\n售。 其生产的工业机器人以六轴通用机器人等为主， 目前产品包含四个型号， 负载6kg-600kg， 可广泛应用\n于汽车整车、汽车部件、轨道客车、家电、电子、机加工、食品、建筑材料、工程机械、军工等行业。\n2020年底哈工现代智能工厂建成， 智能工厂按照现代重工大邱工厂的产能规模和智慧工厂标准进行建\n设，设计产能10,000台机器人/年。2021年投产后，哈工现代、海宁哈工我耀、上海我耀均积极进行机器人\n本体产品的推广和销售。凭借公司工业机器人全产业链布局优势，工业机器人本体业务板块与下游系统集\n成子公司充分发挥协同效应，有效拓展了销售渠道和订单规模，形成了良好的应用案例和示范效应。哈工\n现代机器人本体产品在投产首年便成功应用于对产品稳定性、质量、服务等具有高标准要求的汽车行业，\n与上汽通用五菱汽车股份有限公司开展直接合作并受到了来自客户的较高认可。\n公司参股公司上海昇视唯盛科技有限公司（以下简称“昇视唯盛”）致力于打造细分领域的智能工业机\n器人，将基于AI的3D视觉技术融合进传统的工业机器人，以智能制造、 智慧物流为切入点，向客户提供工\n业机器人3D视觉解决方案。\n在工业机器人应用方面， 公司专注于智能自动化装备、 焊接/连接机器人系统集成核心技术的研发、 相\n关产品的生产和销售，专业为汽车、汽车零部件、医疗设备等行业客户提供先进的智能化柔性生产线，是\n高端智能自动化装备系统集成供应商。公司高端智能装备制造业务主要由下属天津福臻、上海奥特博格、\n瑞弗机电、哈工易科、柯灵实业等子公司实施。子公司天津福臻、上海奥特博格主要从事工业智能化柔性\n生产线和工业机器人焊接/连接系统应用的研发、 设计、 制造和销售。 汽车车身智能化柔性生产线以工业机\n器人本体作为基础，以结构化的智能总线技术、自动化控制管理技术、电子检测传感技术和机器人应用技\n术等为纽带，将原本相互隔离独立的硬件设备、软件控制信息系统和彼此独立的应用功能进行有机结合、\n融合优化与系统集成， 形成彼此关联、 智能控制、 协同作业的有机整体， 实现生产过程的智能化、 自动化，\n并从客户需求出发，优化设计定制，可以帮助客户更为科学、合理地安排生产计划，可以有效实现优化车\n身生产线的数据采集、多任务混产、自动检测故障等目标、有利于客户生产的智能化改造和转型升级。经\n过多年发展，天津福臻在智能柔性总拼、高速传输和柔性切换系统、夹具高速柔性切换技术、激光技术、\n包边技术、 冲铆技术、 车身轻量化技术及机器人门盖自动智能装配技术等领域形成了较强的竞争力。 目前，\n天津福臻、上海奥特博格的主要客户包括中国第一汽车集团有限公司、奇瑞捷豹路虎汽车有限公司、长安\n福特汽车有限公司、沃尔沃汽车集团、上海蔚来汽车有限公司、上海大众汽车有限公司、广汽本田汽车有\n限公司、华晨宝马汽车有限公司、重庆长安汽车股份有限公司、东风柳州汽车有限公司、北京汽车集团有\n限公司、安徽江淮汽车集团股份有限公司、宝能汽车有限公司、北京奔驰汽车有限公司等国内外众多知名\n汽车制造厂商及卡斯马、海斯坦普等国际一线汽车零部件供应商，有较强的市场竞争力和行业号召力。控\n股公司瑞弗机电专注于白车身焊装主线、 地板线、 侧围线等自动化要求高的工业机器人焊接/连接系统应用\n装备制造和服务领域。在汽车领域，瑞弗机电主要提供汽车研发同步工程技术服务，工业机器人焊装设备\n在汽车白车身领域的设计与制造，白车身质量保证技术咨询服务等，以实现汽车白车身焊接总成及各分总\n成的焊接定位、夹紧及工位间的输送等功能。基于客户产品多样化、设备投入经济性的要求，瑞弗机电提\n供柔性工艺设备， 多车种共线的项目是瑞弗机电的特长与研发重心。 此外， 基于成熟的机器人焊接/连接系\n统应用技术与经验，瑞弗机电亦致力于工业机器人焊接/连接系统在航空航天、军工领域的各类技术应用/\n自动化装备的研发，参与多种技术改造项目。瑞弗机电主要客户包括法国雷诺汽车（RENAULT） 、法国标\n致汽车（PEUGEOT） 、俄罗斯拉达汽车（LADA） 、比亚迪、南宁宁达新能源汽车、吉利PMA、宇通汽车、\n合众新能源汽车等国内外知名汽车整车制造厂商。\n控股公司哈工易科则致力于为一般工业领域客户提供机器人自动焊接综合解决方案，其已为特殊车\n辆、医疗设备、工程机械、船舶、压力容器、钢结构、新能源、制药装备、农用机械、海工装备、特种变\n压器和钢结构等行业客户提供服务，为安徽合力叉车、湖南楚天科技、安徽国风塑业、徐工集团、南通勺\n海车辆部件有限公司、山东安车检测技术有限公司、哈尔滨第一机械集团等公司提供了相关服务。报告期\n内， 哈工易科坚持以中厚板焊接自动化为主，通过持续技术研发投入实现了快速离线编程技术和焊接技术，\n有效提升了公司技术水平，围绕一般工业领域开拓了特变电工、中联农机、三一重工、惠生海工、中驰集\n团等国内优质企业客户。\n柯灵实业是精密工业清洗解决方案提供者， 专注于为汽车行业及其配套供应商提供定制解决方案和服\n务，满足客户对于汽车发动机、变速箱、新能源汽车电池、变速器壳体、一般工业装备等产品在机加工、\n装配生产中，对产品清洁度、颗粒度等方面的要求，保障及提升产品质量。\n公司的工业机器人服务业务是由我耀机器人----“51ROBOT”平台负责开展相关业务，“51ROBOT”着眼\n新兴的机器人售后市场，致力于打造“工业机器人本体-操作编程培训-机器人标准系统-系统集成-实时监控\n软件-维护保养-二手机器人回收-翻新再制造”的可循环式工业机器人全生命周期生态链，基于大数据和云\n计算的应用以及5G+AI+云的互通、互联、共融，为工业机器人提供更加先进的工业互联网服务。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 14,
+            "page_end": 16
+          },
+          "metadata": {
+            "title": "（一）公司主要业务、主要产品及其用途",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "二、报告期内公司从事的主要业务",
+              "（一）公司主要业务、主要产品及其用途"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 4,
+            "page": 14
+          },
+          "source_date": null,
+          "content_hash": "13622e97cbcd34e9e6e5ffe23e9d3e405daae178a3efd136e48445cc48d1e1cd"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "三、核心竞争力分析\n1、技术研发优势\n公司下属核心业务的子公司均设有研发部门， 负责现有业务关键环节的技术升级以及内部核心产品的\n研发。同时总部下设中央研究院，研究院一方面职能是协调下属子公司技术创新间的融合，另一方面职能\n是以机器人关键技术研究和应用为核心，面向汽车、医疗、军工三大板块，将人工智能技术与信息技术融\n入机器人产业链的各个环节，推动公司整体核心竞争力的提升。除上述研究体系外，总部根据公司战略和\n业务发展将下属研究中心调整为车身轻量化连接技术研发中心、机器人再制造工程技术研发中心、\nAI+ROBOT研发中心。目前，在汽车生产及装配领域的优势，公司采用全数字化制造技术、车身轻量化技\n术、机器人门盖智能装配技术等，实现了高精度柔性定位、监控、检测、诊断、维护、预报等智能化控制\n与管理，具备了完整的车身智能柔性生产、车身轻量化生产、机器人门盖智能装配解决方案的设计能力，\n推动了车身装备向柔性化、节能化、智能化发展，可适应客户多产品、共线生产等各类需求。在中厚板焊\n接领域的优势，通过采用激光跟踪、双机协调、快速离线编程、焊接仿真预编程技术，可实现不锈钢材料\n以及厚板的一级焊缝自动焊接、板层焊接零变形、板层平面度及粗糙度自动检测、焊缝柔性打磨。可满足\n客户焊接过程中焊接工件的自动上下料、打标、转运、焊接、打磨，同时具有扩容柔性生产的特点，目前\n广泛应用于陶瓷的焊缝、清洗和校平，砂光机焊接的自动化集成，不同规格的板层柔性焊接。与此同时，\n2018年下半年，公司还组建了AI研发团队，提出了“AI+ROBOT”的理念，利用规则推理算法、案例推理算\n法、快速随机搜索树算法、深度学习算法、视觉算法等技术，解决企业现代化生产过程中所需要的工业智\n能设计、机器人视觉引导、机器人视觉识别等问题。目前，公司通过机器人应用、离线仿真、整线模拟、\n虚拟调试等技术，在轻量化车身连接、机器人门盖自动智能装配、冻干机层板机器人自动焊接、AI算法方\n面等处于国内领先地位。\n基于上述技术和客户资源的积累，近年来公司也成功将机器人清洗技术、采血穿刺机器人技术、工业\n智能设计软件技术进行了转化，分别孵化了“柯灵自动化”、“设序科技”、“磅客策”三家智能制造相关的公\n司，并已获得了险峰、高榕、联想创投等多家知名机构的投资，进一步体现了市场对哈工智能研发能力的\n认可。\n2021年共新增实用新型专利41件、软件著作权6件。截至2021年12月31日，公司共有授权知识产权154\n件，其中发明专利5件，软件著作权57件、外观专利4件。\n公司未来几年将围绕主营业务及战略发展规划持续深入在高端智能制造及人工智能领域的研究， 为公\n司未来的进一步发展提供持续创新动力，提升公司的产品竞争力、技术竞争力和抗风险能力。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 18,
+            "page_end": 19
+          },
+          "metadata": {
+            "title": "1、技术研发优势",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "三、核心竞争力分析",
+              "1、技术研发优势"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 18
+          },
+          "source_date": null,
+          "content_hash": "7c3a2c12cce20799eb99c05b086a6a87cb46cf997f320e540aadd5bce08b8f6e"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00030",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "四、主营业务分析\n1、概述\n2021年新冠疫情在全球范围内形势依旧严峻，新冠病毒的不断变异和不同政治制度、文明形态国家抗\n疫政策的差异化表现出对各行业造成诸多不利影响。在过去的一年中，公司业务占比最大的汽车制造业面\n临了芯片短缺、原材料价格持续高位、现金流等不利因素影响。尽管2021年我国汽车行业产销量分别完成\n2608.2万辆和2627.5万辆，结束了2018年以来连续三年的下降局面，但依然低于疫情前水平，尤其是传统\n乘用车。据国家统计局数据统计，最近三年（2019、2020、2021年）我国汽车制造业固定资产投资额出现\n连续下滑，同比分别变化-1.5%、-12.4%和-3.7%，行业出现汽车整车厂新生产线投资项目暂缓或停止的情\n况，新增产线项目大幅减少，行业竞争激烈，导致公司签订的项目毛利率大幅下降，公司全年业绩受到影\n响。\n同时受下游行业的影响，公司部分客户的回款时间拉长，部分客户经营和回款出现风险，导致报告期\n内公司计提的应收款项减值大幅增加； 部分参股公司因市场经营层面暂未有明显突破， 经营风险有所上升，\n因此根据权益法核算的投资亏损相较去年大幅增加； 此外， 公司继续主动积极进行战略和研发方向的调整，\n战略转型军工智能化， 往新能源产业链上下游的延伸， 不断探索机器人与AI、5G、 视觉、 医疗、 军工技改、\n有色金属领域的技术结合与产业应用，布局机器人自动化生产在军工领域的技术探索，继续加大相关领域\n研发投入。报告期内，公司实现营业收入172,245.87万元，同比增加6.46%；毛利相较去年同期下降3.47%，\n再累加商誉减值等因素影响，归属于母公司所有者的净利润为-58,791.90万元。\n2021年公司也收获了来自机器人行业和社会各界的广泛认可，报告期内获得了 OFweek维科网评选的\n“2021中国工业自动化及数字化行业年度品牌影响力企业奖 ”和“2021中国工业自动化及数字化行业年度 优\n秀产品奖”，成功入榜中国科学院《互联网周刊》发布的“2021中国科技机器人企业TOP50”榜单；荣获前程\n无忧发起的“2021人力资源管理杰出奖”，公司子公司天津福臻2021年成功入选工信部发布的第三批重点专\n精特新“小巨人”企业、公司子公司哈工现代斩获高工金球奖“2021年度快速成长企业奖”。\n2021年公司面对艰难环境，迎难而上，逆境中求生存，重点开展了以下工作：\n1）虽积极应对下游汽车行业低迷，工业机器人应用板块业务仍难以力挽狂澜\n自2018年四季度下游汽车行业低迷至2020年因疫情导致的下游汽车行业持续低迷， 汽车整车厂新生产\n线投资项目纷纷暂缓或停止，新增产线项目大幅减少，行业竞争激烈，导致该期间公司签订的项目毛利率\n大幅下降，至本报告期确认收入时，对公司的业绩产生了较大的影响。\n在毛利率下降的同时，2018年四季度下游汽车行业进入下行周期及受新冠疫情影响以来，公司部分客\n户的回款时间拉长，部分客户经营和回款出现风险，尤其是2021年下半年包括南京知行汽车、宝沃汽车、\n华晨汽车、 宝能汽车等在内的部分国内汽车整车制造厂商或进入被申请破产流程或申请破产或出现重大经\n营风险，导致公司报告期内的应收款项减值大幅增加、经营性现金流为负，对公司的经营来说无疑是雪上\n加霜，对公司的生产经营和偿债能力带来一定的风险。\n为应对传统汽车行业整体低迷，抓住新能源汽车的发展契机，充分发挥公司在新能源汽车领域的领先\n技术优势谋求可持续性发展，2021年公司工业机器人应用业务先后同蔚来、 比亚迪、 南宁宁达、 吉利PMA、\n宇通汽车、合众新能源汽车等国内外知名汽车制造厂商签订新能源汽车生产线订单，子公司天津福臻成功\n中标了蔚来汽车ET7等车型的部分产线，成功取得豪华汽车品牌莲花汽车（LOTUS）的订单，同广州某企\n业签订了新能源电池相关产线的订单，在重卡市场开拓了中国重型汽车集团、福田汽车等新客户。公司子\n公司瑞弗机电前期受海外疫情影响无法开展的法国雷诺汽车（RENAULT） 、法国标致汽车（PEUGEOT）\n等海外项目陆续开展，部分国内业务人员已可返回疫情控制较好的海外地区开展工作。\n为了保证公司业务的正常开展，公司多方筹措资金，内部资金调度；使用闲置募集资金暂时补充流动\n资金；为天津福臻（含子公司）取得可用于银行流动资金贷款、承兑汇票、保函等的授信额度36,000万元，\n为瑞弗机电取得可用于银行流动资金贷款、承兑汇票、保函等授信额度13,057.45万元。\n虽然公司采取了多种措施，但下游客户出现的回款风险对报告期内公司的经营还是产生了不利的影\n响。\n2）机器人本体板块的长期主义\n2021年公司机器人本体业务发展较上年有较大增长，哈工现代全年实现营业收入 7,444.46万元，同比\n增长182%， 华东、 华南、 西南、 华北、 大客户五个大区业务均实现业务一定的增长， 成功与对产品稳定性、\n质量、 服务等具有高标准要求的汽车行业客户上汽通用五菱展开直接合作， 并获得了来自客户的高度认可。\n同时，公司也在机械、工控、家电等领域拓展新市场。在机型方面，公司从原有的基本机型（ 6公斤、20\n公斤、50公斤、220公斤等）拓展为套机等多种机型，极大的满足了工业机器人客户需求。此外，结合昇\n视唯盛基于AI的3D视觉技术，哈工现代也可以向客户提供整合了3D视觉解决方案的机器人本体。2021年\n机器人本体销售出货量783台，已签约订单数量千余台，并已与23家客户达成新的年度战略合作，如广西\n哲程机器人科技有限公司、佛山市新工智能化设备有限公司、中迪机器人（盐城）有限公司、广西鑫广源\n自动化科技有限责任公司、成都卓普同创智能科技有限公司、郑州控信科技有限公司等。但哈工现代面临\n的问题与天津福臻、瑞弗机电类似，由于哈工现代面对的下游客户多为中小集成商或终端用户，回款难及\n现金流问题，对哈工现代这样的尚在起步期的公司来说是巨大的挑战。同时，起步期的哈工现代出货量对\n采购价格的影响也比较大，实现盈利还需要哈工现代对长期主义的坚持。\n3）积极探索公司技术/产品在其它行业的应用，对冲单一行业影响，实现多元发展\n为更好的对冲单一行业对公司业务的不利影响，实现公司长远发展，公司子公司哈工易科在一般工业\n领域坚持以中厚板自动化焊接整体解决方案为主，坚持走高品质，差异化竞争策略，以技术创新和优质服\n务应对市场的挑战，报告期内新增开发了和拓展应用了激光传感器和免试教编程技术等新技术，并在工程\n机械、制药装备、海工装备、特种变压器、钢结构等领域拓展了徐工集团、中联农机、特变电工、楚天科\n技、惠生海工、合力集团、中驰集团等众多行业领域的优质客户，报告期内实现合同签订额5,158.5万元，\n为公司实现可持续发展培育了新的业务增长点。\n2021年由于新能源汽车行业新建产线增多及2020年疫情国外竞争对手产能萎缩， 公司工业机器人清洗\n系统提供商柯灵实业紧抓行业机遇，订单实现较大增量，同一汽解放、春风动力、太平洋精锻、爱克迪、\n宁波旭升、凌云工业签订了机器人清洗等订单，加强了同高端车企和新能源车企等的合作，针对性研发了\n包括发动机平衡器壳体清洗系统和设备等在内的多项技术专利。2021年柯灵实业整体加工行业订单较为饱\n满，终端客户逐渐向新能源客户过渡。\n4）拓产品、重服务，工业机器人服务板块发展“服务”升级\n在工业机器人服务板块，公司子公司上海我耀在保持和库卡合作的基础上，拓展了如遨博等多家品牌\n机器人渠道，进一步增强了机器人本体产品线；与众多知名上市企业、自动化集成企业达成并保持良好的\n业务关系。2021年公司成功与德国伦茨传动公司达成合作协议，通过与伦茨公司的紧密合作实现向食药、",
+          "location": {
+            "kind": "pdf",
+            "page_start": 20,
+            "page_end": 22
+          },
+          "metadata": {
+            "title": "1、概述",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "1、概述"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 20
+          },
+          "source_date": null,
+          "content_hash": "a869ddbd164fbd3e039aca033884fe42394d95428e76f4569df2f4cab5d845fe"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "汽车及一般工业的自动化设备领域进一步开拓。为做大做强公司的工业机器人维修保养业务，2021年3月，\n子公司上海我耀参股投资设立了苏州哈工凯尔机器人技术服务有限公司， 该公司的主营业务主要系工业机\n器人的备改造、维修、保养及备件业务。目前该公司已取得库卡机器人、库卡工业、伦茨、伊维莱、哈工\n现代等公司的售后服务/业务授权服务（经销）商，已为开能健康、燕京啤酒、宝钢集团、中船重工、合众\n新能源、零跑汽车、牛创新能源、上海空间电源研究所、天津福臻、江苏北人、先惠技术、星云股份、成\n焊宝玛、广州中设、广州明珞、柯马工程、吉利、长城、比亚迪、宝马等客户提供了工业机器人的维护保\n养。2021年上海我耀实现主营业务收入11,537.93万元（单体口径） ，相较上年同期增长约2.57%，毛利也相\n较去年同期增加约342.60万元。\n5）持续加大研发投入，以技术引领创新发展\n2021年公司围绕工业智能化， 聚焦AI视觉及应用、 数字化技术、 军工非标自动化、 机器人应用等领域，\n不断探索机器人与AI、5G、视觉、医疗、军工、防务、有色金属等领域的技术结合与产业应用，为客户提\n供全方位综合解决方案服务，为公司产品和技术向高端制造、军工、防务、航空航天等新的人工智能应用\n领域进行拓展、延伸奠定基础。\n报告期内公司持续加强研发投入， 累计实现研发投入8,566.35万元， 研发投入占营业收入比重达4.97%，\n公司报告期内新增实用新型专利41件、软件著作权6件。公司在高端智能装备制造板块针对新能源汽车市\n场突破性完成了新能源的电池包和电池模组项目， 开发了数字信息化的智能生产管理系统和柔性门洞包边\n系统； 一般工业领域哈工易科则由焊接工作站逐步向焊接产线过渡， 通过拓展前后道自动化以提高竞争力，\n通过快速离线编程技术和焊接技术等技术研发进一步提升公司技术水平。\n报告期内， 哈工智能中央研究院还与战略合作伙伴中铝智能科技发展有限公司在有色金属行业的矿石\n开采、金属冶炼、型材加工等生产流程中的智能化设备开发及推广应用方面展开深度合作，共同推动人工\n智能与机器人技术针对有色金属行业不同应用场景的落地，在实现传统生产工艺和装备的数字化、智能化\n和无人化等方面取得积极进展。\n2021年6月，公司对2020年非公开发行募投项目进行了变更，拟由公司全资子公司海宁哈工我耀实施\n“研发中心建设项目”，利用公司在浙江省海宁经济开发区现有土地，建设约26,000平米研发及实验场地，\n主要实施内容为厂房建设、设备投资、软件投资等，项目计划总投资为21,340.73万元，全部使用结余募集\n资金。本项目的建设周期为2年。研发中心项目的研发内容和方向为AI融合技术、数字化工厂传感技术、\n军工非标自动化技术和机器人应用技术。\n6）持续推进公司向军工智能化领域业务转型\n报告期内公司继续主动积极进行战略和研发方向的调整，不断探索机器人与AI、5G、视觉、军工、防\n务、有色金属等领域的技术结合与产业应用，重点布局现金流、利润率更好的与工业机器人能够有机结合\n的军工、防务领域。2021年1月25日，公司与航天新通科技有限公司（以下简称“航天新通”）签署了《战略\n合作框架协议》 ，以进一步加强双方产品、技术、市场以及人员对接交流，共同推动5G、人工智能、大数\n据、高端智能制造、机器人等技术在国有工业企业的普及和商用，共同推动国有重点企业的技术改造和产\n业升级。公司子公司浙江瑞弗机电目前已开展了多个军工产品的自动化生产线项目，通过工序全自动化作\n业、物流转运自动识别跟踪定位、整体生产远程监控、全过程数字化质量检测跟踪等技术，有效提升军工\n产品的表面整型及自动化工艺能力，以及生产过程的一体化集成制造水平。瑞弗机电子公司浙江瑞弗航空\n航天技术装备有限公司一直致力于发展军民融合业务，为军品生产企业提供智能化自动化生产线，报告期\n内瑞弗机电和某军工企业签订了销售合同、意向协议、获取了客户的项目确认书等，由于目前军工生产企\n业产品生产自动化水平偏低，自动化改造需求明显，未来仍具有较强的业务拓展潜力。\n2021年公司还启动了对江机民科的收购工作。江机民科主要从事武器装备系统用光电产品、航材、热\n电池、军用机电组件、非标仪器研发等军品，以及石油射孔弹及射孔枪等产品的研发、生产及销售，其中\n核心产品红外瞄具产品已批量生产供货；其主要客户有部队、科研院所、大型军工企业及高校等单位；目\n前已形成主要包括光电、热电池、引信、航材、非标检测设备和射孔等主要产品系列。\n7）研发孵化项目获得创投市场受认可，三家参股子公司实现证券化/完成市场化融资\n自2018年起公司加大研发投入，为充分释放组织创新活力，激发研发人员积极性，哈工智能对内部研\n发团队推行共享孵化机制，实现创新成果“前期研发有依靠、中期成效有辅导、后期证券化有保障”，项目\n研发团队可以让自己的研发成果从自主研发，走向独立运营，再到自负盈亏、接受市场的考验。截至本报\n告期末，公司通过研发创新促业务，共孵化了三家高质量子公司。\n柯灵自动化设立于2019年1月，立足于工业清洗领域，是哈工智能设立研发孵化机制后，成功孵化的\n第一家公司。近几年，柯灵实业基于机器人技术，开发应用于汽车精密零部件的全自动机器人清洗系统。\n系统实现了多项技术创新： 运用机器视觉识别技术， 实现精准定位； 运用机器人技术， 实现多项清洗工艺。\n2020年底， 公司启动了收购柯灵实业股权的程序， 柯灵实业的核心管理团队与公司签订了 《股份购买协议》\n和《业绩补偿协议》 。2021年柯灵实业订单充沛，最终实现收入4,357.04万元，净利润798.33万元，扣非后\n净利润825.93万元，完成了业绩承诺，并同一汽解放、春风动力、太平洋精锻、爱柯迪、宁波旭升、凌云\n工业达成合作，业务快速增长。\n2018年下半年，哈工智能中央研究院启动了医疗手术机器人的设计与研发，运用医学图像处理、微控\n技术、多模态传感技术及AI算法、机器人技术，直至成功完成了肿瘤介入等多个穿刺机器人样机的设计开\n发。2019年4月，磅客策设立完成。设立后磅客策先后同与中国人民解放军总医院、上海交通大学附属瑞\n金医院、上海第一人民医院、上海六院、上海九院、复旦大学附属华山医院、中山医院、海军军医大学第\n一附属医院等国内十余家知名医院进行交流合作。在哈工智能的助推下，磅客策陆续取得了联想创投、金\n沙江创投等知名机构的天使轮投资，开始走向独立运营。2021年2月，哈工智能、磅客策与中国医用超声\n的发源地上海超声研究所开展了全面战略合作并建立了医工联合实验室， 同年下旬磅客策也与上海高端医\n疗装备创新中心达成了战略合作关系， 并入围2021年上海市最具投资潜力50佳， 入围全球创新项目TOP20。\n2022年磅客策启动了新一轮的融资。\n基于天津福臻、瑞弗机电过往的实施的项目所积累的项目库，出于降本增效的目的，2019年，哈工智\n能组建了一支以AI技术应用为核心，擅长运用规则推理算法、案例推理算法、快速随机搜索树算法、图像\n算法、深度学习算法、视觉算法等的研发团队，致力于研究工业生产制造过程中涉及有痛点需求的工业设\n计领域的智能化设计。2020年8月设序科技成立，其核心竞争能力在于将AI技术融合入工业CAD设计的软\n件中， 通过积累大量的工业数据、 工业设计行业知识和深度学习算法能力， 实现大幅提升工业设计、 仿真、\n工艺规划和制造等设计生产环节的效率，将原有的数十小时级的设计工作量缩短至分钟级。成立当年设序\n科技即完成了险峰长青、高榕资本、联想创投等知名机构出资的天使轮融资，哈工智能助力其服务第一批",
+          "location": {
+            "kind": "pdf",
+            "page_start": 23,
+            "page_end": 25
+          },
+          "metadata": {
+            "title": "1、概述",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "1、概述"
+            ],
+            "chunk_index_in_section": 1,
+            "heading_level": 5,
+            "page": 23
+          },
+          "source_date": null,
+          "content_hash": "72148dff47fee4d5eef9eb50e04d1f129945ab4073e49e6b27aaf62512a46ce6"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00088",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "6、技术创新风险\n随着智能制造行业的不断发展以及机器人、人工智能领域的持续创新，如果公司不能准确把握行业技\n术发展的趋势，不能进行持续创新，公司将可能丧失技术发展和市场拓展的优势，面临技术与产品开发落\n后于市场发展的风险，从而降低公司的竞争力。\n公司通过长期技术积累和发展，培养了一支以博士及高级工程师为核心的高水平技术研发和设计团\n队，形成了突出的自主创新能力，并拥有了自主知识产权的核心技术。截至报告期末，公司共有研发及技\n术人员548人，研发人员覆盖深度算法软件、机械设计、软件控制、电气控制、嵌入式控制、仿真、方案、\n工艺等多个专业， 公司将持续积极跟进技术发展， 充分发挥公司及下属子公司的协同效应， 整合创新资源，\n激发员工创造力，保持公司处于技术领先水平，提高公司核心竞争力。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 57,
+            "page_end": 58
+          },
+          "metadata": {
+            "title": "6、技术创新风险",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "十一、公司未来发展的展望",
+              "（三）公司面临的风险和应对措施：",
+              "6、技术创新风险"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 57
+          },
+          "source_date": null,
+          "content_hash": "3724fc8b8e1732e3e597be0df4319279a312a525ef171205797b2d23e53ffdb8"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00152",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等\n整改方案：公司控股股东无锡哲方哈工智能机器人投资企业（有限合伙）执行事务合伙人马鞍山哲方\n智能机器人投资管理有限公司同意将商标哈工智能第7、28类、HGZN第7、28、35类授权许可江苏哈工智\n能机器人股份有限公司在中国（包括台湾、香港、澳门）独占许可使用，授权期限至2027年2月13日。\n整改结果： 整改完毕， 公司将继续完善上市公司治理结构， 规范上市公司运作， 以优异的业绩回报投资者。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 95,
+            "page_end": 95
+          },
+          "metadata": {
+            "title": "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "十五、上市公司治理专项行动自查问题整改情况",
+              "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 95
+          },
+          "source_date": null,
+          "content_hash": "4f4876b598cbdaeceb630756bbde0ade36685696542e2c08617f0a4123d6032c"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00568",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "25、无形资产\n（1）无形资产情况\n单位：元\n项目 土地使用权 专利权 非专利技术 软件 合计",
+          "location": {
+            "kind": "pdf",
+            "page_start": 216,
+            "page_end": 217
+          },
+          "metadata": {
+            "title": "（1）无形资产情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "四、账面价值",
+              "25、无形资产",
+              "（1）无形资产情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 216
+          },
+          "source_date": null,
+          "content_hash": "17eae4add5fc1f376ce4c96edaf6f7727c3f88c5d177a2d367f6bf0d90b74d0c"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00032",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "种子客户， 实现独立化运营。2021年， 为了保证设序科技的业务独立性， 哈工智能退出了设序科技。 同年，\n设序科技完成两轮融资，分别由SIG领投的Pre-A轮及由字节跳动领投的A轮。\n这三个公司的成功充分说明了哈工智能的研发能力，公司亦会将共享孵化机制继续推行下去，以研发\n创新推动公司的发展。\n8）提升内部控制管理水平，加强制度建设，提高公司凝聚力\n报告期内，公司建立了较为完善的内控制度体系，各项制度符合国家有关法律、法规及监管部门的要\n求，也符合公司目前生产经营情况的需要。2021年公司先后制定和优化了涉及固定资产管理、人员管理及\n中高层管理人员监督机制等方面的多项公司制度， 最大程度地完成资源的优化配置， 优化公司的管理体系，\n实现公司内部控制体系贯穿于公司经营活动的各个方面，帮助公司实现经营管理规范、资产安全、财务信\n息真实完整。\n为了更好地营造学习型组织氛围，不断提高员工对公司制度建设、流程建设及法律合规性方面的参与\n度及融入度，提升公司体系的良性循环，报告期内公司有针对性组织开展了多期制度及专业交流培训，碰\n撞思想、凝聚共识。公司通过评选各岗位爱岗敬业年度标兵的方式，树立标杆，以标杆力量激励组织良性\n发展，从人抓起谋取企业发展“破局”。\n9）持续加强企业精细化管理，降本增效，提升利润能力\n报告期内，公司实施精细化管理，对期间费用加强管控，针对不同的业务板块运营模式，细化考核要\n求，优化费用支出结构，在加大研发投入的同时对费用进行了有效控制。公司以年度经营目标预算、月度\n资金预算、项目预算三大条线为抓手，加强全面预算管理，大力压缩管理费用支出，不断完善考核机制，\n优化人事布局，有效提高资金和人才的使用效率。通过进一步加强企业内部的精细化管理，深入推进经营\n创效，全力以赴降成本、提效益。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 25,
+            "page_end": 26
+          },
+          "metadata": {
+            "title": "1、概述",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "1、概述"
+            ],
+            "chunk_index_in_section": 2,
+            "heading_level": 5,
+            "page": 25
+          },
+          "source_date": null,
+          "content_hash": "1c8722043a73462c7d5e49cb308c4ba6a2e506795ebb5e600c2e8e13c961eb88"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "tech_002",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.source",
+            "value": "自主研发",
+            "value_type": "text",
+            "information_status": "supported",
+            "content_role": "enterprise_claim",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                "excerpt": "公司下属核心业务的子公司均设有研发部门， 负责现有业务关键环节的技术升级以及内部核心产品的研发。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "ip_001",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "intellectual_property.name",
+            "value": "授权知识产权",
+            "value_type": "entity_ref",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                "excerpt": "截至2021年12月31日，公司共有授权知识产权154件，其中发明专利5件，软件著作权57件、外观专利4件。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "ip_003",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "intellectual_property.patent_grant_count",
+            "value": 5,
+            "value_type": "integer",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                "excerpt": "截至2021年12月31日，公司共有授权知识产权154件，其中发明专利5件，软件著作权57件、外观专利4件。"
+              }
+            ],
+            "value_scope": "发明专利",
+            "reporting_period": "2021-12-31",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "ip_004",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "intellectual_property.patent_grant_count",
+            "value": 57,
+            "value_type": "integer",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                "excerpt": "截至2021年12月31日，公司共有授权知识产权154件，其中发明专利5件，软件著作权57件、外观专利4件。"
+              }
+            ],
+            "value_scope": "软件著作权",
+            "reporting_period": "2021-12-31",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "ip_005",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "intellectual_property.patent_grant_count",
+            "value": 4,
+            "value_type": "integer",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                "excerpt": "截至2021年12月31日，公司共有授权知识产权154件，其中发明专利5件，软件著作权57件、外观专利4件。"
+              }
+            ],
+            "value_scope": "外观专利",
+            "reporting_period": "2021-12-31",
+            "extraction_method": "llm"
+          }
+        ],
+        "profile_relations": [],
+        "information_gaps": [
+          "未披露截至2021年12月31日公司申请中（在申）专利的数量。",
+          "未披露公司核心技术对应的具体专利名称或专利号。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [
+          {
+            "content": "公司控股股东无锡哲方哈工智能机器人投资企业（有限合伙）执行事务合伙人马鞍山哲方智能机器人投资管理有限公司同意将商标哈工智能第7、28类、HGZN第7、28、35类授权许可江苏哈工智能机器人股份有限公司在中国（包括台湾、香港、澳门）独占许可使用，授权期限至2027年2月13日。",
+            "reason": "商标许可使用不属于当前technology_and_ip领域的Ontology字段，无法映射。"
+          }
+        ],
+        "consistency_warnings": [],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": [
+          {
+            "kind": "profile_items",
+            "index": 5,
+            "candidate_id": "tech_001",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "item_id": "tech_001",
+              "subject": "the_enterprise",
+              "section_id": "technology_ip",
+              "field_id": "technology.name",
+              "value": "工业机器人本体制造和销售、高端智能装备制造、工业机器人一站式服务平台",
+              "value_type": "entity_ref",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "公司智能制造业务围绕工业机器人进行全产业链布局，目前涵盖工业机器人本体的制造和销售（工业机器人本体） 、高端智能装备制造（工业机器人应用）及工业机器人一站式服务平台（工业机器人服务）三个子板块。"
+                }
+              ]
+            },
+            "reason": "实体名称必须直接出现在至少一条证据摘录中。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 6,
+            "candidate_id": "tech_003",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019"
+            ],
+            "candidate": {
+              "item_id": "tech_003",
+              "subject": "the_enterprise",
+              "section_id": "technology_ip",
+              "field_id": "technology.maturity_stage",
+              "value": "已量产",
+              "value_type": "enum",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+                  "excerpt": "2020年底哈工现代智能工厂建成， 智能工厂按照现代重工大邱工厂的产能规模和智慧工厂标准进行建设，设计产能10,000台机器人/年。2021年投产后，哈工现代、海宁哈工我耀、上海我耀均积极进行机器人本体产品的推广和销售。"
+                }
+              ]
+            },
+            "reason": "技术成熟度必须引用具体技术名称。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 7,
+            "candidate_id": "tech_004",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "candidate": {
+              "item_id": "tech_004",
+              "subject": "the_enterprise",
+              "section_id": "technology_ip",
+              "field_id": "technology.ownership_status",
+              "value": "self_owned",
+              "value_type": "enum",
+              "information_status": "supported",
+              "content_role": "enterprise_claim",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00025"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                  "excerpt": "公司通过长期技术积累和发展，培养了一支以博士及高级工程师为核心的高水平技术研发和设计团队，形成了突出的自主创新能力，并拥有了自主知识产权的核心技术。"
+                }
+              ]
+            },
+            "reason": "每条证据摘录都必须逐字来自对应的 EvidenceUnit。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 8,
+            "candidate_id": "ip_002",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "candidate": {
+              "item_id": "ip_002",
+              "subject": "the_enterprise",
+              "section_id": "technology_ip",
+              "field_id": "intellectual_property.patent_grant_count",
+              "value": 154,
+              "value_type": "integer",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "reporting_period": "2021-12-31",
+              "value_scope": "全部",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00025"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                  "excerpt": "截至2021年12月31日，公司共有授权知识产权154件，其中发明专利5件，软件著作权57件、外观专利4件。"
+                }
+              ]
+            },
+            "reason": "专利子集数量不得写为无范围总量。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 9,
+            "candidate_id": "ip_006",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025",
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "candidate": {
+              "item_id": "ip_006",
+              "subject": "the_enterprise",
+              "section_id": "technology_ip",
+              "field_id": "intellectual_property.patent_application_count",
+              "value": 41,
+              "value_type": "integer",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "reporting_period": "2021",
+              "value_scope": "新增实用新型专利",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00025",
+                "src_8c28d5fe0b5a3392:eu_00031"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                  "excerpt": "2021年共新增实用新型专利41件、软件著作权6件。"
+                },
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                  "excerpt": "公司报告期内新增实用新型专利41件、软件著作权6件。"
+                }
+              ]
+            },
+            "reason": "专利申请数量的证据摘录必须明确表达申请。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 10,
+            "candidate_id": "ip_007",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025",
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "candidate": {
+              "item_id": "ip_007",
+              "subject": "the_enterprise",
+              "section_id": "technology_ip",
+              "field_id": "intellectual_property.patent_application_count",
+              "value": 6,
+              "value_type": "integer",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "reporting_period": "2021",
+              "value_scope": "新增软件著作权",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00025",
+                "src_8c28d5fe0b5a3392:eu_00031"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                  "excerpt": "2021年共新增实用新型专利41件、软件著作权6件。"
+                },
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+                  "excerpt": "公司报告期内新增实用新型专利41件、软件著作权6件。"
+                }
+              ]
+            },
+            "reason": "专利申请数量的证据摘录必须明确表达申请。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 11,
+            "candidate_id": "ip_008",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "candidate": {
+              "item_id": "ip_008",
+              "subject": "the_enterprise",
+              "section_id": "technology_ip",
+              "field_id": "intellectual_property.ownership_status",
+              "value": "self_owned",
+              "value_type": "enum",
+              "information_status": "supported",
+              "content_role": "enterprise_claim",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00025"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                  "excerpt": "公司通过长期技术积累和发展，培养了一支以博士及高级工程师为核心的高水平技术研发和设计团队，形成了突出的自主创新能力，并拥有了自主知识产权的核心技术。"
+                }
+              ]
+            },
+            "reason": "每条证据摘录都必须逐字来自对应的 EvidenceUnit。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 12,
+            "candidate_id": "ip_009",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00152"
+            ],
+            "candidate": {
+              "item_id": "ip_009",
+              "subject": "the_enterprise",
+              "section_id": "technology_ip",
+              "field_id": "intellectual_property.rights_restriction_status",
+              "value": "unrestricted",
+              "value_type": "enum",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00152"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00152",
+                  "excerpt": "整改方案：公司控股股东无锡哲方哈工智能机器人投资企业（有限合伙）执行事务合伙人马鞍山哲方智能机器人投资管理有限公司同意将商标哈工智能第7、28类、HGZN第7、28、35类授权许可江苏哈工智能机器人股份有限公司在中国（包括台湾、香港、澳门）独占许可使用，授权期限至2027年2月13日。"
+                }
+              ]
+            },
+            "reason": "知识产权权利限制状态必须引用明确的限制或无限制表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 0,
+            "candidate_id": "rel_001",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "candidate": {
+              "relation_id": "rel_001",
+              "information_status": "supported",
+              "content_role": "enterprise_claim",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00025"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "tech_001",
+              "relation_type": "owns",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                  "excerpt": "公司通过长期技术积累和发展，培养了一支以博士及高级工程师为核心的高水平技术研发和设计团队，形成了突出的自主创新能力，并拥有了自主知识产权的核心技术。"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 1,
+            "candidate_id": "recovery:rel_002",
+            "provided_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00025"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_002",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00025"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "ip_001",
+              "relation_type": "owns",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+                  "excerpt": "截至2021年12月31日，公司共有授权知识产权154件，其中发明专利5件，软件著作权57件、外观专利4件。"
+                }
+              ]
+            },
+            "reason": "owns 关系必须引用明确的拥有或权属表述。"
+          }
+        ]
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00019",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（一）公司主要业务、主要产品及其用途",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "（一）公司主要业务、主要产品及其用途"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 14,
+            "page_end": 16
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "工业机器人",
+            "核心技术"
+          ],
+          "content_chars": 2546
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00025",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、技术研发优势",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "三、核心竞争力分析",
+            "1、技术研发优势"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 18,
+            "page_end": 19
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "专利",
+            "授权",
+            "知识产权"
+          ],
+          "content_chars": 1152
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00088",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "6、技术创新风险",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "十一、公司未来发展的展望",
+            "（三）公司面临的风险和应对措施：",
+            "6、技术创新风险"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 57,
+            "page_end": 58
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "知识产权",
+            "核心技术"
+          ],
+          "content_chars": 345
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00076",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、优化现有业务结构，避开竞争红海，深耕高毛利细分市场",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "十一、公司未来发展的展望",
+            "（二）2022年经营计划",
+            "1、优化现有业务结构，避开竞争红海，深耕高毛利细分市场"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 53,
+            "page_end": 54
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "核心技术"
+          ],
+          "content_chars": 371
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00113",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "4、公司董事赵亮先生",
+          "section_path": [
+            "第四节 公司治理",
+            "一、公司第十一届董事会董事：",
+            "4、公司董事赵亮先生"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 68,
+            "page_end": 68
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "专利"
+          ],
+          "content_chars": 327
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00081",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "6、加强人才队伍建设",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "十一、公司未来发展的展望",
+            "（二）2022年经营计划",
+            "6、加强人才队伍建设"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 54,
+            "page_end": 54
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "核心技术"
+          ],
+          "content_chars": 230
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00152",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等",
+          "section_path": [
+            "第四节 公司治理",
+            "十五、上市公司治理专项行动自查问题整改情况",
+            "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 95,
+            "page_end": 95
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "专利",
+            "授权"
+          ],
+          "content_chars": 229
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00568",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）无形资产情况",
+          "section_path": [
+            "第十节 财务报告",
+            "四、账面价值",
+            "25、无形资产",
+            "（1）无形资产情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 216,
+            "page_end": 217
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "专利"
+          ],
+          "content_chars": 47
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00030",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、概述",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "1、概述"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 20,
+            "page_end": 22
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [],
+          "content_chars": 3176
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00682",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "73、营业外收入",
+          "section_path": [
+            "第十节 财务报告",
+            "十三、其他 -3,209,935.45",
+            "73、营业外收入"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 259,
+            "page_end": 260
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "专利申请",
+            "专利"
+          ],
+          "content_chars": 782
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00031",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、概述",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "1、概述"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 23,
+            "page_end": 25
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "工业机器人",
+            "专利",
+            "授权"
+          ],
+          "content_chars": 3153
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00193",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "9、关于公司为董事、监事及高级管理人员购买责任险的事项",
+          "section_path": [
+            "第六节 重要事项",
+            "十六、其他重大事项的说明",
+            "9、关于公司为董事、监事及高级管理人员购买责任险的事项"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 112,
+            "page_end": 113
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "授权"
+          ],
+          "content_chars": 539
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00032",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、概述",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "1、概述"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 25,
+            "page_end": 26
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [],
+          "content_chars": 760
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00015",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "九、非经常性损益项目及金额",
+          "section_path": [
+            "第二节 公司简介和主要财务指标",
+            "九、非经常性损益项目及金额"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 11,
+            "page_end": 12
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "量产"
+          ],
+          "content_chars": 1034
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00018",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、国内工业机器人行业发展情况",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "一、报告期内公司所处的行业情况",
+            "2、国内工业机器人行业发展情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 13,
+            "page_end": 14
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "工业机器人"
+          ],
+          "content_chars": 1190
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00673",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "67、投资收益",
+          "section_path": [
+            "第十节 财务报告",
+            "二、不具备商业实",
+            "67、投资收益"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 251,
+            "page_end": 252
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "量产"
+          ],
+          "content_chars": 315
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_8c28d5fe0b5a3392:eu_00019",
+        "src_8c28d5fe0b5a3392:eu_00025",
+        "src_8c28d5fe0b5a3392:eu_00030",
+        "src_8c28d5fe0b5a3392:eu_00031",
+        "src_8c28d5fe0b5a3392:eu_00088",
+        "src_8c28d5fe0b5a3392:eu_00152",
+        "src_8c28d5fe0b5a3392:eu_00568",
+        "src_8c28d5fe0b5a3392:eu_00032"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "核心技术 专利 知识产权 技术来源",
+            "keyword_count": 4,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00025",
+              "src_8c28d5fe0b5a3392:eu_00088",
+              "src_8c28d5fe0b5a3392:eu_00076",
+              "src_8c28d5fe0b5a3392:eu_00113",
+              "src_8c28d5fe0b5a3392:eu_00081",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00568",
+              "src_8c28d5fe0b5a3392:eu_00030",
+              "src_8c28d5fe0b5a3392:eu_00682"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "专利申请 授权 技术依赖 成熟度",
+            "keyword_count": 8,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00682",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00025",
+              "src_8c28d5fe0b5a3392:eu_00088",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00076",
+              "src_8c28d5fe0b5a3392:eu_00113",
+              "src_8c28d5fe0b5a3392:eu_00193",
+              "src_8c28d5fe0b5a3392:eu_00081"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00025",
+              "src_8c28d5fe0b5a3392:eu_00030",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00088",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00568"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00025",
+              "src_8c28d5fe0b5a3392:eu_00030",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00088",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00568",
+              "src_8c28d5fe0b5a3392:eu_00032"
+            ],
+            "continuation_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00032"
+            ],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 11408
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "工业机器人 专利 授权 量产 知识产权",
+            "keyword_count": 7,
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00025",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00015",
+              "src_8c28d5fe0b5a3392:eu_00088",
+              "src_8c28d5fe0b5a3392:eu_00076",
+              "src_8c28d5fe0b5a3392:eu_00018",
+              "src_8c28d5fe0b5a3392:eu_00113",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00673"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00025",
+              "src_8c28d5fe0b5a3392:eu_00031"
+            ],
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00019",
+              "src_8c28d5fe0b5a3392:eu_00025",
+              "src_8c28d5fe0b5a3392:eu_00031",
+              "src_8c28d5fe0b5a3392:eu_00030"
+            ],
+            "continuation_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00030"
+            ],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 10027
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 662,
+          "output_tokens": 148,
+          "total_tokens": 810,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4650,
+          "output_tokens": 685,
+          "total_tokens": 5335,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 13127,
+          "output_tokens": 425,
+          "total_tokens": 13552,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "technology_and_ip",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 11814,
+              "completion_tokens": 3515,
+              "total_tokens": 15329,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019",
+                "src_8c28d5fe0b5a3392:eu_00025",
+                "src_8c28d5fe0b5a3392:eu_00030",
+                "src_8c28d5fe0b5a3392:eu_00031",
+                "src_8c28d5fe0b5a3392:eu_00088",
+                "src_8c28d5fe0b5a3392:eu_00152",
+                "src_8c28d5fe0b5a3392:eu_00568",
+                "src_8c28d5fe0b5a3392:eu_00032"
+              ]
+            }
+          ],
+          "prompt_tokens": 11814,
+          "completion_tokens": 3515,
+          "total_tokens": 15329
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 2512,
+          "output_tokens": 519,
+          "total_tokens": 3031,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4944,
+          "output_tokens": 252,
+          "total_tokens": 5196,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "stage": "profile_extraction_recovery",
+          "domain": "technology_and_ip",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 12966,
+              "completion_tokens": 2241,
+              "total_tokens": 15207,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00019",
+                "src_8c28d5fe0b5a3392:eu_00025",
+                "src_8c28d5fe0b5a3392:eu_00030",
+                "src_8c28d5fe0b5a3392:eu_00031",
+                "src_8c28d5fe0b5a3392:eu_00088",
+                "src_8c28d5fe0b5a3392:eu_00152",
+                "src_8c28d5fe0b5a3392:eu_00568",
+                "src_8c28d5fe0b5a3392:eu_00032"
+              ]
+            }
+          ],
+          "prompt_tokens": 12966,
+          "completion_tokens": 2241,
+          "total_tokens": 15207
+        }
+      ]
+    }
+  ]
+}

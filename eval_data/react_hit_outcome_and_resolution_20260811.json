@@ -1,0 +1,1270 @@
+{
+  "case_id": "HIT",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "outcome_and_resolution",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00165",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "九、年度报告披露后面临退市情况\n□ 适用 √ 不适用",
+          "location": {
+            "kind": "pdf",
+            "page_start": 99,
+            "page_end": 99
+          },
+          "metadata": {
+            "title": "九、年度报告披露后面临退市情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第六节 重要事项",
+              "九、年度报告披露后面临退市情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 99
+          },
+          "source_date": null,
+          "content_hash": "df688a47caf5cf66d1181c388a3ea546f0a99d517bd804143ddfbf84fee40ce0"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00168",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "十二、处罚及整改情况\n□ 适用 √ 不适用\n公司报告期不存在处罚及整改情况。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 101,
+            "page_end": 101
+          },
+          "metadata": {
+            "title": "十二、处罚及整改情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十二、处罚及整改情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 101
+          },
+          "source_date": null,
+          "content_hash": "c366cc0056577f680465a6559620cd11f97a675ad8d765682414e60d72e8ac67"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00152",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等\n整改方案：公司控股股东无锡哲方哈工智能机器人投资企业（有限合伙）执行事务合伙人马鞍山哲方\n智能机器人投资管理有限公司同意将商标哈工智能第7、28类、HGZN第7、28、35类授权许可江苏哈工智\n能机器人股份有限公司在中国（包括台湾、香港、澳门）独占许可使用，授权期限至2027年2月13日。\n整改结果： 整改完毕， 公司将继续完善上市公司治理结构， 规范上市公司运作， 以优异的业绩回报投资者。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 95,
+            "page_end": 95
+          },
+          "metadata": {
+            "title": "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "十五、上市公司治理专项行动自查问题整改情况",
+              "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 95
+          },
+          "source_date": null,
+          "content_hash": "4f4876b598cbdaeceb630756bbde0ade36685696542e2c08617f0a4123d6032c"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00149",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "十四、内部控制自我评价报告或内部控制审计报告\n1、内控自我评价报告\n内部控制评价报告全文披露日期 2022 年 04 月 15 日\n内部控制评价报告全文披露索引 巨潮资讯网（www.cninfo.com.cn）\n纳入评价范围单位资产总额占公司合\n并财务报表资产总额的比例\n100.00%\n纳入评价范围单位营业收入占公司合\n并财务报表营业收入的比例\n100.00%\n缺陷认定标准\n类别 财务报告 非财务报告\n定性标准\n重大缺陷：公司会计报表、财务报告及\n信息披露等方面发生重大违规事件；公\n司审计委员会和内部审计机构未能有效\n发挥监督职能；注册会计师对公司财务\n报表出具无保留意见之外的其他三种意\n见审计报告； 重要缺陷： 公司会计报表、\n财务报告编制不完全符合企业会计准则\n和披露要求，导致财务报表出现重要错\n报；公司以前年度公告的财务报告出现\n重要错报需要进行追溯调整； 一般缺陷：\n未构成重大缺陷、重要缺陷标准的其他\n内部控制缺陷。\n重大缺陷：公司重要业务缺乏制度控\n制或制度体系失效； 信息系统的安全\n存在重大隐患； 内控评价重大缺陷未\n完成整改； 重要缺陷： 公司一般业务\n缺乏制度控制或制度体系失效； 信息\n系统的安全存在隐患； 内控评价重要\n缺陷未完成整改； 一般缺陷： 未构成\n重大缺陷、 重要缺陷标准的其他内部\n控制缺陷。\n定量标准\n以 2021 年度财务合并报表数据为基准，\n确定公司内部控制缺陷认定标准。重大\n缺陷： 大于或等于营业收入的1%、 大于\n或等于资产总额的 1%； 重要缺陷： 占营\n业收入比例 0.5%-1%、占资产总额比例\n0.5%-1%；一般缺陷：小于营业收入的\n参照财务报告内部控制缺陷评价的\n定量标准执行\n0.5%、小于资产总额的 0.5%\n财务报告重大缺陷数量（个） 0\n非财务报告重大缺陷数量（个） 0\n财务报告重要缺陷数量（个） 0\n非财务报告重要缺陷数量（个） 0",
+          "location": {
+            "kind": "pdf",
+            "page_start": 94,
+            "page_end": 95
+          },
+          "metadata": {
+            "title": "1、内控自我评价报告",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "十四、内部控制自我评价报告或内部控制审计报告",
+              "1、内控自我评价报告"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 94
+          },
+          "source_date": null,
+          "content_hash": "45235dab0eca661e5bc093aee6a03df7cc42c770780c0ce94c0354ae4c4e0356"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00151",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "十五、上市公司治理专项行动自查问题整改情况\n根据证监会部署， 公司开展了治理专项自查工作， 对公司治理进行了全面的回顾， 对照监管规则和 《公\n司章程》等规范文件，发现问题，查找不足，以专项自查活动为契机，提升治理水平，维护投资者利益。\n现将自查情况和整改情况报告如下：",
+          "location": {
+            "kind": "pdf",
+            "page_start": 95,
+            "page_end": 95
+          },
+          "metadata": {
+            "title": "十五、上市公司治理专项行动自查问题整改情况",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第四节 公司治理",
+              "十五、上市公司治理专项行动自查问题整改情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 95
+          },
+          "source_date": null,
+          "content_hash": "3f4b8a4339adf13670bfc5ea22c921f3127f08bfbdca2dd18eea4378521c0977"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00193",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "9、关于公司为董事、监事及高级管理人员购买责任险的事项\n根据中国证券监督管理委员会《上市公司治理准则》等相关规定，为完善公司风险管理体系，降低公\n司运营风险，同时保障公司及公司董事、监事、高级管理人员权益，促进相关责任人员充分行使权利、履\n行职责，维护公司及股东的利益，公司拟以不超过人民币60万/年（具体以与保险公司协商确定的数额为\n准）为公司及公司董事、监事、高级管理人员购买责任保险，赔偿限额为不超过人民币10,000万（具体以\n与保险公司协商确定的数额为准） ，保险期限为12个月（后续每年续保或重新投保） 。为提高决策效率，公\n司董事会提请股东大会授权公司管理层办理董监高责任险投保的相关事宜（包括但不限于确定保险公司、\n被保险人范围、赔偿限额、保费等其他保险条款；选择及聘任保险经纪公司或其他中介机构；签署相关法\n律文件及处理与投保相关的其他事项等） ，以及在当期董监高责任险合同期满时或之前办理与续保或者重\n新投保等相关事宜。具体内容详见公司于2021年6月17日刊载于《中国证券报》 、 《上海证券报》 、 《证券时\n报》和巨潮资讯网（www.cninfo.com.cn）的《关于公司为董事、监事及高级管理人员购买责任险的公告》\n（公告编号：2021-085）。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 112,
+            "page_end": 113
+          },
+          "metadata": {
+            "title": "9、关于公司为董事、监事及高级管理人员购买责任险的事项",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十六、其他重大事项的说明",
+              "9、关于公司为董事、监事及高级管理人员购买责任险的事项"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 112
+          },
+          "source_date": null,
+          "content_hash": "9c2996608c37ef75b11e3401e91159146f538fa7d28650c8f310cbe852d6145a"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00153",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "第五节 环境和社会责任\n一、重大环保问题\n上市公司及其子公司是否属于环境保护部门公布的重点排污单位\n□ 是 √ 否\n报告期内因环境问题受到行政处罚的情况\n公司或子公司名\n称\n处罚原因 违规情形 处罚结果\n对上市公司生产\n经营的影响\n公司的整改措施\n不适用 不适用  不适用 不适用  不适用  不适用\n参照重点排污单位披露的其他环境信息\n公司及其子公司不属于重点排污单位。公司及其子公司在日常生产经营中认真执行《中华人民共和国\n环境保护法》 《中华人民共和国水污染防治法》 《中华人民共和国大气污染防治法》 《中华人民共和国环境\n噪声污染防治法》 《中华人民共和国固体废物污染防治法》等环保方面的法律法规，报告期内未出现因违\n法违规而受到处罚的情况。\n在报告期内为减少其碳排放所采取的措施及效果\n□ 适用 √ 不适用\n未披露其他环境信息的原因\n不适用",
+          "location": {
+            "kind": "pdf",
+            "page_start": 96,
+            "page_end": 96
+          },
+          "metadata": {
+            "title": "一、重大环保问题",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第五节 环境和社会责任",
+              "一、重大环保问题"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 96
+          },
+          "source_date": null,
+          "content_hash": "2c109ddece948d1410c8067dcaa2261b38784947a1d2253f4d5c8dd32abfd1fd"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00681",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "73、营业外收入\n单位：元\n项目 本期发生额 上期发生额\n计入当期非经常性损益的金\n额\n政府补助 13,753,428.27 55,260,785.84 13,753,428.27\n赔偿收入 235,000.00 1,200,689.72 235,000.00\n不需支付的款项 51,162.77  51,162.77\n诉讼补偿   （注） 14,404,025.38 12,337,903.17 14,404,025.38\n其他 563,877.24 98,957.87 563,877.24\n合计 29,007,493.66 68,898,336.60 14,603,468.28\n计入当期损益的政府补助：\n单位：元\n补助项目 发放主体 发放原因 性质类型\n补贴是否\n影响当年\n盈亏\n是否特殊\n补贴\n本期发生\n金额\n上期发生\n金额\n与资产相\n关/与收益\n相关\n2020 年度\n天津市智\n能制造专\n项支持应\n用场景建\n设项目(市\n级)\n天津市津\n南区科学\n技术局\n补助\n因研究开\n发、 技术更\n新及改造\n等获得的\n补助\n否 否\n3,140,000.\n00\n与收益相\n关\n2020 年度\n天津市智\n天津市津\n南区科学\n补助 因研究开\n发、 技术更\n否 否\n3,140,000.\n00\n与收益相\n关\n能制造专\n项支持应\n用场景建\n设项目 （区\n级）\n技术局 新及改造\n等获得的\n补助\n2020 年度\n天津市智\n能制造专\n项支持应\n用场景建\n设项目 （市\n级）\n天津市津\n南区工业\n和信息化\n局\n补助\n因研究开\n发、 技术更\n新及改造\n等获得的\n补助\n否 否\n2,716,300.\n00\n与收益相\n关\n2020 年度\n天津市智\n能制造专\n项支持应\n用场景建\n设项目 （区\n级）\n天津市津\n南区工业\n和信息化\n局\n补助\n因研究开\n发、技术更\n新及改造\n等获得的\n补助\n否 否\n2,716,300.\n00\n与收益相\n关\n2020 年智\n能制造系\n统解决方\n案供应商\n（市级）\n天津市津\n南区工业\n和信息化\n局\n补助\n因研究开\n发、 技术更\n新及改造\n等获得的\n补助\n否 否\n1,860,000.\n00\n与收益相\n关\n倾斜补助\n上海市青\n浦区财政\n局\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 67,700.00\n与收益相\n关\n稳岗补贴\n天津市津\n南区公共\n就业（人\n才） 服务中\n心\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 51,485.37\n与收益相\n关\n残疾人就\n业补贴奖\n励\n天津市津\n南区残疾\n人综合服\n务中心\n奖励\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 43,168.00\n与收益相\n关\n稳岗返还\n及补贴\n苏州工业\n园区社会\n保险基金\n和公积金\n管理中心\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 3,968.99 5,907.30\n与收益相\n关\n岗位补贴\n广州市番\n禺区劳动\n就业服务\n管理中心\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 3,494.12\n与收益相\n关\n失业保险\n稳岗返还\n合肥失业\n保险管理\n中心\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 2,124.19\n与收益相\n关\n稳岗补贴\n合肥经济\n技术开发\n区财政国\n库支付中\n心\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n否 否 2,063.13\n与收益相\n关\n职能而获\n得的补助\n以工代训\n补贴\n失保基金\n代理支付\n专户\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 2,700.00\n与收益相\n关\n稳岗补贴\n其他代理\n业务资金\n代付劳动\n就业失业\n金\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 1,766.47\n与收益相\n关\n上海市残\n疾人就业\n服务中心\n长比例奖\n励\n上海市残\n疾人就业\n服务中心\n奖励\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 1,717.30\n与收益相\n关\n稳岗补贴\n广东省社\n会保险基\n金管理局\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否 340.70\n与收益相\n关\n版权引导\n资金\n苏州工业\n园区国库\n支付中心\n（财政零\n余额账户）\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n否 否 300.00\n与收益相\n关\n品供应或\n价格控制\n职能而获\n得的补助\n支持新型\n冠状病毒\n肺炎疫情\n防控补贴\n中共成都\n市国有资\n产监督管\n理委员会\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否  10,000.00\n与收益相\n关\n防疫专项\n补贴款\n上海市闵\n行区虹桥\n镇财政所\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否  50,000.00\n与收益相\n关\n防疫专项\n补贴款\n上海市闵\n行区虹桥\n镇总工会\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否  10,000.00\n与收益相\n关\n稳岗补贴\n合肥市财\n政局\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否  5,316.53\n与收益相\n关\n稳岗补贴\n海宁市就\n业管理处\n补助\n因承担国\n家为保障\n某种公用\n否 否  49,365.95\n与收益相\n关\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n稳岗补贴\n失保基金\n代理支付\n专户\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否  45,114.00\n与收益相\n关\n稳岗补贴\n广州市社\n会保险基\n金管理中\n心\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否  936.18\n与收益相\n关\n稳岗补贴\n天津市津\n南区失业\n保险管理\n所\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否  79,194.48\n与收益相\n关\n以工代训\n补贴\n海宁市就\n业管理处\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否  28,000.00\n与收益相\n关\n转型升级 海宁市黄 补助 因符合地 否 否  328,000.00 与收益相\n跨越发展\n扶持资金\n湾镇人民\n政府\n方政府招\n商引资等\n地方性扶\n持政策而\n获得的补\n助\n关\n两直资金\n补助\n海宁市市\n场监督管\n理局\n补助\n因符合地\n方政府招\n商引资等\n地方性扶\n持政策而\n获得的补\n助\n否 否  20,000.00\n与收益相\n关\n社保岗位\n补贴\n上海市浦\n东新区就\n业促进中\n心\n补助\n因承担国\n家为保障\n某种公用\n事业或社\n会必要产\n品供应或\n价格控制\n职能而获\n得的补助\n否 否  95,667.00\n与收益相\n关\n天津市智\n能制造专\n项资金\n天津市津\n南区工业\n和信息化\n局\n补助\n因研究开\n发、 技术更\n新及改造\n等获得的\n补助\n否 否",
+          "location": {
+            "kind": "pdf",
+            "page_start": 253,
+            "page_end": 259
+          },
+          "metadata": {
+            "title": "73、营业外收入",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "十三、其他 -3,209,935.45",
+              "73、营业外收入"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 253
+          },
+          "source_date": null,
+          "content_hash": "0f2f628471b6a7c2a0299a4d22a62c05e553b97e9a5d1c95a6a74f6b8d5573f4"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00688",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "（2）支付的其他与经营活动有关的现金\n单位：元\n项目 本期发生额 上期发生额\n支付的各项费用 87,849,235.69 77,943,726.28\n支付的保证金等往来款项 16,781,183.61 17,355,369.90\n诉讼赔偿款  25,500,000.00\n赔偿款 10,280,197.57\n其他往来款 5,070,946.20 3,517,215.75\n其他 2,983,441.63 6,222,025.22\n合计 122,965,004.70 130,538,337.15\n支付的其他与经营活动有关的现金说明：",
+          "location": {
+            "kind": "pdf",
+            "page_start": 262,
+            "page_end": 262
+          },
+          "metadata": {
+            "title": "（2）支付的其他与经营活动有关的现金",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "十三、其他 -3,209,935.45",
+              "77、现金流量表项目",
+              "（2）支付的其他与经营活动有关的现金"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 262
+          },
+          "source_date": null,
+          "content_hash": "22b53b7fd406ed0c7a031d45608d9be1d09464ce6248fe3815bc7c4afa0b7cd8"
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00689",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "content_type": "document_chunk",
+          "content": "（3）收到的其他与投资活动有关的现金\n单位：元\n项目 本期发生额 上期发生额\n支付的各项费用\n支付的保证金等往来款项\n诉讼赔偿款\n赔偿款\n其他往来款\n其他\n收到的其他与投资活动有关的现金说明：",
+          "location": {
+            "kind": "pdf",
+            "page_start": 262,
+            "page_end": 263
+          },
+          "metadata": {
+            "title": "（3）收到的其他与投资活动有关的现金",
+            "source_title": "哈工智能2021年报",
+            "section_path": [
+              "第十节 财务报告",
+              "十三、其他 -3,209,935.45",
+              "77、现金流量表项目",
+              "（3）收到的其他与投资活动有关的现金"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 262
+          },
+          "source_date": null,
+          "content_hash": "cb1b509d843c458d1ad6ac897edffa72676ba5f6df600fec02adf859e78eb104"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "outcome_001",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "报告期不存在处罚及整改情况",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00168"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00168",
+                "excerpt": "十二、处罚及整改情况\n□ 适用 √ 不适用\n公司报告期不存在处罚及整改情况。"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_002",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "报告期内未出现因违法违规而受到处罚的情况",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00153",
+                "excerpt": "公司及其子公司不属于重点排污单位。公司及其子公司在日常生产经营中认真执行《中华人民共和国环境保护法》 《中华人民共和国水污染防治法》 《中华人民共和国大气污染防治法》 《中华人民共和国环境噪声污染防治法》 《中华人民共和国固体废物污染防治法》等环保方面的法律法规，报告期内未出现因违法违规而受到处罚的情况。"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_003",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "年度报告披露后面临退市情况不适用",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00165"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00165",
+                "excerpt": "九、年度报告披露后面临退市情况\n□ 适用 √ 不适用"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_004",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "控股股东、实际控制人与上市公司共用商标、专利、非专利技术等整改完毕",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00152"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00152",
+                "excerpt": "整改方案：公司控股股东无锡哲方哈工智能机器人投资企业（有限合伙）执行事务合伙人马鞍山哲方智能机器人投资管理有限公司同意将商标哈工智能第7、28类、HGZN第7、28、35类授权许可江苏哈工智能机器人股份有限公司在中国（包括台湾、香港、澳门）独占许可使用，授权期限至2027年2月13日。\n整改结果： 整改完毕， 公司将继续完善上市公司治理结构， 规范上市公司运作， 以优异的业绩回报投资者。"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_005",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "上市公司治理专项行动自查问题整改情况报告",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00151"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00151",
+                "excerpt": "十五、上市公司治理专项行动自查问题整改情况\n根据证监会部署， 公司开展了治理专项自查工作， 对公司治理进行了全面的回顾， 对照监管规则和 《公司章程》等规范文件，发现问题，查找不足，以专项自查活动为契机，提升治理水平，维护投资者利益。\n现将自查情况和整改情况报告如下："
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_006",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "报告期内因环境问题受到行政处罚的情况不适用",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00153",
+                "excerpt": "报告期内因环境问题受到行政处罚的情况\n公司或子公司名称\n处罚原因 违规情形 处罚结果\n对上市公司生产经营的影响\n公司的整改措施\n不适用 不适用  不适用 不适用  不适用  不适用"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_007",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "内部控制评价报告披露日期2022年04月15日",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00149"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00149",
+                "excerpt": "内部控制评价报告全文披露日期 2022 年 04 月 15 日"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_008",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "财务报告重大缺陷数量0个",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00149"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00149",
+                "excerpt": "财务报告重大缺陷数量（个） 0"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_009",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "非财务报告重大缺陷数量0个",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00149"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00149",
+                "excerpt": "非财务报告重大缺陷数量（个） 0"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_010",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "财务报告重要缺陷数量0个",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00149"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00149",
+                "excerpt": "财务报告重要缺陷数量（个） 0"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_011",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "非财务报告重要缺陷数量0个",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00149"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00149",
+                "excerpt": "非财务报告重要缺陷数量（个） 0"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_013",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "营业外收入中诉讼补偿14,404,025.38元",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00681"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00681",
+                "excerpt": "诉讼补偿   （注） 14,404,025.38 12,337,903.17 14,404,025.38"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_014",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "支付的其他与经营活动有关的现金中诉讼赔偿款25,500,000.00元",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00688"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00688",
+                "excerpt": "诉讼赔偿款  25,500,000.00"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          },
+          {
+            "item_id": "outcome_015",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "支付的其他与经营活动有关的现金中赔偿款10,280,197.57元",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "outcome",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00688"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00688",
+                "excerpt": "赔偿款 10,280,197.57"
+              }
+            ],
+            "extraction_method": "llm",
+            "reporting_period": "2021"
+          }
+        ],
+        "profile_relations": [],
+        "information_gaps": [
+          "未披露诉讼补偿、诉讼赔偿款和赔偿款的具体案件名称、对方当事人及处置结果，无法确认是否属于已发生的具体处置或结果。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [
+          {
+            "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00689",
+            "reason": "收到的其他与投资活动有关的现金表格中无实际数据，仅有表头，无法提取具体事实。"
+          },
+          {
+            "item_id": "unmapped_001",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "公司拟为董事、监事及高级管理人员购买责任险",
+            "value_type": "entity_ref",
+            "information_status": "insufficient_evidence",
+            "content_role": "enterprise_claim",
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00193"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00193",
+                "excerpt": "公司拟以不超过人民币60万/年（具体以与保险公司协商确定的数额为准）为公司及公司董事、监事、高级管理人员购买责任保险，赔偿限额为不超过人民币10,000万（具体以与保险公司协商确定的数额为准） ，保险期限为12个月（后续每年续保或重新投保） 。"
+              }
+            ],
+            "extraction_method": "llm",
+            "reason": "该事项为拟议中的计划，并非已发生的处置或结果，不符合outcome_and_resolution领域的content_role=outcome要求，故不生成画像项。"
+          }
+        ],
+        "consistency_warnings": [],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": [
+          {
+            "kind": "profile_items",
+            "value": {
+              "item_id": "outcome_012",
+              "subject": "the_enterprise",
+              "section_id": "compliance_legal_risk",
+              "field_id": "risk.matter",
+              "value": "公司拟为董事、监事及高级管理人员购买责任险",
+              "value_type": "entity_ref",
+              "information_status": "claimed",
+              "content_role": "enterprise_claim",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00193"
+              ],
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00193",
+                  "excerpt": "公司拟以不超过人民币60万/年（具体以与保险公司协商确定的数额为准）为公司及公司董事、监事、高级管理人员购买责任保险，赔偿限额为不超过人民币10,000万（具体以与保险公司协商确定的数额为准） ，保险期限为12个月（后续每年续保或重新投保） 。"
+                }
+              ],
+              "extraction_method": "llm",
+              "reporting_period": "2021"
+            },
+            "reason": "outcome_and_resolution 的 content_role 不合法"
+          }
+        ]
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00165",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "九、年度报告披露后面临退市情况",
+          "section_path": [
+            "第六节 重要事项",
+            "九、年度报告披露后面临退市情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 99,
+            "page_end": 99
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "退市"
+          ],
+          "content_chars": 26
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00193",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "9、关于公司为董事、监事及高级管理人员购买责任险的事项",
+          "section_path": [
+            "第六节 重要事项",
+            "十六、其他重大事项的说明",
+            "9、关于公司为董事、监事及高级管理人员购买责任险的事项"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 112,
+            "page_end": 113
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "赔偿"
+          ],
+          "content_chars": 539
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00152",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等",
+          "section_path": [
+            "第四节 公司治理",
+            "十五、上市公司治理专项行动自查问题整改情况",
+            "1、控股股东、实际控制人与上市公司共用商标、专利、非专利技术等"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 95,
+            "page_end": 95
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "整改"
+          ],
+          "content_chars": 229
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00688",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（2）支付的其他与经营活动有关的现金",
+          "section_path": [
+            "第十节 财务报告",
+            "十三、其他 -3,209,935.45",
+            "77、现金流量表项目",
+            "（2）支付的其他与经营活动有关的现金"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 262,
+            "page_end": 262
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "赔偿"
+          ],
+          "content_chars": 266
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00149",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、内控自我评价报告",
+          "section_path": [
+            "第四节 公司治理",
+            "十四、内部控制自我评价报告或内部控制审计报告",
+            "1、内控自我评价报告"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 94,
+            "page_end": 95
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "整改"
+          ],
+          "content_chars": 807
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00689",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（3）收到的其他与投资活动有关的现金",
+          "section_path": [
+            "第十节 财务报告",
+            "十三、其他 -3,209,935.45",
+            "77、现金流量表项目",
+            "（3）收到的其他与投资活动有关的现金"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 262,
+            "page_end": 263
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "赔偿"
+          ],
+          "content_chars": 96
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00151",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "十五、上市公司治理专项行动自查问题整改情况",
+          "section_path": [
+            "第四节 公司治理",
+            "十五、上市公司治理专项行动自查问题整改情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 95,
+            "page_end": 95
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "整改"
+          ],
+          "content_chars": 135
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00681",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "73、营业外收入",
+          "section_path": [
+            "第十节 财务报告",
+            "十三、其他 -3,209,935.45",
+            "73、营业外收入"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 253,
+            "page_end": 259
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "赔偿"
+          ],
+          "content_chars": 3196
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00168",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "十二、处罚及整改情况",
+          "section_path": [
+            "第六节 重要事项",
+            "十二、处罚及整改情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 101,
+            "page_end": 101
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "整改"
+          ],
+          "content_chars": 38
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00153",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "一、重大环保问题",
+          "section_path": [
+            "第五节 环境和社会责任",
+            "一、重大环保问题"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 96,
+            "page_end": 96
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "整改"
+          ],
+          "content_chars": 375
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00426",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（3）处置长期股权投资，其账面价值与实际取得价款的差额计入当期损益，采用权益法核算的长期",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "（二）出售极可能发生，即企业已经就一项出售计划作出决议且获得确定的购买承诺，预计出售将在",
+            "22、长期股权投资",
+            "（3）处置长期股权投资，其账面价值与实际取得价款的差额计入当期损益，采用权益法核算的长期"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 168,
+            "page_end": 168
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "处置"
+          ],
+          "content_chars": 481
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00386",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "6、合并财务报表的编制方法",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "6、合并财务报表的编制方法"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 157,
+            "page_end": 158
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "处置"
+          ],
+          "content_chars": 1200
+        },
+        {
+          "evidence_unit_id": "src_8c28d5fe0b5a3392:eu_00421",
+          "source_id": "src_8c28d5fe0b5a3392",
+          "case_id": "HIT",
+          "source_title": "哈工智能2021年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "①企业合并形成的长期股权投资，按以下方法确定投资成本：",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "（二）出售极可能发生，即企业已经就一项出售计划作出决议且获得确定的购买承诺，预计出售将在",
+            "22、长期股权投资",
+            "（2）投资成本确定",
+            "①企业合并形成的长期股权投资，按以下方法确定投资成本："
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 166,
+            "page_end": 167
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "处置"
+          ],
+          "content_chars": 830
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_8c28d5fe0b5a3392:eu_00165",
+        "src_8c28d5fe0b5a3392:eu_00168",
+        "src_8c28d5fe0b5a3392:eu_00152",
+        "src_8c28d5fe0b5a3392:eu_00149",
+        "src_8c28d5fe0b5a3392:eu_00151",
+        "src_8c28d5fe0b5a3392:eu_00193",
+        "src_8c28d5fe0b5a3392:eu_00153",
+        "src_8c28d5fe0b5a3392:eu_00681",
+        "src_8c28d5fe0b5a3392:eu_00688",
+        "src_8c28d5fe0b5a3392:eu_00689"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "HIT outcome resolution",
+            "keyword_count": 7,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00165",
+              "src_8c28d5fe0b5a3392:eu_00193",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00688",
+              "src_8c28d5fe0b5a3392:eu_00149",
+              "src_8c28d5fe0b5a3392:eu_00689",
+              "src_8c28d5fe0b5a3392:eu_00151",
+              "src_8c28d5fe0b5a3392:eu_00681",
+              "src_8c28d5fe0b5a3392:eu_00168",
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "历史结果 处置 整改 赔偿 退市 风险事项结局",
+            "keyword_count": 7,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00426",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00193",
+              "src_8c28d5fe0b5a3392:eu_00165",
+              "src_8c28d5fe0b5a3392:eu_00386",
+              "src_8c28d5fe0b5a3392:eu_00149",
+              "src_8c28d5fe0b5a3392:eu_00688",
+              "src_8c28d5fe0b5a3392:eu_00421",
+              "src_8c28d5fe0b5a3392:eu_00151",
+              "src_8c28d5fe0b5a3392:eu_00689"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00165",
+              "src_8c28d5fe0b5a3392:eu_00168",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00149",
+              "src_8c28d5fe0b5a3392:eu_00151",
+              "src_8c28d5fe0b5a3392:eu_00193",
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00165",
+              "src_8c28d5fe0b5a3392:eu_00168",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00149",
+              "src_8c28d5fe0b5a3392:eu_00151",
+              "src_8c28d5fe0b5a3392:eu_00193",
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 2149
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00681",
+              "src_8c28d5fe0b5a3392:eu_00688",
+              "src_8c28d5fe0b5a3392:eu_00689"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00681",
+              "src_8c28d5fe0b5a3392:eu_00688",
+              "src_8c28d5fe0b5a3392:eu_00689"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 3558
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "公司拟为董事监事及高级管理人员购买责任险",
+            "keyword_count": 5,
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00165",
+              "src_8c28d5fe0b5a3392:eu_00193",
+              "src_8c28d5fe0b5a3392:eu_00152",
+              "src_8c28d5fe0b5a3392:eu_00688",
+              "src_8c28d5fe0b5a3392:eu_00149",
+              "src_8c28d5fe0b5a3392:eu_00689",
+              "src_8c28d5fe0b5a3392:eu_00151",
+              "src_8c28d5fe0b5a3392:eu_00681",
+              "src_8c28d5fe0b5a3392:eu_00168",
+              "src_8c28d5fe0b5a3392:eu_00153"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00193"
+            ],
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_8c28d5fe0b5a3392:eu_00193"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 539
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 628,
+          "output_tokens": 137,
+          "total_tokens": 765,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4692,
+          "output_tokens": 507,
+          "total_tokens": 5199,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 7419,
+          "output_tokens": 449,
+          "total_tokens": 7868,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 10844,
+          "output_tokens": 59,
+          "total_tokens": 10903,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "outcome_and_resolution",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 8898,
+              "completion_tokens": 3469,
+              "total_tokens": 12367,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00165",
+                "src_8c28d5fe0b5a3392:eu_00168",
+                "src_8c28d5fe0b5a3392:eu_00152",
+                "src_8c28d5fe0b5a3392:eu_00149",
+                "src_8c28d5fe0b5a3392:eu_00151",
+                "src_8c28d5fe0b5a3392:eu_00193",
+                "src_8c28d5fe0b5a3392:eu_00153",
+                "src_8c28d5fe0b5a3392:eu_00681",
+                "src_8c28d5fe0b5a3392:eu_00688",
+                "src_8c28d5fe0b5a3392:eu_00689"
+              ]
+            }
+          ],
+          "prompt_tokens": 8898,
+          "completion_tokens": 3469,
+          "total_tokens": 12367
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 834,
+          "output_tokens": 150,
+          "total_tokens": 984,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 2895,
+          "output_tokens": 125,
+          "total_tokens": 3020,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "stage": "profile_extraction_recovery",
+          "domain": "outcome_and_resolution",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 9145,
+              "completion_tokens": 329,
+              "total_tokens": 9474,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_8c28d5fe0b5a3392:eu_00165",
+                "src_8c28d5fe0b5a3392:eu_00168",
+                "src_8c28d5fe0b5a3392:eu_00152",
+                "src_8c28d5fe0b5a3392:eu_00149",
+                "src_8c28d5fe0b5a3392:eu_00151",
+                "src_8c28d5fe0b5a3392:eu_00193",
+                "src_8c28d5fe0b5a3392:eu_00153",
+                "src_8c28d5fe0b5a3392:eu_00681",
+                "src_8c28d5fe0b5a3392:eu_00688",
+                "src_8c28d5fe0b5a3392:eu_00689"
+              ]
+            }
+          ],
+          "prompt_tokens": 9145,
+          "completion_tokens": 329,
+          "total_tokens": 9474
+        }
+      ]
+    }
+  ]
+}

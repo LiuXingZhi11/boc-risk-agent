@@ -1,0 +1,84 @@
+{
+  "single_case_rule_hypotheses": [
+    {
+      "rule_id": "RULE_HYP_001",
+      "case_id": "CASE_BOOK_001",
+      "rule_hypothesis": "多家表面上互不关联的企业实际上充当了同一借款主体的融资平台，使得信贷风险集中暴露，且银行在单户审查中未能识别关联关系，最终导致贷款同时出现风险。",
+      "supporting_fact_ids": [
+        "CASE_BOOK_001_F002",
+        "CASE_BOOK_001_F004",
+        "CASE_BOOK_001_F007",
+        "CASE_BOOK_001_F006"
+      ],
+      "uncertainty": "银行事前能否通过公开信息或交易模式发现关联关系不确定。",
+      "generalization_status": "single_case_hypothesis"
+    },
+    {
+      "rule_id": "RULE_HYP_002",
+      "case_id": "CASE_BOOK_002",
+      "rule_hypothesis": "企业利用关联方或利益关联体通过资金循环划转制造虚假销售回款，掩盖了真实经营现金流的不足，导致银行对还款能力误判。",
+      "supporting_fact_ids": [
+        "CASE_BOOK_002_F005",
+        "CASE_BOOK_002_F007",
+        "CASE_BOOK_002_F008"
+      ],
+      "uncertainty": "贷前环节能否有效识别虚假回款信号不确定。",
+      "generalization_status": "single_case_hypothesis"
+    },
+    {
+      "rule_id": "RULE_HYP_003",
+      "case_id": "CASE_BOOK_003",
+      "rule_hypothesis": "高成本融资高度依赖项目销售回款，一旦销售不及预期，极易导致违约；展期不仅未减少本金，反而累积高额财务成本，进一步弱化偿债能力。",
+      "supporting_fact_ids": [
+        "CASE_BOOK_003_F001",
+        "CASE_BOOK_003_F003",
+        "CASE_BOOK_003_F006"
+      ],
+      "uncertainty": "抵押物是否足值以及快速处置能否覆盖债务不确定；展期后若市场好转可能改善偿债能力。",
+      "generalization_status": "single_case_hypothesis"
+    },
+    {
+      "rule_id": "RULE_HYP_004",
+      "case_id": "CASE_BOOK_004",
+      "rule_hypothesis": "企业缺乏相关行业经验且大规模跨行业投资，项目投产严重延迟并遭遇市场下行，导致持续亏损并最终资不抵债。",
+      "supporting_fact_ids": [
+        "CASE_BOOK_004_F003",
+        "CASE_BOOK_004_F004",
+        "CASE_BOOK_004_F006",
+        "CASE_BOOK_004_F007",
+        "CASE_BOOK_004_F009",
+        "CASE_BOOK_004_F012"
+      ],
+      "uncertainty": "行业人士评估的缺乏经验是风险评估，但实际失败中市场下行也可能起主要作用，二者相对重要性不确定。",
+      "generalization_status": "single_case_hypothesis"
+    },
+    {
+      "rule_id": "RULE_HYP_005",
+      "case_id": "CASE_BOOK_005",
+      "rule_hypothesis": "企业间复杂的互保网络使得单一主体危机通过担保关系逐层传导，引发银行集中收贷和更大范围的违约，导致风险扩散。",
+      "supporting_fact_ids": [
+        "CASE_BOOK_005_F001",
+        "CASE_BOOK_005_F002",
+        "CASE_BOOK_005_F003",
+        "CASE_BOOK_005_F004",
+        "CASE_BOOK_005_F005",
+        "CASE_BOOK_005_F007",
+        "CASE_BOOK_005_F010"
+      ],
+      "uncertainty": "危机传播的具体触发时点和银行集中收贷的决策逻辑不确定。",
+      "generalization_status": "single_case_hypothesis"
+    }
+  ],
+  "uncertainties": [],
+  "api_meta": {
+    "stage": "rules",
+    "model": "deepseek-v4-pro",
+    "generation_mode": "thinking",
+    "temperature": null,
+    "reasoning_effort": "high",
+    "finish_reason": "stop",
+    "prompt_tokens": 8165,
+    "completion_tokens": 3714,
+    "total_tokens": 11879
+  }
+}

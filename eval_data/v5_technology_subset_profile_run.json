@@ -1,0 +1,74 @@
+{
+  "case_id": "ZJ_TECH_SUBSET",
+  "profile_type": "historical",
+  "domains": [
+    {
+      "domain": "technology_and_ip",
+      "evidence_units": [],
+      "evidence_catalog": [],
+      "selected_evidence_unit_ids": [
+        "src_92c9bd753dea8be0:eu_00296"
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "tech_medium",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "光存储介质核心技术",
+            "value_type": "entity_ref",
+            "information_status": "claimed",
+            "content_role": "enterprise_claim",
+            "evidence_unit_ids": [
+              "src_92c9bd753dea8be0:eu_00296"
+            ]
+          },
+          {
+            "item_id": "tech_medium_maturity",
+            "section_id": "technology_ip",
+            "field_id": "technology.maturity_stage",
+            "value": "commercial",
+            "value_type": "enum",
+            "information_status": "claimed",
+            "content_role": "enterprise_claim",
+            "evidence_unit_ids": [
+              "src_92c9bd753dea8be0:eu_00296"
+            ]
+          },
+          {
+            "item_id": "tech_medium_ownership",
+            "section_id": "technology_ip",
+            "field_id": "technology.ownership_status",
+            "value": "self_owned",
+            "value_type": "enum",
+            "information_status": "claimed",
+            "content_role": "enterprise_claim",
+            "evidence_unit_ids": [
+              "src_92c9bd753dea8be0:eu_00296"
+            ]
+          }
+        ],
+        "profile_relations": [
+          {
+            "relation_id": "owns_medium",
+            "relation_type": "owns",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "tech_medium",
+            "target_type": "Technology",
+            "information_status": "claimed",
+            "content_role": "enterprise_claim",
+            "evidence_unit_ids": [
+              "src_92c9bd753dea8be0:eu_00296"
+            ]
+          }
+        ],
+        "information_gaps": [],
+        "conflicts": [],
+        "unmapped_items": [],
+        "rejected_candidates": [],
+        "consistency_warnings": []
+      }
+    }
+  ]
+}

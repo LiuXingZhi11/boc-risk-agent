@@ -1,0 +1,1100 @@
+{
+  "case_id": "Saiwei",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "risk_matters",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00001",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "第一节 重要提示、目录和释义\n公司董事会、监事会及董事、监事、高级管理人员保证年度报告内容的真\n实、准确、完整，不存在虚假记载、误导性陈述或者重大遗漏，并承担个别和\n连带的法律责任。\n公司负责人周起如、主管会计工作负责人曾令君及会计机构负责人(会计\n主管人员)曾令君声明：保证本年度报告中财务报告的真实、准确、完整。\n所有董事均已出席了审议本报告的董事会会议。\n中审亚太会计师事务所(特殊普通合伙)为本公司出具了带持续经营重大不\n确定性段落的保留意见的审计报告，本公司董事会、监事会对相关事项已有详\n细说明，请投资者注意阅读。\n公司 2024 年度营业收入为 14,328.26 万元，较上年同期下降 68.03%；归\n属于上市公司股东的净利润为负 50,731.58 万元，较上年同期增亏 215.55%。\n2024 年度公司处于亏损状态。敬请广大投资者注意投资风险。\n本报告中如有涉及未来发展计划、预测等方面的内容，均不构成本公司对\n投资者及相关人士的实质承诺，投资者及相关人士均应当对此保持足够的风险\n认识，并且应该理解计划、预测与承诺之间的差异。敬请广大投资者注意投资\n风险。\n公司已在本年度报告中“第三节 管理层讨论与分析”之“十一、公司未\n来发展的展望”中列示了公司目前经营过程中面临的风险因素，提请投资者注\n意阅读并充分关注投资风险。\n公司需遵守《深圳证券交易所上市公司自律监管指引第 4 号——创业板行业信\n息披露》中的“互联网游戏业务”的披露要求：\n公司全资子公司北京开心人信息技术有限公司及其控股的关联公司主营业\n务为网络游戏研发，其相关风险及公司其他业务板块在经营管理中可能面临的\n风险与对策举措已在本报告第三节“管理层讨论与分析”之“十一、公司未来\n发展的展望”部分详细描述，敬请投资者关注相关内容。\n公司计划不派发现金红利，不送红股，不以公积金转增股本。\n备查文件目录",
+          "location": {
+            "kind": "pdf",
+            "page_start": 2,
+            "page_end": 5
+          },
+          "metadata": {
+            "title": "第一节 重要提示、目录和释义",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第一节 重要提示、目录和释义"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 2,
+            "page": 2
+          },
+          "source_date": null,
+          "content_hash": "b6028a0e1b3dc614178bb3b8234686f0ed6b20d69034d2e96421ee2e45862879"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "十一、重大诉讼、仲裁事项\n适用 □不适用\n诉讼(仲裁)基本情况 涉案金额\n（万元）\n是否形成预计负\n债 诉讼(仲裁)进展 诉讼(仲裁)审理结果及影\n响\n诉讼(仲\n裁)判决执\n行情况\n披露\n日期 披露索引\n公司与恒天集团关于恒天集\n团与天津恒天新能源汽车研\n究院有限公司借款合同纠纷\n的诉讼,二审（终审）已判\n决，维持原判，公司已胜\n诉。\n490 否 二审（终审）已判决，维持原\n判，公司已胜诉。\n本次判决为终审判决，依\n据终审判决结果，公司无\n需承担责任。案件对公司\n损益不构成影响。\n终审已判\n决，公司\n胜诉。\n2024\n年 08\n月 21\n日\n《关于诉讼事项的公告》\n(公告编号:2022-072)、\n《关于公司诉讼事项进展\n的公告》(公告编号:2024-\n001)、《关于公司诉讼事\n项进展的公告》(公告编\n号:2024-004)、《关于公\n司诉讼事项结果的进展公\n告》（公告编号：2024-\n026）\n因与北京纵横网联数据科技\n有限公司建设工程施工合同\n纠纷事项，向北京市第三中\n级人民法院递交起诉状，在\n收到北京市第三中级人民法\n院的通知（案号：（2023）\n京 03 民初 23 号）后，已开\n庭审理\n10,387.3 否\n2023 年6 月，一审开庭审理，\n公司胜诉\n2024 年1 月，二审开庭审理，\n公司胜诉\n本次判决为终审判决，已\n申请执行，后续具体执行\n情况存在不确定性，对公\n司本期利润暂未构成影\n响，对公司期后利润的实\n际影响存在不确定性。\n终审已判\n决，公司\n胜诉，已\n申请执\n行，部分\n已执行。\n2024\n年 01\n月 31\n日\n《关于重大诉讼事项的公\n告》（公告编号：2023-\n008）、《关于公司重大诉\n讼进展的公告》（公告编\n号：2023-067）、《关于\n公司重大诉讼进展的公\n告》（公告编号：2024-\n003）\n2023 年4 月12 日，公司接\n到深圳市中级人民法院短信\n通知，由深圳市艾特网能技\n术有限公司作为原告向深圳\n中院提起的被告人为公司的\n买卖合同纠纷已获受理（案\n号：(2023)粤 03 民初 557\n号），公司已接收了由深圳\n中院以通讯形式传达的《民\n事起诉状》\n95,355.75 是\n2023 年5 月，公司接到深圳市\n中级人民法院出具的《民事裁\n定书》，深圳中院经审查认为\n该案标的由独立的两部分组\n成，针对部分诉讼标的裁定驳\n回深圳市艾特网能技术有限公\n司的起诉，余下诉讼标的涉及\n金额未达深圳中院受理金额，\n裁定移送深圳市龙岗区人民法\n院审理。\n2023 年10 月，驳回后重新立\n由于仲裁案件尚未判决，\n对公司本期利润暂未构成\n影响，对公司期后利润的\n实际影响存在不确定性。\n报告期后诉讼案件一审已\n判决，报告期已确认预计\n负债 133,931,646.49\n元。\n裁定驳回\n部分诉讼\n标的，余\n下诉讼标\n的移送深\n圳市龙岗\n区人民法\n院审理，\n法院已判\n决。\n仲裁案件\n尚未判\n2023\n年 04\n月 14\n日\n《关于重大诉讼事项的公\n告》（公告编号：2023-\n015）、《关于公司重大诉\n讼进展的公告》（公告编\n号：2023-030）、《关于\n公司重大诉讼进展的公\n告》（公告编号：2023-\n068）、《关于重大仲裁事\n项的公告》（公告编号：\n2023-075）\n案，立案金额为 22,244.56 万\n元，一审已开庭，2025 年2 月\n28 日，法院已判决，公司已提\n起上诉。\n2023 年12 月，驳回后重新仲\n裁立案，立案金额为\n83,976.77 万元，已开庭，尚\n未裁决。\n决。\n未达重大诉讼标准的其他诉\n讼、仲裁事项(公司作为被\n告）\n6,684.38\n公司作为被告或\n被申请人的其他\n案件涉案金额共\n6684.38 万元，\n案件尚未终审判\n决，无法判断是\n否形成预计负\n债。\n不适用 不适用 不适用\n2025\n年 03\n月 12\n日\n《关于重大诉讼进展及累\n计诉讼、仲裁的公告》\n（公告编号：2025-007）\n未达重大诉讼标准的其他诉\n讼、仲裁事项（公司作为原\n告）\n2,645.24\n公司作为原告或\n申请人的其他案\n件金额共\n2645.24 万元，\n案件尚未终审判\n决，无法判断是\n否形成预计负\n债。\n不适用 不适用 不适用\n2025\n年 03\n月 12\n日\n《关于重大诉讼进展及累\n计诉讼、仲裁的公告》\n（公告编号：2025-007）",
+          "location": {
+            "kind": "pdf",
+            "page_start": 68,
+            "page_end": 69
+          },
+          "metadata": {
+            "title": "十一、重大诉讼、仲裁事项",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十一、重大诉讼、仲裁事项"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 68
+          },
+          "source_date": null,
+          "content_hash": "f1d72f3ce2a6d315c95b4d4f15305ef1b2e0cbafe5c0a8003d0780a4ca8727e7"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00646",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "2、或有事项\n（1） 资产负债表日存在的重要或有事项\n1、艾特网能诉讼\n2023 年 8 月 18 日艾特网能向深圳市龙岗区人民法院提起诉讼，请求 1、判令被告立即向原告支付合同价款\n191,330,923.56 元；2、判令被告向原告支付截至 2022 年 12 月 30 日的逾期付款违约金 13,435,682.63 元，及自 2022 年\n12 月 31 日起至实际支付之日止的逾期付款违约金（以 191,330,923.56 为基数，按照每天万分之四的标准计算，暂计算至\n2023 年 8 月 18 日 231 天，为 17,678,977.34 元），上述第 1、2 项诉讼请求暂合计 222,445,583.53 元；3、本案诉讼费、\n财产保全费由被告承担。2025年2月28日深圳市龙岗区人民法院判决如下：一、被告深圳市赛为智能股份有限公司应于判\n决生效之日起十日内向原告深圳市艾特网能技术有限公司支付合同价款 191,330,923.56 元及逾期付款违约金（违约金以\n191,330,923.56 元货款本金为基数，按照日利率 0.04%的标准，自 2023 年 2 月 10 日起计算至实际清偿之日止）；二、原\n告深圳市艾特网能技术有限公司对被告汤福根用于质押的中鹏云控股（深圳）有限公司 57%的股权处置价款在上述第一项\n债权范围内享有优先受偿权；三、原告深圳市艾特网能技术有限公 司对被告中鹏云企业管理（深圳）有限公司用于质押的\n西安中数云谷信息科技有限公司 100%的股权处置价款在上述第一项债权范围内享有优先受偿权；四、被告汤福根、被告廖\n高鹰、被告廊坊市云风数据科技有限公司对被告深圳市赛为智能股份有限公司的上述第一项债务承担连带清偿责任；五、\n被告汤福根、被告中鹏云企业管理（深圳）有限公司、被告廖高鹰、被告廊坊市云风数据科技有限公司承担担保责任后，\n有权向被告深圳市赛为智能股份有限公司追偿；六、原告深圳市艾特网能技术有限公司于判决生效之日起十日内向被告深\n圳市赛为智能股份有限公司返还票据及拒付证明。\n2023年11月13日艾特网能向深圳国际仲裁院对赛为智能及梅特科技提出仲裁申请，请求1、裁决被申请人深圳市赛\n为智能股份有限公司支付合同价款 612,794,431.41 元；2、裁决被申请人深圳市赛为智能股份有限公司支付逾期付款违约\n金 58,228,586.23 元及 2021 年 12 月 30 日起至实际支付全部货款之日止逾期付付款违约金 165,944,732.02 元；（暂计至\n2023 年 11 月 7 日）；3、支付律师费 280 万元；4、裁决申请人对被申请廊坊市梅特科技有限公司提供抵押的设备（详见\n《廊坊市云风数据中心一期项目柴发设备明细》、《廊坊市云风数据中心一期项目设备总清单》）的折价、拍卖、变卖价\n款享有优先受偿权；5、支付全部仲裁费用。深圳国际仲裁院暂未判决。\n根据《票据法》第十七条规定及最高人民法院于2024年3月21日发布的《法答网精选答问（第三批）》，并结合最\n高人民法院最新裁判规则和各地司法实践等，本公司认为：一是一审法院遗漏查明艾特公司在起诉前已经丧失 662 号汇票\n下对前手深圳市前海鸿波科技有限公司（以下简称鸿波公司）追索权的事实，错误认定艾特公司起诉时案涉票据权利完整。\n二是艾特公司负有保全票据权利的注意义务，其提起诉讼的行为并非履行注意义务，一审法院将艾特公司选择行使原因债\n权的行为错误等同于履行对票据权利的注意义务，法律适用存在重大错误。三是艾特公司怠于履行对票据权利的注意义务，\n逾期不主张权利，导致案涉三张汇票票据权利丧失，并因此无法向赛为公司返还完整票据，此时依照最高院意见，艾特公\n司只能继续主张票据利益返还请求权，不能再主张原因债权。一审法院对此存在法律适用错误。四是一审法院漏查艾特公\n司系唯一有权且有可能保全票据权利的主体，亦将艾特公司对原因债权的起诉行为与保全票据权利的义务混淆，错误得出\n艾特公司仍可行使原因债权的结论，应予纠正。艾特公司未及时保全票据权利导致票据失效，过错明显，应自行承担不利\n后果。五是艾特公司未保全票据权利与票据失效后果具有直接因果关系，即使认定赛为公司存在迟延履行债务的过错，其\n对应的责任应系违约金，艾特公司过错对应的责任才是承担票据失效后果，一审法院将赛为公司未能履行合同付款义务作\n为票据失效原因是对法律行为与法律后果的错配，构成法律适用错误。六是从结果实质公平的角度，允许艾特公司主张原\n因债权，等同要求赛为公司承受艾特公司过错所致不利后果，包括：（ 1）被动丧失票据请求权；（2）仅享有行权对象与\n行权范围更窄（可能无法主张票据本金对应近 7000 万元利息）、诉讼时效更短、行权要件更为复杂的民事请求权；（3）\n也丧失了对 662 号汇票前手鸿波公司的票据追索权，利益受损，此种裁判结果显然有失公允，应当纠正。相反，驳回艾特\n公司主张原因债权的请求，艾特公司仍然可以向出票人和承兑人主张票面金额约 8 亿元的票据利益返还请求权，不会导致\n艾特公司债权无法获偿。七是案涉三张汇票系用于结算案涉合同和另一在审仲裁案件【案号：（2023）深国仲受 10705 号】\n的四份合同，汇票与案涉合同及仲裁案件所涉合同的履行结算不存在一一对应关系， 一审法院就三张汇票的返还问题进行\n处理实质是一并审理了仲裁案件的四份合同，超越了诉讼审理范围，程序存在严重错误。八是案涉汇票因艾特公司过错失\n效，艾特网能无权再主张原因债权，更无权主张违约金。即使在票据未失效情形下，法院酌定违约金尚要考虑债权人的过\n错、债务人的违约程度、造成迟延支付的原因等多方面因素。在票据失效情形下，就更应考虑债权人的过错因素，艾特公\n司未积极向出票人行权，现允许其主张违约金可能引发道德风险，助长债权人故意迟延主张票据权利，意图主张更多违约\n金的风气，有违诚信原则。\n综上所述，一审法院的事实查明与法律适用均明显错误，且处理结果导致严重不公局面，让无过错方承担过错方造\n成的全部风险与损失。一审法院认为债权人不主张票据权利没有过错，不用承担任何风险与不利后果，那是否意味着在原\n因债权的履行本存争议的情况下，所有的债权人只要起诉就不必履行保全票据权利义务，任由票据失效，迫使债务人选择\n放弃对原因债权的抗辩或者承担票据失效与履行原因债务双重责任的风险？由此造成的司法导向显然与票据制度本意不符。\n本公司对该诉讼事项已计提相关损失。本公司对广东省深圳市龙岗区人民法院作出的一审判决不服，于 2025 年 3 月\n向广东省深圳市中级人民法院提起上诉，请求如下：撤销广东省深圳市龙岗区人民法院（2023）粤 0307 民初 28764 号民事\n判决，改判驳回深圳市艾特网能技术有限公司全部诉讼请求；本案一审、二审全部诉讼费用由深圳市艾特网能技术有限公\n司承担。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 184,
+            "page_end": 185
+          },
+          "metadata": {
+            "title": "1、艾特网能诉讼",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第十节 财务报告",
+              "十六、承诺及或有事项",
+              "1、艾特网能诉讼"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 184
+          },
+          "source_date": null,
+          "content_hash": "212155c85ba1cdd6b900ca9e14fba23ae4888dcf5768ac50bd15eb744475d8ee"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00652",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "十八、其他重要事项\n1、债务重组\n2021 年 7 月 15 日，深圳市赛为智能股份有限公司（以下简称“赛为智能”或“公司”）与肇庆市科培教育投资开发\n有限公司（以下简称“肇庆科培”）、马鞍山沣志教育科技有限公司（以下简称“沣志教育”）以及马鞍山学院签订《马\n鞍山学院举办者权益转让协议》（下称“转让协议”），转让方赛为智能向购买方沣志教育转让所持有的目标学校马鞍山\n学院 100.00%举办者权益，交易价格为人民币 550,000,000.00 元。如马鞍山学院截至 2021 年 5 月 31 日负债超过\n900,000,000.00元，交易对价在550,000,000.00元基础上相应扣减，扣减金额经甲乙双方确认后在最后一次款项支付时扣\n除。\n根据转让协议约定的付款安排，赛为智能已累计收到转让款项共计 340,000,000.00 元。另经甲乙双方确认，马鞍山\n学院截至 2021 年 5 月 31 日负债金额为 914,586,400.00 元，扣减金额为 14,586,400.00 元，还剩 195,413,600.00 元应收\n款项。转让协议约定第三期款项付款先决条件为“举办者变更申请已完成并获得主管部门批准”，截至目前，举办者变更\n申请还未获得主管部门批准。由于高校举办者权益的转让不同于企业股权的转让，必须经过国家教育主管部门批准，目前，\n举办者变更申请获得主管部门批准的时间无法预测，为加快公司应收款项的回收，防范政策风险和经营风险，促进公司业\n务拓展，保障广大股东利益，经与沣志教育充分沟通，达成《补充协议》，各方确认，协议签订之日起三日内，购买方向\n转让方支付人民币 73,500,000.00 元，前述款项支付后，购买方即履行完毕了《马鞍山学院举办者权益转让协议》项下购\n买方向转让方支付转让款（即交易对价）的全部支付义务，转让方不得以任何理由要求购买方或其他相关主体另行支付任\n何款项。在完成上述款项支付后，甲乙双方仍应尽最大努力履行《马鞍山学院举办者权益转让协议》中约定的各项权利和\n义务。\n2024 年10月28日召开第六届董事会第八次会议，审议通过了《关于公司进行债权债务重组的议案》。债务重组后，\n该事项计入投资收益-119,813,580.20 元。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 186,
+            "page_end": 187
+          },
+          "metadata": {
+            "title": "1、债务重组",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第十节 财务报告",
+              "十八、其他重要事项",
+              "1、债务重组"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 186
+          },
+          "source_date": null,
+          "content_hash": "301e6203421a276e56a753b348d9414e24d4ddbab681b63c564dde84370d7731"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00155",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "第五节 环境和社会责任\n一、重大环保问题\n上市公司及其子公司是否属于环境保护部门公布的重点排污单位\n□是 否\n报告期内因环境问题受到行政处罚的情况\n公司或子公司名\n称 处罚原因 违规情形 处罚结果 对上市公司生产\n经营的影响 公司的整改措施\n不适用 不适用 不适用 不适用 不适用 不适用\n参照重点排污单位披露的其他环境信息\n不适用\n在报告期内为减少其碳排放所采取的措施及效果\n□适用 不适用\n未披露其他环境信息的原因\n公司及下属子公司不存在《重点排污单位名录管理规定》（试用）中规定应纳入水、大气、土壤、声环境等重点排\n污单位名录的情况。公司倡导低碳环保的绿色办公方式，在日常经营中认真执行《中华人民共和国环境保护法》、《中华\n人民共和国水污染防治法》、《中华人民共和国大气污染防治法》、《中华人民共和国环境噪声污染防治法》、《中华人\n民共和国固体废物污染防治法》等环保方面的法规，报告期内未出现因环境保护违法违规而受到处罚的情况。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 57,
+            "page_end": 57
+          },
+          "metadata": {
+            "title": "一、重大环保问题",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第五节 环境和社会责任",
+              "一、重大环保问题"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 3,
+            "page": 57
+          },
+          "source_date": null,
+          "content_hash": "b35e56ae6fc4d1c69fe9cf7f691010e734ec9168b82ca44d97cad1182e28c52d"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00210",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "2、重大担保\n适用 □不适用\n单位：万元\n公司及其子公司对外担保情况（不包括对子公司的担保）\n担保对\n象名称\n担保额\n度相关\n公告披\n露日期\n担保额\n度\n实际发\n生日期\n实际担\n保金额\n担保类\n型\n担保物\n（如\n有）\n反担保\n情况\n（如\n有）\n担保期 是否履\n行完毕\n是否为\n关联方\n担保\n马鞍山\n学院\n44,200\n2018 年\n05 月11\n日\n35,000 连带责\n任保证\n2024 年\n11 月20\n日\n是 否\n2020 年\n12 月01\n日\n3,000 连带责\n任保证\n2024 年\n2 月 1\n日\n是 否\n报告期内审批的对\n外担保额度合计\n（A1）\n0\n报告期内对外担保\n实际发生额合计\n（A2）\n0\n报告期末已审批的\n对外担保额度合计\n（A3）\n44,200\n报告期末实际对外\n担保余额合计\n（A4）\n0\n公司对子公司的担保情况\n担保对\n象名称\n担保额\n度相关\n公告披\n露日期\n担保额\n度\n实际发\n生日期\n实际担\n保金额\n担保类\n型\n担保物\n（如\n有）\n反担保\n情况\n（如\n有）\n担保期 是否履\n行完毕\n是否为\n关联方\n担保\n子公司对子公司的担保情况\n担保对\n象名称\n担保额\n度相关\n公告披\n露日期\n担保额\n度\n实际发\n生日期\n实际担\n保金额\n担保类\n型\n担保物\n（如\n有）\n反担保\n情况\n（如\n有）\n担保期 是否履\n行完毕\n是否为\n关联方\n担保\n公司担保总额（即前三大项的合计）\n报告期内审批担保\n额度合计\n（A1+B1+C1）\n0\n报告期内担保实际\n发生额合计\n（A2+B2+C2）\n0\n报告期末已审批的\n担保额度合计\n（A3+B3+C3）\n44,200\n报告期末实际担保\n余额合计\n（A4+B4+C4）\n0\n其中：\n为股东、实际控制人及其关联方提供担保\n的余额（D） 0\n直接或间接为资产负债率超过 70%的被担\n保对象提供的债务担保余额（E） 0\n担保总额超过净资产 50%部分的金额（F） 0\n上述三项担保金额合计（D+E+F） 0\n采用复合方式担保的具体情况说明",
+          "location": {
+            "kind": "pdf",
+            "page_start": 72,
+            "page_end": 72
+          },
+          "metadata": {
+            "title": "2、重大担保",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十五、重大合同及其履行情况",
+              "2、重大担保"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 72
+          },
+          "source_date": null,
+          "content_hash": "e66ed84a492d098cf69a5b2b0a96826c08a4c31be6eb19eaf32663fef245e764"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "risk_matter_003",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "深圳市艾特网能技术有限公司作为原告向深圳中院提起的被告人为公司的买卖合同纠纷",
+            "value_type": "entity_ref",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00197"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                "excerpt": "2023 年4 月12 日，公司接到深圳市中级人民法院短信通知，由深圳市艾特网能技术有限公司作为原告向深圳中院提起的被告人为公司的买卖合同纠纷已获受理（案号：(2023)粤 03 民初 557 号），公司已接收了由深圳中院以通讯形式传达的《民事起诉状》"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "risk_matter_004",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "艾特网能向深圳国际仲裁院对赛为智能及梅特科技提出的仲裁申请",
+            "value_type": "entity_ref",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00646"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00646",
+                "excerpt": "2023年11月13日艾特网能向深圳国际仲裁院对赛为智能及梅特科技提出仲裁申请，请求1、裁决被申请人深圳市赛为智能股份有限公司支付合同价款 612,794,431.41 元；2、裁决被申请人深圳市赛为智能股份有限公司支付逾期付款违约金 58,228,586.23 元及 2021 年 12 月 30 日起至实际支付全部货款之日止逾期付付款违约金 165,944,732.02 元；（暂计至 2023 年 11 月 7 日）；3、支付律师费 280 万元；4、裁决申请人对被申请廊坊市梅特科技有限公司提供抵押的设备（详见《廊坊市云风数据中心一期项目柴发设备明细》、《廊坊市云风数据中心一期项目设备总清单》）的折价、拍卖、变卖价款享有优先受偿权；5、支付全部仲裁费用。深圳国际仲裁院暂未判决。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "risk_matter_007",
+            "subject": "the_enterprise",
+            "section_id": "compliance_legal_risk",
+            "field_id": "risk.matter",
+            "value": "债务重组事项",
+            "value_type": "entity_ref",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00652"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00652",
+                "excerpt": "2024 年10月28日召开第六届董事会第八次会议，审议通过了《关于公司进行债权债务重组的议案》。债务重组后，该事项计入投资收益-119,813,580.20 元。"
+              }
+            ],
+            "extraction_method": "llm"
+          }
+        ],
+        "profile_relations": [
+          {
+            "relation_id": "rel_001",
+            "relation_type": "involved_in",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "risk_matter_001",
+            "target_type": "LegalRiskMatter",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00197"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                "excerpt": "公司与恒天集团关于恒天集团与天津恒天新能源汽车研究院有限公司借款合同纠纷的诉讼,二审（终审）已判决，维持原判，公司已胜诉。"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_002",
+            "relation_type": "involved_in",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "risk_matter_002",
+            "target_type": "LegalRiskMatter",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00197"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                "excerpt": "因与北京纵横网联数据科技有限公司建设工程施工合同纠纷事项，向北京市第三中级人民法院递交起诉状，在收到北京市第三中级人民法院的通知（案号：（2023）京 03 民初 23 号）后，已开庭审理"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_003",
+            "relation_type": "involved_in",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "risk_matter_003",
+            "target_type": "LegalRiskMatter",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00197"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                "excerpt": "2023 年4 月12 日，公司接到深圳市中级人民法院短信通知，由深圳市艾特网能技术有限公司作为原告向深圳中院提起的被告人为公司的买卖合同纠纷已获受理（案号：(2023)粤 03 民初 557 号），公司已接收了由深圳中院以通讯形式传达的《民事起诉状》"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_004",
+            "relation_type": "involved_in",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "risk_matter_004",
+            "target_type": "LegalRiskMatter",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00646"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00646",
+                "excerpt": "2023年11月13日艾特网能向深圳国际仲裁院对赛为智能及梅特科技提出仲裁申请，请求1、裁决被申请人深圳市赛为智能股份有限公司支付合同价款 612,794,431.41 元；2、裁决被申请人深圳市赛为智能股份有限公司支付逾期付款违约金 58,228,586.23 元及 2021 年 12 月 30 日起至实际支付全部货款之日止逾期付付款违约金 165,944,732.02 元；（暂计至 2023 年 11 月 7 日）；3、支付律师费 280 万元；4、裁决申请人对被申请廊坊市梅特科技有限公司提供抵押的设备（详见《廊坊市云风数据中心一期项目柴发设备明细》、《廊坊市云风数据中心一期项目设备总清单》）的折价、拍卖、变卖价款享有优先受偿权；5、支付全部仲裁费用。深圳国际仲裁院暂未判决。"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_005",
+            "relation_type": "involved_in",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "risk_matter_005",
+            "target_type": "LegalRiskMatter",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00197"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                "excerpt": "未达重大诉讼标准的其他诉讼、仲裁事项(公司作为被告）"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_006",
+            "relation_type": "involved_in",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "risk_matter_006",
+            "target_type": "LegalRiskMatter",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00197"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                "excerpt": "未达重大诉讼标准的其他诉讼、仲裁事项（公司作为原告）"
+              }
+            ]
+          },
+          {
+            "relation_id": "rel_007",
+            "relation_type": "involved_in",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "risk_matter_007",
+            "target_type": "LegalRiskMatter",
+            "information_status": "supported",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00652"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00652",
+                "excerpt": "2024 年10月28日召开第六届董事会第八次会议，审议通过了《关于公司进行债权债务重组的议案》。债务重组后，该事项计入投资收益-119,813,580.20 元。"
+              }
+            ]
+          }
+        ],
+        "information_gaps": [
+          "未达重大诉讼标准的其他诉讼、仲裁事项（公司作为被告）的具体案件名称、涉案金额明细及进展未披露。",
+          "未达重大诉讼标准的其他诉讼、仲裁事项（公司作为原告）的具体案件名称、涉案金额明细及进展未披露。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [
+          {
+            "content": "公司 2024 年度营业收入为 14,328.26 万元，较上年同期下降 68.03%；归属于上市公司股东的净利润为负 50,731.58 万元，较上年同期增亏 215.55%。2024 年度公司处于亏损状态。敬请广大投资者注意投资风险。",
+            "reason": "财务数据不属于风险事项领域，且未在 Ontology 中定义。"
+          },
+          {
+            "content": "中审亚太会计师事务所(特殊普通合伙)为本公司出具了带持续经营重大不确定性段落的保留意见的审计报告",
+            "reason": "审计意见属于财务报告领域，不属于风险事项领域。"
+          },
+          {
+            "content": "公司计划不派发现金红利，不送红股，不以公积金转增股本。",
+            "reason": "利润分配计划不属于风险事项领域。"
+          },
+          {
+            "content": "报告期内因环境问题受到行政处罚的情况：不适用",
+            "reason": "否定事实，不属于风险事项。"
+          },
+          {
+            "content": "公司及下属子公司不存在《重点排污单位名录管理规定》（试用）中规定应纳入水、大气、土壤、声环境等重点排污单位名录的情况。",
+            "reason": "否定事实，不属于风险事项。"
+          },
+          {
+            "content": "报告期内未出现因环境保护违法违规而受到处罚的情况。",
+            "reason": "否定事实，不属于风险事项。"
+          },
+          {
+            "content": "重大担保：报告期末实际对外担保余额合计（A4）0；报告期末实际担保余额合计（A4+B4+C4）0",
+            "reason": "担保余额为零，不构成风险事项。"
+          }
+        ],
+        "consistency_warnings": [],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": [
+          {
+            "kind": "profile_items",
+            "value": {
+              "item_id": "risk_matter_001",
+              "subject": "the_enterprise",
+              "section_id": "compliance_legal_risk",
+              "field_id": "risk.matter",
+              "value": "公司与恒天集团关于恒天集团与天津恒天新能源汽车研究院有限公司借款合同纠纷的诉讼",
+              "value_type": "entity_ref",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00197"
+              ],
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                  "excerpt": "公司与恒天集团关于恒天集团与天津恒天新能源汽车研究院有限公司借款合同纠纷的诉讼,二审（终审）已判决，维持原判，公司已胜诉。"
+                }
+              ],
+              "extraction_method": "llm"
+            },
+            "reason": "已由法院判决或裁判结案的具体诉讼不属于风险事项，应转入权威认定或结果领域"
+          },
+          {
+            "kind": "profile_items",
+            "value": {
+              "item_id": "risk_matter_002",
+              "subject": "the_enterprise",
+              "section_id": "compliance_legal_risk",
+              "field_id": "risk.matter",
+              "value": "因与北京纵横网联数据科技有限公司建设工程施工合同纠纷事项，向北京市第三中级人民法院递交起诉状",
+              "value_type": "entity_ref",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00197"
+              ],
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                  "excerpt": "因与北京纵横网联数据科技有限公司建设工程施工合同纠纷事项，向北京市第三中级人民法院递交起诉状，在收到北京市第三中级人民法院的通知（案号：（2023）京 03 民初 23 号）后，已开庭审理"
+                }
+              ],
+              "extraction_method": "llm"
+            },
+            "reason": "已由法院判决或裁判结案的具体诉讼不属于风险事项，应转入权威认定或结果领域"
+          },
+          {
+            "kind": "profile_items",
+            "value": {
+              "item_id": "risk_matter_005",
+              "subject": "the_enterprise",
+              "section_id": "compliance_legal_risk",
+              "field_id": "risk.matter",
+              "value": "未达重大诉讼标准的其他诉讼、仲裁事项(公司作为被告）",
+              "value_type": "entity_ref",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00197"
+              ],
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                  "excerpt": "未达重大诉讼标准的其他诉讼、仲裁事项(公司作为被告）"
+                }
+              ],
+              "extraction_method": "llm"
+            },
+            "reason": "已由法院判决或裁判结案的具体诉讼不属于风险事项，应转入权威认定或结果领域"
+          },
+          {
+            "kind": "profile_items",
+            "value": {
+              "item_id": "risk_matter_006",
+              "subject": "the_enterprise",
+              "section_id": "compliance_legal_risk",
+              "field_id": "risk.matter",
+              "value": "未达重大诉讼标准的其他诉讼、仲裁事项（公司作为原告）",
+              "value_type": "entity_ref",
+              "information_status": "supported",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00197"
+              ],
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+                  "excerpt": "未达重大诉讼标准的其他诉讼、仲裁事项（公司作为原告）"
+                }
+              ],
+              "extraction_method": "llm"
+            },
+            "reason": "已由法院判决或裁判结案的具体诉讼不属于风险事项，应转入权威认定或结果领域"
+          }
+        ]
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00001",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "第一节 重要提示、目录和释义",
+          "section_path": [
+            "第一节 重要提示、目录和释义"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 2,
+            "page_end": 5
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "风险因素",
+            "风险"
+          ],
+          "content_chars": 797
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00419",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "35、收入",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "35、收入"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 129,
+            "page_end": 130
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "主要风险",
+            "风险"
+          ],
+          "content_chars": 1045
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00652",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、债务重组",
+          "section_path": [
+            "第十节 财务报告",
+            "十八、其他重要事项",
+            "1、债务重组"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 186,
+            "page_end": 187
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "经营风险",
+            "风险"
+          ],
+          "content_chars": 947
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00617",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、金融工具产生的各类风险",
+          "section_path": [
+            "第十节 财务报告",
+            "十二、与金融工具相关的风险",
+            "1、金融工具产生的各类风险"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 180,
+            "page_end": 180
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "风险"
+          ],
+          "content_chars": 387
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00197",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "十一、重大诉讼、仲裁事项",
+          "section_path": [
+            "第六节 重要事项",
+            "十一、重大诉讼、仲裁事项"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 68,
+            "page_end": 69
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "诉讼",
+            "仲裁",
+            "恒天集团",
+            "借款合同",
+            "纵横网联",
+            "建设工程施工合同"
+          ],
+          "content_chars": 1820
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00155",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "一、重大环保问题",
+          "section_path": [
+            "第五节 环境和社会责任",
+            "一、重大环保问题"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 57,
+            "page_end": 57
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "处罚",
+            "违规"
+          ],
+          "content_chars": 419
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00210",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、重大担保",
+          "section_path": [
+            "第六节 重要事项",
+            "十五、重大合同及其履行情况",
+            "2、重大担保"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 72,
+            "page_end": 72
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "担保"
+          ],
+          "content_chars": 845
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00050",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "4.4 进一步加强合规治理",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "4.4 进一步加强合规治理"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 24,
+            "page_end": 24
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "合规"
+          ],
+          "content_chars": 667
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00165",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、保证本承诺人及其关联企业不以任何方式违法违规占有赛为智能的资金、资",
+          "section_path": [
+            "第六节 重要事项",
+            "一、本次重组前，除持有赛为智能的股份外，本人及本人控制的其他公司、企业",
+            "2、保证本承诺人及其关联企业不以任何方式违法违规占有赛为智能的资金、资"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 59,
+            "page_end": 61
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "违规"
+          ],
+          "content_chars": 2558
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00353",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（4）金融资产转移的确认依据和计量方法",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "11、金融工具",
+            "（4）金融资产转移的确认依据和计量方法"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 112,
+            "page_end": 113
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "风险"
+          ],
+          "content_chars": 693
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00646",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、艾特网能诉讼",
+          "section_path": [
+            "第十节 财务报告",
+            "十六、承诺及或有事项",
+            "1、艾特网能诉讼"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 184,
+            "page_end": 185
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "诉讼",
+            "仲裁",
+            "担保",
+            "风险"
+          ],
+          "content_chars": 2837
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00562",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1） 长期借款分类",
+          "section_path": [
+            "第十节 财务报告",
+            "二、离职后福利-设定",
+            "28、长期借款",
+            "（1） 长期借款分类"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 160,
+            "page_end": 161
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "借款合同",
+            "担保"
+          ],
+          "content_chars": 508
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00455",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（2） 按坏账计提方法分类披露",
+          "section_path": [
+            "第十节 财务报告",
+            "七、合并财务报表项目注释",
+            "2、应收账款",
+            "（2） 按坏账计提方法分类披露"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 137,
+            "page_end": 139
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "纵横网联"
+          ],
+          "content_chars": 2009
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_d08e0e930385d696:eu_00001",
+        "src_d08e0e930385d696:eu_00197",
+        "src_d08e0e930385d696:eu_00646",
+        "src_d08e0e930385d696:eu_00652",
+        "src_d08e0e930385d696:eu_00155",
+        "src_d08e0e930385d696:eu_00210"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "风险",
+            "keyword_count": 11,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00001",
+              "src_d08e0e930385d696:eu_00419",
+              "src_d08e0e930385d696:eu_00652",
+              "src_d08e0e930385d696:eu_00617",
+              "src_d08e0e930385d696:eu_00197",
+              "src_d08e0e930385d696:eu_00155",
+              "src_d08e0e930385d696:eu_00210",
+              "src_d08e0e930385d696:eu_00050",
+              "src_d08e0e930385d696:eu_00165",
+              "src_d08e0e930385d696:eu_00353"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "Saiwei 风险事项",
+            "keyword_count": 13,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00001",
+              "src_d08e0e930385d696:eu_00419",
+              "src_d08e0e930385d696:eu_00652",
+              "src_d08e0e930385d696:eu_00197",
+              "src_d08e0e930385d696:eu_00155",
+              "src_d08e0e930385d696:eu_00210",
+              "src_d08e0e930385d696:eu_00050",
+              "src_d08e0e930385d696:eu_00617",
+              "src_d08e0e930385d696:eu_00165",
+              "src_d08e0e930385d696:eu_00646"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00001",
+              "src_d08e0e930385d696:eu_00197",
+              "src_d08e0e930385d696:eu_00646",
+              "src_d08e0e930385d696:eu_00652",
+              "src_d08e0e930385d696:eu_00155",
+              "src_d08e0e930385d696:eu_00210"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00001",
+              "src_d08e0e930385d696:eu_00197",
+              "src_d08e0e930385d696:eu_00646",
+              "src_d08e0e930385d696:eu_00652",
+              "src_d08e0e930385d696:eu_00155",
+              "src_d08e0e930385d696:eu_00210"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 7665
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "诉讼 仲裁 恒天集团 借款合同 纵横网联 建设工程施工合同",
+            "keyword_count": 16,
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00001",
+              "src_d08e0e930385d696:eu_00419",
+              "src_d08e0e930385d696:eu_00652",
+              "src_d08e0e930385d696:eu_00197",
+              "src_d08e0e930385d696:eu_00646",
+              "src_d08e0e930385d696:eu_00562",
+              "src_d08e0e930385d696:eu_00455",
+              "src_d08e0e930385d696:eu_00155",
+              "src_d08e0e930385d696:eu_00210",
+              "src_d08e0e930385d696:eu_00050"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00197"
+            ],
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00197"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 1820
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 621,
+          "output_tokens": 93,
+          "total_tokens": 714,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4295,
+          "output_tokens": 669,
+          "total_tokens": 4964,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 10646,
+          "output_tokens": 103,
+          "total_tokens": 10749,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "risk_matters",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 9258,
+              "completion_tokens": 3673,
+              "total_tokens": 12931,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00001",
+                "src_d08e0e930385d696:eu_00197",
+                "src_d08e0e930385d696:eu_00646",
+                "src_d08e0e930385d696:eu_00652",
+                "src_d08e0e930385d696:eu_00155",
+                "src_d08e0e930385d696:eu_00210"
+              ]
+            }
+          ],
+          "prompt_tokens": 9258,
+          "completion_tokens": 3673,
+          "total_tokens": 12931
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 1599,
+          "output_tokens": 357,
+          "total_tokens": 1956,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 3750,
+          "output_tokens": 116,
+          "total_tokens": 3866,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "stage": "profile_extraction_recovery",
+          "domain": "risk_matters",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 9913,
+              "completion_tokens": 36,
+              "total_tokens": 9949,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00001",
+                "src_d08e0e930385d696:eu_00197",
+                "src_d08e0e930385d696:eu_00646",
+                "src_d08e0e930385d696:eu_00652",
+                "src_d08e0e930385d696:eu_00155",
+                "src_d08e0e930385d696:eu_00210"
+              ]
+            }
+          ],
+          "prompt_tokens": 9913,
+          "completion_tokens": 36,
+          "total_tokens": 9949
+        }
+      ]
+    }
+  ]
+}

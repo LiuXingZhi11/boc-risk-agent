@@ -1,0 +1,3237 @@
+{
+  "case_id": "Saiwei",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "product_and_project",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "2、主要产品及平台\n公司围绕人工智能核心发展战略，深耕人工智能核心技术，以市场为导向不断拓展人工智能产品，目前已形成包括\n无人机、机器人、智能视频分析平台为主的产品线。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 13,
+            "page_end": 13
+          },
+          "metadata": {
+            "title": "2、主要产品及平台",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "二、报告期内公司从事的主要业务",
+              "2、主要产品及平台"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 13
+          },
+          "source_date": null,
+          "content_hash": "ef09433814d480b2e04a96e2f75f5a72b92a11b81c7f1b5a313a08214afa1b85"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "2.2 人工智能平台产品\n在图像与视频分析产品方面，公司组建了人工智能算法团队，主攻深度学习、机器视觉、智能视频分析等方向，并\n主导组建了广东省智能视频分析工程技术研究中心，以复杂环境下人体多姿态检测技术、智能视频行为分析技术、人脸识\n别技术、车牌识别技术为主要研究方向，致力于推动智能视频分析技术在作业安全保障、国家应急体系、平安城市、平安\n建设、科技强警等领域的应用。\n在低空安全领域，公司聚焦机场飞行区安全保障需求，在多个机场野生动物智能监测系统落地案例基础上，拓展业务\n场景至跑道、净空、围界等关键区域。基于图像算法开发跑道异物监测、净空安全监测、围界安防监控功能，进一步整合\n业务流程，实现与现场设备的智能联动，打造基于“云-端”互联架构的机场飞行区智能安全防范体系，提升机场运行品质\n和安全绩效。系统从精准感知、人工智能和大数据等技术入手，具有建设运营成本低、准确性高、漏检率低的优点，可以\n高效实现有据可查、有史可依的管控效果，切实提升低空安全防范管理水平。同时，打破了外国品牌的 行业垄断现状，实\n现平台的国产替代。\n面向安全生产领域，公司中标中国南方电网科技项目并开发作业线上安全检查智能核查方法，研发人脸识别算法、\n工单签名 OCR 算法、作业风险识别算法并完成部署，取得较好应用效果。基于语义分析和人工智能算法，实现计划与作业\n文件等相关信息的数据匹配，为督促外单位提高作业合规性提供数据支持，进一步增强现场作业风险识别能力。本项目可\n进一步推广至安监领域，基于人工智能有效保障施工安全。\n面向公共安全领域，公司开发了基于深度学习的轨交重点区域乘客危险动作识别及安全预警系统和轨交客流统计分\n析管理系统，通过利用计算机视觉和深度学习模型，实时监测乘客行为和车厢客流密度，识别出危险动作，并及时预警相\n关工作人员，以降低意外事故发生的风险，并提升轨道交通系统的整体安全性和服务质量。系统已在合肥地铁部署，总体\n功能和相关技术指标满足合同要求，取得较好应用效果。利用人工智能深度学习算法，突破了高峰期乘客密度高、遮挡度\n高、摄像头透射效应等问题，实现了乘客目标的高精准度捕获，客流计数和客流密度的准确分析，数据处理延时低于 1 秒。\n基于对车厢客流数据的准确、快速分析，该系统可提供客流诱导、客流管制、紧急疏散等服务，并对运维人员的应急指挥\n方案制定、值班安排、列车调度提供科学数据支撑。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 15,
+            "page_end": 17
+          },
+          "metadata": {
+            "title": "2.2 人工智能平台产品",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "二、报告期内公司从事的主要业务",
+              "2.2 人工智能平台产品"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 15
+          },
+          "source_date": null,
+          "content_hash": "76c060ff671b59dfc18ff107b5c0cc89fdb0c35795486846a4762bea6dcd5864"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00059",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "（3）无人机产品\n公司擅长大载荷、长航时无人机机型的研发和生产，主要产品有系留无人机、无人直升机、油电混动多旋翼无人机、\n小型共轴双旋翼无人机等,多次获得高交会优秀产品奖、世界无人机大会系统创新产品奖和省首台(套)重大技术装备等。公\n司拥有武器装备科研生产单位二级保密、武器装备承制，国军标质量体系认证等资格,主编的 ISO24356:2022《系留无人机\n系统通用要求》已正式发布,这是我国在无人机领域的第二项国际标准。团队开发的无人机产品具有续航时间长、抗干扰性\n强、安全性能高的优势，已广泛用于军事、通信、安防、应急响应、防险救灾等领域。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 26,
+            "page_end": 27
+          },
+          "metadata": {
+            "title": "（3）无人机产品",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "三、核心竞争力分析",
+              "2. 产品优势",
+              "（3）无人机产品"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 26
+          },
+          "source_date": null,
+          "content_hash": "e504c8d0be27543cae49ffefefbb204ead349465cd4495fa691f3cf2a5383562"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "4、研发投入\n适用 □不适用\n主要研发项\n目名称 项目目的 项目进展 拟达到的目标 预计对公司未来\n发展的影响\n工业巡检机\n器人产品系\n列迭代研发\n项目\n巡检机器人\n产品系列迭\n代优化，巩\n固在售产品\n先进性和竞\n争力。\n项目已结项。\n针对在售配电房巡检机器人、室内 AGV 巡检机器\n人隧道巡检机器人等产品进行技术迭代开发，提\n高稳定性，降低成本，优化识别率，增强集控集\n管功能，集成其他物联网传感终端，形成综合性\n安全生产、减能增效运维平台。\n持续提高产品竞\n争力，巩固技术\n壁垒，满足客户\n多样化需求，提\n高市占率和利润\n率。\n工业巡检机\n器人产品系\n列迭代研发\n项目 2.0\n巡检机器人\n产品系列迭\n代优化，巩\n固在售产品\n先进性和竞\n争力。\n项目已结项。\n本项目目的在于针对在售机器人产品，根据市场\n反馈的问题，进一步解决客户痛点需求，改善现\n存问题，降低生产和部署成本，加快服务流程，\n并拓展行业应用领域。\n提高工业巡检在\n售产品竞争力，\n巩固技术壁垒，\n继续降低生产和\n部署成本，满足\n不同场景客户需\n求，提高市占率\n和利润率。\n一统天下 增加公司营\n业利润。\n项目处于稳定运\n营阶段。\n本项目是一款以“实时国战”为核心玩法的大型\n三国题材 SLG 游戏。游戏中画风精美写实，地图\n场景贴合史实，武将设计丰富多样，为玩家营造\n出超强的三国代入感。\n持续为公司带来\n收益。\n三国群英传 增加公司营\n业利润。\n项目处于稳定运\n营阶段。\n本项目是一款三国题材的 SLG手机游戏产品，拟\n在还原宇峻奥汀《三国群英传》经典战斗的基础\n上，结合 MMORPG 战斗特点，打造出半开放战场\n中实时操作的策略玩法，让用户在体验《三国群\n英传》经典玩法的同时，获得更新鲜的玩法体\n验。\n持续为公司带来\n收益。\n装甲联队\nonline\n增加公司营\n业利润。\n项目处于稳定运\n营阶段。\n本项目是一款现代军事反恐题材的 SLG 手游产\n品，玩家通过扮演一名军事指挥官，募集著名将\n领，编组自己的海陆空部队，对邪恶势力进行打\n击。玩家可以在战斗过程中实时指挥作战部队，\n并可使用远程导弹等技能支援前线作战，获得逼\n真的军事战争游戏体验。\n持续为公司带来\n收益。\n赛为智能轨\n道交通智慧\n运维管理系\n统 V1.0\n根据行业发\n展趋势进行\n研发，拓展\n新市场，提\n升综合解决\n方案能力。\n项目已结项。\n本系统是为了最大限度提高地铁行业运营管理部\n门工作效率和数字化、智能化管理水平而设计研\n发的系统。该系统建立以设备为中心、预防性维\n护为主导、工单为主线的管理方式，实现各项运\n维业务全面覆盖、各项业务工作闭环处置、各级\n指令准确无误上传下达。通过该系统，将地铁运\n维相关的人、物、事进行统一的管理和协调，使\n地铁运维管理工作更加规范化。\n提升公司核心竞\n争力和提升盈利\n能力。\n基于智能视\n频图像分析\n技术的列车\n客流统计分\n析管理系统\n关键核心客\n户群需求响\n应，通过 AI\n赋能增加车\n载 PIS 产品\n市场竞争\n力。\n项目已结项，对\n应的合肥市科研\n项目已验收通\n过。申请 1 项实\n用新型专利，1 项\n发明专利，发表 2\n篇论文。获得 1\n项软件著作权。\n本项目基于智能视频分析技术的列车客流统计分\n析管理技术的研究，综合采用视频图像分析和重\n力感应互相结合的技术手段，依据数据互补算法\n有效实现列车内部客流数据的精准统计和分析，\n以列车客流密度作为重要的衡量指标，通过量化\n的实时客流数据联动多个系统协作运行，能够有\n效为组织列车运营工作提供科学支撑，为乘客提\n供舒适的乘车环境。依据客流数据组织列车运营\n管理工作，可以有效提升列车运营服务水平，提\n升乘客乘车出行的满意度，同时提升运营管理效\n率并降低运营管理成本。\n提高传统 PIS 产\n品竞争力，通过\n产品差异化抢占\n市场份额，增加\n利润率。\n综合视频管\n理平台\n关键核心客\n户群需求响\n应，增加在\n售产品拓展\n性，提升核\n心算法产品\n产业化能\n力。\n项目处于研发阶\n段\n本项目目的在于研发一款综合性监控设备、视频\n流、图像视频算法和相关物联网设备综合管理应\n用平台。分为视频管理服务、算法服务、数据和\n接入服务、业务服务四大 SaaS 子平台。子平台\n间充分解耦有机融合，可以快速适配诸如工业运\n维、安防安监、智能制造、鸟情防控等场景。通\n过算法服务的灵活配置，增强其行业赋能的产业\n化能力和演进速度。通过数据和接入的全面管\n理，使数据增值服务具备基础条件。\n提高工业巡检和\n安防平台产品竞\n争力，加强拓展\n性和快速响应不\n同领域客户需求\n的能力，提升盈\n利能力。\n公司研发人员情况\n2024 年 2023 年 变动比例\n研发人员数量（人） 70 119 -41.18%\n研发人员数量占比 36.65% 43.91% -7.26%\n研发人员学历\n本科 41 74 -44.59%\n硕士 7 10 -30.00%\n研发人员年龄构成\n30 岁以下 12 32 -62.50%\n30~40 岁 58 87 -33.33%\n近三年公司研发投入金额及占营业收入的比例\n2024 年 2023 年 2022 年\n研发投入金额（元） 51,931,092.54 61,221,907.05 76,841,125.88\n研发投入占营业收入比例 36.24% 13.66% 19.90%\n研发支出资本化的金额\n（元） 11,763,867.74 7,809,446.47 24,154,207.08\n资本化研发支出占研发投入\n的比例 22.65% 12.76% 31.43%\n资本化研发支出占当期净利\n润的比重 -2.30% -4.69% -10.47%\n公司研发人员构成发生重大变化的原因及影响\n□适用 不适用\n研发投入总额占营业收入的比重较上年发生显著变化的原因\n适用 □不适用\n研发投入总额占营业收入的比重较上年增加 22.58%，主要原因是本年度营业收入较上年相比下降了68.03%。\n研发投入资本化率大幅变动的原因及其合理性说明\n研发投入资本化率大幅变动的原因及其合理性说明\n□适用 不适用\n公司需遵守《深圳证券交易所上市公司自律监管指引第 3 号——行业信息披露》中的“软件与信息技术服务业”的披露要\n求\n单位：元\n项目名称 研发资本化金\n额 相关项目的基本情况 实施\n进度\n车站运维\n智能 AI 应\n用系统\n2,183,774.62\n本项目主要运用人工智能技术赋能城市轨道交通车站的运维管理，并基于大数\n据、云计算、无线通信、健康管理等新兴技术，研究开发城市轨道交通智慧运维\n系统相关产品，探索城市轨道交通智慧运维创新模式，提升城市轨道交通保障运\n营安全、提高服务质量和降低运营成本。\n项目\n处于\n研发\n阶段\n工业巡检\n机器人产\n品系列迭\n代研发项\n目 3.0\n3,144,175.87\n针对在售配电房巡检机器人、室内 AGV 巡检机器人隧道巡检机器人等产品进行技\n术迭代开发，提高稳定性，降低成本，优化识别率，增强集控集管功能，集成其\n他物联网传感终端，形成综合性安全生产、减能增效运维平台。\n项目\n处于\n研发\n阶段\nAI 鸟情自\n动化探驱\n防范\n1,931,719.85\n项目拟开发面向机场跑道的鸟情管理用户交互系统，系统覆盖了鸟情分析、鸟情\n查询、驱鸟设备管理、实时视频监控、3D 地图操作平台、日志管理、人员管理、\n系统配置等功能。云平台管理子系统是一套轻量化的管理平台系统软件，它包含\n一套基于 Web 方式访问的应用程序，包含的完整管理和控制功能，符合《民用机\n场运行安全管理规定》管理标准，最大限度优化机场驱鸟的操作流程和工作量。\n云平台管理系统采用前端鸟情检测联动控制系统进行数据传输，可与驱鸟设备进",
+          "location": {
+            "kind": "pdf",
+            "page_start": 31,
+            "page_end": 33
+          },
+          "metadata": {
+            "title": "4、研发投入",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "4、研发投入"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 31
+          },
+          "source_date": null,
+          "content_hash": "0351c05acc9831ac812735fae2443f939afa4eaa4cc51988658368ebdf3204d8"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00610",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "1、符合资本化条件的研发项目\n单位：元\n项目 期初余额\n本期增加金额 本期减少金额\n期末余额\n内部开发支出 其他\n确认\n为无\n形资\n产\n转入\n当期\n损益\n合并范围减少\n赛鹰-350 型转\n子发动机项目 1,173,964.28      1,173,964.28 0.00\n车站运维智能\nAI 应用系统 2,718,960.20 2,183,774.62      4,902,734.82\n工业巡检机器\n人产品系列迭\n代研发项目 3.0\n3,144,175.87      3,144,175.87\nAI 鸟情自动化\n探驱防范  941,153.81 990,566.04     1,931,719.85\n综合视频管理\n平台研发项目  730,612.49      730,612.49\n卫星智能算法\n服务及天地协\n同体系研发\n3,773,584.91     3,773,584.91\n合计 3,892,924.48 6,999,716.79 4,764,150.95    1,173,964.28 14,482,827.94\n重要的资本化研发项目\n项目 研发进度 预计完成时间 预计经济利益产\n生方式\n开始资本化的\n时点\n开始资本化的具\n体依据\n车站运维智能 AI 应用系统 项目处于研\n发阶段\n2025 年06 月\n30 日\n通过销售产品或\n服务实现\n2023 年07 月\n01 日\n使用在技术上具\n有可行性\n工业巡检机器人产品系列迭\n代研发项目 3.0\n项目处于研\n发阶段\n2025 年03 月\n31 日\n通过销售产品或\n服务实现\n2024 年01 月\n01 日\n使用在技术上具\n有可行性\nAI 鸟情自动化探驱防范 项目处于研\n发阶段\n2025 年03 月\n31 日\n通过销售产品或\n服务实现\n2024 年01 月\n01 日\n使用在技术上具\n有可行性\n综合视频管理平台研发项目 项目处于研\n发阶段\n2025 年03 月\n31 日\n通过销售产品或\n服务实现\n2024 年08 月\n01 日\n使用在技术上具\n有可行性\n卫星智能算法服务及天地协\n同体系研发\n项目处于研\n发阶段\n2025 年10 月\n26 日\n通过销售产品或\n服务实现\n2024 年12 月\n01 日\n使用在技术上具\n有可行性\n开发支出减值准备\n单位：元\n项目 期初余额 本期增加 本期减少 期末余额 减值测试情况",
+          "location": {
+            "kind": "pdf",
+            "page_start": 175,
+            "page_end": 175
+          },
+          "metadata": {
+            "title": "1、符合资本化条件的研发项目",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第十节 财务报告",
+              "八、研发支出",
+              "1、符合资本化条件的研发项目"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 175
+          },
+          "source_date": null,
+          "content_hash": "a33d99b81898b002f00d534225ef947117553fb67f01d3ee139c99c833b6f263"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00014",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "（1）人工智能领域\n2024年，人工智能（AI）行业在全球范围内继续保持强劲的增长态势，展现出显著的技术进步和应用扩展。全球人工\n智能市场规模预计从 2023 年的 2080 亿美元增长到 2030 年的 1.84 万亿美元，年均增长率达到 29.77%。中国人工智能市场\n规模在 2024 年达到 7470 亿元人民币，预计 2025 年将突破 10457 亿元，占全球比重达 20.9%。根据国家《“十四五”机器\n人产业发展规划》，机器人作为新兴技术的重要载体和现代产业的关键装备，“十四五”期间，国家将推进机器人应用场\n景开发和产品示范推广，加快医疗、养老、电力、矿山、建筑等领域机器人准入标准制订、产品认证或注册，鼓励企业建\n立产品体验中心。2024 年 1 月，工业和信息化部等七部门发布《关于推动未来产业创新发展的实施意见》，明确要求打造\n人形机器人等高端装备标志性产品，重点推进特殊环境作 业领域人形机器人产品的研制及应用，夯实未来产业发展根基。\n机器人产业迎来升级换代、跨越发展的窗口期。\n2024年12月，中央经济工作会议首次提及了“人工智能+”概念，强调开展“新技术新产品新场景大规模应用示范行\n动”和开展“人工智能+”行动，培育未来产业。2025年2月19日，国务院国资委召开中央企业“AI+”专项行动深化部署\n会，要求抓住人工智能产业发展的战略窗口期，强化科技创新，加速推进成果转化和产业化发展。以数字经济创新发展培\n育新质生产力，已经成为推动经济高质量发展、增强国家综合竞争力和科技创新能力的关键动 力，也是不断满足人民群众\n对美好生活向往、提升社会整体运行效率的必然选择。\n国务院印发的我国第一个人工智能规划《新一代人工智能发展规划》建议“到 2030 年，让中国成为世界领先的人工\n智能创新中心”。在供需两侧的共同推动下，技术创新成果开始大规模地从实验室研究走向产业实践，我国人工智能产业\n发展已驶入快车道。根据中国信通院发布的最新数据测算，2023 年我国人工智能核心产业规模达到 5,784 亿元，五年复合\n增速达 20.38%。初步估算，2024 年我国人工智能核心产业市场规模将达到 6964 亿元。人工智能是新质生产力的引擎，不\n断赋能经济社会发展各领域，成为科技跨越发展、产业优化升级、生产力整体跃升的新动能。AI 在自动驾驶、智能制造、\n智能医疗、智慧生活等领域的应用取得了显著成效，推动了各行业的智能化升级。AI 与其他行业的融合也在不断加速，应\n用场景也逐渐从普适性场景到高端领域延伸。\n人工智能已经成为人类第四次工业革命的核心驱动力量，最终会影响人类生产生活的方方面面。随着人工智能技术\n软硬件技术进一步发展，人工智能和实体经济将进一步深度融合，形成新质生产力，为推进中国式现代化提供更加有力的\n支撑。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 11,
+            "page_end": 11
+          },
+          "metadata": {
+            "title": "（1）人工智能领域",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "一、报告期内公司所处行业情况",
+              "（1）人工智能领域"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 11
+          },
+          "source_date": null,
+          "content_hash": "4ecd368c62c0e8db4679607b73d8346077ae11c5fa17e01aceb1c4a28dd5be6d"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "item_1",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "无人机",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_2",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "机器人",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_3",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "智能视频分析平台",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_4",
+            "subject": "系留无人机",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "系留无人机",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00059"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00059",
+                "excerpt": "主要产品有系留无人机、无人直升机、油电混动多旋翼无人机、小型共轴双旋翼无人机等"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_5",
+            "subject": "无人直升机",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "无人直升机",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00059"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00059",
+                "excerpt": "主要产品有系留无人机、无人直升机、油电混动多旋翼无人机、小型共轴双旋翼无人机等"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_6",
+            "subject": "油电混动多旋翼无人机",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "油电混动多旋翼无人机",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00059"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00059",
+                "excerpt": "主要产品有系留无人机、无人直升机、油电混动多旋翼无人机、小型共轴双旋翼无人机等"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_7",
+            "subject": "小型共轴双旋翼无人机",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "小型共轴双旋翼无人机",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00059"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00059",
+                "excerpt": "主要产品有系留无人机、无人直升机、油电混动多旋翼无人机、小型共轴双旋翼无人机等"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_8",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "机场飞行区智能安全防范体系",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "打造基于“云-端”互联架构的机场飞行区智能安全防范体系"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_9",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "基于深度学习的轨交重点区域乘客危险动作识别及安全预警系统",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "公司开发了基于深度学习的轨交重点区域乘客危险动作识别及安全预警系统和轨交客流统计分析管理系统"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_10",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "轨交客流统计分析管理系统",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "公司开发了基于深度学习的轨交重点区域乘客危险动作识别及安全预警系统和轨交客流统计分析管理系统"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_11",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "赛为智能轨道交通智慧运维管理系统 V1.0",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "赛为智能轨道交通智慧运维管理系统 V1.0"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_13",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "综合视频管理平台",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "综合视频管理平台"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_14",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "车站运维智能 AI 应用系统",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00610"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "车站运维智能 AI 应用系统"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00610",
+                "excerpt": "车站运维智能 AI 应用系统"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_16",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "AI 鸟情自动化探驱防范",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00610"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "AI 鸟情自动化探驱防范"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00610",
+                "excerpt": "AI 鸟情自动化探驱防范"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_19",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "一统天下",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "一统天下"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_20",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "三国群英传",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "三国群英传"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_21",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.name",
+            "value": "装甲联队 online",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "装甲联队 online"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_22",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.commercialization_stage",
+            "value": "commercialized",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018",
+              "src_d08e0e930385d696:eu_00059",
+              "src_d08e0e930385d696:eu_00024",
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00059",
+                "excerpt": "主要产品有系留无人机、无人直升机、油电混动多旋翼无人机、小型共轴双旋翼无人机等"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "系统已在合肥地铁部署，总体功能和相关技术指标满足合同要求，取得较好应用效果。"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "项目处于稳定运营阶段。"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "项目已结项。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_25",
+            "subject": "the_enterprise",
+            "section_id": "product_research_commercialization",
+            "field_id": "product.commercialization_stage",
+            "value": "in_development",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00610"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "项目处于研发阶段"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00610",
+                "excerpt": "项目处于研发阶段"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_29",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "深度学习",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "主攻深度学习、机器视觉、智能视频分析等方向"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_30",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "机器视觉",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "主攻深度学习、机器视觉、智能视频分析等方向"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_31",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "智能视频分析",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "主攻深度学习、机器视觉、智能视频分析等方向"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_32",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "复杂环境下人体多姿态检测技术",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "以复杂环境下人体多姿态检测技术、智能视频行为分析技术、人脸识别技术、车牌识别技术为主要研究方向"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_33",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "智能视频行为分析技术",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "以复杂环境下人体多姿态检测技术、智能视频行为分析技术、人脸识别技术、车牌识别技术为主要研究方向"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_34",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "人脸识别技术",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "以复杂环境下人体多姿态检测技术、智能视频行为分析技术、人脸识别技术、车牌识别技术为主要研究方向"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_35",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "车牌识别技术",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "以复杂环境下人体多姿态检测技术、智能视频行为分析技术、人脸识别技术、车牌识别技术为主要研究方向"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_36",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "人脸识别算法",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "研发人脸识别算法、工单签名 OCR 算法、作业风险识别算法并完成部署"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_37",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "工单签名 OCR 算法",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "研发人脸识别算法、工单签名 OCR 算法、作业风险识别算法并完成部署"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_38",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "作业风险识别算法",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "研发人脸识别算法、工单签名 OCR 算法、作业风险识别算法并完成部署"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_39",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "基于语义分析和人工智能算法",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "基于语义分析和人工智能算法，实现计划与作业文件等相关信息的数据匹配"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_40",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "计算机视觉",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "通过利用计算机视觉和深度学习模型"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_41",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "深度学习模型",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "通过利用计算机视觉和深度学习模型"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_42",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "人工智能深度学习算法",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "利用人工智能深度学习算法，突破了高峰期乘客密度高、遮挡度高、摄像头透射效应等问题"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_43",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "视频图像分析和重力感应互相结合的技术手段",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "综合采用视频图像分析和重力感应互相结合的技术手段"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_44",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "数据互补算法",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "依据数据互补算法有效实现列车内部客流数据的精准统计和分析"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_45",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "智能视频分析技术",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "本项目基于智能视频分析技术的列车客流统计分析管理技术的研究"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_46",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "人工智能技术",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "本项目主要运用人工智能技术赋能城市轨道交通车站的运维管理"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_47",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "大数据",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "并基于大数据、云计算、无线通信、健康管理等新兴技术"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_48",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "云计算",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "并基于大数据、云计算、无线通信、健康管理等新兴技术"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_49",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "无线通信",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "并基于大数据、云计算、无线通信、健康管理等新兴技术"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_50",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "健康管理",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "并基于大数据、云计算、无线通信、健康管理等新兴技术"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_51",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "图像算法",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "基于图像算法开发跑道异物监测、净空安全监测、围界安防监控功能"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_52",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "精准感知",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "item_53",
+            "subject": "the_enterprise",
+            "section_id": "technology_ip",
+            "field_id": "technology.name",
+            "value": "人工智能",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+              }
+            ],
+            "extraction_method": "llm"
+          }
+        ],
+        "profile_relations": [
+          {
+            "relation_id": "rel_8",
+            "relation_type": "develops",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "item_36",
+            "target_type": "Technology",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "研发人脸识别算法、工单签名 OCR 算法、作业风险识别算法并完成部署"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_9",
+            "relation_type": "develops",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "item_37",
+            "target_type": "Technology",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "研发人脸识别算法、工单签名 OCR 算法、作业风险识别算法并完成部署"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_10",
+            "relation_type": "develops",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "item_38",
+            "target_type": "Technology",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "研发人脸识别算法、工单签名 OCR 算法、作业风险识别算法并完成部署"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_23",
+            "relation_type": "develops",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "item_51",
+            "target_type": "Technology",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "基于图像算法开发跑道异物监测、净空安全监测、围界安防监控功能"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_28",
+            "relation_type": "commercializes_as",
+            "source_id": "item_29",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_29",
+            "relation_type": "commercializes_as",
+            "source_id": "item_30",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_30",
+            "relation_type": "commercializes_as",
+            "source_id": "item_31",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_31",
+            "relation_type": "commercializes_as",
+            "source_id": "item_32",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_32",
+            "relation_type": "commercializes_as",
+            "source_id": "item_33",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_33",
+            "relation_type": "commercializes_as",
+            "source_id": "item_34",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_34",
+            "relation_type": "commercializes_as",
+            "source_id": "item_35",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_35",
+            "relation_type": "commercializes_as",
+            "source_id": "item_36",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_36",
+            "relation_type": "commercializes_as",
+            "source_id": "item_37",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_37",
+            "relation_type": "commercializes_as",
+            "source_id": "item_38",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_38",
+            "relation_type": "commercializes_as",
+            "source_id": "item_39",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_39",
+            "relation_type": "commercializes_as",
+            "source_id": "item_40",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_40",
+            "relation_type": "commercializes_as",
+            "source_id": "item_41",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_41",
+            "relation_type": "commercializes_as",
+            "source_id": "item_42",
+            "source_type": "Technology",
+            "target_id": "item_3",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+                "excerpt": "目前已形成包括无人机、机器人、智能视频分析平台为主的产品线。"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_45",
+            "relation_type": "commercializes_as",
+            "source_id": "item_46",
+            "source_type": "Technology",
+            "target_id": "item_14",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "本项目主要运用人工智能技术赋能城市轨道交通车站的运维管理"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_46",
+            "relation_type": "commercializes_as",
+            "source_id": "item_47",
+            "source_type": "Technology",
+            "target_id": "item_14",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "并基于大数据、云计算、无线通信、健康管理等新兴技术"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_47",
+            "relation_type": "commercializes_as",
+            "source_id": "item_48",
+            "source_type": "Technology",
+            "target_id": "item_14",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "并基于大数据、云计算、无线通信、健康管理等新兴技术"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_48",
+            "relation_type": "commercializes_as",
+            "source_id": "item_49",
+            "source_type": "Technology",
+            "target_id": "item_14",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "并基于大数据、云计算、无线通信、健康管理等新兴技术"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_49",
+            "relation_type": "commercializes_as",
+            "source_id": "item_50",
+            "source_type": "Technology",
+            "target_id": "item_14",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                "excerpt": "并基于大数据、云计算、无线通信、健康管理等新兴技术"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_50",
+            "relation_type": "commercializes_as",
+            "source_id": "item_51",
+            "source_type": "Technology",
+            "target_id": "item_8",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "基于图像算法开发跑道异物监测、净空安全监测、围界安防监控功能"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_51",
+            "relation_type": "commercializes_as",
+            "source_id": "item_52",
+            "source_type": "Technology",
+            "target_id": "item_8",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_52",
+            "relation_type": "commercializes_as",
+            "source_id": "item_53",
+            "source_type": "Technology",
+            "target_id": "item_8",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "relation_id": "rel_53",
+            "relation_type": "commercializes_as",
+            "source_id": "item_47",
+            "source_type": "Technology",
+            "target_id": "item_8",
+            "target_type": "ProductService",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+              }
+            ],
+            "extraction_method": "llm"
+          }
+        ],
+        "information_gaps": [
+          "未披露各主要产品的具体商业化阶段（如是否已量产、在售）的明确信息。",
+          "未披露各研发项目对应的具体产品名称及商业化状态。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [
+          {
+            "item_id": "unmapped_1",
+            "content": "广东省智能视频分析工程技术研究中心",
+            "reason": "研究中心属于组织或平台，不属于产品、技术或项目，Ontology 无对应字段。"
+          },
+          {
+            "item_id": "unmapped_2",
+            "content": "机场野生动物智能监测系统",
+            "reason": "系统名称未明确称为产品，且属于应用案例，未匹配 Ontology 字段。"
+          },
+          {
+            "item_id": "unmapped_3",
+            "content": "作业线上安全检查智能核查方法",
+            "reason": "方法属于技术或流程，未明确称为产品，且未匹配 technology.name 字段。"
+          },
+          {
+            "item_id": "unmapped_4",
+            "content": "赛鹰-350 型转子发动机项目",
+            "reason": "研发项目，未明确称为产品，且未匹配 product.name 字段。"
+          },
+          {
+            "item_id": "unmapped_5",
+            "content": "工业巡检机器人产品系列迭代研发项目",
+            "reason": "研发项目，未明确称为产品，且未匹配 product.name 字段。"
+          },
+          {
+            "item_id": "unmapped_6",
+            "content": "工业巡检机器人产品系列迭代研发项目 2.0",
+            "reason": "研发项目，未明确称为产品，且未匹配 product.name 字段。"
+          },
+          {
+            "item_id": "unmapped_7",
+            "content": "配电房巡检机器人、室内 AGV 巡检机器人、隧道巡检机器人",
+            "reason": "产品名称出现在研发项目描述中，但未明确称为产品，且未匹配 product.name 字段。"
+          },
+          {
+            "item_id": "unmapped_8",
+            "content": "机场飞行区智能安全防范体系",
+            "reason": "体系名称未明确称为产品，且未匹配 product.name 字段。"
+          },
+          {
+            "item_id": "unmapped_9",
+            "content": "车站运维智能 AI 应用系统",
+            "reason": "系统名称未明确称为产品，且未匹配 product.name 字段。"
+          },
+          {
+            "item_id": "unmapped_10",
+            "content": "AI 鸟情自动化探驱防范",
+            "reason": "项目名称未明确称为产品，且未匹配 product.name 字段。"
+          },
+          {
+            "item_id": "unmapped_11",
+            "content": "卫星智能算法服务及天地协同体系研发",
+            "reason": "研发项目，未明确称为产品，且未匹配 product.name 字段。"
+          },
+          {
+            "item_id": "unmapped_12",
+            "content": "综合视频管理平台研发项目",
+            "reason": "研发项目，未明确称为产品，且未匹配 product.name 字段。"
+          }
+        ],
+        "consistency_warnings": [
+          {
+            "item_id": "item_22",
+            "field_id": "product.commercialization_stage",
+            "information_gap": "未披露各主要产品的具体商业化阶段（如是否已量产、在售）的明确信息。",
+            "reason": "该字段已有明确候选值，但信息缺口同时表示其证据仍不充分。"
+          },
+          {
+            "item_id": "item_25",
+            "field_id": "product.commercialization_stage",
+            "information_gap": "未披露各主要产品的具体商业化阶段（如是否已量产、在售）的明确信息。",
+            "reason": "该字段已有明确候选值，但信息缺口同时表示其证据仍不充分。"
+          }
+        ],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": [
+          {
+            "kind": "profile_items",
+            "index": 44,
+            "candidate_id": "item_12",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "candidate": {
+              "item_id": "item_12",
+              "subject": "the_enterprise",
+              "section_id": "product_research_commercialization",
+              "field_id": "product.name",
+              "value": "基于智能视频图像分析技术的列车客流统计分析管理系统",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00072"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                  "excerpt": "基于智能视频图像分析技术的列车客流统计分析管理系统"
+                }
+              ]
+            },
+            "reason": "技术或零部件必须被原文明确称为产品、型号或系列。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 45,
+            "candidate_id": "item_15",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00610"
+            ],
+            "candidate": {
+              "item_id": "item_15",
+              "subject": "the_enterprise",
+              "section_id": "product_research_commercialization",
+              "field_id": "product.name",
+              "value": "工业巡检机器人产品系列迭代研发项目 3.0",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00072",
+                "src_d08e0e930385d696:eu_00610"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                  "excerpt": "工业巡检机器人产品系列迭代研发项目 3.0"
+                },
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00610",
+                  "excerpt": "工业巡检机器人产品系列迭代研发项目 3.0"
+                }
+              ]
+            },
+            "reason": "客户、供应商和研发或建设项目不得作为产品名称。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 46,
+            "candidate_id": "item_17",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00610"
+            ],
+            "candidate": {
+              "item_id": "item_17",
+              "subject": "the_enterprise",
+              "section_id": "product_research_commercialization",
+              "field_id": "product.name",
+              "value": "综合视频管理平台研发项目",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00610"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00610",
+                  "excerpt": "综合视频管理平台研发项目"
+                }
+              ]
+            },
+            "reason": "客户、供应商和研发或建设项目不得作为产品名称。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 47,
+            "candidate_id": "item_18",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00610"
+            ],
+            "candidate": {
+              "item_id": "item_18",
+              "subject": "the_enterprise",
+              "section_id": "product_research_commercialization",
+              "field_id": "product.name",
+              "value": "卫星智能算法服务及天地协同体系研发",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00610"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00610",
+                  "excerpt": "卫星智能算法服务及天地协同体系研发"
+                }
+              ]
+            },
+            "reason": "技术或零部件必须被原文明确称为产品、型号或系列。"
+          },
+          {
+            "kind": "profile_items",
+            "index": 48,
+            "candidate_id": "item_55",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00059"
+            ],
+            "candidate": {
+              "item_id": "item_55",
+              "subject": "the_enterprise",
+              "section_id": "technology_ip",
+              "field_id": "technology.name",
+              "value": "大载荷、长航时无人机机型研发和生产技术",
+              "value_type": "entity_ref",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00059"
+              ],
+              "extraction_method": "llm",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00059",
+                  "excerpt": "公司擅长大载荷、长航时无人机机型的研发和生产"
+                }
+              ]
+            },
+            "reason": "实体名称必须直接出现在至少一条证据摘录中。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 27,
+            "candidate_id": "rel_26",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "rel_26",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "extraction_method": "llm",
+              "source_id": "the_enterprise",
+              "target_id": "item_54",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 28,
+            "candidate_id": "rel_27",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00059"
+            ],
+            "candidate": {
+              "relation_id": "rel_27",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00059"
+              ],
+              "extraction_method": "llm",
+              "source_id": "the_enterprise",
+              "target_id": "item_55",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00059",
+                  "excerpt": "公司擅长大载荷、长航时无人机机型的研发和生产"
+                }
+              ]
+            },
+            "reason": "画像关系候选缺少必要字段。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 29,
+            "candidate_id": "recovery:rel_1",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_1",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_29",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "公司组建了人工智能算法团队，主攻深度学习、机器视觉、智能视频分析等方向"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 30,
+            "candidate_id": "recovery:rel_2",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_2",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_30",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "公司组建了人工智能算法团队，主攻深度学习、机器视觉、智能视频分析等方向"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 31,
+            "candidate_id": "recovery:rel_3",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_3",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_31",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "公司组建了人工智能算法团队，主攻深度学习、机器视觉、智能视频分析等方向"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 32,
+            "candidate_id": "recovery:rel_4",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_4",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_32",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "以复杂环境下人体多姿态检测技术、智能视频行为分析技术、人脸识别技术、车牌识别技术为主要研究方向"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 33,
+            "candidate_id": "recovery:rel_5",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_5",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_33",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "以复杂环境下人体多姿态检测技术、智能视频行为分析技术、人脸识别技术、车牌识别技术为主要研究方向"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 34,
+            "candidate_id": "recovery:rel_6",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_6",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_34",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "以复杂环境下人体多姿态检测技术、智能视频行为分析技术、人脸识别技术、车牌识别技术为主要研究方向"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 35,
+            "candidate_id": "recovery:rel_7",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_7",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_35",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "以复杂环境下人体多姿态检测技术、智能视频行为分析技术、人脸识别技术、车牌识别技术为主要研究方向"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 36,
+            "candidate_id": "recovery:rel_11",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_11",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_39",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "基于语义分析和人工智能算法，实现计划与作业文件等相关信息的数据匹配"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 37,
+            "candidate_id": "recovery:rel_12",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_12",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_40",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "通过利用计算机视觉和深度学习模型，实时监测乘客行为和车厢客流密度"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 38,
+            "candidate_id": "recovery:rel_13",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_13",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_41",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "通过利用计算机视觉和深度学习模型，实时监测乘客行为和车厢客流密度"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 39,
+            "candidate_id": "recovery:rel_14",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_14",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_42",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "利用人工智能深度学习算法，突破了高峰期乘客密度高、遮挡度高、摄像头透射效应等问题"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 40,
+            "candidate_id": "recovery:rel_15",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_15",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00072"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_43",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                  "excerpt": "综合采用视频图像分析和重力感应互相结合的技术手段"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 41,
+            "candidate_id": "recovery:rel_16",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_16",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00072"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_44",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                  "excerpt": "依据数据互补算法有效实现列车内部客流数据的精准统计和分析"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 42,
+            "candidate_id": "recovery:rel_17",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_17",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00072"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_45",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                  "excerpt": "本项目基于智能视频分析技术的列车客流统计分析管理技术的研究"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 43,
+            "candidate_id": "recovery:rel_18",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_18",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_46",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "基于人工智能有效保障施工安全"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 44,
+            "candidate_id": "recovery:rel_19",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_19",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_47",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 45,
+            "candidate_id": "recovery:rel_20",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_20",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_48",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "打造基于“云-端”互联架构的机场飞行区智能安全防范体系"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 46,
+            "candidate_id": "recovery:rel_21",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_21",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00072"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_49",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                  "excerpt": "基于大数据、云计算、无线通信、健康管理等新兴技术"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 47,
+            "candidate_id": "recovery:rel_22",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_22",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00072"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_50",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+                  "excerpt": "基于大数据、云计算、无线通信、健康管理等新兴技术"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 48,
+            "candidate_id": "recovery:rel_24",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_24",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_52",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          },
+          {
+            "kind": "profile_relations",
+            "index": 49,
+            "candidate_id": "recovery:rel_25",
+            "provided_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024"
+            ],
+            "candidate": {
+              "relation_id": "recovery:rel_25",
+              "information_status": "confirmed",
+              "content_role": "business_record",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00024"
+              ],
+              "source_id": "the_enterprise",
+              "target_id": "item_53",
+              "relation_type": "develops",
+              "evidence_quotes": [
+                {
+                  "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+                  "excerpt": "系统从精准感知、人工智能和大数据等技术入手"
+                }
+              ]
+            },
+            "reason": "develops 关系必须引用明确的自研、研发或开发表述。"
+          }
+        ]
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "4、研发投入",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "4、研发投入"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 31,
+            "page_end": 33
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "智能视频",
+            "产品",
+            "研发",
+            "开发",
+            "列车客流",
+            "产业化"
+          ],
+          "content_chars": 3186
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00610",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、符合资本化条件的研发项目",
+          "section_path": [
+            "第十节 财务报告",
+            "八、研发支出",
+            "1、符合资本化条件的研发项目"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 175,
+            "page_end": 175
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "研发",
+            "开发",
+            "工业巡检机器人",
+            "综合视频管理平台",
+            "研发项目"
+          ],
+          "content_chars": 995
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00055",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "(2)关键共性技术优势",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "三、核心竞争力分析",
+            "1、技术研发优势",
+            "(2)关键共性技术优势"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 26,
+            "page_end": 26
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "研发",
+            "技术"
+          ],
+          "content_chars": 212
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00059",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（3）无人机产品",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "三、核心竞争力分析",
+            "2. 产品优势",
+            "（3）无人机产品"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 26,
+            "page_end": 27
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "研发",
+            "开发",
+            "无人机",
+            "主要产品"
+          ],
+          "content_chars": 272
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00014",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）人工智能领域",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "一、报告期内公司所处行业情况",
+            "（1）人工智能领域"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 11,
+            "page_end": 11
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "开发",
+            "产业化"
+          ],
+          "content_chars": 1176
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00047",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "4.1 聚焦主营业务，持续研发创新",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "4.1 聚焦主营业务，持续研发创新"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 23,
+            "page_end": 23
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "应用",
+            "产品"
+          ],
+          "content_chars": 258
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00054",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "(1)研发体系优势",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "三、核心竞争力分析",
+            "1、技术研发优势",
+            "(1)研发体系优势"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 26,
+            "page_end": 26
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "研发",
+            "技术"
+          ],
+          "content_chars": 238
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00024",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2.2 人工智能平台产品",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "2.2 人工智能平台产品"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 15,
+            "page_end": 17
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "智能视频",
+            "产品",
+            "研发",
+            "开发"
+          ],
+          "content_chars": 1003
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00018",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、主要产品及平台",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "2、主要产品及平台"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 13,
+            "page_end": 13
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "主要产品",
+            "产品"
+          ],
+          "content_chars": 84
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00056",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "(3)产学研优势",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "三、核心竞争力分析",
+            "1、技术研发优势",
+            "(3)产学研优势"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 26,
+            "page_end": 26
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产业化",
+            "项目",
+            "研发项目"
+          ],
+          "content_chars": 162
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00038",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2.4.2 智慧城市平台软件",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "2.4.2 智慧城市平台软件"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 21,
+            "page_end": 21
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "应用"
+          ],
+          "content_chars": 300
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00657",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "3、其他",
+          "section_path": [
+            "第十节 财务报告",
+            "六、负债总额 2,107,760,384.6",
+            "3、其他"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 188,
+            "page_end": 188
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "项目",
+            "应用"
+          ],
+          "content_chars": 633
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00026",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）系留多旋翼无人机",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "2.3 无人机系列产品",
+            "（1）系留多旋翼无人机"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 18,
+            "page_end": 18
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "应用",
+            "产品"
+          ],
+          "content_chars": 358
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00422",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（1）自主运营",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "（二）本公司收入的具体确认原则",
+            "4、游戏业务收入",
+            "（1）自主运营"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 130,
+            "page_end": 130
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "自研"
+          ],
+          "content_chars": 331
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00165",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、保证本承诺人及其关联企业不以任何方式违法违规占有赛为智能的资金、资",
+          "section_path": [
+            "第六节 重要事项",
+            "一、本次重组前，除持有赛为智能的股份外，本人及本人控制的其他公司、企业",
+            "2、保证本承诺人及其关联企业不以任何方式违法违规占有赛为智能的资金、资"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 59,
+            "page_end": 61
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "开发"
+          ],
+          "content_chars": 2558
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00019",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2.1 人工智能硬件产品",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "2.1 人工智能硬件产品"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 13,
+            "page_end": 13
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "研发",
+            "开发",
+            "工业巡检机器人"
+          ],
+          "content_chars": 122
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00025",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2.3 无人机系列产品",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "2.3 无人机系列产品"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 17,
+            "page_end": 17
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "产品",
+            "研发",
+            "无人机"
+          ],
+          "content_chars": 533
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00035",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（3）综合安防集成平台软件",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "二、报告期内公司从事的主要业务",
+            "2.4.1 轨道交通系列产品",
+            "（3）综合安防集成平台软件"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 20,
+            "page_end": 20
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "智能视频"
+          ],
+          "content_chars": 459
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_d08e0e930385d696:eu_00018",
+        "src_d08e0e930385d696:eu_00024",
+        "src_d08e0e930385d696:eu_00059",
+        "src_d08e0e930385d696:eu_00072",
+        "src_d08e0e930385d696:eu_00610",
+        "src_d08e0e930385d696:eu_00014"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "产品 商业化 研发 技术",
+            "keyword_count": 7,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00610",
+              "src_d08e0e930385d696:eu_00055",
+              "src_d08e0e930385d696:eu_00059",
+              "src_d08e0e930385d696:eu_00014",
+              "src_d08e0e930385d696:eu_00047",
+              "src_d08e0e930385d696:eu_00054",
+              "src_d08e0e930385d696:eu_00024",
+              "src_d08e0e930385d696:eu_00018",
+              "src_d08e0e930385d696:eu_00056"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "产业化 项目 应用",
+            "keyword_count": 6,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00014",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00038",
+              "src_d08e0e930385d696:eu_00059",
+              "src_d08e0e930385d696:eu_00610",
+              "src_d08e0e930385d696:eu_00047",
+              "src_d08e0e930385d696:eu_00657",
+              "src_d08e0e930385d696:eu_00026",
+              "src_d08e0e930385d696:eu_00018",
+              "src_d08e0e930385d696:eu_00056"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018",
+              "src_d08e0e930385d696:eu_00024",
+              "src_d08e0e930385d696:eu_00059",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00610",
+              "src_d08e0e930385d696:eu_00014"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00018",
+              "src_d08e0e930385d696:eu_00024",
+              "src_d08e0e930385d696:eu_00059",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00610",
+              "src_d08e0e930385d696:eu_00014"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 6716
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "智能视频 产品 自研 研发 开发 列车客流 工业巡检机器人 综合视频管理平台 无人机",
+            "keyword_count": 12,
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00422",
+              "src_d08e0e930385d696:eu_00610",
+              "src_d08e0e930385d696:eu_00165",
+              "src_d08e0e930385d696:eu_00019",
+              "src_d08e0e930385d696:eu_00025",
+              "src_d08e0e930385d696:eu_00059",
+              "src_d08e0e930385d696:eu_00014",
+              "src_d08e0e930385d696:eu_00035"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00610",
+              "src_d08e0e930385d696:eu_00019",
+              "src_d08e0e930385d696:eu_00025",
+              "src_d08e0e930385d696:eu_00059"
+            ],
+            "phase": "react_evidence_recovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00024",
+              "src_d08e0e930385d696:eu_00072"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 4189
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 623,
+          "output_tokens": 139,
+          "total_tokens": 762,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4444,
+          "output_tokens": 1079,
+          "total_tokens": 5523,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 10353,
+          "output_tokens": 40,
+          "total_tokens": 10393,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "product_and_project",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 8495,
+              "completion_tokens": 20032,
+              "total_tokens": 28527,
+              "attempt_count": 2,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00018",
+                "src_d08e0e930385d696:eu_00024",
+                "src_d08e0e930385d696:eu_00059",
+                "src_d08e0e930385d696:eu_00072",
+                "src_d08e0e930385d696:eu_00610",
+                "src_d08e0e930385d696:eu_00014"
+              ]
+            }
+          ],
+          "prompt_tokens": 8495,
+          "completion_tokens": 20032,
+          "total_tokens": 28527
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 8146,
+          "output_tokens": 1086,
+          "total_tokens": 9232,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 11164,
+          "output_tokens": 1143,
+          "total_tokens": 12307,
+          "stage": "react_evidence_recovery"
+        },
+        {
+          "stage": "profile_extraction_recovery",
+          "domain": "product_and_project",
+          "batch_count": 1,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 12710,
+              "completion_tokens": 4581,
+              "total_tokens": 17291,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "all",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00018",
+                "src_d08e0e930385d696:eu_00024",
+                "src_d08e0e930385d696:eu_00059",
+                "src_d08e0e930385d696:eu_00072",
+                "src_d08e0e930385d696:eu_00610",
+                "src_d08e0e930385d696:eu_00014"
+              ]
+            }
+          ],
+          "prompt_tokens": 12710,
+          "completion_tokens": 4581,
+          "total_tokens": 17291
+        }
+      ]
+    }
+  ]
+}

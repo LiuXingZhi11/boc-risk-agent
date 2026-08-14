@@ -1,0 +1,1765 @@
+{
+  "case_id": "Saiwei",
+  "profile_type": "current",
+  "execution_mode": "react",
+  "domains": [
+    {
+      "domain": "customer_and_supplier",
+      "status": "pending_review",
+      "evidence_units": [
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "（8） 主要销售客户和主要供应商情况\n公司主要销售客户情况\n前五名客户合计销售金额（元） 120,837,143.40\n前五名客户合计销售金额占年度销售总额比例 84.34%\n前五名客户销售额中关联方销售额占年度销售总额比例 0.00%\n公司前 5 大客户资料\n序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%\n3 单位 3 11,864,302.02 8.28%\n4 单位 4 5,627,514.98 3.93%\n5 单位 5 4,036,682.06 2.82%\n合计 -- 120,837,143.42 84.34%\n主要客户其他情况说明\n□适用 不适用\n公司主要供应商情况\n前五名供应商合计采购金额（元） 57,184,540.51\n前五名供应商合计采购金额占年度采购总额比例 44.48%\n前五名供应商采购额中关联方采购额占年度采购总额比例 0.00%\n公司前 5 名供应商资料\n序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%\n2 单位 2 10,992,311.50 8.55%\n3 单位 3 7,079,646.06 5.51%\n4 单位 4 4,592,999.29 3.57%\n5 单位 5 4,307,715.03 3.35%\n合计 -- 57,184,540.51 44.48%\n主要供应商其他情况说明\n□适用 不适用",
+          "location": {
+            "kind": "pdf",
+            "page_start": 30,
+            "page_end": 31
+          },
+          "metadata": {
+            "title": "（8） 主要销售客户和主要供应商情况",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第三节 管理层讨论与分析",
+              "四、主营业务分析",
+              "2、收入与成本",
+              "（8） 主要销售客户和主要供应商情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 6,
+            "page": 30
+          },
+          "source_date": null,
+          "content_hash": "8c60a3c5438d9ccd1c25c8af28714cce2d69b3bb9174cf65e669564fd382af59"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00203",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "4、关联债权债务往来\n适用 □不适用\n是否存在非经营性关联债权债务往来\n是 □否\n应收关联方债权\n关联方 关联关系 形成原因\n是否存在\n非经营性\n资金占用\n期初余额\n（万元）\n本期新增\n金额（万\n元）\n本期收回\n金额（万\n元）\n利率 本期利息\n（万元）\n期末余额\n（万元）\n应付关联方债务\n关联方 关联关系 形成原因 期初余额\n（万元）\n本期新增\n金额（万\n元）\n本期归还\n金额（万\n元）\n利率 本期利息\n（万元）\n期末余额\n（万元）\n周勇 控股股东 资金往来 1,349.15 110 1,459.15  0 0\n关联债务对公司经营成\n果及财务状况的影响 补充公司流动资金，缓解公司资金压力。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 70,
+            "page_end": 70
+          },
+          "metadata": {
+            "title": "4、关联债权债务往来",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第六节 重要事项",
+              "十四、重大关联交易",
+              "4、关联债权债务往来"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 70
+          },
+          "source_date": null,
+          "content_hash": "70a9d1e46e0c831ab66c79efe6971443eca98e4cd49e1bf5d09fbdfb4f40d436"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00226",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "2、公司控股股东情况\n控股股东性质：自然人控股\n控股股东类型：自然人\n控股股东姓名 国籍 是否取得其他国家或地区居留权\n周勇 中国 否\n主要职业及职务 公司董事、战略发展首席执行官\n报告期内控股和参股的其他境内外上\n市公司的股权情况 无\n股东名称 报告期末持有无限售条件股份数量\n股份种类\n股份种\n类 数量\n周勇 64,436,123 人民币\n普通股 64,436,123\n周新宏 15,827,200 人民币\n普通股 15,827,200\n深圳担保集团有限公司 8,973,490 人民币\n普通股 8,973,490\n管兴盛 2,278,910 人民币\n普通股 2,278,910\n陈伟平 2,197,700 人民币\n普通股 2,197,700\n廖仁生 1,993,900 人民币\n普通股 1,993,900\n李辉 1,720,700 人民币\n普通股 1,720,700\n毕凡 1,500,000 人民币\n普通股 1,500,000\n陈泽宇 1,447,100 人民币\n普通股 1,447,100\nMORGAN STANLEY & CO.\nINTERNATIONALPLC. 1,402,358 人民币\n普通股 1,402,358\n前 10 名无限售流通股股东之间，\n以及前 10 名无限售流通股股东和\n前 10 名股东之间关联关系或一致\n行动的说明\n前 10 名无限售流通股股东中，除周新宏与周勇具备一致行动关系外，未知其他股东\n之间是否存在关联关系，也未知是否属于一致行动人。\n参与融资融券业务股东情况说明\n（如有）（参见注 5）\n公司股东陈伟平通过国泰君安证券股份有限公司客户信用交易担保证券账户持有\n2,197,700 股，通过普通证券账户持有0 股，实际合计持有2,197,700 股；公司股东\n陈泽宇通过中信建投证券股份有限公司客户信用交易担保证券账户持有 1,447,100\n股，通过普通证券账户持有 0股，实际合计持有 1,447,100股。\n控股股东报告期内变更\n□适用 不适用\n公司报告期控股股东未发生变更。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 77,
+            "page_end": 78
+          },
+          "metadata": {
+            "title": "2、公司控股股东情况",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第六节 重要事项",
+              "三、股东和实际控制人情况",
+              "2、公司控股股东情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 77
+          },
+          "source_date": null,
+          "content_hash": "7a043c65d2bb9a247a5903a2a25f7218af5bbf6aaee79440bc67a55407022a42"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00622",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "2.信用风险\n本公司的信用风险主要来自货币资金、应收账款、应收票据、其他应收款。管理层已制定适当的信用政策，并且不断\n监察这些信用风险的敞口。\n本公司持有的货币资金，主要存放于国有控股银行和其他大中型上市银行，本公司认为其不存在重大的信用风险，不\n会因对方违约而导致任何重大损失。\n对于应收账款、其他应收款，本公司设定相关政策以控制信用风险敞口。本公司基于对客户的财务状况、从第三方获\n取担保的可能性、信用记录及其它因素诸如目前市场状况等评估客户的信用资质并设置相应信用期。本公司会定期对客户\n信用记录进行监控，对于信用记录不良的客户，本公司会采用书面催款、缩短信用期或取消信用期等方式，以确保本公司\n的整体信用风险在可控的范围内。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 180,
+            "page_end": 180
+          },
+          "metadata": {
+            "title": "2.信用风险",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第十节 财务报告",
+              "十二、与金融工具相关的风险",
+              "2.信用风险"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 180
+          },
+          "source_date": null,
+          "content_hash": "900981446eb11f193ce79d843a49a0b1ed999bbb69b687fa9809a04738cc82a6"
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00225",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "content_type": "document_chunk",
+          "content": "三、股东和实际控制人情况\n1、公司股东数量及持股情况\n单位：股\n报告期末普通股股\n东总数 92,055\n年度\n报告\n披露\n日前\n上一\n月末\n普通\n股股\n东总\n数\n103,142\n报告期末表决\n权恢复的优先\n股股东总数\n（如有）（参\n见注 9）\n0\n年度报告披\n露日前上一\n月末表决权\n恢复的优先\n股股东总数\n（如有）\n（参见注\n9）\n0\n持有\n特别\n表决\n权股\n份的\n股东\n总数\n（如\n有）\n0\n持股 5%以上的股东或前10 名股东持股情况（不含通过转融通出借股份）\n股东名称 股东性质 持股\n比例\n报告期末持股\n数量\n报告期内增减\n变动情况\n持\n有\n有\n限\n售\n条\n件\n的\n股\n份\n数\n量\n持有无限售\n条件的股份\n数量\n质押、标记或冻结情\n况\n股份状\n态 数量\n周勇 境内自然人 8.44% 64,436,123  -16,611,990  0 64,436,123 质押 63,758,010\n周新宏 境内自然人 2.07% 15,827,200 0    0 15,827,200 质押 5,000,000\n深圳担保集团有限\n公司 国有法人 1.17% 8,973,490 8,973,490 0 8,973,490 不适用 0\n管兴盛 境内自然人 0.30% 2,278,910  0    0 2,278,910 不适用 0\n陈伟平 境内自然人 0.29% 2,197,700  2,197,700  0 2,197,700 不适用 0\n廖仁生 境内自然人 0.26% 1,993,900  1,993,900  0 1,993,900 不适用 0\n李辉 境内自然人 0.23% 1,720,700  1,720,700  0 1,720,700 不适用 0\n毕凡 境内自然人 0.20% 1,500,000  1,205,700  0 1,500,000 不适用 0\n陈泽宇 境内自然人 0.19% 1,447,100  1,447,100  0 1,447,100 不适用 0\nMORGAN STANLEY &\nCO.\nINTERNATIONALPLC.\n境外法人 0.18% 1,402,358 -4,030,786 0 1,402,358 不适用 0\n战略投资者或一般法人因配售新股\n成为前 10 名股东的情况（如有）\n（参见注 4）\n不适用\n上述股东关联关系或一致行动的说\n明\n公司前 10 名股东之间，除周勇与周新宏属于一致行动人外，未知其余股东之间是否\n存在关联关系，也未知是否属于一致行动人。\n上述股东涉及委托/受托表决权、\n放弃表决权情况的说明 无\n前 10 名股东中存在回购专户的特\n别说明（如有）（参见注 10） 不适用\n前 10 名无限售条件股东持股情况（不含通过转融通出借股份、高管锁定股）\n持股 5%以上股东、前10 名股东及前10 名无限售流通股股东参与转融通业务出借股份情况\n□适用 不适用\n前 10 名股东及前10 名无限售流通股股东因转融通出借/归还原因导致较上期发生变化\n□适用 不适用\n公司是否具有表决权差异安排\n□适用 不适用\n公司前 10 名普通股股东、前10 名无限售条件普通股股东在报告期内是否进行约定购回交易\n□是 否\n公司前 10 名普通股股东、前10 名无限售条件普通股股东在报告期内未进行约定购回交易。",
+          "location": {
+            "kind": "pdf",
+            "page_start": 76,
+            "page_end": 77
+          },
+          "metadata": {
+            "title": "1、公司股东数量及持股情况",
+            "source_title": "赛为智能2024年报",
+            "section_path": [
+              "第六节 重要事项",
+              "三、股东和实际控制人情况",
+              "1、公司股东数量及持股情况"
+            ],
+            "chunk_index_in_section": 0,
+            "heading_level": 5,
+            "page": 76
+          },
+          "source_date": null,
+          "content_hash": "2847a5244a44ca69b4679f6186bbc2d322f7e5d938919c17dbfb806ef5028632"
+        }
+      ],
+      "candidates": {
+        "profile_items": [
+          {
+            "item_id": "customer:item_1",
+            "subject": "the_enterprise",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.customer_concentration",
+            "value": 0.8434,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "前五名客户合计销售金额（元） 120,837,143.40"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "前五名客户合计销售金额占年度销售总额比例 84.34%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%\n3 单位 3 11,864,302.02 8.28%\n4 单位 4 5,627,514.98 3.93%\n5 单位 5 4,036,682.06 2.82%\n合计 -- 120,837,143.42 84.34%\n主要客户其他情况说明"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "前五名客户合计销售金额占年度销售总额比例",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_2",
+            "subject": "单位 1",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 1",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "1 单位 1 59,362,040.60 41.43%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "customer:item_3",
+            "subject": "单位 1",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 59362040.6,
+            "value_type": "money",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "1 单位 1 59,362,040.60 41.43%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "向主要客户销售金额",
+            "unit": "元",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_4",
+            "subject": "单位 1",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.4143,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "1 单位 1 59,362,040.60 41.43%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "占营业收入比例",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_5",
+            "subject": "单位 2",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 2",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "2 单位 2 39,946,603.76 27.88%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "customer:item_6",
+            "subject": "单位 2",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 39946603.76,
+            "value_type": "money",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "2 单位 2 39,946,603.76 27.88%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "向主要客户销售金额",
+            "unit": "元",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_7",
+            "subject": "单位 2",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.2788,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "2 单位 2 39,946,603.76 27.88%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "占营业收入比例",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_8",
+            "subject": "单位 3",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 3",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "3 单位 3 11,864,302.02 8.28%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "customer:item_9",
+            "subject": "单位 3",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 11864302.02,
+            "value_type": "money",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "3 单位 3 11,864,302.02 8.28%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%\n3 单位 3 11,864,302.02 8.28%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "向主要客户销售金额",
+            "unit": "元",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_10",
+            "subject": "单位 3",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.0828,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "3 单位 3 11,864,302.02 8.28%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%\n3 单位 3 11,864,302.02 8.28%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "占营业收入比例",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_11",
+            "subject": "单位 4",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 4",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "4 单位 4 5,627,514.98 3.93%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "customer:item_12",
+            "subject": "单位 4",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 5627514.98,
+            "value_type": "money",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "4 单位 4 5,627,514.98 3.93%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%\n3 单位 3 11,864,302.02 8.28%\n4 单位 4 5,627,514.98 3.93%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "向主要客户销售金额",
+            "unit": "元",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_13",
+            "subject": "单位 4",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.0393,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "4 单位 4 5,627,514.98 3.93%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%\n3 单位 3 11,864,302.02 8.28%\n4 单位 4 5,627,514.98 3.93%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "占营业收入比例",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_14",
+            "subject": "单位 5",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 5",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "5 单位 5 4,036,682.06 2.82%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "customer:item_15",
+            "subject": "单位 5",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 4036682.06,
+            "value_type": "money",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "5 单位 5 4,036,682.06 2.82%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%\n3 单位 3 11,864,302.02 8.28%\n4 单位 4 5,627,514.98 3.93%\n5 单位 5 4,036,682.06 2.82%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "向主要客户销售金额",
+            "unit": "元",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_16",
+            "subject": "单位 5",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.0282,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "5 单位 5 4,036,682.06 2.82%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 客户名称 销售额（元） 占年度销售总额比例\n1 单位 1 59,362,040.60 41.43%\n2 单位 2 39,946,603.76 27.88%\n3 单位 3 11,864,302.02 8.28%\n4 单位 4 5,627,514.98 3.93%\n5 单位 5 4,036,682.06 2.82%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "占营业收入比例",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "customer:item_17",
+            "subject": "the_enterprise",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.related_party_status",
+            "value": "non_related",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "前五名客户销售额中关联方销售额占年度销售总额比例 0.00%"
+              }
+            ],
+            "extraction_method": "llm",
+            "value_scope": "前五名客户",
+            "reporting_period": "2024"
+          },
+          {
+            "item_id": "supplier:item_1",
+            "subject": "单位 1",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 1",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "1 单位 1 30,211,868.63 23.50%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "1 单位 1 59,362,040.60 41.43%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_2",
+            "subject": "单位 2",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 2",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "2 单位 2 10,992,311.50 8.55%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "2 单位 2 39,946,603.76 27.88%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_3",
+            "subject": "单位 3",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 3",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "3 单位 3 7,079,646.06 5.51%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "3 单位 3 11,864,302.02 8.28%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_4",
+            "subject": "单位 4",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 4",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "4 单位 4 4,592,999.29 3.57%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "4 单位 4 5,627,514.98 3.93%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_5",
+            "subject": "单位 5",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.counterparty_name",
+            "value": "单位 5",
+            "value_type": "entity_ref",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "5 单位 5 4,307,715.03 3.35%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "5 单位 5 4,036,682.06 2.82%"
+              }
+            ],
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_6",
+            "subject": "单位 1",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 30211868.63,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "1 单位 1 30,211,868.63 23.50%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%"
+              }
+            ],
+            "value_scope": "向主要供应商采购金额",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_7",
+            "subject": "单位 1",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.235,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "1 单位 1 30,211,868.63 23.50%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%"
+              }
+            ],
+            "value_scope": "占年度采购总额比例",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_8",
+            "subject": "单位 2",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 10992311.5,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "2 单位 2 10,992,311.50 8.55%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%\n2 单位 2 10,992,311.50 8.55%"
+              }
+            ],
+            "value_scope": "向主要供应商采购金额",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_9",
+            "subject": "单位 2",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.0855,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "2 单位 2 10,992,311.50 8.55%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%\n2 单位 2 10,992,311.50 8.55%"
+              }
+            ],
+            "value_scope": "占年度采购总额比例",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_10",
+            "subject": "单位 3",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 7079646.06,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "3 单位 3 7,079,646.06 5.51%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%\n2 单位 2 10,992,311.50 8.55%\n3 单位 3 7,079,646.06 5.51%"
+              }
+            ],
+            "value_scope": "向主要供应商采购金额",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_11",
+            "subject": "单位 3",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.0551,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "3 单位 3 7,079,646.06 5.51%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%\n2 单位 2 10,992,311.50 8.55%\n3 单位 3 7,079,646.06 5.51%"
+              }
+            ],
+            "value_scope": "占年度采购总额比例",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_12",
+            "subject": "单位 4",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 4592999.29,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "4 单位 4 4,592,999.29 3.57%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%\n2 单位 2 10,992,311.50 8.55%\n3 单位 3 7,079,646.06 5.51%\n4 单位 4 4,592,999.29 3.57%"
+              }
+            ],
+            "value_scope": "向主要供应商采购金额",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_13",
+            "subject": "单位 4",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.0357,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "4 单位 4 4,592,999.29 3.57%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%\n2 单位 2 10,992,311.50 8.55%\n3 单位 3 7,079,646.06 5.51%\n4 单位 4 4,592,999.29 3.57%"
+              }
+            ],
+            "value_scope": "占年度采购总额比例",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_14",
+            "subject": "单位 5",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_amount",
+            "value": 4307715.03,
+            "value_type": "money",
+            "unit": "元",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "5 单位 5 4,307,715.03 3.35%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%\n2 单位 2 10,992,311.50 8.55%\n3 单位 3 7,079,646.06 5.51%\n4 单位 4 4,592,999.29 3.57%\n5 单位 5 4,307,715.03 3.35%"
+              }
+            ],
+            "value_scope": "向主要供应商采购金额",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_15",
+            "subject": "单位 5",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.transaction_ratio",
+            "value": 0.0335,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "5 单位 5 4,307,715.03 3.35%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "序号 供应商名称 采购额（元） 占年度采购总额比例\n1 单位 1 30,211,868.63 23.50%\n2 单位 2 10,992,311.50 8.55%\n3 单位 3 7,079,646.06 5.51%\n4 单位 4 4,592,999.29 3.57%\n5 单位 5 4,307,715.03 3.35%"
+              }
+            ],
+            "value_scope": "占年度采购总额比例",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_16",
+            "subject": "the_enterprise",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.supplier_concentration",
+            "value": 0.4448,
+            "value_type": "ratio",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "前五名供应商合计采购金额（元） 57,184,540.51"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "前五名供应商合计采购金额占年度采购总额比例 44.48%"
+              },
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "前五名供应商采购额中关联方采购额占年度采购总额比例 0.00%"
+              }
+            ],
+            "value_scope": "前五名供应商合计采购金额占年度采购总额比例",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          },
+          {
+            "item_id": "supplier:item_17",
+            "subject": "the_enterprise",
+            "section_id": "customer_supplier_partners",
+            "field_id": "customer_supplier.related_party_status",
+            "value": "non_related",
+            "value_type": "enum",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "前五名供应商采购额中关联方采购额占年度采购总额比例 0.00%"
+              }
+            ],
+            "value_scope": "前五名供应商",
+            "reporting_period": "2024",
+            "extraction_method": "llm"
+          }
+        ],
+        "profile_relations": [
+          {
+            "relation_id": "customer:rel_1",
+            "relation_type": "sells_to",
+            "source_id": "customer:item_1",
+            "source_type": "Enterprise",
+            "target_id": "customer:item_2",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "1 单位 1 59,362,040.60 41.43%"
+              }
+            ]
+          },
+          {
+            "relation_id": "customer:rel_2",
+            "relation_type": "sells_to",
+            "source_id": "customer:item_1",
+            "source_type": "Enterprise",
+            "target_id": "customer:item_5",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "2 单位 2 39,946,603.76 27.88%"
+              }
+            ]
+          },
+          {
+            "relation_id": "customer:rel_3",
+            "relation_type": "sells_to",
+            "source_id": "customer:item_1",
+            "source_type": "Enterprise",
+            "target_id": "customer:item_8",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "3 单位 3 11,864,302.02 8.28%"
+              }
+            ]
+          },
+          {
+            "relation_id": "customer:rel_4",
+            "relation_type": "sells_to",
+            "source_id": "customer:item_1",
+            "source_type": "Enterprise",
+            "target_id": "customer:item_11",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "4 单位 4 5,627,514.98 3.93%"
+              }
+            ]
+          },
+          {
+            "relation_id": "customer:rel_5",
+            "relation_type": "sells_to",
+            "source_id": "customer:item_1",
+            "source_type": "Enterprise",
+            "target_id": "customer:item_14",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "audited_information",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "5 单位 5 4,036,682.06 2.82%"
+              }
+            ]
+          },
+          {
+            "relation_id": "supplier:rel_1",
+            "relation_type": "purchases_from",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "supplier:item_1",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "1 单位 1 30,211,868.63 23.50%"
+              }
+            ]
+          },
+          {
+            "relation_id": "supplier:rel_2",
+            "relation_type": "purchases_from",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "supplier:item_2",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "2 单位 2 10,992,311.50 8.55%"
+              }
+            ]
+          },
+          {
+            "relation_id": "supplier:rel_3",
+            "relation_type": "purchases_from",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "supplier:item_3",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "3 单位 3 7,079,646.06 5.51%"
+              }
+            ]
+          },
+          {
+            "relation_id": "supplier:rel_4",
+            "relation_type": "purchases_from",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "supplier:item_4",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "4 单位 4 4,592,999.29 3.57%"
+              }
+            ]
+          },
+          {
+            "relation_id": "supplier:rel_5",
+            "relation_type": "purchases_from",
+            "source_id": "the_enterprise",
+            "source_type": "Enterprise",
+            "target_id": "supplier:item_5",
+            "target_type": "Enterprise",
+            "information_status": "confirmed",
+            "content_role": "business_record",
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070"
+            ],
+            "evidence_quotes": [
+              {
+                "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+                "excerpt": "5 单位 5 4,307,715.03 3.35%"
+              }
+            ]
+          }
+        ],
+        "information_gaps": [
+          "前五大客户仅披露匿名代称（单位 1 至单位 5），真实法律主体名称未披露。",
+          "前五大供应商的真实法律主体名称未披露，仅以匿名代称（单位 1 至单位 5）列示。"
+        ],
+        "conflicts": [],
+        "unmapped_items": [],
+        "consistency_warnings": [],
+        "deduplicated_candidates": [],
+        "deduplicated_relations": [],
+        "rejected_candidates": []
+      },
+      "evidence_catalog": [
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00419",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "35、收入",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "35、收入"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 129,
+            "page_end": 130
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "客户"
+          ],
+          "content_chars": 1045
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00070",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（8） 主要销售客户和主要供应商情况",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "2、收入与成本",
+            "（8） 主要销售客户和主要供应商情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 30,
+            "page_end": 31
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "主要客户",
+            "供应商",
+            "前五名客户",
+            "前五名供应商",
+            "采购额"
+          ],
+          "content_chars": 659
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00203",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "4、关联债权债务往来",
+          "section_path": [
+            "第六节 重要事项",
+            "十四、重大关联交易",
+            "4、关联债权债务往来"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 70,
+            "page_end": 70
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "关联关系"
+          ],
+          "content_chars": 299
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00404",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "31、合同负债",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "31、合同负债"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 126,
+            "page_end": 126
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "客户"
+          ],
+          "content_chars": 175
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00190",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、本公司自 2024 年1 月1 日起执行财政部颁布的《企业会计准则解释第17 号》“关于供应商融资安排的披露”规",
+          "section_path": [
+            "第六节 重要事项",
+            "六、董事会关于报告期会计政策、会计估计变更或重大会计差错更正的说明",
+            "2、本公司自 2024 年1 月1 日起执行财政部颁布的《企业会计准则解释第17 号》“关于供应商融资安排的披露”规"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 66,
+            "page_end": 66
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "供应商"
+          ],
+          "content_chars": 81
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00225",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、公司股东数量及持股情况",
+          "section_path": [
+            "第六节 重要事项",
+            "三、股东和实际控制人情况",
+            "1、公司股东数量及持股情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 76,
+            "page_end": 77
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "关联关系"
+          ],
+          "content_chars": 1388
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00072",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "4、研发投入",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "四、主营业务分析",
+            "4、研发投入"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 31,
+            "page_end": 33
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "占比"
+          ],
+          "content_chars": 3186
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00444",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "②本公司自2024年1月1日起执行财政部颁布的《企业会计准则解释第17号》“关于供应商融资安排的披露”规定。",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "（二）本公司收入的具体确认原则",
+            "41、重要会计政策和会计估计变更",
+            "（1） 重要会计政策变更",
+            "②本公司自2024年1月1日起执行财政部颁布的《企业会计准则解释第17号》“关于供应商融资安排的披露”规定。"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 135,
+            "page_end": 135
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "供应商"
+          ],
+          "content_chars": 75
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00226",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、公司控股股东情况",
+          "section_path": [
+            "第六节 重要事项",
+            "三、股东和实际控制人情况",
+            "2、公司控股股东情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 77,
+            "page_end": 78
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "客户",
+            "关联关系"
+          ],
+          "content_chars": 866
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00622",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2.信用风险",
+          "section_path": [
+            "第十节 财务报告",
+            "十二、与金融工具相关的风险",
+            "2.信用风险"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 180,
+            "page_end": 180
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "客户"
+          ],
+          "content_chars": 316
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00095",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "2、关于董事和董事会",
+          "section_path": [
+            "第四节 公司治理",
+            "一、公司治理的基本状况",
+            "2、关于董事和董事会"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 41,
+            "page_end": 41
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "占比"
+          ],
+          "content_chars": 434
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00015",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "（2）轨道交通领域",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "一、报告期内公司所处行业情况",
+            "（2）轨道交通领域"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 11,
+            "page_end": 12
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "占比"
+          ],
+          "content_chars": 1116
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00076",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "1、资产构成重大变动情况",
+          "section_path": [
+            "第三节 管理层讨论与分析",
+            "六、资产及负债状况分析",
+            "1、资产构成重大变动情况"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 35,
+            "page_end": 36
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "占比"
+          ],
+          "content_chars": 915
+        },
+        {
+          "evidence_unit_id": "src_d08e0e930385d696:eu_00402",
+          "source_id": "src_d08e0e930385d696",
+          "case_id": "Saiwei",
+          "source_title": "赛为智能2024年报",
+          "source_date": null,
+          "reporting_period_hint": null,
+          "title": "29、长期资产减值",
+          "section_path": [
+            "第十节 财务报告",
+            "五、重要会计政策及会计估计",
+            "29、长期资产减值"
+          ],
+          "location": {
+            "kind": "pdf",
+            "page_start": 125,
+            "page_end": 126
+          },
+          "content_type": "document_chunk",
+          "block_type": null,
+          "person_name": null,
+          "keyword_hits": [
+            "占比"
+          ],
+          "content_chars": 812
+        }
+      ],
+      "selected_evidence_unit_ids": [
+        "src_d08e0e930385d696:eu_00070",
+        "src_d08e0e930385d696:eu_00203",
+        "src_d08e0e930385d696:eu_00226",
+        "src_d08e0e930385d696:eu_00622",
+        "src_d08e0e930385d696:eu_00225"
+      ],
+      "react_trace": [
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "客户 供应商 关联关系 集中度",
+            "keyword_count": 9,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 10,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00419",
+              "src_d08e0e930385d696:eu_00070",
+              "src_d08e0e930385d696:eu_00203",
+              "src_d08e0e930385d696:eu_00404",
+              "src_d08e0e930385d696:eu_00190",
+              "src_d08e0e930385d696:eu_00225",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00444",
+              "src_d08e0e930385d696:eu_00226",
+              "src_d08e0e930385d696:eu_00622"
+            ]
+          }
+        },
+        {
+          "tool_name": "search_evidence",
+          "input_summary": {
+            "query": "主要客户 供应商 交易金额 占比",
+            "keyword_count": 9,
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "catalog_count": 8,
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070",
+              "src_d08e0e930385d696:eu_00190",
+              "src_d08e0e930385d696:eu_00095",
+              "src_d08e0e930385d696:eu_00444",
+              "src_d08e0e930385d696:eu_00015",
+              "src_d08e0e930385d696:eu_00072",
+              "src_d08e0e930385d696:eu_00076",
+              "src_d08e0e930385d696:eu_00402"
+            ]
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070",
+              "src_d08e0e930385d696:eu_00203",
+              "src_d08e0e930385d696:eu_00226"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00070",
+              "src_d08e0e930385d696:eu_00203",
+              "src_d08e0e930385d696:eu_00226"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 1824
+          }
+        },
+        {
+          "tool_name": "read_evidence",
+          "input_summary": {
+            "evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00622",
+              "src_d08e0e930385d696:eu_00225"
+            ],
+            "phase": "react_evidence_discovery"
+          },
+          "output_summary": {
+            "read_evidence_unit_ids": [
+              "src_d08e0e930385d696:eu_00622",
+              "src_d08e0e930385d696:eu_00225"
+            ],
+            "continuation_evidence_unit_ids": [],
+            "unknown_evidence_unit_ids": [],
+            "content_chars": 1704
+          }
+        }
+      ],
+      "api_meta": [
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "search_evidence",
+            "search_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 641,
+          "output_tokens": 112,
+          "total_tokens": 753,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 4267,
+          "output_tokens": 227,
+          "total_tokens": 4494,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            "read_evidence"
+          ],
+          "invalid_tool_calls": [],
+          "input_tokens": 6111,
+          "output_tokens": 1054,
+          "total_tokens": 7165,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "finish_reason": "stop",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "input_tokens": 8581,
+          "output_tokens": 192,
+          "total_tokens": 8773,
+          "stage": "react_evidence_discovery"
+        },
+        {
+          "stage": "profile_extraction",
+          "domain": "customer_and_supplier",
+          "batch_count": 2,
+          "batch_calls": [
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 4954,
+              "completion_tokens": 4445,
+              "total_tokens": 9399,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 1,
+              "batch_name": "customer",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00070"
+              ]
+            },
+            {
+              "model": "deepseek-v4-flash",
+              "generation_mode": "sampling",
+              "temperature": 0.1,
+              "reasoning_effort": null,
+              "finish_reason": "stop",
+              "prompt_tokens": 4954,
+              "completion_tokens": 4443,
+              "total_tokens": 9397,
+              "attempt_count": 1,
+              "empty_response_count": 0,
+              "batch_index": 2,
+              "batch_name": "supplier",
+              "evidence_unit_ids": [
+                "src_d08e0e930385d696:eu_00070"
+              ]
+            }
+          ],
+          "prompt_tokens": 9908,
+          "completion_tokens": 8888,
+          "total_tokens": 18796
+        }
+      ]
+    }
+  ]
+}

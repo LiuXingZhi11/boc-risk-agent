@@ -1,0 +1,445 @@
+ontology:
+  id: technology_enterprise_ontology
+  version: "0.8.0"
+  status: draft
+  label: 科技型企业通用 Ontology
+
+objects:
+  - id: Enterprise
+    label: 企业
+  - id: Person
+    label: 人员
+  - id: EducationRecord
+    label: 教育经历
+  - id: ProfessionalExperience
+    label: 职业经历
+  - id: Organization
+    label: 组织
+  - id: Technology
+    label: 技术
+  - id: IntellectualProperty
+    label: 知识产权
+  - id: ProductService
+    label: 产品或服务
+  - id: ResearchProject
+    label: 研发项目
+  - id: FinancingMatter
+    label: 融资事项
+  - id: LegalRiskMatter
+    label: 法律与风险事项
+  - id: EvidenceUnit
+    label: 证据单元
+
+relations:
+  - id: controls
+    label: 控制
+    domain: [Enterprise, Person, Organization]
+    range: [Enterprise, Organization]
+  - id: holds_position_in
+    label: 任职于
+    domain: [Person]
+    range: [Enterprise, Organization]
+  - id: has_education
+    label: 具有教育经历
+    domain: [Person]
+    range: [EducationRecord]
+  - id: has_professional_experience
+    label: 具有职业经历
+    domain: [Person]
+    range: [ProfessionalExperience]
+  - id: owns
+    label: 拥有
+    domain: [Enterprise, Person, Organization]
+    range: [Technology, IntellectualProperty, ProductService, Enterprise]
+  - id: claims_to_own
+    label: 声称拥有
+    domain: [Enterprise, Person, Organization]
+    range: [Technology, IntellectualProperty, ProductService, Enterprise]
+  - id: licenses
+    label: 许可使用
+    domain: [Enterprise, Person, Organization]
+    range: [Technology, IntellectualProperty]
+  - id: develops
+    label: 开发
+    domain: [Enterprise, Person, Organization]
+    range: [Technology, ProductService, ResearchProject]
+  - id: uses_technology
+    label: 使用技术
+    domain: [Enterprise, ProductService, ResearchProject]
+    range: [Technology]
+  - id: commercializes_as
+    label: 商业化为
+    domain: [Technology, ResearchProject]
+    range: [ProductService]
+  - id: depends_on
+    label: 依赖
+    domain: [Enterprise, ProductService, ResearchProject]
+    range: [Enterprise, Organization, Technology, IntellectualProperty]
+  - id: sells_to
+    label: 销售给
+    domain: [Enterprise]
+    range: [Enterprise, Organization]
+  - id: purchases_from
+    label: 采购自
+    domain: [Enterprise]
+    range: [Enterprise, Organization]
+  - id: cooperates_with
+    label: 合作
+    domain: [Enterprise, Organization, Person]
+    range: [Enterprise, Organization, Person]
+  - id: financed_by
+    label: 融资自
+    domain: [Enterprise]
+    range: [Enterprise, Organization, FinancingMatter]
+  - id: guarantees_for
+    label: 为其担保
+    domain: [Enterprise, Organization]
+    range: [Enterprise, Organization]
+  - id: involved_in
+    label: 涉及
+    domain: [Enterprise, Person, Organization]
+    range: [LegalRiskMatter]
+  - id: supported_by
+    label: 有证据支持
+    domain: [Enterprise, Person, Organization, Technology, ProductService, ResearchProject, LegalRiskMatter]
+    range: [EvidenceUnit]
+  - id: contradicted_by
+    label: 被证据反驳
+    domain: [Enterprise, Person, Organization, Technology, ProductService, ResearchProject, LegalRiskMatter]
+    range: [EvidenceUnit]
+
+information_status:
+  - claimed
+  - supported
+  - confirmed
+  - disputed
+  - contradicted
+  - pending_verification
+  - insufficient_evidence
+  - unknown
+  - not_disclosed
+  - not_applicable
+
+content_role:
+  - enterprise_claim
+  - business_record
+  - audited_information
+  - external_observation
+  - regulatory_finding
+  - judicial_finding
+  - internal_assessment
+  - outcome
+
+extraction_methods:
+  - llm
+  - rule
+  - import
+  - manual
+
+profile_sections:
+  - id: basic_information
+    label: 企业基本信息
+  - id: ownership_governance_team
+    label: 股权、治理与团队
+  - id: technology_ip
+    label: 技术与知识产权
+  - id: product_research_commercialization
+    label: 产品、研发与商业化
+  - id: market_competition
+    label: 市场与竞争
+  - id: customer_supplier_partners
+    label: 客户、供应商与合作方
+  - id: operations_delivery
+    label: 运营与交付
+  - id: finance_capital
+    label: 财务与融资
+  - id: compliance_legal_risk
+    label: 合规、法律与风险事项
+  - id: evidence_quality_gaps
+    label: 证据质量与信息缺口
+
+# ComparisonCard 是 Ontology 之上的派生检索层。这里仅固定维度与画像板块映射，
+# 不把模型生成的摘要或比较词写回核心 Ontology。
+comparison_dimensions:
+  - id: enterprise_and_team
+    label: 企业基础、治理与团队
+    section_ids: [basic_information, ownership_governance_team]
+  - id: technology_and_ip
+    label: 技术与知识产权
+    section_ids: [technology_ip]
+  - id: product_and_commercialization
+    label: 产品、研发、市场与商业化
+    section_ids: [product_research_commercialization, market_competition, operations_delivery]
+  - id: customer_supplier_and_dependency
+    label: 客户、供应商与外部依赖
+    section_ids: [customer_supplier_partners]
+  - id: finance_and_funding
+    label: 财务与融资
+    section_ids: [finance_capital]
+  - id: risk_and_compliance
+    label: 风险与合规
+    section_ids: [compliance_legal_risk]
+  - id: authority_outcome_and_evidence
+    label: 权威认定、历史结果与证据质量
+    section_ids: [compliance_legal_risk, evidence_quality_gaps]
+
+fields:
+  - id: enterprise.legal_name
+    section_id: basic_information
+    label: 法定名称
+    value_type: text
+    evidence_required: true
+  - id: enterprise.founded_date
+    section_id: basic_information
+    label: 成立时间
+    value_type: date
+    evidence_required: true
+  - id: enterprise.business_stage
+    section_id: basic_information
+    label: 企业发展阶段
+    value_type: enum
+    evidence_required: true
+  - id: enterprise.main_business
+    section_id: basic_information
+    label: 主营业务
+    value_type: text
+    evidence_required: true
+  - id: ownership.controller
+    section_id: ownership_governance_team
+    label: 实际控制人
+    value_type: entity_ref
+    evidence_required: true
+  - id: team.key_person
+    section_id: ownership_governance_team
+    label: 关键人员
+    value_type: entity_ref
+    evidence_required: true
+  - id: team.education_background
+    section_id: ownership_governance_team
+    label: 关键人员教育背景
+    value_type: text
+    evidence_required: true
+    deprecated_since: "0.5.0"
+  - id: team.professional_experience
+    section_id: ownership_governance_team
+    label: 关键人员职业经历
+    value_type: text
+    evidence_required: true
+    deprecated_since: "0.5.0"
+  - id: team.education_structure
+    section_id: ownership_governance_team
+    label: 核心团队教育结构
+    value_type: text
+    evidence_required: true
+  - id: team.professional_background
+    section_id: ownership_governance_team
+    label: 核心团队职业背景概况
+    value_type: text
+    evidence_required: true
+  - id: governance.equity_incentive_plan_status
+    section_id: ownership_governance_team
+    label: 股权激励计划状态
+    value_type: enum
+    allowed_values: [active, approved_not_started, planned, completed, terminated, not_applicable]
+    reporting_period_required: true
+    evidence_required: true
+  - id: technology.name
+    section_id: technology_ip
+    label: 核心技术
+    value_type: entity_ref
+    evidence_required: true
+  - id: technology.source
+    section_id: technology_ip
+    label: 技术来源
+    value_type: text
+    evidence_required: true
+  - id: technology.maturity_stage
+    section_id: technology_ip
+    label: 技术成熟阶段
+    value_type: enum
+    evidence_required: true
+  - id: technology.ownership_status
+    section_id: technology_ip
+    label: 技术权属
+    value_type: enum
+    evidence_required: true
+  - id: intellectual_property.name
+    section_id: technology_ip
+    label: 核心知识产权
+    value_type: entity_ref
+    evidence_required: true
+  - id: intellectual_property.patent_application_count
+    section_id: technology_ip
+    label: 专利申请数量
+    value_type: integer
+    reporting_period_required: true
+    evidence_required: true
+  - id: intellectual_property.patent_grant_count
+    section_id: technology_ip
+    label: 专利授权或拥有数量
+    value_type: integer
+    reporting_period_required: true
+    evidence_required: true
+  - id: intellectual_property.ownership_status
+    section_id: technology_ip
+    label: 知识产权权属
+    value_type: enum
+    evidence_required: true
+  - id: intellectual_property.rights_restriction_status
+    section_id: technology_ip
+    label: 知识产权权利限制状态
+    value_type: enum
+    allowed_values: [unrestricted, restricted, partially_restricted]
+    evidence_required: true
+  - id: product.name
+    section_id: product_research_commercialization
+    label: 产品或服务
+    value_type: entity_ref
+    evidence_required: true
+  - id: product.commercialization_stage
+    section_id: product_research_commercialization
+    label: 产品商业化阶段
+    value_type: enum
+    evidence_required: true
+  - id: customer_supplier.customer_concentration
+    section_id: customer_supplier_partners
+    label: 客户集中度
+    value_type: ratio
+    reporting_period_required: true
+    value_scope_required: true
+    evidence_required: true
+  - id: customer_supplier.supplier_concentration
+    section_id: customer_supplier_partners
+    label: 供应商集中度
+    value_type: ratio
+    reporting_period_required: true
+    value_scope_required: true
+    evidence_required: true
+  - id: customer_supplier.counterparty_name
+    section_id: customer_supplier_partners
+    label: 材料披露的交易对手名称或代称
+    value_type: entity_ref
+    evidence_required: true
+  - id: customer_supplier.transaction_amount
+    section_id: customer_supplier_partners
+    label: 交易金额
+    value_type: money
+    reporting_period_required: true
+    currency_required: true
+    value_scope_required: true
+    evidence_required: true
+  - id: customer_supplier.transaction_ratio
+    section_id: customer_supplier_partners
+    label: 交易占比
+    value_type: ratio
+    reporting_period_required: true
+    value_scope_required: true
+    evidence_required: true
+  - id: customer_supplier.transaction_content
+    section_id: customer_supplier_partners
+    label: 交易内容
+    value_type: text
+    reporting_period_required: true
+    value_scope_required: true
+    evidence_required: true
+  - id: customer_supplier.related_party_status
+    section_id: customer_supplier_partners
+    label: 主要交易对手关联关系状态
+    value_type: enum
+    allowed_values: [related, non_related, partially_related]
+    reporting_period_required: true
+    value_scope_required: true
+    evidence_required: true
+  - id: finance.operating_revenue
+    section_id: finance_capital
+    label: 营业收入
+    value_type: money
+    reporting_period_required: true
+    currency_required: true
+    evidence_required: true
+  - id: finance.operating_cash_flow
+    section_id: finance_capital
+    label: 经营活动产生的现金流量净额
+    value_type: money
+    reporting_period_required: true
+    currency_required: true
+    evidence_required: true
+  - id: finance.net_profit
+    section_id: finance_capital
+    label: 净利润
+    value_type: money
+    reporting_period_required: true
+    currency_required: true
+    evidence_required: true
+  - id: finance.net_profit_attributable_to_parent
+    section_id: finance_capital
+    label: 归属于母公司所有者的净利润
+    value_type: money
+    reporting_period_required: true
+    currency_required: true
+    evidence_required: true
+  - id: finance.adjusted_net_profit_attributable_to_parent
+    section_id: finance_capital
+    label: 扣除非经常性损益后归属于母公司所有者的净利润
+    value_type: money
+    reporting_period_required: true
+    currency_required: true
+    evidence_required: true
+  - id: finance.research_expense
+    section_id: finance_capital
+    label: 研发费用
+    value_type: money
+    reporting_period_required: true
+    currency_required: true
+    evidence_required: true
+  - id: finance.research_expense_ratio
+    section_id: finance_capital
+    label: 研发费用率
+    value_type: ratio
+    reporting_period_required: true
+    evidence_required: true
+  - id: finance.customer_concentration
+    section_id: finance_capital
+    label: 客户集中度
+    value_type: ratio
+    reporting_period_required: true
+    evidence_required: true
+    deprecated_since: "0.4.0"
+    replaced_by: customer_supplier.customer_concentration
+  - id: finance.cash_balance
+    section_id: finance_capital
+    label: 期末现金及现金等价物余额
+    value_type: money
+    reporting_period_required: true
+    currency_required: true
+    evidence_required: true
+  - id: finance.interest_bearing_debt
+    section_id: finance_capital
+    label: 有息负债余额
+    value_type: money
+    reporting_period_required: true
+    currency_required: true
+    evidence_required: true
+  - id: risk.matter
+    section_id: compliance_legal_risk
+    label: 风险事项
+    value_type: entity_ref
+    evidence_required: true
+  - id: evidence.missing_material
+    section_id: evidence_quality_gaps
+    label: 缺失材料
+    value_type: text
+    evidence_required: false
+
+constraints:
+  - accepted_profile_item_requires_evidence
+  - enterprise_claim_cannot_be_confirmed_automatically
+  - regulatory_finding_requires_regulatory_evidence
+  - judicial_finding_requires_judicial_evidence
+  - ratio_must_be_between_zero_and_one
+  - integer_count_must_be_non_negative
+  - money_requires_currency
+  - financial_metric_requires_reporting_period
+  - conflicting_values_must_coexist
+  - unknown_must_not_be_guessed
+  - historical_result_cannot_transfer_to_current_profile
