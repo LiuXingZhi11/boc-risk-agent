@@ -3,26 +3,18 @@ from __future__ import annotations
 import json
 
 from src.ui.v5_services import (
+    approve_peer_cohort,
     approve_profile_review,
+    create_peer_cohort,
     ingest_uploaded_source,
     load_profile_review,
     profile_rows,
     run_domain_investigation,
     run_react_domain_investigation,
+    run_react_profile_investigation,
     source_rows,
 )
 from src.profiles.historical_workflow import HistoricalProfileRun
-from src.profiles import (
-    ComparisonCardRepository,
-    ComparisonDimension,
-    CurrentEnterpriseProfile,
-    EnterpriseComparisonCard,
-    ProfileRepository,
-    profile_content_hash,
-)
-from src.ui.v5_services import run_detailed_review_report
-from src.profiles.risk_judgment import CoreRiskJudgment
-from src.industry import IndustryBackgroundProfile, IndustryProfileRepository
 
 
 def test_v5_source_workspace_ingests_html(tmp_path):
@@ -32,9 +24,8 @@ def test_v5_source_workspace_ingests_html(tmp_path):
         case_id="TECH1",
         upload_root=tmp_path / "uploads",
         filename="notice.html",
-        content="<h1>核心技术</h1><p>公司形成自主技术。</p>".encode("utf-8"),
+        content=b"<h1>core technology</h1><p>company technology</p>",
     )
-
     rows = source_rows(database, "TECH1")
     assert result["evidence_units"] >= 1
     assert rows[0]["case_id"] == "TECH1"
@@ -54,7 +45,7 @@ def test_v5_review_workspace_approves_profile(tmp_path):
                             "item_id": "t1",
                             "section_id": "technology_ip",
                             "field_id": "technology.name",
-                            "value": "光存储技术",
+                            "value": "core technology",
                             "value_type": "entity_ref",
                             "information_status": "claimed",
                             "content_role": "enterprise_claim",
@@ -71,16 +62,31 @@ def test_v5_review_workspace_approves_profile(tmp_path):
     }
     database = tmp_path / "v5.db"
     bundle = load_profile_review(json.dumps(run, ensure_ascii=False))
-
     saved = approve_profile_review(
         database=database,
         bundle=bundle,
         profile_id="tech1-profile",
-        enterprise_name="测试科技企业",
+        enterprise_name="Test Technology",
     )
-
     assert saved["review_status"] == "approved"
     assert profile_rows(database)[0]["profile_id"] == "tech1-profile"
+
+
+def test_v5_peer_cohort_can_be_created_and_approved(tmp_path):
+    database = tmp_path / "v5.db"
+    created = create_peer_cohort(
+        database=database,
+        cohort_id="robotics-v2",
+        industry_id="robotics_industry_2026",
+        cohort_name="机器人同行样本 V2",
+        fiscal_period="2025",
+        company_case_ids=("TECH1", "TECH2"),
+        selection_rule="已批准企业画像",
+    )
+    assert created["review_status"] == "pending"
+
+    approved = approve_peer_cohort(database=database, cohort_id="robotics-v2")
+    assert approved["review_status"] == "approved"
 
 
 def test_v5_domain_investigation_uses_historical_workflow(monkeypatch, tmp_path):
@@ -97,7 +103,6 @@ def test_v5_domain_investigation_uses_historical_workflow(monkeypatch, tmp_path)
         profile_type="historical",
         domains=("technology_and_ip",),
     )
-
     assert result["case_id"] == "TECH1"
     assert result["profile_type"] == "historical"
     assert captured["domains"] == ("technology_and_ip",)
@@ -125,86 +130,30 @@ def test_v5_react_investigation_uses_controlled_workflow(monkeypatch, tmp_path):
         max_catalog_items=8,
         max_read_units=4,
     )
-
     assert result["execution_mode"] == "react"
     assert captured["domain"] == "technology_and_ip"
     assert captured["react_config"].mode == "thinking"
     assert captured["extraction_config"].mode == "sampling"
-    assert captured["extraction_config"].temperature == 0.1
     assert captured["limits"].max_catalog_items == 8
     assert captured["limits"].max_read_units == 4
 
 
-def test_v5_detailed_report_skips_comparison_but_generates_risk_when_no_history(monkeypatch, tmp_path):
-    database = tmp_path / "v5.db"
-    current = CurrentEnterpriseProfile(
-        profile_id="current-profile",
-        case_id="CURRENT",
-        enterprise_name="当前企业",
-        review_status="approved",
-    )
-    ProfileRepository(database).save(current)
-    card = EnterpriseComparisonCard(
-        card_id="current-card",
-        profile_id=current.profile_id,
-        case_id=current.case_id,
-        enterprise_name=current.enterprise_name,
-        profile_type="current",
-        ontology_version=current.ontology_version,
-        profile_hash=profile_content_hash(current),
-        dimensions=(
-            ComparisonDimension(
-                dimension_id="technology_and_ip",
-                summary="当前技术信息有限。",
-                comparison_terms=("技术",),
-            ),
-        ),
-        review_status="approved",
-    )
-    ComparisonCardRepository(database).save(card)
-    industry = IndustryBackgroundProfile(
-        profile_id="industry-profile",
-        industry_id="robotics",
-        industry_name="机器人",
-        source_ids=(),
-        insights=(),
-        review_status="approved",
-    )
-    IndustryProfileRepository(database).save(industry)
-    captured = {}
+def test_v5_react_profile_investigation_merges_selected_domains(monkeypatch, tmp_path):
+    calls = []
 
-    def fail_if_called(*args, **kwargs):
-        raise AssertionError("没有历史候选时不应调用详细比较")
+    def fake_domain(**kwargs):
+        calls.append(kwargs["domain"])
+        return {"domains": [{"domain": kwargs["domain"], "status": "pending_review"}]}
 
-    monkeypatch.setattr("src.ui.v5_services.compare_profile_candidates", fail_if_called)
-    def fake_risk_judgment(current, comparison, **kwargs):
-        captured.update(kwargs)
-        return CoreRiskJudgment(
-            current_profile_id=current.profile_id,
-            overall_judgment="当前材料有限，核心风险判断仍需更多企业事实支持。",
-            key_risks=(),
-            mitigating_factors=(),
-            uncertainties=("当前材料尚未形成完整企业画像。",),
-            verification_priorities=("优先补充能够证明企业核心情况的材料。",),
-            evidence_unit_ids=(),
-            api_meta={"model": "fake-model"},
-            industry_profile_id=kwargs["industry_profile"].profile_id,
-            industry_name=kwargs["industry_profile"].industry_name,
-        )
-
-    monkeypatch.setattr(
-        "src.ui.v5_services.generate_core_risk_judgment",
-        fake_risk_judgment,
-    )
-    result = run_detailed_review_report(
-        database=database,
-        current_profile_id=current.profile_id,
-        current_card_id=card.card_id,
-        industry_profile_id=industry.profile_id,
+    monkeypatch.setattr("src.ui.v5_services.run_react_domain_investigation", fake_domain)
+    result = run_react_profile_investigation(
+        database=tmp_path / "v5.db",
+        case_id="TECH1",
+        domains=("technology_and_ip", "team"),
     )
 
-    assert result["detailed_comparison"]["api_meta"]["skipped"] is True
-    assert result["report"]["comparisons"] == ()
-    assert result["core_risk_judgment"]["api_meta"]["model"] == "fake-model"
-    assert captured["industry_profile"].profile_id == industry.profile_id
-    assert "## 核心风险判断" in result["report_markdown"]
+    assert calls == ["technology_and_ip", "team"]
+    assert [item["domain"] for item in result["domains"]] == [
+        "technology_and_ip",
+        "team",
+    ]

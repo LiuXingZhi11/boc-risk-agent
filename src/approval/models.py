@@ -205,7 +205,7 @@ class ApprovalPointDefinition:
 @dataclass(frozen=True)
 class DomainApprovalReport:
     report_id: str
-    cohort_id: str
+    cohort_id: str | None
     case_id: str
     domain_id: str
     one_sentence_summary: str
@@ -213,14 +213,10 @@ class DomainApprovalReport:
     review_status: str = "pending"
 
     def __post_init__(self) -> None:
-        for field_name in (
-            "report_id",
-            "cohort_id",
-            "case_id",
-            "domain_id",
-            "one_sentence_summary",
-        ):
+        for field_name in ("report_id", "case_id", "domain_id", "one_sentence_summary"):
             _require_text(getattr(self, field_name), field_name)
+        if self.cohort_id is not None:
+            _require_text(self.cohort_id, "cohort_id")
         if not self.approval_points:
             raise ValueError("a domain approval report requires approval points")
         point_ids = [point.approval_point_id for point in self.approval_points]
@@ -255,7 +251,7 @@ class CompositeApprovalReport:
         _validate_review_status(self.review_status)
 
 
-RATING_LEVELS = {"A", "B", "C", "D"}
+RATING_LEVELS = {"AAA", "AA", "A", "BBB", "BB", "B", "CCC", "CC", "C"}
 FINAL_DIRECTION_STATUSES = {
     "passed",
     "conditional_passed",
@@ -306,7 +302,7 @@ class OverallAssessmentRationale:
 @dataclass(frozen=True)
 class EnterpriseOverallAssessment:
     assessment_id: str
-    cohort_id: str
+    cohort_id: str | None
     case_id: str
     rating_level: str
     overall_judgment: str
@@ -326,15 +322,12 @@ class EnterpriseOverallAssessment:
     review_status: str = "pending"
 
     def __post_init__(self) -> None:
-        for field_name in (
-            "assessment_id",
-            "cohort_id",
-            "case_id",
-            "overall_judgment",
-        ):
+        for field_name in ("assessment_id", "case_id", "overall_judgment"):
             _require_text(getattr(self, field_name), field_name)
+        if self.cohort_id is not None:
+            _require_text(self.cohort_id, "cohort_id")
         if self.rating_level not in RATING_LEVELS:
-            raise ValueError("rating_level must be one of A, B, C, D")
+            raise ValueError("rating_level must be one of AAA, AA, A, BBB, BB, B, CCC, CC, C")
         if self.recommendation not in FINAL_RECOMMENDATIONS:
             raise ValueError("invalid final recommendation")
         if self.strong_constraint_failed_count < 0 or self.weak_constraint_failed_count < 0:

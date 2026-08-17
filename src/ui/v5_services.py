@@ -9,10 +9,11 @@ from typing import Any
 
 from src.evidence import EvidenceRepository
 from src.evidence import EvidenceQueryService
-from src.case_analysis import (
-    HistoricalCaseAnalysisRepository,
-    approve_historical_case_analysis,
-    generate_historical_case_analysis,
+from src.authorization import (
+    can_run_approval_section,
+    can_run_profile_domain,
+    can_run_profile_dimension,
+    filter_profile_for_role,
 )
 from src.config.settings import get_settings
 from src.llm.generation_config import GenerationConfig
@@ -36,6 +37,7 @@ from src.approval import (
     build_direction_comparison_card,
     build_guideline_metric_comparisons,
     build_guideline_section_context,
+    build_standalone_guideline_section_context,
     composite_approval_report_to_markdown,
     direction_ranking_to_markdown,
     domain_approval_report_to_markdown,
@@ -50,31 +52,19 @@ from src.approval import (
     approve_direction_ranking,
     build_metric_value_candidates,
 )
+from src.approval.action_recommendations import generate_action_recommendations
 from src.approval.guideline_definitions import (
     GUIDELINE_SECTIONS_BY_ID,
     get_guideline_point_definitions,
 )
 from src.profiles import (
-    ComparisonCardRepository,
-    ComparisonCardSimilarityService,
     ProfileRepository,
-    approve_comparison_card,
     aggregate_profile_run,
     finalize_and_save_profile_review,
-    generate_comparison_card,
-    build_v5_review_report,
     build_enterprise_visual_card,
-    compare_profile_candidates,
-    generate_core_risk_judgment,
 )
-from src.profiles.material_context import build_profile_material_context
-from src.profiles.models import (
-    CurrentEnterpriseProfile,
-    EvidenceReference,
-    HistoricalEnterpriseProfile,
-)
+from src.profiles.models import EvidenceReference
 from src.profiles.current_workflow import CurrentProfileWorkflow
-from src.profiles.detailed_comparison import DetailedComparisonRun
 from src.profiles.historical_workflow import HistoricalProfileWorkflow
 from src.profiles.react_models import ReactLimits
 from src.profiles.react_workflow import (
@@ -89,14 +79,6 @@ from src.profiles.topic_analysis import (
 )
 from src.profiles.topic_analysis_repository import ProfileTopicAnalysisRepository
 from src.sources import ingest_source
-
-
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-
-
-def _material_context(database: str | Path, profile) -> dict[str, Any]:
-    sources = EvidenceRepository(database).list_sources(case_id=profile.case_id)
-    return build_profile_material_context(profile, sources)
 
 
 def ingest_uploaded_source(
@@ -170,7 +152,6 @@ def ingest_industry_source(
         "evidence_units": len(units),
     }
 
-
 def industry_source_rows(
     database: str | Path,
     industry_id: str = "",
@@ -235,9 +216,7 @@ def generate_industry_profile_review(
             max_read_units=max_read_units,
             max_catalog_items=max_catalog_items,
         ),
-        guide_text=(
-            PROJECT_ROOT / "prompts" / "科技型企业行业背景画像生成协议_V1.md"
-        ).read_text(encoding="utf-8"),
+        guide_text="",
     )
     if run.generation is not None:
         IndustryProfileRepository(database).save(run.generation.profile)
@@ -296,7 +275,11 @@ def run_domain_investigation(
     max_selected_evidence_per_domain: int = 5,
     max_tokens: int = 18000,
     max_retries: int = 2,
+    role: str | None = "senior_business",
 ) -> dict[str, Any]:
+    denied_domains = [domain for domain in domains if not can_run_profile_domain(role, domain)]
+    if denied_domains:
+        raise PermissionError("当前身份无权调查领域：" + ", ".join(denied_domains))
     settings = get_settings()
     selection_config = GenerationConfig(
         model=settings.model,
@@ -313,9 +296,7 @@ def run_domain_investigation(
         max_retries=max_retries,
     )
     evidence_service = EvidenceQueryService(EvidenceRepository(database))
-    guide_text = (PROJECT_ROOT / "prompts" / "科技型企业企业画像抽取协议_V1.md").read_text(
-        encoding="utf-8"
-    )
+    guide_text = ""
     common = {
         "case_id": case_id,
         "selection_config": selection_config,
@@ -344,8 +325,11 @@ def run_react_domain_investigation(
     max_read_units: int = 5,
     max_tokens: int = 18000,
     max_retries: int = 2,
+    role: str | None = "senior_business",
 ) -> dict[str, Any]:
     """执行当前企业单领域受控 ReAct 调查。"""
+    if not can_run_profile_domain(role, domain):
+        raise PermissionError(f"当前身份无权调查领域：{domain}")
     settings = get_settings()
     react_config = GenerationConfig(
         model=settings.model,
@@ -364,9 +348,7 @@ def run_react_domain_investigation(
     workflow = ControlledReactProfileWorkflow(
         EvidenceQueryService(EvidenceRepository(database))
     )
-    guide_text = (PROJECT_ROOT / "prompts" / "科技型企业企业画像抽取协议_V1.md").read_text(
-        encoding="utf-8"
-    )
+    guide_text = ""
     result = workflow.run_current_domain(
         case_id=case_id,
         domain=domain,
@@ -380,6 +362,43 @@ def run_react_domain_investigation(
         guide_text=guide_text,
     )
     return asdict(result)
+
+
+def run_react_profile_investigation(
+    *,
+    database: str | Path,
+    case_id: str,
+    domains: tuple[str, ...],
+    query: str = "",
+    max_catalog_items: int = 10,
+    max_read_units: int = 5,
+    max_tokens: int = 18000,
+    max_retries: int = 2,
+    role: str | None = "senior_business",
+) -> dict[str, Any]:
+    """按领域顺序执行当前企业 ReAct，并合并为一次候选运行。"""
+    if not domains:
+        raise ValueError("至少选择一个企业画像领域。")
+    domain_results: list[dict[str, Any]] = []
+    for domain in domains:
+        result = run_react_domain_investigation(
+            database=database,
+            case_id=case_id,
+            domain=domain,
+            query=query,
+            max_catalog_items=max_catalog_items,
+            max_read_units=max_read_units,
+            max_tokens=max_tokens,
+            max_retries=max_retries,
+            role=role,
+        )
+        domain_results.extend(result.get("domains", []))
+    return {
+        "case_id": case_id,
+        "profile_type": "current",
+        "execution_mode": "react",
+        "domains": domain_results,
+    }
 
 
 def approve_profile_review(
@@ -422,10 +441,16 @@ def profile_detail(database: str | Path, profile_id: str) -> dict[str, Any] | No
     return asdict(profile) if profile is not None else None
 
 
-def profile_visual_card(database: str | Path, profile_id: str) -> dict[str, Any] | None:
+def profile_visual_card(
+    database: str | Path,
+    profile_id: str,
+    *,
+    role: str | None = "senior_business",
+) -> dict[str, Any] | None:
     profile = ProfileRepository(database).get(profile_id)
     if profile is None:
         return None
+    profile = filter_profile_for_role(profile, role)
     evidence_repository = EvidenceRepository(database)
     evidence_ids = {
         reference.evidence_unit_id
@@ -440,6 +465,8 @@ def profile_visual_card(database: str | Path, profile_id: str) -> dict[str, Any]
     card = build_enterprise_visual_card(profile, evidence_by_id=evidence_by_id)
     for saved in ProfileTopicAnalysisRepository(database).list_for_profile(profile_id):
         if saved["status"] != "completed":
+            continue
+        if not can_run_profile_dimension(role, saved["dimension_id"]):
             continue
         card = apply_topic_analysis(
             card,
@@ -462,11 +489,15 @@ def run_profile_topic_analysis(
     max_topic_reads: int = 12,
     max_facts_per_read: int = 30,
     max_tokens: int = 18000,
+    role: str | None = "senior_business",
 ) -> dict[str, Any]:
     """对已审核企业画像的一个领域执行主题分析，返回待查看结果。"""
     profile = ProfileRepository(database).get(profile_id)
     if profile is None:
         raise ValueError("未找到企业画像。")
+    if not can_run_profile_dimension(role, dimension_id):
+        raise PermissionError(f"当前身份无权生成画像方向：{dimension_id}")
+    profile = filter_profile_for_role(profile, role)
     evidence_repository = EvidenceRepository(database)
     evidence_ids = {
         ref.evidence_unit_id
@@ -527,6 +558,7 @@ def generate_domain_approval_review(
     domain_id: str,
     max_tokens: int = 8000,
     max_retries: int = 2,
+    role: str | None = "senior_business",
 ) -> dict[str, Any]:
     repository = ApprovalRepository(database)
     cohort = repository.get_cohort(cohort_id)
@@ -534,6 +566,9 @@ def generate_domain_approval_review(
     industry_profile = IndustryProfileRepository(database).get(industry_profile_id)
     if cohort is None or profile is None or industry_profile is None:
         raise ValueError("peer cohort, enterprise profile, or industry profile was not found")
+    if not can_run_approval_section(role, domain_id):
+        raise PermissionError(f"当前身份无权生成授信方向：{domain_id}")
+    profile = filter_profile_for_role(profile, role)
     context = build_domain_approval_context(
         cohort,
         profile,
@@ -609,6 +644,7 @@ def generate_guideline_section_review(
     section_id: str,
     max_tokens: int = 8000,
     max_retries: int = 2,
+    role: str | None = "senior_business",
 ) -> dict[str, Any]:
     """按授信指引方向生成一份跨画像领域的单企业审批报告。"""
     repository = ApprovalRepository(database)
@@ -620,6 +656,9 @@ def generate_guideline_section_review(
         raise ValueError(f"guideline section was not found: {section_id}")
     if cohort is None or profile is None or industry_profile is None:
         raise ValueError("peer cohort, enterprise profile, or industry profile was not found")
+    if not can_run_approval_section(role, section_id):
+        raise PermissionError(f"当前身份无权生成授信方向：{section_id}")
+    profile = filter_profile_for_role(profile, role)
     point_definitions = get_guideline_point_definitions(section_id)
     metric_ids = tuple(
         metric_id
@@ -662,6 +701,53 @@ def generate_guideline_section_review(
     }
 
 
+def generate_standalone_guideline_section_review(
+    *,
+    database: str | Path,
+    report_id: str,
+    profile_id: str,
+    industry_profile_id: str,
+    section_id: str,
+    max_tokens: int = 8000,
+    max_retries: int = 2,
+    role: str | None = "senior_business",
+) -> dict[str, Any]:
+    """不依赖同行样本，生成单企业风险评级方向报告。"""
+    repository = ApprovalRepository(database)
+    section = GUIDELINE_SECTIONS_BY_ID.get(section_id)
+    profile = ProfileRepository(database).get(profile_id)
+    industry_profile = IndustryProfileRepository(database).get(industry_profile_id)
+    if section is None:
+        raise ValueError(f"guideline section was not found: {section_id}")
+    if profile is None or industry_profile is None:
+        raise ValueError("enterprise profile or industry profile was not found")
+    if not can_run_approval_section(role, section_id):
+        raise PermissionError(f"当前身份无权生成风险评级方向：{section_id}")
+    profile = filter_profile_for_role(profile, role)
+    context = build_standalone_guideline_section_context(
+        profile,
+        industry_profile,
+        section,
+    )
+    report = generate_guideline_section_report(
+        report_id,
+        context,
+        config=GenerationConfig(
+            model=get_settings().model,
+            mode="thinking",
+            reasoning_effort="high",
+            max_tokens=max_tokens,
+            max_retries=max_retries,
+        ),
+    )
+    repository.save_domain_report(report)
+    return {
+        "section": {"section_id": section.section_id, "title": section.title},
+        "report": asdict(report),
+        "report_markdown": domain_approval_report_to_markdown(report),
+    }
+
+
 def generate_direction_ranking_review(
     *,
     database: str | Path,
@@ -670,6 +756,7 @@ def generate_direction_ranking_review(
     section_id: str,
     max_tokens: int = 8000,
     max_retries: int = 2,
+    role: str | None = "senior_business",
 ) -> dict[str, Any]:
     """汇总同一方向的已批准报告，生成多企业方向排名。"""
     repository = ApprovalRepository(database)
@@ -682,6 +769,8 @@ def generate_direction_ranking_review(
         raise ValueError(f"guideline section does not support ranking: {section_id}")
     if cohort is None or industry_profile is None:
         raise ValueError("peer cohort or industry profile was not found")
+    if not can_run_approval_section(role, section_id):
+        raise PermissionError(f"当前身份无权生成授信方向排名：{section_id}")
     reports = tuple(
         repository.list_domain_reports(
             cohort_id=cohort_id,
@@ -708,7 +797,7 @@ def generate_direction_ranking_review(
         )
         if len(profile_rows) != 1:
             raise ValueError(f"expected one approved current profile for {case_id}")
-        profile = profile_rows[0]
+        profile = filter_profile_for_role(profile_rows[0], role)
         metric_comparisons = build_guideline_metric_comparisons(
             cohort,
             case_id,
@@ -775,6 +864,7 @@ def direction_ranking_basis_detail(
     cohort_id: str,
     industry_profile_id: str,
     section_id: str,
+    role: str | None = "senior_business",
 ) -> dict[str, Any] | None:
     """重建已保存方向排名实际使用的比较卡，供页面审阅，不调用模型。"""
     repository = ApprovalRepository(database)
@@ -811,7 +901,7 @@ def direction_ranking_basis_detail(
         )
         if len(profile_rows) != 1:
             raise ValueError(f"expected one approved current profile for {case_id}")
-        profile = profile_rows[0]
+        profile = filter_profile_for_role(profile_rows[0], role)
         context = build_guideline_section_context(
             cohort,
             profile,
@@ -861,7 +951,7 @@ def generate_enterprise_overall_assessment_review(
     cohort_id: str,
     profile_id: str,
 ) -> dict[str, Any]:
-    """基于 11 个方向报告和方向排名生成 A-D 综合评定。"""
+    """基于 11 个方向报告和方向排名生成客户风险评级报告。"""
     repository = ApprovalRepository(database)
     cohort = repository.get_cohort(cohort_id)
     profile = ProfileRepository(database).get(profile_id)
@@ -907,11 +997,122 @@ def generate_enterprise_overall_assessment_review(
             max_retries=2,
         ),
     )
+    assessment = replace(
+        assessment,
+        verification_priorities=generate_action_recommendations(
+            assessment,
+            enterprise_name=profile.enterprise_name,
+            config=GenerationConfig(
+                model=get_settings().model,
+                mode="thinking",
+                reasoning_effort="high",
+                max_tokens=30000,
+                max_retries=1,
+            ),
+        ),
+    )
     repository.save_overall_assessment(assessment)
     return {
         "assessment": asdict(assessment),
         "assessment_package": package,
         "assessment_markdown": overall_assessment_to_markdown(assessment),
+    }
+
+
+def generate_standalone_enterprise_overall_assessment_review(
+    *,
+    database: str | Path,
+    assessment_id: str,
+    profile_id: str,
+) -> dict[str, Any]:
+    """基于单家企业的 11 个方向报告生成客户风险评级，不要求同行排名。"""
+    repository = ApprovalRepository(database)
+    profile = ProfileRepository(database).get(profile_id)
+    if profile is None:
+        raise ValueError("enterprise profile was not found")
+    reports = tuple(
+        report
+        for report in repository.list_domain_reports(case_id=profile.case_id)
+        if report.cohort_id is None
+    )
+    reporting_periods = tuple(
+        sorted({item.reporting_period for item in profile.items if item.reporting_period})
+    )
+    package = build_overall_assessment_package(
+        enterprise_name=profile.enterprise_name,
+        profile_reporting_periods=reporting_periods,
+        cohort_name="单企业分析（未进行同行比较）",
+        cohort_fiscal_period=None,
+        cohort_selection_rule="未启用同行样本",
+        reports=reports,
+        rankings=(),
+        is_experimental=False,
+    )
+    assessment = generate_overall_assessment(
+        assessment_id,
+        package,
+        reports,
+        (),
+        config=GenerationConfig(
+            model=get_settings().model,
+            mode="thinking",
+            reasoning_effort="high",
+            max_tokens=30000,
+            max_retries=2,
+        ),
+    )
+    assessment = replace(
+        assessment,
+        verification_priorities=generate_action_recommendations(
+            assessment,
+            enterprise_name=profile.enterprise_name,
+            config=GenerationConfig(
+                model=get_settings().model,
+                mode="thinking",
+                reasoning_effort="high",
+                max_tokens=30000,
+                max_retries=1,
+            ),
+        ),
+    )
+    repository.save_overall_assessment(assessment)
+    return {
+        "assessment": asdict(assessment),
+        "assessment_package": package,
+        "assessment_markdown": overall_assessment_to_markdown(assessment),
+    }
+
+
+def generate_enterprise_action_recommendations(
+    *,
+    database: str | Path,
+    assessment_id: str,
+    profile_id: str,
+) -> dict[str, Any]:
+    """为已有客户风险评级报告补生成详细行动建议。"""
+    repository = ApprovalRepository(database)
+    assessment = repository.get_overall_assessment(assessment_id)
+    profile = ProfileRepository(database).get(profile_id)
+    if assessment is None or profile is None:
+        raise ValueError("overall assessment or enterprise profile was not found")
+    updated = replace(
+        assessment,
+        verification_priorities=generate_action_recommendations(
+            assessment,
+            enterprise_name=profile.enterprise_name,
+            config=GenerationConfig(
+                model=get_settings().model,
+                mode="thinking",
+                reasoning_effort="high",
+                max_tokens=30000,
+                max_retries=1,
+            ),
+        ),
+    )
+    repository.save_overall_assessment(updated)
+    return {
+        "assessment": asdict(updated),
+        "assessment_markdown": overall_assessment_to_markdown(updated),
     }
 
 
@@ -1195,235 +1396,4 @@ def approval_workspace_rows(database: str | Path) -> dict[str, list[dict[str, An
         "overall_assessments": [
             asdict(item) for item in repository.list_overall_assessments()
         ],
-    }
-
-
-def historical_case_analysis_rows(database: str | Path) -> list[dict[str, Any]]:
-    return [
-        {
-            "analysis_id": item.analysis_id,
-            "profile_id": item.profile_id,
-            "enterprise_name": item.enterprise_name,
-            "outcome_status": item.outcome_status,
-            "review_status": item.review_status,
-            "factors": len(item.factors),
-            "current": HistoricalCaseAnalysisRepository(database).is_current(item, profile),
-        }
-        for item in HistoricalCaseAnalysisRepository(database).list()
-        if (profile := ProfileRepository(database).get(item.profile_id)) is not None
-    ]
-
-
-def historical_case_analysis_detail(database: str | Path, analysis_id: str) -> dict[str, Any] | None:
-    item = HistoricalCaseAnalysisRepository(database).get(analysis_id)
-    if item is None:
-        return None
-    return {"human": item.to_human_dict(), "human_markdown": item.to_markdown(), "debug": item.to_dict()}
-
-
-def generate_historical_case_analysis_review(*, database: str | Path, profile_id: str, max_tokens: int = 8000, max_retries: int = 2) -> dict[str, Any]:
-    profile = ProfileRepository(database).get(profile_id)
-    if not isinstance(profile, HistoricalEnterpriseProfile):
-        raise ValueError("未找到匹配的 historical EnterpriseProfile。")
-    settings = get_settings()
-    config = GenerationConfig(model=settings.model, mode="thinking", reasoning_effort="high", max_tokens=max_tokens, max_retries=max_retries)
-    guide = (PROJECT_ROOT / "prompts" / "科技型企业历史案例分析协议_V1.md").read_text(encoding="utf-8")
-    analysis = generate_historical_case_analysis(
-        profile,
-        config=config,
-        guide_text=guide,
-        material_context=_material_context(database, profile),
-    )
-    HistoricalCaseAnalysisRepository(database).save(analysis)
-    return {"human": analysis.to_human_dict(), "human_markdown": analysis.to_markdown(), "debug": analysis.to_dict()}
-
-
-def approve_historical_case_analysis_review(*, database: str | Path, analysis_id: str) -> dict[str, Any]:
-    repository = HistoricalCaseAnalysisRepository(database)
-    analysis = repository.get(analysis_id)
-    if analysis is None:
-        raise ValueError(f"HistoricalCaseAnalysis 不存在：{analysis_id}")
-    profile = ProfileRepository(database).get(analysis.profile_id)
-    if profile is None or not repository.is_current(analysis, profile):
-        raise ValueError("案例分析对应的企业画像已经变化，请重新生成后再审核。")
-    approved = approve_historical_case_analysis(analysis)
-    repository.save(approved)
-    return {"human": approved.to_human_dict(), "human_markdown": approved.to_markdown(), "debug": approved.to_dict()}
-
-
-def comparison_card_rows(database: str | Path) -> list[dict[str, Any]]:
-    return [
-        {
-            "card_id": card.card_id,
-            "profile_id": card.profile_id,
-            "enterprise_name": card.enterprise_name,
-            "profile_type": card.profile_type,
-            "review_status": card.review_status,
-            "dimensions": len(card.dimensions),
-        }
-        for card in ComparisonCardRepository(database).list()
-    ]
-
-
-def generate_profile_comparison_card(
-    *,
-    database: str | Path,
-    profile_id: str,
-    approve: bool = False,
-    max_tokens: int = 8000,
-    max_retries: int = 2,
-) -> dict[str, Any]:
-    profile = ProfileRepository(database).get(profile_id)
-    if profile is None:
-        raise ValueError(f"EnterpriseProfile 不存在：{profile_id}")
-    settings = get_settings()
-    config = GenerationConfig(
-        model=settings.model,
-        mode="thinking",
-        reasoning_effort="high",
-        max_tokens=max_tokens,
-        max_retries=max_retries,
-    )
-    guide_text = (PROJECT_ROOT / "prompts" / "科技型企业比较卡生成协议_V1.md").read_text(
-        encoding="utf-8"
-    )
-    card, api_meta = generate_comparison_card(
-        profile,
-        config=config,
-        guide_text=guide_text,
-        material_context=_material_context(database, profile),
-    )
-    if approve:
-        card = approve_comparison_card(card)
-    ComparisonCardRepository(database).save(card)
-    return {"comparison_card": card.to_dict(), "api_meta": api_meta}
-
-
-def find_similar_profiles(
-    database: str | Path,
-    current_card_id: str,
-    *,
-    limit: int = 5,
-) -> list[dict[str, Any]]:
-    repository = ComparisonCardRepository(database)
-    card = repository.get(current_card_id)
-    if card is None:
-        raise ValueError(f"ComparisonCard 不存在：{current_card_id}")
-    return [
-        match.to_dict()
-        for match in ComparisonCardSimilarityService(repository).find_similar(card, limit=limit)
-    ]
-
-
-def run_detailed_review_report(
-    *,
-    database: str | Path,
-    current_profile_id: str,
-    current_card_id: str,
-    limit: int = 5,
-    max_tokens: int = 12000,
-    max_retries: int = 2,
-    industry_profile_id: str = "",
-) -> dict[str, Any]:
-    profile_repository = ProfileRepository(database)
-    current = profile_repository.get(current_profile_id)
-    if not isinstance(current, CurrentEnterpriseProfile):
-        raise ValueError("未找到匹配的 current EnterpriseProfile。")
-    card_repository = ComparisonCardRepository(database)
-    current_card = card_repository.get(current_card_id)
-    if current_card is None or current_card.profile_id != current.profile_id:
-        raise ValueError("当前 ComparisonCard 不存在或与画像不匹配。")
-    industry_profile = None
-    if industry_profile_id:
-        industry_profile = IndustryProfileRepository(database).get(industry_profile_id)
-        if industry_profile is None or industry_profile.review_status != "approved":
-            raise ValueError("所选行业背景画像不存在或尚未批准。")
-    matches = ComparisonCardSimilarityService(card_repository).find_similar(
-        current_card, limit=limit
-    )
-    historical_profiles = tuple(
-        profile
-        for match in matches
-        if isinstance(
-            (profile := profile_repository.get(match.historical_profile_id)),
-            HistoricalEnterpriseProfile,
-        )
-    )
-    if not historical_profiles:
-        comparison = DetailedComparisonRun(
-            current_profile_id=current.profile_id,
-            comparisons=(),
-            api_meta={"skipped": True, "reason": "没有召回可用的 approved 历史画像。"},
-        )
-        settings = get_settings()
-        risk_judgment = generate_core_risk_judgment(
-            current,
-            comparison,
-            config=GenerationConfig(
-                model=settings.model,
-                mode="thinking",
-                reasoning_effort="high",
-                max_tokens=max_tokens,
-                max_retries=max_retries,
-            ),
-            guide_text=(
-                PROJECT_ROOT / "prompts" / "科技型企业核心风险判断协议_V1.md"
-            ).read_text(encoding="utf-8"),
-            industry_profile=industry_profile,
-        )
-        report = build_v5_review_report(current, comparison, risk_judgment)
-        return {
-            "detailed_comparison": comparison.to_dict(),
-            "core_risk_judgment": risk_judgment.to_dict(),
-            "report": report.to_dict(),
-            "report_markdown": report.to_markdown(),
-        }
-    settings = get_settings()
-    analysis_repository = HistoricalCaseAnalysisRepository(database)
-    approved_case_analyses = {}
-    for profile in historical_profiles:
-        analysis = analysis_repository.get_by_profile(profile.profile_id, review_status="approved")
-        if analysis is not None and analysis_repository.is_current(analysis, profile):
-            approved_case_analyses[profile.profile_id] = analysis.to_human_dict()
-    comparison = compare_profile_candidates(
-        current,
-        historical_profiles,
-        matches,
-        config=GenerationConfig(
-            model=settings.model,
-            mode="thinking",
-            reasoning_effort="high",
-            max_tokens=max_tokens,
-            max_retries=max_retries,
-        ),
-        guide_text=(
-            PROJECT_ROOT / "prompts" / "科技型企业画像详细比较协议_V1.md"
-        ).read_text(encoding="utf-8"),
-        historical_case_analyses=approved_case_analyses,
-        material_contexts={
-            profile.profile_id: _material_context(database, profile)
-            for profile in (current, *historical_profiles)
-        },
-    )
-    risk_judgment = generate_core_risk_judgment(
-        current,
-        comparison,
-        config=GenerationConfig(
-            model=settings.model,
-            mode="thinking",
-            reasoning_effort="high",
-            max_tokens=max_tokens,
-            max_retries=max_retries,
-        ),
-        guide_text=(
-            PROJECT_ROOT / "prompts" / "科技型企业核心风险判断协议_V1.md"
-        ).read_text(encoding="utf-8"),
-        industry_profile=industry_profile,
-    )
-    report = build_v5_review_report(current, comparison, risk_judgment)
-    return {
-        "detailed_comparison": comparison.to_dict(),
-        "core_risk_judgment": risk_judgment.to_dict(),
-        "report": report.to_dict(),
-        "report_markdown": report.to_markdown(),
     }

@@ -1,15 +1,15 @@
-"""企业 A-D 综合评定：组装有限输入、生成、校验和导出。"""
+"""客户风险评级报告：组装有限输入、生成、校验和导出。"""
 
 from __future__ import annotations
 
 import json
 from dataclasses import replace
-from pathlib import Path
 from typing import Any
 
 from src.llm.deepseek_client import call_deepseek
 from src.llm.generation_config import GenerationConfig
 from src.profiles.models import EvidenceReference
+from src.prompts import load_prompt_section
 
 from .direction_ranking import DirectionRankingResult
 from .guideline_definitions import GUIDELINE_SECTION_DEFINITIONS
@@ -31,10 +31,15 @@ ASSESSMENT_DIMENSIONS = (
 )
 
 RATING_RULES = {
-    "A": "无强弱约束不通过，且除试验量化边界外不存在信息不足。",
-    "B": "无强弱约束不通过，但存在需要持续核实的信息边界。",
-    "C": "存在一至四项明确弱约束不通过，且未达到多风险面 D 的门槛。",
-    "D": "存在强约束不通过，或多个弱约束不通过并覆盖关键风险面。",
+    "AAA": "无强约束或弱约束不通过，且没有非量化关键信息不足。",
+    "AA": "无强约束或弱约束不通过，但存在非量化关键信息不足。",
+    "A": "存在 1 条弱约束不通过。",
+    "BBB": "存在 2 条弱约束不通过。",
+    "BB": "存在 3 条弱约束不通过，但未达到规范性与财务组合门槛。",
+    "B": "存在 4 条弱约束不通过，但未达到规范性与财务组合门槛。",
+    "CCC": "存在 5 条及以上弱约束不通过，但未达到 CC 的组合门槛。",
+    "CC": "至少 3 条弱约束不通过，同时覆盖企业规范性和财务情况。",
+    "C": "存在任一强约束不通过。",
 }
 
 RECOMMENDATION_LABELS = {
@@ -44,17 +49,12 @@ RECOMMENDATION_LABELS = {
     "do_not_proceed": "不建议推进",
 }
 
-OVERALL_ASSESSMENT_PROMPT_PATH = (
-    Path(__file__).resolve().parents[2] / "prompts" / "09_企业综合评级.md"
-)
-
-
 def build_overall_assessment_package(
     *,
     enterprise_name: str,
     profile_reporting_periods: tuple[str, ...],
     cohort_name: str,
-    cohort_fiscal_period: str,
+    cohort_fiscal_period: str | None,
     cohort_selection_rule: str,
     reports: tuple[DomainApprovalReport, ...],
     rankings: tuple[DirectionRankingResult, ...],
@@ -122,9 +122,10 @@ def build_overall_assessment_package(
 
 
 def build_overall_assessment_messages(package: dict[str, Any]) -> list[dict[str, str]]:
-    system = _prompt_section("系统提示词")
-    user = _prompt_section("用户提示词").replace(
-        "{{ASSESSMENT_PACKAGE_JSON}}", json.dumps(package, ensure_ascii=False)
+    system = load_prompt_section("logic/授信审批逻辑规则.md", "客户风险评级")
+    user = (
+        "请仅根据下方企业综合评定包输出完整合法 JSON，不得补充外部事实。\n\n"
+        f"企业综合评定包：\n{json.dumps(package, ensure_ascii=False)}"
     )
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 
@@ -169,19 +170,13 @@ def _build_format_repair_messages(
             {"role": "assistant", "content": json.dumps(raw, ensure_ascii=False)},
             {
                 "role": "user",
-                "content": _prompt_section("格式修复提示词").replace(
+                "content": load_prompt_section("logic/授信审批逻辑规则.md", "格式修复").replace(
                     "{{VALIDATION_ERROR}}", str(error)
                 ),
             },
         )
     )
     return messages
-
-
-def _prompt_section(title: str) -> str:
-    """读取综合评级提示词中的一个固定章节。"""
-    content = OVERALL_ASSESSMENT_PROMPT_PATH.read_text(encoding="utf-8")
-    return content.split(f"## {title}", 1)[1].split("\n## ", 1)[0].strip()
 
 
 def validate_overall_assessment_output(
@@ -266,19 +261,20 @@ def approve_overall_assessment(
 
 def overall_assessment_to_markdown(assessment: EnterpriseOverallAssessment) -> str:
     status = "试验性待审核" if assessment.is_experimental else assessment.review_status
+    report_text = lambda value: str(value).replace("授信审批", "风险评级")
     lines = [
-        "# 最终授信审批报告",
+        "# 客户风险评级报告",
         "",
         f"- 推进建议：{RECOMMENDATION_LABELS[assessment.recommendation]}",
-        f"- 综合等级：{assessment.rating_level}",
+        f"- 客户风险评级：{assessment.rating_level}",
         f"- 强约束不通过：{assessment.strong_constraint_failed_count} 条",
         f"- 弱约束不通过：{assessment.weak_constraint_failed_count} 条",
         f"- 审核状态：{status}",
         "",
-        assessment.overall_judgment,
+        report_text(assessment.overall_judgment),
     ]
     if assessment.direction_results:
-        lines.extend(["", "## 授信审批指引逐条结论", ""])
+        lines.extend(["", "## 风险评级指引逐条结论", ""])
         titles = {item.section_id: item.title for item in GUIDELINE_SECTION_DEFINITIONS}
         status_labels = {
             "passed": "通过",
@@ -293,22 +289,22 @@ def overall_assessment_to_markdown(assessment: EnterpriseOverallAssessment) -> s
                     f"### {titles[item.section_id]}",
                     f"- 约束类型：{constraint_labels[item.constraint_level]}",
                     f"- 状态：{status_labels[item.status]}",
-                    f"- 结论：{item.summary}",
+                    f"- 结论：{report_text(item.summary)}",
                     "",
                 )
             )
     lines.extend(["", "## 五类评定依据", ""])
     for item in assessment.rating_rationale:
-        lines.append(f"- **{item.title}**：{item.judgment}")
+        lines.append(f"- **{item.title}**：{report_text(item.judgment)}")
     for title, values in (
         ("主要风险", assessment.core_risks),
         ("缓释因素", assessment.mitigating_factors),
         ("判断边界", assessment.rating_boundaries),
-        ("优先核实事项", assessment.verification_priorities),
+        ("后续行动建议", assessment.verification_priorities),
     ):
         if values:
             lines.extend(["", f"## {title}", ""])
-            lines.extend(f"- {value}" for value in values)
+            lines.extend(f"- {report_text(value)}" for value in values)
     return "\n".join(lines) + "\n"
 
 
@@ -331,12 +327,17 @@ def _validate_assessment_inputs(
         if report.review_status != expected_status:
             raise ValueError("direction report status does not match assessment type")
     expected_ranked_sections = {
-        section.section_id for section in GUIDELINE_SECTION_DEFINITIONS if section.ranking_enabled
+        section.section_id
+        for section in GUIDELINE_SECTION_DEFINITIONS
+        if section.ranking_enabled
     }
-    if {ranking.section_id for ranking in rankings} != expected_ranked_sections:
-        raise ValueError("overall assessment requires every enabled direction ranking")
+    actual_ranked_sections = {ranking.section_id for ranking in rankings}
+    if not actual_ranked_sections.issubset(expected_ranked_sections):
+        raise ValueError("overall assessment contains an unsupported direction ranking")
     for ranking in rankings:
-        if ranking.cohort_id != first.cohort_id or ranking.review_status != expected_status:
+        if first.cohort_id is None or ranking.cohort_id != first.cohort_id:
+            raise ValueError("direction ranking requires a matching peer cohort")
+        if ranking.review_status != expected_status:
             raise ValueError("direction ranking status does not match assessment type")
 
 
@@ -450,19 +451,26 @@ def _validate_rating_boundary(
         and item.status == "insufficient_information"
         for item in direction_results
     )
-    if recommendation == "do_not_proceed":
-        expected = "D"
-    elif len(weak_failed) >= 5 or {
+    if recommendation == "do_not_proceed" and any(
+        item.constraint_level == "strong" and item.status == "failed"
+        for item in direction_results
+    ):
+        expected = "C"
+    elif {
         "enterprise_norms",
         "financial_position",
     }.issubset(weak_failed) and len(weak_failed) >= 3:
-        expected = "D"
-    elif weak_failed:
-        expected = "C"
-    elif non_methodology_information_gap:
-        expected = "B"
+        expected = "CC"
+    elif len(weak_failed) >= 5:
+        expected = "CCC"
     else:
-        expected = "A"
+        expected = {
+            4: "B",
+            3: "BB",
+            2: "BBB",
+            1: "A",
+            0: "AA" if non_methodology_information_gap else "AAA",
+        }[len(weak_failed)]
     if rating_level != expected:
         raise ValueError("rating_level does not match fixed quality boundary")
 

@@ -11,12 +11,20 @@ from .loader import load_manifest
 class FieldDefinition:
     field_id: str
     section_id: str
+    label: str
     value_type: str
     evidence_required: bool
     reporting_period_required: bool = False
     currency_required: bool = False
     value_scope_required: bool = False
     allowed_values: tuple[str, ...] = ()
+    description: str = ""
+    synonyms: tuple[str, ...] = ()
+    include_when: tuple[str, ...] = ()
+    exclude_when: tuple[str, ...] = ()
+    extraction_notes: tuple[str, ...] = ()
+    deprecated_since: str | None = None
+    replaced_by: str | None = None
 
 
 class OntologyRegistry:
@@ -26,16 +34,24 @@ class OntologyRegistry:
             item["id"]: FieldDefinition(
                 field_id=item["id"],
                 section_id=item["section_id"],
+                label=item.get("label", item["id"]),
                 value_type=item["value_type"],
                 evidence_required=item.get("evidence_required", False),
                 reporting_period_required=item.get("reporting_period_required", False),
                 currency_required=item.get("currency_required", False),
                 value_scope_required=item.get("value_scope_required", False),
                 allowed_values=tuple(item.get("allowed_values", ())),
+                description=item.get("description", ""),
+                synonyms=tuple(item.get("synonyms", ())),
+                include_when=tuple(item.get("include_when", ())),
+                exclude_when=tuple(item.get("exclude_when", ())),
+                extraction_notes=tuple(item.get("extraction_notes", ())),
+                deprecated_since=item.get("deprecated_since"),
+                replaced_by=item.get("replaced_by"),
             )
             for item in manifest["fields"]
         }
-        self.sections = {item["id"] for item in manifest["profile_sections"]}
+        self.sections = {item["id"] for item in manifest["fact_sections"]}
 
     def get_field(self, field_id: str) -> FieldDefinition:
         try:

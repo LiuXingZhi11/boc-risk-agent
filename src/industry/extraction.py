@@ -9,6 +9,7 @@ from typing import Any
 
 from src.llm.deepseek_client import call_deepseek
 from src.llm.generation_config import GenerationConfig
+from src.prompts import load_prompt_section
 from src.profiles.models import EvidenceReference
 
 from .models import (
@@ -51,37 +52,14 @@ def build_industry_profile_messages(
             for unit in bundle.evidence_units
         ],
     }
-    system = (
-        f"{guide_text}\n\n"
-        "你负责从行业报告证据中建立行业背景画像。"
-        "只复述输入材料明确表达的行业事实、预测和分析判断，"
-        "不得补充外部知识，也不得把行业陈述改写成某一家企业的事实。"
-        "只输出合法 JSON，不输出 Markdown 或额外解释。"
-    )
+    system = load_prompt_section("data/行业背景数据规则.md", "行业背景生成")
+    if guide_text:
+        system = f"{system}\n\n{guide_text}"
     user = (
-        "顶层只输出 insights 和 information_gaps。insights 是数组，每项只包含："
-        "insight_id、dimension_id、statement、insight_type、time_scope、"
-        "geographic_scope、evidence_unit_ids、evidence_quotes。\n"
+        f"{load_prompt_section('data/行业背景数据规则.md', '行业背景生成')}\n\n"
         f"本批次 dimension_id 只能使用：{', '.join(dimensions)}。\n"
         f"当前维度定义：\n{dimension_definitions}\n"
-        "只有证据直接回答对应维度定义时才生成要点；不符合当前维度的证据必须省略，"
-        "不得为了使用证据而强行归类。\n"
-        f"insight_type 只能使用：{', '.join(INDUSTRY_INSIGHT_TYPES)}。"
-        "reported_fact 表示报告陈述的现状或历史事实，forecast 表示预测，"
-        "analysis_judgment 表示报告的分析观点或建议；不得把预测标成事实，"
-        "不得把‘建议、提出、可考虑’等建议性表述标成 forecast。\n"
-        "statement 使用普通人可读的简体中文，并保留材料披露的时间、地域、"
-        "统计口径和不确定措辞。time_scope、geographic_scope 未明确披露时填 null。\n"
-        "evidence_unit_ids 只能逐字复制输入 ID。evidence_quotes 是对象数组，"
-        "每项只包含 evidence_unit_id 和 excerpt；每个引用 ID 都必须至少有一条摘录。"
-        "excerpt 必须逐字连续复制对应 EvidenceUnit 原文，不得拼接、改写或使用省略号。\n"
-        "每条要点只表达一个核心事实，不要把多个独立技术、阶段或判断合并成一条。"
-        "statement 中每个实质性结论都必须由 evidence_quotes 的连续原文直接支持。"
-        "在证据充分时，优先保留不同来源或不同章节中的独立事实，不要因为已有一条概括性结论"
-        "就省略其他能补充市场、技术、产业链、竞争、商业化或风险判断的直接证据。"
-        "每个维度最多输出 4 条高价值要点，没有充分证据时可以不输出。"
-        "同一事实不要重复输出。information_gaps 是简体中文字符串数组，只说明"
-        "本次输入证据未充分覆盖的当前批次维度，不生成其他维度或企业信息缺口。\n\n"
+        f"允许的 insight_type：{', '.join(INDUSTRY_INSIGHT_TYPES)}。\n\n"
         "===== 行业证据开始 =====\n"
         f"{json.dumps(payload, ensure_ascii=False, indent=2)}\n"
         "===== 行业证据结束 ====="
@@ -205,18 +183,9 @@ def build_industry_audit_messages(
             for insight in profile.insights
         ],
     }
-    system = (
-        "你负责审核行业背景画像候选，只能根据输入候选、维度定义和原文摘录判断。"
-        "不得使用外部知识，不得改写或补充行业事实。只输出合法 JSON。"
-    )
+    system = load_prompt_section("data/行业背景数据规则.md", "行业语义审核")
     user = (
-        "逐条检查：dimension_id 是否匹配；insight_type 是否正确；statement 的全部"
-        "实质结论是否被摘录直接支持；是否与其他候选实质重复。建议、提出、可考虑"
-        "属于 analysis_judgment，不属于 forecast。行业风险必须是不利影响、不确定性、"
-        "约束、瓶颈或安全伦理问题，不能是收益、机会或缓释措施。\n"
-        "顶层只输出 decisions 数组，每项只包含 insight_id、accepted、reason。"
-        "accepted 只能是 true 或 false。重复候选只接受信息更直接、维度更准确的一项。"
-        "不要输出修改后的 statement 或新要点。\n\n"
+        f"{load_prompt_section('data/行业背景数据规则.md', '行业语义审核')}\n\n"
         f"{json.dumps(payload, ensure_ascii=False, indent=2)}"
     )
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]

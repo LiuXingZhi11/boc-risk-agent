@@ -1,5 +1,7 @@
 import pytest
 
+from dataclasses import replace
+
 from src.approval import ApprovalPoint, ApprovalRepository
 from src.approval.direction_ranking import (
     DirectionRankPoint,
@@ -82,7 +84,7 @@ def _package(*, experimental: bool = False) -> dict:
     )
 
 
-def _raw(package: dict, *, rating_level: str = "A") -> dict:
+def _raw(package: dict, *, rating_level: str = "AAA") -> dict:
     reports = package["direction_cards"]
     evidence_ids = [
         card["approval_points"][0]["key_evidence_unit_ids"][0]
@@ -132,12 +134,33 @@ def test_overall_assessment_validates_full_direction_inputs_and_markdown():
         "assessment-a", package, _reports(), _rankings(), _raw(package)
     )
 
-    assert assessment.rating_level == "A"
+    assert assessment.rating_level == "AAA"
     assert len(assessment.rating_rationale) == 5
     assert len(assessment.source_direction_report_ids) == 11
     assert assessment.recommendation == "proceed_with_caution"
     assert len(assessment.direction_results) == 11
-    assert "综合等级：A" in overall_assessment_to_markdown(assessment)
+    assert "客户风险评级：AAA" in overall_assessment_to_markdown(assessment)
+
+
+def test_overall_assessment_can_run_without_peer_rankings():
+    reports = tuple(replace(report, cohort_id=None) for report in _reports())
+    package = build_overall_assessment_package(
+        enterprise_name="单企业测试",
+        profile_reporting_periods=("2025",),
+        cohort_name="单企业分析（未进行同行比较）",
+        cohort_fiscal_period=None,
+        cohort_selection_rule="未启用同行样本",
+        reports=reports,
+        rankings=(),
+        is_experimental=False,
+    )
+
+    assessment = validate_overall_assessment_output(
+        "standalone-assessment", package, reports, (), _raw(package)
+    )
+
+    assert assessment.cohort_id is None
+    assert assessment.source_direction_ranking_sections == ()
 
 
 def test_overall_assessment_rejects_unknown_rating_and_derives_source_references():
@@ -158,7 +181,7 @@ def test_overall_assessment_rejects_unknown_rating_and_derives_source_references
 
 def test_final_report_strong_constraint_failure_requires_hard_trigger_evidence():
     package = _package()
-    raw = _raw(package, rating_level="D")
+    raw = _raw(package, rating_level="C")
     target = next(
         item for item in raw["direction_results"] if item["section_id"] == "aml_sanctions"
     )
@@ -180,7 +203,7 @@ def test_final_report_strong_constraint_failure_requires_hard_trigger_evidence()
 
 def test_final_report_weak_constraint_failure_is_not_a_veto():
     package = _package()
-    raw = _raw(package, rating_level="C")
+    raw = _raw(package, rating_level="A")
     target = next(
         item for item in raw["direction_results"] if item["section_id"] == "financial_position"
     )
@@ -195,7 +218,7 @@ def test_final_report_weak_constraint_failure_is_not_a_veto():
 
 def test_quantitative_assessment_does_not_fail_or_count_as_enterprise_risk():
     package = _package()
-    raw = _raw(package, rating_level="B")
+    raw = _raw(package, rating_level="AAA")
     target = next(
         item
         for item in raw["direction_results"]
@@ -208,7 +231,7 @@ def test_quantitative_assessment_does_not_fail_or_count_as_enterprise_risk():
         )
 
     experimental_package = _package(experimental=True)
-    experimental_raw = _raw(experimental_package, rating_level="A")
+    experimental_raw = _raw(experimental_package, rating_level="AAA")
     quantitative = next(
         item
         for item in experimental_raw["direction_results"]
@@ -225,24 +248,45 @@ def test_quantitative_assessment_does_not_fail_or_count_as_enterprise_risk():
         )
 
 
-def test_final_report_rating_boundaries_cover_b_c_and_d():
+def test_final_report_rating_boundaries_cover_aa_and_cc():
     package = _package()
-    raw = _raw(package, rating_level="B")
+    raw = _raw(package, rating_level="AA")
     next(
         item for item in raw["direction_results"] if item["section_id"] == "core_team"
     )["status"] = "insufficient_information"
     assert validate_overall_assessment_output(
         "assessment-b", package, _reports(), _rankings(), raw
-    ).rating_level == "B"
+    ).rating_level == "AA"
 
-    raw = _raw(package, rating_level="D")
+    raw = _raw(package, rating_level="CC")
     for section_id in ("enterprise_norms", "financial_position", "market_space"):
         next(
             item for item in raw["direction_results"] if item["section_id"] == section_id
         )["status"] = "failed"
     assert validate_overall_assessment_output(
         "assessment-d", package, _reports(), _rankings(), raw
-    ).rating_level == "D"
+    ).rating_level == "CC"
+
+
+def test_final_report_rating_boundaries_split_weak_failures_into_nine_levels():
+    package = _package()
+    weak_sections = [
+        section.section_id
+        for section in GUIDELINE_SECTION_DEFINITIONS
+        if section.constraint_level == "weak"
+        and section.section_id != "quantitative_assessment"
+    ]
+    expected = {1: "A", 2: "BBB", 3: "BB", 4: "B", 5: "CCC"}
+    for count, rating in expected.items():
+        raw = _raw(package, rating_level=rating)
+        for section_id in weak_sections[:count]:
+            next(
+                item for item in raw["direction_results"]
+                if item["section_id"] == section_id
+            )["status"] = "failed"
+        assert validate_overall_assessment_output(
+            f"assessment-{rating}", package, _reports(), _rankings(), raw
+        ).rating_level == rating
 
 
 def test_final_report_recommendations_follow_a_to_d_boundaries():
@@ -253,7 +297,7 @@ def test_final_report_recommendations_follow_a_to_d_boundaries():
         "assessment-a", package, _reports(), _rankings(), raw
     ).recommendation == "proceed_with_caution"
 
-    raw = _raw(package, rating_level="B")
+    raw = _raw(package, rating_level="AA")
     next(
         item for item in raw["direction_results"] if item["section_id"] == "core_team"
     )["status"] = "insufficient_information"
@@ -261,7 +305,7 @@ def test_final_report_recommendations_follow_a_to_d_boundaries():
         "assessment-b", package, _reports(), _rankings(), raw
     ).recommendation == "proceed_with_review"
 
-    raw = _raw(package, rating_level="C")
+    raw = _raw(package, rating_level="A")
     next(
         item
         for item in raw["direction_results"]
@@ -271,7 +315,7 @@ def test_final_report_recommendations_follow_a_to_d_boundaries():
         "assessment-c", package, _reports(), _rankings(), raw
     ).recommendation == "conditional_proceed"
 
-    raw = _raw(package, rating_level="D")
+    raw = _raw(package, rating_level="CC")
     for section_id in ("enterprise_norms", "financial_position", "market_space"):
         next(
             item for item in raw["direction_results"] if item["section_id"] == section_id
@@ -296,7 +340,7 @@ def test_final_report_repair_prompt_restates_strong_constraint_and_rating_rules(
 
     prompt = _build_format_repair_messages(_package(), _raw(_package()), ValueError("test"))[-1]["content"]
     assert "hard trigger code" in prompt
-    assert "5个及以上弱约束 failed" in prompt
+    assert "CCC" in prompt and "CC" in prompt
 
 
 def test_experimental_assessment_cannot_be_approved_and_persists(tmp_path):
@@ -382,5 +426,5 @@ def test_overall_assessment_repairs_one_invalid_model_format(monkeypatch):
         _rankings(),
         config=GenerationConfig(mode="thinking"),
     )
-    assert assessment.rating_level == "A"
+    assert assessment.rating_level == "AAA"
     assert len(calls) == 2

@@ -18,6 +18,7 @@ from src.evidence.models import EvidenceUnit
 from src.evidence.service import EvidenceQueryService
 from src.llm.deepseek_client import call_deepseek
 from src.llm.generation_config import GenerationConfig, REQUEST_TIMEOUT_SECONDS
+from src.prompts import render_prompt_section
 from .extraction import (
     PROFILE_DOMAINS,
     PROFILE_DOMAIN_PURPOSES,
@@ -66,24 +67,23 @@ def build_react_system_prompt(
     query: str,
     limits: ReactLimits,
 ) -> str:
-    """构造只负责发现和读取证据的单领域调查提示词。"""
+    """构造单领域证据调查提示词，并注入当前运行参数。"""
     if domain not in PROFILE_DOMAINS:
         raise ValueError(f"调查领域非法：{domain!r}")
-    return f"""你负责当前企业的单领域受控证据调查。
-case_id：{case_id}
-domain：{domain}
-领域目标：{PROFILE_DOMAIN_PURPOSES[domain]}
-用户补充查询：{query or '无'}
-
-必须先用 search_evidence 查看轻量目录，再用 read_evidence 读取最有助于完成领域画像的正文。
-累计读取 {limits.max_read_units} 条正文后，不得再次调用 read_evidence。
-完成读取后只回复“证据选择完成”，不要生成画像、JSON、关系、结论或审核意见。
-如果目录中没有相关证据，直接说明没有可用证据，不得读取无关内容。
-不得调查其他案例，不得批准或保存画像。
-
-调用上限：模型 {limits.max_model_calls} 次，搜索 {limits.max_search_calls} 次，
-读取工具 {limits.max_read_calls} 次，累计正文 {limits.max_read_units} 条。
-""".strip()
+    return render_prompt_section(
+        "data/企业画像数据规则.md",
+        "ReAct证据调查",
+        {
+            "case_id": case_id,
+            "domain": domain,
+            "domain_purpose": PROFILE_DOMAIN_PURPOSES[domain],
+            "query_or_none": query or "无",
+            "max_model_calls": limits.max_model_calls,
+            "max_search_calls": limits.max_search_calls,
+            "max_read_calls": limits.max_read_calls,
+            "max_read_units": limits.max_read_units,
+        },
+    )
 
 
 def build_recovery_system_prompt(
@@ -93,24 +93,21 @@ def build_recovery_system_prompt(
     requests: list[dict[str, Any]],
     limits: ReactLimits,
 ) -> str:
-    """构造拒绝候选后的补充证据调查提示词。"""
-    return f"""你负责为当前企业的失败画像候选补充证据。
-case_id：{case_id}
-domain：{domain}
-领域目标：{PROFILE_DOMAIN_PURPOSES[domain]}
-
-首轮候选已经被 Python 拒绝。以下请求只描述缺失的证据，不代表事实已经成立：
-{json.dumps(requests, ensure_ascii=False, indent=2)}
-
-必须先用 search_evidence 搜索每个请求中的主体、对象和缺失证据表达，再用 read_evidence 读取能够直接证明候选的正文。
-优先检查同一产品、人员或事项在不同章节中的产品说明、演变说明、表格说明和法律/风险说明。
-不要重复读取已经足够的无关证据；找不到连续原文时回复“没有找到补充证据”。
-完成补查后只回复“补充证据选择完成”，不要生成画像 JSON、关系或结论。
-
-本轮上限：模型 {limits.max_model_calls} 次，搜索 {limits.max_search_calls} 次，
-读取工具 {limits.max_read_calls} 次，补充正文 {limits.max_read_units} 条。
-""".strip()
-
+    """构造候选被拒绝后的定向补查提示词。"""
+    return render_prompt_section(
+        "data/企业画像数据规则.md",
+        "ReAct被拒候选补查",
+        {
+            "case_id": case_id,
+            "domain": domain,
+            "domain_purpose": PROFILE_DOMAIN_PURPOSES[domain],
+            "recovery_requests_json": json.dumps(requests, ensure_ascii=False, indent=2),
+            "max_model_calls": limits.max_model_calls,
+            "max_search_calls": limits.max_search_calls,
+            "max_read_calls": limits.max_read_calls,
+            "max_read_units": limits.max_read_units,
+        },
+    )
 
 def build_react_agent(
     *,

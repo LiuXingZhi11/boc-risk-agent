@@ -13,6 +13,7 @@ from langchain_core.tools import BaseTool
 
 from src.evidence.service import EvidenceQueryService
 from src.llm.generation_config import GenerationConfig
+from src.prompts import render_prompt_section
 from src.profiles.react_workflow import (
     build_deepseek_chat_model,
     collect_agent_api_meta,
@@ -52,25 +53,22 @@ def build_industry_react_system_prompt(
         f"{' '.join(INDUSTRY_SEARCH_TERMS[dimension_id])}"
         for dimension_id in INDUSTRY_DIMENSIONS
     )
-    return f"""你负责为行业背景画像选择证据。
-industry_id：{industry_id}
-industry_name：{industry_name}
-固定维度：{dimensions}
-
-首次调查必须为八个维度各调用一次 search_industry_evidence，每次只能提交一个 dimension_id：
-{search_plan}
-query 中的概念词用空格分开，不要把“政策”和“法规”一类独立概念合成一个长词，也不要写 industry_name。
-完成八次首次搜索后，根据目录标题和位置选择正文，再调用 read_industry_evidence 分批读取最相关正文。
-最多保留两次额外搜索，只在某维度目录少于 4 项、某来源尚未出现、或目录集中在同一章节时，
-使用尚未使用的独立概念词补充检索；不要重复相同 query。读取正文时先保证八个维度都覆盖，
-再保证不同来源和不同章节覆盖；每个维度在预算允许时至少读取 3 条，同一维度有多个来源或章节时
-不要连续读取同一来源同一章节。累计读取 {limits.max_read_units} 条正文后不得继续读取。
-证据足够时提前结束，只回复“行业证据选择完成”。
-不要生成行业画像 JSON、企业事实、风险结论或审核意见；不要读取其他材料集合。
-
-调用上限：模型 {limits.max_model_calls} 次，搜索 {limits.max_search_calls} 次，读取工具 {limits.max_read_calls} 次，
-累计正文 {limits.max_read_units} 条，每次目录最多 {limits.max_catalog_items} 项。
-""".strip()
+    business_rules = render_prompt_section(
+        "data/行业背景数据规则.md",
+        "ReAct证据调查",
+        {
+            "industry_id": industry_id,
+            "industry_name": industry_name,
+            "industry_dimensions": dimensions,
+            "max_read_units": limits.max_read_units,
+            "industry_search_plan": search_plan,
+            "max_model_calls": limits.max_model_calls,
+            "max_search_calls": limits.max_search_calls,
+            "max_read_calls": limits.max_read_calls,
+            "max_catalog_items": limits.max_catalog_items,
+        },
+    )
+    return business_rules
 
 
 def build_industry_react_agent(

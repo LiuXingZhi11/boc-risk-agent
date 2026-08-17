@@ -11,6 +11,7 @@ from src.approval import (
     approve_direction_ranking,
     build_direction_comparison_card,
     build_guideline_section_context,
+    build_standalone_guideline_section_context,
     direction_ranking_to_markdown,
     generate_direction_ranking,
     generate_guideline_section_report,
@@ -142,6 +143,17 @@ def test_guideline_definitions_have_eleven_sections_and_cross_domain_fields():
         "fiscal_period": "2025",
         "selection_rule": "same industry and reporting period",
     }
+
+
+def test_standalone_guideline_context_does_not_require_peer_metrics():
+    context = build_standalone_guideline_section_context(
+        _profile("company-a"),
+        _industry_profile(),
+        GUIDELINE_SECTIONS_BY_ID["market_space"],
+    )
+
+    assert context.cohort_id is None
+    assert all("可比指标" not in gap for gap in context.information_gaps)
 
 
 def test_guideline_context_selects_fact_groups_across_allowed_fields():

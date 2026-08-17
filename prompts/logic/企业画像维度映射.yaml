@@ -1,0 +1,120 @@
+# 企业画像逻辑层配置
+#
+# 本文件不定义字段含义，也不定义 PDF 中事实如何取值。
+# 它只定义：已抽取的结构化事实，按哪些调查领域提取、按哪些画像维度组织。
+
+extraction_domains:
+  - id: enterprise_and_control
+    label: 企业基本信息与控制关系
+    purpose: 企业法定身份、成立信息、主营业务、发展阶段和控制关系
+    field_ids:
+      - enterprise.legal_name
+      - enterprise.founded_date
+      - enterprise.business_stage
+      - enterprise.main_business
+      - ownership.controller
+    relation_types: [controls, owns, claims_to_own]
+
+  - id: team
+    label: 团队与股权激励
+    purpose: 实际控制人、关键人员、教育背景、职业经历、任职关系和股权激励计划
+    field_ids:
+      - ownership.controller
+      - team.key_person
+      - team.education_structure
+      - team.professional_background
+      - governance.equity_incentive_plan_status
+    relation_types: [holds_position_in, controls]
+
+  - id: technology_and_ip
+    label: 技术与知识产权
+    purpose: 核心技术名称、技术来源、成熟度、技术权属、核心知识产权、专利申请与授权总量以及外部技术依赖
+    field_ids:
+      - technology.name
+      - technology.source
+      - technology.maturity_stage
+      - technology.ownership_status
+      - intellectual_property.name
+      - intellectual_property.patent_application_count
+      - intellectual_property.patent_grant_count
+      - intellectual_property.ownership_status
+      - intellectual_property.rights_restriction_status
+    relation_types: [owns, claims_to_own, licenses, develops, uses_technology, depends_on]
+
+  - id: product_and_project
+    label: 产品、研发与项目
+    purpose: 产品、商业化阶段、研发项目、技术应用和产业化关系
+    field_ids: [technology.name, product.name, product.commercialization_stage]
+    relation_types: [develops, uses_technology, commercializes_as, depends_on]
+
+  - id: market_and_commercialization
+    label: 市场与商业化
+    purpose: 产品市场、商业化、竞争和销售关系
+    field_ids: [product.name, product.commercialization_stage]
+    relation_types: [sells_to, cooperates_with, depends_on]
+
+  - id: customer_and_supplier
+    label: 客户、供应商与合作方
+    purpose: 主要客户和供应商、逐年交易金额与占比、交易内容、集中度、关联关系和外部依赖
+    field_ids:
+      - customer_supplier.customer_concentration
+      - customer_supplier.supplier_concentration
+      - customer_supplier.counterparty_name
+      - customer_supplier.transaction_amount
+      - customer_supplier.transaction_ratio
+      - customer_supplier.transaction_content
+      - customer_supplier.related_party_status
+    relation_types: [sells_to, purchases_from, cooperates_with, depends_on]
+
+  - id: finance_and_funding
+    label: 财务与融资
+    purpose: 收入、净利润、现金流、研发费用、现金余额、有息负债、融资、担保和资金依赖
+    field_ids:
+      - finance.operating_revenue
+      - finance.operating_cash_flow
+      - finance.net_profit
+      - finance.net_profit_attributable_to_parent
+      - finance.adjusted_net_profit_attributable_to_parent
+      - finance.research_expense
+      - finance.research_expense_ratio
+      - finance.cash_balance
+      - finance.interest_bearing_debt
+    relation_types: [financed_by, guarantees_for, depends_on]
+
+  - id: risk_matters
+    label: 风险事项
+    purpose: 已经披露的技术、经营、财务、合规和法律风险事项
+    field_ids: [risk.matter]
+    relation_types: [involved_in, depends_on, supported_by, contradicted_by]
+
+  - id: authoritative_findings
+    label: 权威认定
+    purpose: 监管、行政、司法或其他权威来源的明确认定
+    field_ids: [risk.matter]
+    relation_types: [involved_in, supported_by, contradicted_by]
+
+  - id: outcome_and_resolution
+    label: 历史结果与处置
+    purpose: 历史结果、处置、整改、赔偿、退市或风险事项结局
+    field_ids: [risk.matter]
+    relation_types: [involved_in, supported_by, contradicted_by]
+
+portrait_dimensions:
+  - id: enterprise_and_team
+    label: 企业治理与团队
+    fact_section_ids: [basic_information, ownership_governance_team]
+  - id: technology_and_ip
+    label: 技术与知识产权
+    fact_section_ids: [technology_ip]
+  - id: product_and_commercialization
+    label: 产品、研发与商业化
+    fact_section_ids: [product_research_commercialization, market_competition, operations_delivery]
+  - id: customer_supplier
+    label: 客户、供应商与合作方
+    fact_section_ids: [customer_supplier_partners]
+  - id: finance_and_funding
+    label: 财务与融资
+    fact_section_ids: [finance_capital]
+  - id: risk_and_compliance
+    label: 风险、合规与证据质量
+    fact_section_ids: [compliance_legal_risk, evidence_quality_gaps]

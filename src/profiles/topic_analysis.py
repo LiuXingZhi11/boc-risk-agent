@@ -16,7 +16,9 @@ from langchain.agents.middleware import ModelCallLimitMiddleware, ToolCallLimitM
 from langchain_core.language_models import BaseChatModel
 from langchain_core.tools import BaseTool, tool
 
+from src.llm.deepseek_client import call_deepseek
 from src.llm.generation_config import GenerationConfig
+from src.prompts import render_prompt_section
 from src.profiles.visual_card import CardDimension, CardFact, CardTopic, EnterpriseVisualCard
 from src.utils.json_utils import extract_json_from_text
 
@@ -151,41 +153,205 @@ def build_topic_analysis_system_prompt(
     limits: TopicAnalysisLimits,
 ) -> str:
     catalog = json.dumps(build_topic_catalog(dimension), ensure_ascii=False, indent=2)
-    return f"""你负责分析企业画像中的一个领域，不负责抽取新的原始事实。
-企业：{enterprise_name}
-领域：{dimension.label}
+    business_rules = render_prompt_section(
+        "logic/企业画像逻辑规则.md",
+        "主题分析",
+        {
+            "enterprise_name": enterprise_name,
+            "dimension_label": dimension.label,
+            "max_model_calls": limits.max_model_calls,
+            "max_topic_reads": limits.max_topic_reads,
+            "max_facts_per_read": limits.max_facts_per_read,
+        },
+    )
+    return (
+        f"{business_rules}\n\n"
+        f"运行时主题目录：\n{catalog}\n\n"
+        f"企业：{enterprise_name}\n领域：{dimension.label}\n"
+        f"模型调用上限：{limits.max_model_calls}；主题读取上限：{limits.max_topic_reads}；"
+        f"每次最多读取事实：{limits.max_facts_per_read}。"
+    ).strip()
 
-主题目录：
-{catalog}
 
-工作流程：
-1. 必须使用 read_topic 读取每个有事实的主题；事实超过单次上限时继续读取下一页。
-2. 只能根据读取到的事实、统计结果和证据摘要进行分析。
-3. 分析应说明企业特征、变化趋势、经营含义和信息边界，不能只复述字段和值。
-4. 每个主题的 fact_refs 只能引用该主题 read_topic 返回的事实，不能把同一证据表中的其他主题事实交叉归入。
-5. 证据不足时写明“未披露”或“无法判断”，不得补造事实。
-6. 最终只输出 JSON，不要输出 Markdown。
+def build_topic_analysis_final_messages(
+    *,
+    card: EnterpriseVisualCard,
+    dimension: CardDimension,
+    limits: TopicAnalysisLimits,
+) -> list[dict[str, str]]:
+    """为 ReAct 读取结果构造独立的 JSON 合成请求。"""
+    system = build_topic_analysis_system_prompt(
+        enterprise_name=card.enterprise_name,
+        dimension=dimension,
+        limits=limits,
+    )
+    packet = build_domain_analysis_packet(card, dimension.dimension_id)
+    user = (
+        "ReAct 已完成本领域全部主题的事实读取。请根据下方完整主题事实包生成最终主题分析。"
+        "只输出合法 JSON 对象，不要输出说明文字、Markdown 或代码块；不得补充事实。\n\n"
+        f"完整主题事实包：\n{json.dumps(packet, ensure_ascii=False, indent=2)}"
+    )
+    return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 
-JSON 格式：
-{{
-  "domain_summary": "该领域的整体画像",
-  "topic_analyses": [
-    {{
-      "topic_id": "主题编号",
-      "conclusion": "主题分析结论",
-      "key_signals": ["具体特征或趋势"],
-      "information_boundaries": ["无法判断或未披露内容"],
-      "fact_refs": ["事实编号"],
-      "evidence_refs": ["证据编号"]
-    }}
-  ],
-  "information_boundaries": ["本领域整体边界"],
-  "evidence_refs": ["证据编号"]
-}}
 
-不得新增原文没有的数字、名称、关系或确定性风险结论。每个事实引用和证据引用必须来自工具返回结果。
-模型调用上限 {limits.max_model_calls} 次，主题读取上限 {limits.max_topic_reads} 次，
-每次最多读取 {limits.max_facts_per_read} 条事实。""".strip()
+def _coerce_topic_analysis_list(value: Any) -> list[Any] | None:
+    if isinstance(value, list):
+        normalized: list[Any] = []
+        for item in value:
+            if not isinstance(item, dict):
+                normalized.append(item)
+                continue
+            item = dict(item)
+            if "topic_id" not in item:
+                for key in ("id", "topic", "主题编号", "主题ID"):
+                    if item.get(key):
+                        item["topic_id"] = item[key]
+                        break
+            normalized.append(item)
+        return normalized
+    if isinstance(value, str):
+        try:
+            return _coerce_topic_analysis_list(json.loads(value))
+        except (TypeError, json.JSONDecodeError):
+            return None
+    if not isinstance(value, dict):
+        return None
+    if "topic_id" in value:
+        return [value]
+    for key in (
+        "topic_analyses",
+        "topic_analysis",
+        "analyses",
+        "topics",
+        "topic_results",
+        "主题分析",
+        "主题分析结果",
+        "主题结论",
+    ):
+        if key in value:
+            nested = _coerce_topic_analysis_list(value[key])
+            if nested is not None:
+                return nested
+    items = []
+    for topic_id, analysis in value.items():
+        if isinstance(analysis, dict):
+            item = dict(analysis)
+            item.setdefault("topic_id", topic_id)
+            items.append(item)
+        elif isinstance(analysis, str) and analysis.strip():
+            items.append({"topic_id": topic_id, "conclusion": analysis.strip()})
+    return items or None
+
+
+_DOMAIN_SUMMARY_KEYS = (
+    "domain_summary",
+    "overall_summary",
+    "overall_conclusion",
+    "domain_conclusion",
+    "overall_assessment",
+    "summary",
+    "analysis",
+    "judgment",
+    "conclusion",
+    "领域摘要",
+    "领域总结",
+    "领域结论",
+    "总体结论",
+    "整体结论",
+    "整体分析",
+    "本领域结论",
+    "总体摘要",
+    "整体摘要",
+)
+_TOPIC_CONCLUSION_KEYS = (
+    "conclusion",
+    "topic_conclusion",
+    "topic_summary",
+    "summary",
+    "analysis",
+    "judgment",
+    "主题结论",
+    "主题摘要",
+    "分析结论",
+    "结论",
+    "总结",
+)
+_SIGNAL_KEYS = ("key_signals", "signals", "key_points", "关键特征", "关键信号")
+
+
+def _first_nonempty_text(mapping: dict[str, Any], keys: tuple[str, ...]) -> str:
+    for key in keys:
+        value = mapping.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    return ""
+
+
+def _text_values(mapping: dict[str, Any], keys: tuple[str, ...]) -> list[str]:
+    values: list[str] = []
+    for key in keys:
+        value = mapping.get(key)
+        if isinstance(value, str) and value.strip():
+            values.append(value.strip())
+        elif isinstance(value, list):
+            values.extend(
+                item.strip()
+                for item in value
+                if isinstance(item, str) and item.strip()
+            )
+    return list(dict.fromkeys(values))
+
+
+def normalize_topic_analysis_result(result: dict[str, Any]) -> dict[str, Any]:
+    """统一模型的等价字段，并只从已返回内容补齐领域摘要。"""
+    normalized = dict(result)
+    analyses = _coerce_topic_analysis_list(normalized.get("topic_analyses"))
+    if analyses is None:
+        for key in (
+            "topic_analysis",
+            "analyses",
+            "topics",
+            "topic_results",
+            "主题分析",
+            "主题分析结果",
+            "主题结论",
+        ):
+            analyses = _coerce_topic_analysis_list(normalized.get(key))
+            if analyses is not None:
+                break
+    if analyses is not None:
+        normalized["topic_analyses"] = analyses
+    if isinstance(normalized.get("topic_analyses"), list):
+        normalized["topic_analyses"] = [
+            (
+                {
+                    **analysis,
+                    "conclusion": (
+                        _first_nonempty_text(analysis, _TOPIC_CONCLUSION_KEYS)
+                        or "；".join(_text_values(analysis, _SIGNAL_KEYS)[:3])
+                    ),
+                }
+                if isinstance(analysis, dict)
+                else analysis
+            )
+            for analysis in normalized["topic_analyses"]
+        ]
+    summary = _first_nonempty_text(normalized, _DOMAIN_SUMMARY_KEYS)
+    if not summary:
+        conclusions = [
+            analysis.get("conclusion", "").strip()
+            for analysis in normalized.get("topic_analyses", [])
+            if isinstance(analysis, dict)
+            and isinstance(analysis.get("conclusion"), str)
+            and analysis.get("conclusion", "").strip()
+        ]
+        summary = "；".join(dict.fromkeys(conclusions))
+    if not summary:
+        summary = "；".join(_text_values(normalized, _SIGNAL_KEYS)[:3])
+    if not summary:
+        summary = "基于当前已读取事实，暂未形成可归纳的本领域结论，需补充或核实相关信息。"
+    normalized["domain_summary"] = summary
+    return normalized
 
 
 def create_topic_analysis_tools(session: TopicAnalysisSession) -> list[BaseTool]:
@@ -260,9 +426,11 @@ class ControlledReactTopicAnalysisWorkflow:
         *,
         model_factory: Callable[[GenerationConfig], BaseChatModel],
         agent_factory: Callable[..., Any] = build_topic_analysis_agent,
+        final_generator: Callable[[list[dict[str, str]], GenerationConfig], dict[str, Any]] = call_deepseek,
     ) -> None:
         self.model_factory = model_factory
         self.agent_factory = agent_factory
+        self.final_generator = final_generator
 
     def run(
         self,
@@ -284,6 +452,7 @@ class ControlledReactTopicAnalysisWorkflow:
             ),
             limits=limits,
         )
+        state: dict[str, Any] = {}
         try:
             state = agent.invoke(
                 {
@@ -295,15 +464,61 @@ class ControlledReactTopicAnalysisWorkflow:
                     ]
                 }
             )
-            result = _parse_agent_result(state)
-            validate_topic_analysis_result(result, session)
         except Exception as exc:
+            if set(session.read_topic_ids) != {topic.topic_id for topic in dimension.topics}:
+                return TopicAnalysisRun(
+                    dimension_id=dimension_id,
+                    status="failed",
+                    read_topic_ids=tuple(session.read_topic_ids),
+                    react_trace=tuple(session.trace),
+                    error=f"{type(exc).__name__}: {exc}",
+                )
+
+        result: dict[str, Any] | None = None
+        api_meta: tuple[dict[str, Any], ...] = ()
+        try:
+            if state:
+                result = normalize_topic_analysis_result(_parse_agent_result(state))
+                validate_topic_analysis_result(result, session)
+                api_meta = tuple(_collect_api_meta(state))
+        except Exception:
+            result = None
+
+        if result is None:
+            try:
+                if set(session.read_topic_ids) != {topic.topic_id for topic in dimension.topics}:
+                    raise ValueError("ReAct 未读取当前领域的全部主题，无法进行 JSON 合成。")
+                final_raw = self.final_generator(
+                    build_topic_analysis_final_messages(
+                        card=card,
+                        dimension=dimension,
+                        limits=limits,
+                    ),
+                    config,
+                )
+                final_raw = normalize_topic_analysis_result(dict(final_raw))
+                meta = final_raw.pop("api_meta", None)
+                if isinstance(meta, dict):
+                    api_meta = (meta,)
+                validate_topic_analysis_result(final_raw, session)
+                result = final_raw
+            except Exception as exc:
+                error = f"{type(exc).__name__}: {exc}"
+                return TopicAnalysisRun(
+                    dimension_id=dimension_id,
+                    status="failed",
+                    read_topic_ids=tuple(session.read_topic_ids),
+                    react_trace=tuple(session.trace),
+                    error=error,
+                )
+
+        if result is None:
             return TopicAnalysisRun(
                 dimension_id=dimension_id,
                 status="failed",
                 read_topic_ids=tuple(session.read_topic_ids),
                 react_trace=tuple(session.trace),
-                error=f"{type(exc).__name__}: {exc}",
+                error="主题分析未生成结果。",
             )
         return TopicAnalysisRun(
             dimension_id=dimension_id,
@@ -311,7 +526,7 @@ class ControlledReactTopicAnalysisWorkflow:
             result=result,
             read_topic_ids=tuple(session.read_topic_ids),
             react_trace=tuple(session.trace),
-            api_meta=tuple(_collect_api_meta(state)),
+            api_meta=api_meta,
         )
 
 
@@ -437,12 +652,32 @@ def _parse_agent_result(state: dict[str, Any]) -> dict[str, Any]:
         text = _message_text(content)
         if text:
             parsed = extract_json_from_text(text)
-            if isinstance(parsed, dict) and "domain_summary" in parsed:
+            if _looks_like_topic_analysis_result(parsed):
                 return parsed
     structured = state.get("structured_response")
-    if isinstance(structured, dict) and "domain_summary" in structured:
+    if _looks_like_topic_analysis_result(structured):
         return structured
     raise ValueError("分析 Agent 没有返回可解析的 JSON。")
+
+
+def _looks_like_topic_analysis_result(value: Any) -> bool:
+    if not isinstance(value, dict):
+        return False
+    return bool(
+        set(value).intersection(
+            {
+                *_DOMAIN_SUMMARY_KEYS,
+                "topic_analyses",
+                "topic_analysis",
+                "analyses",
+                "topics",
+                "topic_results",
+                "主题分析",
+                "主题分析结果",
+                "主题结论",
+            }
+        )
+    )
 
 
 def _message_text(content: Any) -> str:

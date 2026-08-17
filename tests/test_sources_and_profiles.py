@@ -652,6 +652,39 @@ def test_profile_candidates_are_evidence_bound_and_build_current_profile():
     assert profile.items[0].evidence_refs[0].evidence_unit_id == unit_id
 
 
+def test_profile_candidates_normalize_direct_extraction_alias():
+    unit_id = "src:eu_alias"
+    candidates = {
+        "profile_items": [
+            {
+                "item_id": "item-alias",
+                "section_id": "technology_ip",
+                "field_id": "technology.name",
+                "value": "某项技术",
+                "value_type": "entity_ref",
+                "information_status": "claimed",
+                "content_role": "enterprise_claim",
+                "evidence_unit_ids": [unit_id],
+                "extraction_method": "direct_extraction",
+            }
+        ],
+        "profile_relations": [],
+        "information_gaps": [],
+        "conflicts": [],
+        "unmapped_items": [],
+    }
+
+    profile = build_profile_from_candidates(
+        candidates,
+        profile_id="p-alias",
+        case_id="c-alias",
+        enterprise_name="测试企业",
+        profile_type="current",
+    )
+
+    assert profile.items[0].extraction_method == "llm"
+
+
 def test_invalid_profile_candidate_is_filtered_without_dropping_valid_item():
     data = {
         "profile_items": [

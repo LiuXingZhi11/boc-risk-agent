@@ -32,9 +32,9 @@ class GuidelinePointContext:
 
 @dataclass(frozen=True)
 class GuidelineSectionContext:
-    cohort_id: str
-    cohort_fiscal_period: str
-    cohort_selection_rule: str
+    cohort_id: str | None
+    cohort_fiscal_period: str | None
+    cohort_selection_rule: str | None
     case_id: str
     section_id: str
     section_title: str
@@ -78,6 +78,53 @@ def build_guideline_section_context(
         cohort_id=cohort.cohort_id,
         cohort_fiscal_period=cohort.fiscal_period,
         cohort_selection_rule=cohort.selection_rule,
+        case_id=profile.case_id,
+        section_id=section.section_id,
+        section_title=section.title,
+        enterprise_profile_id=profile.profile_id,
+        industry_profile_id=industry_profile.profile_id,
+        point_contexts=point_contexts,
+        information_gaps=tuple(dict.fromkeys(gaps)),
+    )
+
+
+def build_standalone_guideline_section_context(
+    profile: EnterpriseProfile,
+    industry_profile: IndustryBackgroundProfile,
+    section: GuidelineSectionDefinition,
+) -> GuidelineSectionContext:
+    """为单企业模式组装企业和行业材料，不引入同行样本或可比指标。"""
+    if profile.review_status != "approved":
+        raise ValueError("an approval context requires an approved enterprise profile")
+    if industry_profile.review_status != "approved":
+        raise ValueError("an approval context requires an approved industry profile")
+    if section.review_status != "approved":
+        raise ValueError("the guideline section must be approved")
+    accepted_items = tuple(item for item in profile.items if item.review_status == "accepted")
+    accepted_insights = tuple(
+        insight
+        for insight in industry_profile.insights
+        if insight.review_status == "accepted"
+    )
+    point_contexts = tuple(
+        _build_point_context(
+            definition,
+            accepted_items,
+            accepted_insights,
+            (),
+            comparison_enabled=False,
+        )
+        for definition in get_guideline_point_definitions(section.section_id)
+    )
+    gaps = list(profile.information_gaps)
+    gaps.extend(profile.conflicts)
+    gaps.extend(industry_profile.information_gaps)
+    for point in point_contexts:
+        gaps.extend(point.information_gaps)
+    return GuidelineSectionContext(
+        cohort_id=None,
+        cohort_fiscal_period=None,
+        cohort_selection_rule=None,
         case_id=profile.case_id,
         section_id=section.section_id,
         section_title=section.title,
@@ -138,6 +185,8 @@ def _build_point_context(
     accepted_items: tuple[ProfileItem, ...],
     accepted_insights: tuple[IndustryInsight, ...],
     metric_comparisons: tuple[MetricComparison, ...],
+    *,
+    comparison_enabled: bool = True,
 ) -> GuidelinePointContext:
     items = _select_enterprise_items(definition, accepted_items)
     insights = tuple(
@@ -165,7 +214,7 @@ def _build_point_context(
         gaps.append(f"审批点 {definition.title} 缺少已审核企业事实。")
     if definition.industry_dimension_ids and not insights:
         gaps.append(f"审批点 {definition.title} 缺少已审核行业基准。")
-    if definition.metric_ids and not metrics:
+    if comparison_enabled and definition.metric_ids and not metrics:
         gaps.append(f"审批点 {definition.title} 缺少可比指标。")
     return GuidelinePointContext(
         point_id=definition.point_id,

@@ -8,6 +8,7 @@ from typing import Any
 from src.llm.deepseek_client import call_deepseek
 from src.llm.generation_config import GenerationConfig
 from src.profiles.models import EvidenceReference
+from src.prompts import load_prompt_section
 
 from .guideline_context import GuidelinePointContext, GuidelineSectionContext
 from .guideline_definitions import get_guideline_point_definitions
@@ -18,24 +19,11 @@ def build_guideline_section_report_messages(
     context: GuidelineSectionContext,
 ) -> list[dict[str, str]]:
     point_payloads = [_point_payload(point) for point in context.point_contexts]
-    system = (
-        "你根据已审核的当前企业事实、行业背景和同行指标，撰写授信审批指引中的一个方向报告。"
-        "只能使用输入材料，不得补充外部事实，不得自行计算或改写指标名次。"
-        "行业背景只能解释外部环境，不能单独证明企业现状。"
-        "输出必须是合法 JSON，不得包含 Markdown。"
-    )
+    system = load_prompt_section("logic/授信审批逻辑规则.md", "审批方向报告")
+    comparison_mode = "未启用同行比较" if context.cohort_id is None else "已启用同行比较"
     user = (
-        "输出顶层字段 one_sentence_summary 和 approval_points。"
-        "approval_points 必须与输入审批点一一对应，每项包含："
-        "approval_point_id、enterprise_observation、industry_benchmark、"
-        "peer_comparison、judgment、enterprise_item_ids、industry_insight_ids、"
-        "metric_ids、information_gap_numbers。"
-        "所有 ID 和编号只能从对应审批点输入中复制。"
-        "enterprise_observation、industry_benchmark、peer_comparison 和 judgment 必须使用业务自然语言，"
-        "不得写出 metric_id、enterprise_item_id、industry_insight_id、information_gap_numbers 或其他内部 ID。"
-        "每个有明确企业判断的审批点至少引用一个 enterprise_item_id 或 metric_id；"
-        "材料不足时在 judgment 中说明信息不足，不得编造事实。\n"
-        f"{json.dumps({'cohort': {'cohort_id': context.cohort_id, 'fiscal_period': context.cohort_fiscal_period, 'selection_rule': context.cohort_selection_rule}, 'section_id': context.section_id, 'section_title': context.section_title, 'section_information_gaps': list(context.information_gaps), 'approval_points': point_payloads}, ensure_ascii=False)}"
+        "当前审批方向输入如下，请按 system 规则输出完整 JSON：\n"
+        f"{json.dumps({'comparison_mode': comparison_mode, 'cohort': {'cohort_id': context.cohort_id, 'fiscal_period': context.cohort_fiscal_period, 'selection_rule': context.cohort_selection_rule}, 'section_id': context.section_id, 'section_title': context.section_title, 'section_information_gaps': list(context.information_gaps), 'approval_points': point_payloads}, ensure_ascii=False)}"
     )
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 

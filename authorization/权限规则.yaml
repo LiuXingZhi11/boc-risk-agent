@@ -1,0 +1,47 @@
+# 当前应用层权限配置
+#
+# 本文件由 Python 读取，不作为模型提示词发送给 DeepSeek。
+# 角色选择器仅用于当前无登录系统时的演示；正式接入登录后由登录会话提供 role。
+
+roles:
+  general_business:
+    label: 一般业务人员
+    hidden_fields:
+      - team.key_person
+      - team.education_background
+      - team.professional_experience
+      - team.education_structure
+      - team.professional_background
+    denied_profile_domains:
+      - team
+    denied_profile_dimensions:
+      - enterprise_and_team
+    denied_approval_sections:
+      - core_team
+    can_view_full_evidence: false
+    can_view_debug: false
+    can_edit_business_prompts: false
+    can_approve_results: false
+
+  senior_business:
+    label: 高级业务人员
+    hidden_fields: []
+    denied_profile_domains: []
+    denied_profile_dimensions: []
+    denied_approval_sections: []
+    can_view_full_evidence: true
+    can_view_debug: true
+    can_edit_business_prompts: true
+    can_approve_results: true
+
+business_prompt_files:
+  - prompts/data/企业画像字段语义.yaml
+  - prompts/data/企业画像抽取规则.yaml
+  - prompts/data/企业画像数据规则.md
+  - prompts/logic/企业画像逻辑规则.md
+  - prompts/logic/授信审批逻辑规则.md
+  - prompts/action/行动建议规则.md
+
+protected_files:
+  - prompts/data/企业画像本体.yaml
+  - authorization/权限规则.yaml

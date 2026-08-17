@@ -8,8 +8,21 @@ from pathlib import Path
 
 import streamlit as st
 
+from src.authorization import (
+    business_prompt_files,
+    can_approve_results,
+    can_edit_business_prompts,
+    can_run_profile_dimension,
+    can_run_profile_domain,
+    can_run_approval_section,
+    can_view_debug,
+    can_view_full_evidence,
+    get_role_label,
+    get_role_options,
+)
 from src.approval.repository import ApprovalRepository
 from src.ontology.loader import load_manifest
+from src.prompts import load_profile_dimension_mapping
 from src.profiles.visual_card import ROLE_LABELS, STATUS_LABELS
 from src.ui.v5_services import (
     approval_workspace_rows,
@@ -19,26 +32,21 @@ from src.ui.v5_services import (
     approve_domain_approval_review,
     approve_metric_value_candidate,
     approve_peer_cohort,
-    approve_historical_case_analysis_review,
     approve_industry_profile_review,
     approve_profile_review,
-    comparison_card_rows,
     composite_approval_report_detail,
     create_approval_point_definition,
     create_comparable_metric_definition,
     create_peer_cohort,
     domain_approval_report_detail,
-    find_similar_profiles,
     generate_industry_profile_review,
     generate_enterprise_overall_assessment_review,
+    generate_standalone_enterprise_overall_assessment_review,
     generate_composite_approval_review,
     generate_direction_ranking_review,
     generate_domain_approval_review,
     generate_guideline_section_review,
-    generate_profile_comparison_card,
-    generate_historical_case_analysis_review,
-    historical_case_analysis_detail,
-    historical_case_analysis_rows,
+    generate_standalone_guideline_section_review,
     industry_profile_detail,
     industry_profile_rows,
     enterprise_overall_assessment_detail,
@@ -56,9 +64,7 @@ from src.ui.v5_services import (
     profile_rows,
     profile_visual_card,
     run_profile_topic_analysis,
-    run_domain_investigation,
-    run_react_domain_investigation,
-    run_detailed_review_report,
+    run_react_profile_investigation,
     source_rows,
 )
 
@@ -66,25 +72,21 @@ from src.ui.v5_services import (
 PROJECT_ROOT = Path(__file__).resolve().parent
 DEFAULT_DATABASE = PROJECT_ROOT / "data" / "current_project.db"
 UPLOAD_ROOT = PROJECT_ROOT / "data" / "uploads"
-PROFILE_DOMAINS = (
-    "enterprise_and_control",
-    "team",
-    "technology_and_ip",
-    "product_and_project",
-    "market_and_commercialization",
-    "customer_and_supplier",
-    "finance_and_funding",
-    "risk_matters",
-    "authoritative_findings",
-    "outcome_and_resolution",
+_PROFILE_DIMENSION_MAPPING = load_profile_dimension_mapping()
+PROFILE_DOMAINS = tuple(
+    item["id"] for item in _PROFILE_DIMENSION_MAPPING["extraction_domains"]
 )
+PROFILE_DOMAIN_LABELS = {
+    item["id"]: item["label"]
+    for item in _PROFILE_DIMENSION_MAPPING["extraction_domains"]
+}
 
 
 def _ontology_labels() -> tuple[dict[str, str], dict[str, str], dict[str, str]]:
     manifest = load_manifest()
     return (
         {item["id"]: item["label"] for item in manifest["fields"]},
-        {item["id"]: item["label"] for item in manifest["profile_sections"]},
+        {item["id"]: item["label"] for item in manifest["fact_sections"]},
         {item["id"]: item["label"] for item in manifest["relations"]},
     )
 
@@ -97,16 +99,48 @@ def _debug_enabled() -> bool:
     return bool(st.session_state.get("v5_show_debug", False))
 
 
+def _current_role() -> str:
+    return str(st.session_state.get("v5_role", "general_business"))
+
+
+def _business_prompt_editor(role: str) -> None:
+    if not can_edit_business_prompts(role):
+        return
+    files = business_prompt_files()
+    if not files:
+        return
+    with st.sidebar.expander("业务提示词维护", expanded=False):
+        selected = st.selectbox(
+            "可维护文件",
+            files,
+            format_func=lambda value: Path(value).name,
+            key="v5_prompt_file",
+        )
+        path = PROJECT_ROOT / selected
+        if not path.is_file():
+            st.error("提示词文件不存在")
+            return
+        content = path.read_text(encoding="utf-8")
+        edited = st.text_area(
+            "文件内容",
+            value=content,
+            height=220,
+            key=f"v5_prompt_content:{selected}",
+        )
+        if st.button("保存业务提示词", key="v5_prompt_save"):
+            path.write_text(edited, encoding="utf-8")
+            load_manifest.cache_clear()
+            st.success("已保存，新的业务规则将在后续调用中使用。")
+
+
 def _profile_option_map(rows: list[dict[str, object]]) -> dict[str, str]:
     """将企业画像选项显示为中文企业名，内部仍返回稳定 profile_id。"""
-    type_labels = {"current": "当前画像", "historical": "历史画像"}
     options: dict[str, str] = {}
     for row in rows:
         name = str(row["enterprise_name"])
-        profile_type = type_labels.get(str(row.get("profile_type", "")), "企业画像")
-        label = f"{name}（{profile_type}）"
+        label = name
         if label in options:
-            label = f"{name}（{profile_type}，案例 {row['case_id']}）"
+            label = f"{name}（案例 {row['case_id']}）"
         options[label] = str(row["profile_id"])
     return options
 
@@ -130,7 +164,7 @@ def _render_direction_ranking_basis(basis: dict[str, object]) -> None:
             )
             for point in card["approval_points"]:
                 st.markdown(f"#### {point['title']}")
-                st.write(f"审批判断：{point['judgment']}")
+                st.write(f"评级判断：{point['judgment']}")
                 st.write(f"企业现状：{point['enterprise_observation']}")
                 if point["industry_benchmark"]:
                     st.write(f"行业基准：{point['industry_benchmark']}")
@@ -178,23 +212,26 @@ def _candidate_relation_rows(candidates: dict[str, object]) -> list[dict[str, ob
     ]
 
 
-def _sidebar() -> tuple[str, str, bool]:
+def _sidebar() -> tuple[str, str, str]:
     st.sidebar.header("项目配置")
+    role_options = get_role_options()
+    role = st.sidebar.selectbox(
+        "使用身份",
+        list(role_options),
+        format_func=lambda value: role_options[value],
+        key="v5_role",
+    )
+    st.sidebar.caption(f"当前身份：{get_role_label(role)}")
+    _business_prompt_editor(role)
     database = st.sidebar.text_input("SQLite 数据库", str(DEFAULT_DATABASE))
-    show_advanced = st.sidebar.toggle("显示高级工具", value=False)
-    show_debug = st.sidebar.toggle("显示开发调试工具", value=False)
-    st.session_state["v5_show_debug"] = show_debug
-    pages = ["材料管理", "企业画像", "行业背景", "授信审批报告"]
-    if show_advanced:
-        pages.extend(["历史案例", "相似案例与报告", "审批配置（高级）"])
-    if show_debug:
-        pages.append("开发调试")
+    pages = ["材料管理", "企业画像", "行业背景", "客户风险评级报告"]
     page = st.sidebar.radio(
         "工作区",
         pages,
     )
     st.sidebar.caption("所有输出仅用于历史参考和信息核实辅助。")
-    return database, page, show_debug
+    st.session_state["v5_show_debug"] = can_view_debug(role)
+    return database, page, role
 
 
 def _sources(database: str, *, show_header: bool = True) -> None:
@@ -250,6 +287,9 @@ def _sources(database: str, *, show_header: bool = True) -> None:
 
 
 def _profile_review(database: str, *, show_header: bool = True) -> None:
+    if not can_approve_results(_current_role()):
+        st.info("一般业务人员不能审核或写入正式企业画像，请联系高级业务人员。")
+        return
     if show_header:
         st.header("审核并写入正式画像")
     st.caption("审核领域调查生成的候选事实；可直接使用本次页面结果，或上传“生成候选”页下载的候选 JSON。确认后才写入正式企业画像。")
@@ -307,55 +347,79 @@ def _profile_review(database: str, *, show_header: bool = True) -> None:
 
 
 def _investigation(database: str, *, show_header: bool = True) -> None:
+    role = _current_role()
     if show_header:
         st.header("生成画像候选")
-    st.caption("固定流程适合稳定批量生成；受控 ReAct 会按需搜索和读取少量证据。两种模式都会调用 DeepSeek。")
-    investigation_mode = st.selectbox("调查模式", ["", "固定流程", "受控 ReAct（试验）"])
-    react_mode = investigation_mode == "受控 ReAct（试验）"
-    case_id = st.text_input("调查案例 ID", "", key="investigation_case_id")
-    profile_type = st.selectbox(
-        "画像类型",
-        ["", "current"] if react_mode else ["", "historical", "current"],
+    st.caption("当前企业画像统一使用受控 ReAct；选择多个领域时，系统会按领域逐个调查并合并为一次待审核候选。")
+    all_sources = source_rows(database)
+    source_case_ids = sorted({str(row["case_id"]) for row in all_sources})
+    profile_names = {
+        str(row["case_id"]): str(row["enterprise_name"])
+        for row in profile_rows(database)
+    }
+    source_titles = {
+        case_id: next(
+            (str(row["title"]) for row in all_sources if str(row["case_id"]) == case_id),
+            "",
+        )
+        for case_id in source_case_ids
+    }
+    case_options = {
+        case_id: (
+            f"{profile_names[case_id]}（{case_id}）"
+            if case_id in profile_names
+            else f"{source_titles[case_id]}（{case_id}）"
+        )
+        for case_id in source_case_ids
+    }
+    case_labels = {label: case_id for case_id, label in case_options.items()}
+    selected_case_label = st.selectbox(
+        "调查案例",
+        [""] + list(case_labels),
+        key="investigation_case_id",
+    )
+    case_id = case_labels.get(selected_case_label, "")
+    allowed_domains = [
+        domain for domain in PROFILE_DOMAINS
+        if can_run_profile_domain(role, domain)
+    ]
+    select_all = st.checkbox("选择全部可见领域", key="investigation_select_all")
+    current_domains = [
+        domain
+        for domain in st.session_state.get("investigation_domains", [])
+        if domain in allowed_domains
+    ]
+    st.session_state["investigation_domains"] = (
+        list(allowed_domains) if select_all else current_domains
     )
     domains = st.multiselect(
         "调查领域",
-        PROFILE_DOMAINS,
-        default=[],
+        allowed_domains,
+        format_func=lambda value: PROFILE_DOMAIN_LABELS.get(value, value),
+        key="investigation_domains",
     )
-    query = st.text_input("当前案例补充查询词（历史画像忽略）")
+    query = st.text_input("当前案例补充查询词")
     first, second = st.columns(2)
     max_catalog = first.number_input("每领域目录候选上限", 1, 50, 20)
     max_selected = second.number_input("每领域正文读取上限", 1, 10, 5)
     confirmed = st.checkbox("我确认本次操作将调用 DeepSeek 并可能产生费用")
     if st.button("运行领域调查", type="primary"):
-        if not investigation_mode or not case_id.strip() or not profile_type or not domains:
-            st.error("请选择调查模式、填写案例 ID、选择画像类型，并至少选择一个调查领域。")
+        if not case_id or not domains:
+            st.error("请先在材料管理导入企业材料、选择调查案例，并至少选择一个调查领域。")
         elif not confirmed:
             st.error("请先确认本次操作可能产生 DeepSeek 费用。")
-        elif react_mode and (profile_type != "current" or len(domains) != 1):
-            st.error("受控 ReAct 目前支持 current 画像，每次运行一个调查领域。")
         else:
             try:
                 with st.spinner("正在执行证据调查和画像候选抽取……"):
-                    if react_mode:
-                        result = run_react_domain_investigation(
-                            database=database,
-                            case_id=case_id.strip(),
-                            domain=domains[0],
-                            query=query.strip(),
-                            max_catalog_items=int(max_catalog),
-                            max_read_units=int(max_selected),
-                        )
-                    else:
-                        result = run_domain_investigation(
-                            database=database,
-                            case_id=case_id.strip(),
-                            profile_type=profile_type,
-                            domains=tuple(domains),
-                            query=query.strip(),
-                            max_evidence_per_domain=int(max_catalog),
-                            max_selected_evidence_per_domain=int(max_selected),
-                        )
+                    result = run_react_profile_investigation(
+                        database=database,
+                        case_id=case_id.strip(),
+                        domains=tuple(domains),
+                        query=query.strip(),
+                        max_catalog_items=int(max_catalog),
+                        max_read_units=int(max_selected),
+                        role=role,
+                    )
                 st.session_state["v5_profile_run"] = result
                 st.success("领域调查完成，请切换到“审核并入库”确认候选事实。")
             except Exception as exc:
@@ -363,18 +427,20 @@ def _investigation(database: str, *, show_header: bool = True) -> None:
     result = st.session_state.get("v5_profile_run")
     if result:
         st.success("候选画像已保留在当前页面会话中。可直接到“审核并入库”勾选“使用本次页面调查结果”；如需稍后或在其他设备审核，请先下载 JSON。")
-        st.download_button(
-            "下载候选画像运行 JSON",
-            json.dumps(result, ensure_ascii=False, indent=2),
-            file_name=f"{result['case_id']}_{result['profile_type']}_profile_run.json",
-            mime="application/json",
-        )
+        if can_view_debug(role):
+            st.download_button(
+                "下载候选画像运行 JSON",
+                json.dumps(result, ensure_ascii=False, indent=2),
+                file_name=f"{result['case_id']}_{result['profile_type']}_profile_run.json",
+                mime="application/json",
+            )
     if result and _debug_enabled():
         with st.expander("开发调试：本次画像运行 JSON"):
             st.json(result, expanded=False)
 
 
 def _profiles(database: str) -> None:
+    role = _current_role()
     st.header("正式企业画像")
     st.caption("画像卡先展示已审核事实；主题分析单独调用 DeepSeek，结果仍保留事实和证据引用。")
     rows = profile_rows(database)
@@ -382,26 +448,36 @@ def _profiles(database: str) -> None:
     selected_label = st.selectbox("企业画像", [""] + list(profile_options))
     selected = profile_options.get(selected_label, "")
     if selected:
-        card = profile_visual_card(database, selected)
+        card = profile_visual_card(database, selected, role=role)
         if card is None:
             st.error("未找到企业画像。")
             return
         saved_analysis = st.session_state.get("v5_topic_analysis")
-        if saved_analysis and saved_analysis.get("profile_id") == selected:
+        if (
+            saved_analysis
+            and saved_analysis.get("profile_id") == selected
+            and can_view_full_evidence(role)
+        ):
             card = saved_analysis["card"]
-        type_label = "历史企业画像" if card["profile_type"] == "historical" else "当前企业画像"
         st.subheader(card["enterprise_name"])
-        st.caption(f"{type_label} · 案例 {card['case_id']} · 画像状态：{card['review_status']}")
+        st.caption(f"案例 {card['case_id']} · 画像状态：{card['review_status']}")
         metrics = st.columns(4)
         metrics[0].metric("画像事实", card["item_count"])
         metrics[1].metric("关联证据", card["evidence_count"])
         metrics[2].metric("权威/结果事实", card["authority_fact_count"])
         metrics[3].metric("信息缺口", len(card["information_gaps"]))
 
-        dimensions_by_id = {dimension["dimension_id"]: dimension for dimension in card["dimensions"]}
+        visible_dimensions = [
+            dimension
+            for dimension in card["dimensions"]
+            if can_run_profile_dimension(role, dimension["dimension_id"])
+        ]
+        dimensions_by_id = {
+            dimension["dimension_id"]: dimension for dimension in visible_dimensions
+        }
         analysis_dimension = st.selectbox(
             "需要分析的画像领域",
-            [dimension["dimension_id"] for dimension in card["dimensions"]],
+            [dimension["dimension_id"] for dimension in visible_dimensions],
             format_func=lambda value: dimensions_by_id[value]["label"],
             key="profile_analysis_dimension",
         )
@@ -419,6 +495,7 @@ def _profiles(database: str) -> None:
                             database=database,
                             profile_id=selected,
                             dimension_id=analysis_dimension,
+                            role=role,
                         )
                     st.session_state["v5_topic_analysis"] = {
                         "profile_id": selected,
@@ -426,9 +503,12 @@ def _profiles(database: str) -> None:
                     }
                     if analysis_result["run"]["status"] == "completed":
                         st.success("主题分析已生成，可在对应领域展开查看。")
+                        st.rerun()
                     else:
                         st.error(f"主题分析未完成：{analysis_result['run'].get('error', '未知错误')}")
-                    st.rerun()
+                        read_topics = analysis_result["run"].get("read_topic_ids", ())
+                        if read_topics:
+                            st.caption("本次已读取主题：" + "、".join(read_topics))
                 except Exception as exc:
                     st.error(f"主题分析失败：{exc}")
 
@@ -452,13 +532,18 @@ def _profiles(database: str) -> None:
                     continue
                 for topic in dimension["topics"]:
                     st.markdown(f"#### {topic['title']}")
-                    st.write(topic["summary"])
+                    st.text(topic["summary"])
                     if topic.get("analysis"):
-                        st.info(topic["analysis"])
+                        st.markdown("**分析结论**")
+                        st.text(topic["analysis"])
                     if topic.get("key_signals"):
-                        st.markdown("**分析信号**：" + "；".join(topic["key_signals"]))
+                        st.markdown("**分析信号**")
+                        for signal in topic["key_signals"]:
+                            st.text(signal)
                     if topic.get("information_boundaries"):
-                        st.caption("信息边界：" + "；".join(topic["information_boundaries"]))
+                        st.markdown("**信息边界**")
+                        for boundary in topic["information_boundaries"]:
+                            st.text(boundary)
                     if topic["records"]:
                         st.dataframe(list(topic["records"]), width="stretch", hide_index=True)
                     with st.expander(
@@ -466,12 +551,11 @@ def _profiles(database: str) -> None:
                         expanded=False,
                     ):
                         for fact in topic["facts"]:
-                            st.markdown(
-                                f"**{fact['field_label']}**：{fact['value']}  \n"
-                                f"`{fact['role_label']}` · {fact['status_label']}"
-                            )
+                            st.markdown(f"**{fact['field_label']}**")
+                            st.text(fact["value"])
+                            st.caption(f"{fact['role_label']} · {fact['status_label']}")
                             if fact["context"]:
-                                st.caption(fact["context"])
+                                st.text(fact["context"])
                             if fact["evidence"]:
                                 with st.expander(
                                     f"查看证据（{len(fact['evidence'])} 条）", expanded=False
@@ -480,26 +564,29 @@ def _profiles(database: str) -> None:
                                         heading = evidence["source_title"]
                                         if evidence["location"]:
                                             heading += f" · {evidence['location']}"
-                                        st.markdown(f"**{heading}**")
-                                        st.caption(evidence["evidence_unit_id"])
+                                        st.markdown("**证据来源**")
+                                        st.text(heading)
+                                        st.caption("证据编号")
+                                        st.text(evidence["evidence_unit_id"])
                                         if evidence["excerpt"]:
-                                            st.write(evidence["excerpt"])
+                                            st.text(evidence["excerpt"])
 
         if card["information_gaps"]:
             st.subheader("当前信息缺口")
             for gap in card["information_gaps"]:
-                st.markdown(f"- {gap}")
+                st.text(gap)
         if card["conflicts"]:
             st.subheader("待核实冲突")
             for conflict in card["conflicts"]:
-                st.warning(conflict)
+                st.warning("发现待核实冲突")
+                st.text(conflict)
         if _debug_enabled():
             with st.expander("调试信息（完整画像 JSON）"):
                 st.json(profile_detail(database, selected), expanded=False)
 
 
 def _render_approval_report_detail(database: str, detail: dict[str, object]) -> None:
-    """以可读的指标名和折叠证据展示单份分方向审批报告。"""
+    """以可读的指标名和折叠证据展示单份分方向风险评级报告。"""
     report = detail["report"]
     metric_names = {
         definition.metric_id: definition.name
@@ -508,13 +595,13 @@ def _render_approval_report_detail(database: str, detail: dict[str, object]) -> 
     st.caption(f"审核状态：{report['review_status']}")
     st.markdown(report["one_sentence_summary"])
     for index, point in enumerate(report["approval_points"], start=1):
-        st.markdown(f"## 审批点 {index}：{point['title']}")
+        st.markdown(f"## 评级判断点 {index}：{point['title']}")
         st.markdown(f"- 企业现状：{_business_text(point['enterprise_observation'])}")
         if point["industry_benchmark"]:
             st.markdown(f"- 行业基准：{_business_text(point['industry_benchmark'])}")
         if point["peer_comparison"]:
             st.markdown(f"- 同行比较：{_business_text(point['peer_comparison'])}")
-        st.markdown(f"- 审批判断：{_business_text(point['judgment'])}")
+        st.markdown(f"- 评级判断：{_business_text(point['judgment'])}")
         for ranking in point["ranking_results"]:
             metric_name = metric_names.get(ranking["metric_id"], ranking["metric_id"])
             st.markdown(
@@ -538,15 +625,16 @@ def _business_text(text: str) -> str:
         r"（基于(?:metric_id|enterprise_item_id|industry_insight_id|information_gap_numbers)[^）]*）",
         "",
         text,
-    )
+    ).replace("授信审批", "风险评级")
 
 
 def _render_final_approval_report(database: str, detail: dict[str, object]) -> None:
     """展示一份面向业务人员的最终报告，并折叠其分方向依据。"""
+    role = _current_role()
     assessment = detail["assessment"]
     direction_results = assessment["direction_results"]
     if not direction_results:
-        st.info("该记录为旧版综合评定，未包含11个方向的通过状态。请重新生成最终授信审批报告。")
+        st.info("该记录为旧版综合评定，未包含11个方向的通过状态。请重新生成客户风险评级报告。")
         return
 
     recommendation_labels = {
@@ -563,11 +651,13 @@ def _render_final_approval_report(database: str, detail: dict[str, object]) -> N
     }
     constraint_labels = {"strong": "强约束", "weak": "弱约束"}
     section_titles = {
-        item["section_id"]: item["title"] for item in guideline_section_rows()
+        item["section_id"]: item["title"]
+        for item in guideline_section_rows()
+        if can_run_approval_section(role, item["section_id"])
     }
     columns = st.columns(4)
     columns[0].metric("推进建议", recommendation_labels[assessment["recommendation"]])
-    columns[1].metric("综合等级", assessment["rating_level"])
+    columns[1].metric("客户风险评级", assessment["rating_level"])
     columns[2].metric("强约束不通过", f"{assessment['strong_constraint_failed_count']} 条")
     columns[3].metric("弱约束不通过", f"{assessment['weak_constraint_failed_count']} 条")
     st.caption(f"审核状态：{assessment['review_status']}")
@@ -577,14 +667,16 @@ def _render_final_approval_report(database: str, detail: dict[str, object]) -> N
         ("主要风险", assessment["core_risks"]),
         ("缓释因素", assessment["mitigating_factors"]),
         ("判断边界", assessment["rating_boundaries"]),
-        ("优先核实事项", assessment["verification_priorities"]),
+        ("后续行动建议", assessment["verification_priorities"]),
     ):
         if values:
-            st.markdown(f"**{title}**：" + "；".join(values))
+            st.markdown(f"**{title}**：" + "；".join(_business_text(value) for value in values))
 
-    st.subheader("授信审批指引逐条结论")
+    st.subheader("风险评级指引逐条结论")
     for result in direction_results:
         section_id = result["section_id"]
+        if section_id not in section_titles:
+            continue
         heading = (
             f"{section_titles[section_id]} · {constraint_labels[result['constraint_level']]} · "
             f"{status_labels[result['status']]}"
@@ -602,226 +694,17 @@ def _render_final_approval_report(database: str, detail: dict[str, object]) -> N
             if report_id:
                 report_detail = domain_approval_report_detail(database, report_id)
                 if report_detail:
-                    st.caption("审批点、同行排名与原文证据")
+                    st.caption("评级判断点、同行排名与原文证据")
                     _render_approval_report_detail(database, report_detail)
 
-    st.download_button(
-        "下载最终授信审批报告 Markdown",
-        detail["assessment_markdown"],
-        file_name=f"{assessment['assessment_id']}.md",
-        mime="text/markdown",
-        key="final_approval_report_download",
-    )
-
-
-def _historical_case_analysis(database: str) -> None:
-    st.header("历史企业案例分析")
-    st.caption("从审核通过的历史企业画像提炼单案分析。正文面向人员阅读；来源 ID、过滤记录和模型元数据仅在调试区展示。")
-    profiles = [row for row in profile_rows(database) if row["profile_type"] == "historical" and row["review_status"] == "approved"]
-    profile_options = _profile_option_map(profiles)
-    selected_label = st.selectbox("历史企业画像", [""] + list(profile_options))
-    selected_profile = profile_options.get(selected_label, "")
-    confirmed = st.checkbox("我确认生成案例分析将调用 DeepSeek 并可能产生费用")
-    if st.button("生成待审核案例分析", type="primary"):
-        if not selected_profile:
-            st.error("请先选择历史企业画像。")
-        elif not confirmed:
-            st.error("请先确认本步骤会调用 DeepSeek。")
-        else:
-            try:
-                st.session_state["v5_case_analysis"] = generate_historical_case_analysis_review(database=database, profile_id=selected_profile)
-                st.success("案例分析已生成，当前仍为待审核状态。")
-            except Exception as exc:
-                st.error(f"案例分析生成失败：{exc}")
-
-    rows = historical_case_analysis_rows(database)
-    st.dataframe(
-        [
-            {
-                "企业": row["enterprise_name"],
-                "案例结果状态": row["outcome_status"],
-                "审核状态": row["review_status"],
-                "分析因素数": row["factors"],
-                "是否对应当前画像": row["current"],
-            }
-            for row in rows
-        ],
-        width="stretch",
-        hide_index=True,
-    )
-    analysis_options = {f"{row['enterprise_name']} · {row['review_status']}": row["analysis_id"] for row in rows}
-    selected_label = st.selectbox("查看案例分析", [""] + list(analysis_options))
-    selected_analysis = analysis_options.get(selected_label, "")
-    detail = historical_case_analysis_detail(database, selected_analysis) if selected_analysis else st.session_state.get("v5_case_analysis")
-    if not detail:
-        return
-    st.markdown(detail["human_markdown"])
-    st.download_button("下载可读 Markdown", detail["human_markdown"], file_name="historical_case_analysis.md", mime="text/markdown")
-    if _debug_enabled():
-        with st.expander("调试信息（来源、过滤记录与模型元数据）"):
-            st.json(detail["debug"], expanded=False)
-            st.download_button("下载调试 JSON", json.dumps(detail["debug"], ensure_ascii=False, indent=2), file_name="historical_case_analysis_debug.json", mime="application/json")
-    if detail["debug"]["review_status"] == "pending":
-        approval = st.checkbox("我已阅读正文并确认批准该案例分析", key="approve_case_analysis")
-        if st.button("批准案例分析"):
-            if not approval:
-                st.error("请先完成审核确认。")
-            else:
-                try:
-                    st.session_state["v5_case_analysis"] = approve_historical_case_analysis_review(database=database, analysis_id=detail["debug"]["analysis_id"])
-                    st.success("案例分析已批准。")
-                except Exception as exc:
-                    st.error(f"批准失败：{exc}")
-
-
-def _similar(database: str) -> None:
-    st.caption("先选择已批准的当前企业检索卡，在本地召回少量相似历史企业；召回分数只用于排序。")
-    cards = comparison_card_rows(database)
-    current_cards = [row for row in cards if row["profile_type"] == "current"]
-    card_options = {f"{row['enterprise_name']} · {row['review_status']}": row["card_id"] for row in current_cards}
-    selected_label = st.selectbox("当前企业检索卡", [""] + list(card_options), key="similar_card")
-    selected = card_options.get(selected_label, "")
-    limit = st.slider("返回数量", 1, 10, 5)
-    if st.button("本地检索相似案例", type="primary"):
-        if not selected:
-            st.error("请先选择当前企业检索卡。")
-        else:
-            try:
-                st.session_state["v5_similar_matches"] = find_similar_profiles(database, selected, limit=limit)
-            except Exception as exc:
-                st.error(f"检索失败：{exc}")
-    matches = st.session_state.get("v5_similar_matches", [])
-    if matches:
-        st.subheader("已召回的历史企业")
-        st.dataframe(
-            [
-                {
-                    "历史企业": match["historical_enterprise_name"],
-                    "案例 ID": match["historical_case_id"],
-                    "召回分数": round(match["score"], 4),
-                    "主要匹配维度": "、".join(match["matched_dimensions"]) or "无",
-                }
-                for match in matches
-            ],
-            width="stretch",
-            hide_index=True,
-        )
-        if _debug_enabled():
-            with st.expander("开发调试：相似案例召回详情"):
-                st.json(matches, expanded=False)
-
-
-def _comparison_cards(database: str) -> None:
-    st.caption("从已审核企业画像生成分维度检索卡；点击生成会调用 DeepSeek。")
-    profiles = [row for row in profile_rows(database) if row["review_status"] == "approved"]
-    profile_options = _profile_option_map(profiles)
-    selected_label = st.selectbox("正式企业画像", [""] + list(profile_options), key="comparison_profile")
-    selected = profile_options.get(selected_label, "")
-    approve = st.checkbox("生成后直接批准该检索卡进入相似案例流程")
-    confirmed = st.checkbox("我确认生成检索卡将调用 DeepSeek 并可能产生费用")
-    if st.button("生成检索卡", type="primary"):
-        if not selected:
-            st.error("请先选择正式画像。")
-        elif not confirmed:
-            st.error("请先确认本次操作可能产生 DeepSeek 费用。")
-        else:
-            try:
-                with st.spinner("正在生成分维度比较卡……"):
-                    result = generate_profile_comparison_card(
-                        database=database,
-                        profile_id=selected,
-                        approve=approve,
-                )
-                st.success("检索卡已保存。")
-                st.session_state["v5_comparison_card"] = result
-            except Exception as exc:
-                st.error(f"比较卡生成失败：{exc}")
-    st.subheader("已生成的检索卡")
-    st.dataframe(
-        [
-            {
-                "企业": row["enterprise_name"],
-                "画像类型": "历史" if row["profile_type"] == "historical" else "当前",
-                "审核状态": row["review_status"],
-                "覆盖维度": row["dimensions"],
-            }
-            for row in comparison_card_rows(database)
-        ],
-        width="stretch",
-        hide_index=True,
-    )
-    if _debug_enabled() and st.session_state.get("v5_comparison_card"):
-        with st.expander("开发调试：本次 ComparisonCard 结果"):
-            st.json(st.session_state["v5_comparison_card"], expanded=False)
-
-
-def _detailed_report(database: str) -> None:
-    st.caption(
-        "本步骤先对已召回的少量历史画像进行详细比较，再生成当前企业核心风险判断。"
-        "有历史候选时调用两次 DeepSeek；没有历史候选时跳过比较、只调用一次生成风险判断。"
-    )
-    cards = comparison_card_rows(database)
-    current_cards = [row for row in cards if row["profile_type"] == "current"]
-    card_options = {f"{row['enterprise_name']} · {row['review_status']}": row for row in current_cards}
-    selected_label = st.selectbox("当前企业检索卡", [""] + list(card_options), key="detail_current_card")
-    selected_card = card_options.get(selected_label, {}).get("card_id", "")
-    selected_row = next((row for row in current_cards if row["card_id"] == selected_card), None)
-    approved_industry_profiles = [
-        row
-        for row in industry_profile_rows(database)
-        if row["review_status"] == "approved"
-    ]
-    industry_options = {
-        f"{row['industry_name']} · {row['profile_id']}": row["profile_id"]
-        for row in approved_industry_profiles
-    }
-    selected_industry_label = st.selectbox(
-        "行业背景画像（可选）",
-        [""] + list(industry_options),
-        key="detail_industry_profile",
-    )
-    selected_industry_profile_id = industry_options.get(selected_industry_label, "")
-    limit = st.slider("详细比较历史企业数量", 1, 5, 3)
-    confirmed = st.checkbox("我确认详细比较和核心风险判断将调用 DeepSeek 并可能产生费用")
-    if st.button("运行详细比较并生成报告", type="primary"):
-        if selected_row is None:
-            st.error("请先选择当前企业检索卡。")
-        elif not confirmed:
-            st.error("请先确认本次操作可能产生 DeepSeek 费用。")
-        else:
-            try:
-                with st.spinner("正在执行详细画像比较……"):
-                    result = run_detailed_review_report(
-                        database=database,
-                        current_profile_id=selected_row["profile_id"],
-                        current_card_id=selected_row["card_id"],
-                        limit=limit,
-                        industry_profile_id=selected_industry_profile_id,
-                    )
-                st.session_state["v5_review_report"] = result
-                st.success("详细比较、核心风险判断和报告已生成。")
-            except Exception as exc:
-                st.error(f"详细比较失败：{exc}")
-    result = st.session_state.get("v5_review_report")
-    if result:
-        st.warning(result["report"]["disclaimer"])
-        st.markdown(result["report_markdown"])
-        first, second = st.columns(2)
-        first.download_button(
-            "下载可读报告 Markdown",
-            result["report_markdown"],
-            file_name="v5_review_report.md",
+    if can_view_full_evidence(role):
+        st.download_button(
+            "下载客户风险评级报告 Markdown",
+            detail["assessment_markdown"],
+            file_name=f"{assessment['assessment_id']}.md",
             mime="text/markdown",
+            key="final_approval_report_download",
         )
-        if _debug_enabled():
-            with st.expander("开发调试：报告 JSON"):
-                second.download_button(
-                    "下载报告 JSON",
-                    json.dumps(result, ensure_ascii=False, indent=2),
-                    file_name="v5_review_report.json",
-                    mime="application/json",
-                )
-                st.json(result, expanded=False)
 
 
 def _enterprise_workspace(database: str) -> None:
@@ -837,6 +720,7 @@ def _enterprise_workspace(database: str) -> None:
 
 
 def _industry_workspace(database: str) -> None:
+    role = _current_role()
     st.header("行业背景")
     st.caption("行业材料与企业材料独立保存；行业共性不能直接作为某家企业的事实。")
     ingestion, generation, profiles = st.tabs(
@@ -971,7 +855,7 @@ def _industry_workspace(database: str) -> None:
                 width="stretch",
                 hide_index=True,
             )
-            if st.button("批准并保存行业画像"):
+            if can_approve_results(role) and st.button("批准并保存行业画像"):
                 try:
                     approve_industry_profile_review(
                         database=database,
@@ -1039,207 +923,10 @@ def _industry_workspace(database: str) -> None:
                                 st.caption(context)
 
 
-def _advanced_approval_workspace(database: str) -> None:
-    st.header("同行比较与审批报告")
-    st.caption("按“配置口径 → 确认指标 → 生成并审批报告”操作。样本排名仅代表当前同行样本。")
-    setup, values, reports, guideline_reports = st.tabs(
-        ["1. 配置", "2. 确认指标", "3. 审批报告", "4. 授信指引报告"]
-    )
-    with setup:
-        st.subheader("同行样本")
-        cohort_id = st.text_input("同行样本 ID", key="approval_cohort_id")
-        industry_id = st.text_input("行业 ID", key="approval_cohort_industry")
-        cohort_name = st.text_input("样本名称", key="approval_cohort_name")
-        fiscal_period = st.text_input("报告期", key="approval_cohort_period")
-        case_ids = st.text_input("企业案例 ID（逗号分隔）", key="approval_cohort_cases")
-        selection_rule = st.text_input("入样规则", key="approval_cohort_rule")
-        if st.button("保存待审核同行样本"):
-            try:
-                create_peer_cohort(
-                    database=database, cohort_id=cohort_id.strip(), industry_id=industry_id.strip(),
-                    cohort_name=cohort_name.strip(), fiscal_period=fiscal_period.strip(),
-                    company_case_ids=tuple(item.strip() for item in case_ids.split(",") if item.strip()),
-                    selection_rule=selection_rule.strip(),
-                )
-                st.success("已保存待审核同行样本。")
-            except Exception as exc:
-                st.error(str(exc))
-        rows = approval_workspace_rows(database)
-        st.dataframe(rows["cohorts"], width="stretch", hide_index=True)
-        pending_cohort = st.selectbox("批准同行样本", [""] + [item["cohort_id"] for item in rows["cohorts"] if item["review_status"] == "pending"])
-        if st.button("批准所选同行样本", disabled=not pending_cohort):
-            try:
-                approve_peer_cohort(database=database, cohort_id=pending_cohort)
-                st.rerun()
-            except Exception as exc:
-                st.error(str(exc))
-
-        st.subheader("可比指标与画像字段绑定")
-        metric_id = st.text_input("指标 ID", key="approval_metric_id")
-        direction = st.selectbox("审批方向", PROFILE_DOMAINS, key="approval_metric_domain")
-        point_id = st.text_input("所属审批点 ID", key="approval_metric_point")
-        metric_name = st.text_input("指标名称", key="approval_metric_name")
-        comparison_direction = st.selectbox("比较方向", ["higher_is_better", "lower_is_better"])
-        unit = st.text_input("统一单位", key="approval_metric_unit")
-        value_scope = st.text_input("统计范围", key="approval_metric_scope")
-        section_id = st.text_input("画像 section_id", key="approval_metric_section")
-        field_id = st.text_input("画像 field_id", key="approval_metric_field")
-        if st.button("保存待审核指标口径"):
-            try:
-                create_comparable_metric_definition(
-                    database=database, metric_id=metric_id.strip(), approval_direction_id=direction,
-                    approval_point_id=point_id.strip(), name=metric_name.strip(),
-                    comparison_direction=comparison_direction, unit=unit.strip(), value_scope=value_scope.strip(),
-                    section_id=section_id.strip(), field_id=field_id.strip(),
-                )
-                st.success("已保存待审核指标口径。")
-            except Exception as exc:
-                st.error(str(exc))
-        st.dataframe(rows["metrics"], width="stretch", hide_index=True)
-        pending_metric = st.selectbox("批准指标口径", [""] + [item["metric_id"] for item in rows["metrics"] if item["review_status"] == "pending"])
-        if st.button("批准所选指标口径", disabled=not pending_metric):
-            try:
-                approve_comparable_metric_definition(database=database, metric_id=pending_metric)
-                st.rerun()
-            except Exception as exc:
-                st.error(str(exc))
-
-        st.subheader("审批点定义")
-        definition_id = st.text_input("审批点 ID", key="approval_point_id")
-        definition_domain = st.selectbox("审批点方向", PROFILE_DOMAINS, key="approval_point_domain")
-        definition_title = st.text_input("审批点标题", key="approval_point_title")
-        definition_fields = st.text_input("允许企业字段（逗号分隔）", key="approval_point_fields")
-        definition_metrics = st.text_input("允许指标 ID（逗号分隔）", key="approval_point_metrics")
-        definition_dimensions = st.text_input("允许行业维度（逗号分隔）", key="approval_point_dimensions")
-        if st.button("保存待审核审批点"):
-            split = lambda text: tuple(item.strip() for item in text.split(",") if item.strip())
-            try:
-                create_approval_point_definition(
-                    database=database, approval_point_id=definition_id.strip(), approval_direction_id=definition_domain,
-                    title=definition_title.strip(), enterprise_field_ids=split(definition_fields),
-                    metric_ids=split(definition_metrics), industry_dimension_ids=split(definition_dimensions),
-                )
-                st.success("已保存待审核审批点。")
-            except Exception as exc:
-                st.error(str(exc))
-
-    with values:
-        rows = approval_workspace_rows(database)
-        cohorts = [item for item in rows["cohorts"] if item["review_status"] == "approved"]
-        metrics = [item for item in rows["metrics"] if item["review_status"] == "approved"]
-        profiles = [item for item in profile_rows(database) if item["review_status"] == "approved"]
-        profile_options = _profile_option_map(profiles)
-        cohort_id = st.selectbox("已批准同行样本", [""] + [item["cohort_id"] for item in cohorts], key="approval_value_cohort")
-        profile_label = st.selectbox("已批准企业画像", [""] + list(profile_options), key="approval_value_profile")
-        profile_id = profile_options.get(profile_label, "")
-        metric_id = st.selectbox("已批准指标", [""] + [item["metric_id"] for item in metrics], key="approval_value_metric")
-        if st.button("生成指标候选"):
-            try:
-                st.session_state["approval_metric_candidates"] = metric_value_candidates(
-                    database=database, cohort_id=cohort_id, profile_id=profile_id, metric_id=metric_id
-                )
-            except Exception as exc:
-                st.error(str(exc))
-        candidates = st.session_state.get("approval_metric_candidates", [])
-        if candidates:
-            st.dataframe(candidates, width="stretch", hide_index=True)
-            selected_item = st.selectbox("确认来源画像项", [item["source_item_id"] for item in candidates])
-            if st.button("确认并保存已批准指标值"):
-                try:
-                    approve_metric_value_candidate(
-                        database=database, cohort_id=cohort_id, profile_id=profile_id,
-                        metric_id=metric_id, source_item_id=selected_item,
-                    )
-                    st.success("已保存已批准指标值。")
-                except Exception as exc:
-                    st.error(str(exc))
-
-    with reports:
-        rows = approval_workspace_rows(database)
-        cohorts = [item for item in rows["cohorts"] if item["review_status"] == "approved"]
-        profiles = [item for item in profile_rows(database) if item["review_status"] == "approved"]
-        profile_options = _profile_option_map(profiles)
-        industries = [item for item in industry_profile_rows(database) if item["review_status"] == "approved"]
-        cohort_id = st.selectbox("同行样本", [""] + [item["cohort_id"] for item in cohorts], key="approval_report_cohort")
-        profile_label = st.selectbox("企业画像", [""] + list(profile_options), key="approval_report_profile")
-        profile_id = profile_options.get(profile_label, "")
-        industry_profile_id = st.selectbox("行业背景", [""] + [item["profile_id"] for item in industries], key="approval_report_industry")
-        domain_id = st.selectbox("审批方向", PROFILE_DOMAINS, key="approval_report_domain")
-        report_id = st.text_input("方向报告 ID", key="approval_report_id")
-        confirmed = st.checkbox("我确认生成方向报告将调用 DeepSeek 并可能产生费用", key="approval_report_confirm")
-        if st.button("生成待审核方向报告"):
-            if not confirmed:
-                st.error("请先确认模型调用费用。")
-            else:
-                try:
-                    result = generate_domain_approval_review(
-                        database=database, report_id=report_id.strip(), cohort_id=cohort_id,
-                        profile_id=profile_id, industry_profile_id=industry_profile_id, domain_id=domain_id,
-                    )
-                    st.session_state["approval_last_domain_report"] = result
-                except Exception as exc:
-                    st.error(str(exc))
-        if st.session_state.get("approval_last_domain_report"):
-            latest = st.session_state["approval_last_domain_report"]
-            st.markdown(latest["report_markdown"])
-            st.download_button(
-                "下载方向报告 Markdown", latest["report_markdown"],
-                file_name="domain_approval_report.md", mime="text/markdown",
-            )
-        st.dataframe(rows["domain_reports"], width="stretch", hide_index=True)
-        pending = st.selectbox("批准方向报告", [""] + [item["report_id"] for item in rows["domain_reports"] if item["review_status"] == "pending"])
-        if st.button("批准所选方向报告", disabled=not pending):
-            try:
-                approve_domain_approval_review(database=database, report_id=pending)
-                st.rerun()
-            except Exception as exc:
-                st.error(str(exc))
-        st.subheader("综合核心风险判断")
-        composite_id = st.text_input("综合报告 ID", key="approval_composite_id")
-        composite_case_id = st.text_input("企业案例 ID", key="approval_composite_case")
-        composite_confirmed = st.checkbox(
-            "我确认生成综合报告将调用 DeepSeek 并可能产生费用",
-            key="approval_composite_confirm",
-        )
-        if st.button("生成待审核综合报告"):
-            if not composite_confirmed:
-                st.error("请先确认模型调用费用。")
-            else:
-                try:
-                    result = generate_composite_approval_review(
-                        database=database, report_id=composite_id.strip(),
-                        cohort_id=cohort_id, case_id=composite_case_id.strip(),
-                    )
-                    st.session_state["approval_last_composite_report"] = result
-                except Exception as exc:
-                    st.error(str(exc))
-        if st.session_state.get("approval_last_composite_report"):
-            latest = st.session_state["approval_last_composite_report"]
-            st.markdown(latest["report_markdown"])
-            st.download_button(
-                "下载综合报告 Markdown", latest["report_markdown"],
-                file_name="composite_approval_report.md", mime="text/markdown",
-            )
-        st.dataframe(rows["composite_reports"], width="stretch", hide_index=True)
-        pending_composite = st.selectbox(
-            "批准综合报告",
-            [""] + [item["report_id"] for item in rows["composite_reports"] if item["review_status"] == "pending"],
-        )
-        if st.button("批准所选综合报告", disabled=not pending_composite):
-            try:
-                approve_composite_approval_review(database=database, report_id=pending_composite)
-                st.rerun()
-            except Exception as exc:
-                st.error(str(exc))
-
-    with guideline_reports:
-        _guideline_approval_workspace(database)
-
-
 def _approval_workspace(database: str) -> None:
-    st.header("授信审批报告")
-    st.caption("先按企业和审批方向查看结果；生成、审核和同行排名放在单独的工作区。")
-    report_view, report_management = st.tabs(["查看企业审批报告", "生成、审核与同行排名"])
+    st.header("客户风险评级报告")
+    st.caption("先按企业和风险评级方向查看结果；生成、审核和同行排名放在单独的工作区。")
+    report_view, report_management = st.tabs(["查看企业风险评级报告", "生成、审核与同行排名"])
     with report_view:
         _guideline_approval_report_view(database)
     with report_management:
@@ -1247,16 +934,21 @@ def _approval_workspace(database: str) -> None:
 
 
 def _guideline_approval_report_view(database: str) -> None:
-    """按企业、报告批次和指引方向查看单份审批报告。"""
+    """按企业、报告批次和指引方向查看单份风险评级报告。"""
+    role = _current_role()
     rows = approval_workspace_rows(database)
     sections = guideline_section_rows()
-    section_titles = {item["section_id"]: item["title"] for item in sections}
+    section_titles = {
+        item["section_id"]: item["title"]
+        for item in sections
+        if can_run_approval_section(role, item["section_id"])
+    }
     section_order = {item["section_id"]: index for index, item in enumerate(sections)}
     guideline_reports = [
         item for item in rows["domain_reports"] if item["domain_id"] in section_titles
     ]
     if not guideline_reports:
-        st.info("尚未生成授信审批分方向报告。")
+        st.info("尚未生成风险评级分方向报告。")
         return
 
     profiles = [item for item in profile_rows(database) if item["review_status"] == "approved"]
@@ -1279,11 +971,18 @@ def _guideline_approval_report_view(database: str) -> None:
     ]
 
     cohorts = {item["cohort_id"]: item for item in rows["cohorts"]}
-    cohort_ids = sorted({str(item["cohort_id"]) for item in enterprise_reports})
-    cohort_options = {
-        f"{cohorts.get(cohort_id, {}).get('cohort_name', cohort_id)}（{cohorts.get(cohort_id, {}).get('fiscal_period', '报告期未标注')}）": cohort_id
-        for cohort_id in cohort_ids
-    }
+    cohort_ids = list(dict.fromkeys(item["cohort_id"] for item in enterprise_reports))
+    cohort_options = {}
+    for cohort_id in cohort_ids:
+        if cohort_id is None:
+            label = "单企业分析（未进行同行比较）"
+        else:
+            cohort = cohorts.get(cohort_id, {})
+            label = (
+                f"{cohort.get('cohort_name', cohort_id)}"
+                f"（{cohort.get('fiscal_period', '报告期未标注')}）"
+            )
+        cohort_options[label] = cohort_id
     selected_cohort_label = st.selectbox(
         "报告批次（同行样本）",
         list(cohort_options),
@@ -1307,17 +1006,130 @@ def _guideline_approval_report_view(database: str) -> None:
             _render_final_approval_report(database, detail)
         return
 
-    st.info("该企业当前批次尚未生成最终授信审批报告。可在“生成、审核与同行排名”中生成。")
+    st.info("该企业当前批次尚未生成客户风险评级报告。可在“生成、审核与同行排名”中生成。")
+
+
+def _peer_cohort_management(
+    database: str,
+    rows: dict,
+    profiles: list[dict],
+    industries: list[dict],
+    role: str,
+) -> None:
+    st.subheader("同行样本管理")
+    profile_names = {
+        str(item["case_id"]): str(item["enterprise_name"])
+        for item in profiles
+        if item["review_status"] == "approved"
+    }
+    cohorts = list(rows["cohorts"])
+    if can_approve_results(role):
+        with st.expander("新建同行样本组", expanded=False):
+            industry_options = {
+                f"{item['industry_name']}（{item['industry_id']}）": item["industry_id"]
+                for item in industries
+                if item["review_status"] == "approved"
+            }
+            cohort_id = st.text_input("样本组 ID", key="cohort_manage_id")
+            cohort_name = st.text_input("样本组名称", key="cohort_manage_name")
+            industry_label = st.selectbox(
+                "对应行业",
+                [""] + list(industry_options),
+                key="cohort_manage_industry",
+            )
+            fiscal_period = st.text_input(
+                "样本报告期", key="cohort_manage_period", placeholder="例如 2025"
+            )
+            selection_rule = st.text_area(
+                "入样规则",
+                key="cohort_manage_rule",
+                placeholder="例如：智能机器人行业已批准企业画像，报告期为 2025 年",
+            )
+            company_options = {
+                f"{name}（{case_id}）": case_id
+                for case_id, name in sorted(profile_names.items(), key=lambda item: item[1])
+            }
+            selected_companies = st.multiselect(
+                "同行企业（至少选择两家）",
+                list(company_options),
+                key="cohort_manage_companies",
+            )
+            if st.button("创建待审核同行样本组", key="cohort_manage_create"):
+                existing_ids = {str(item["cohort_id"]) for item in cohorts}
+                if not cohort_id.strip() or not cohort_name.strip() or not industry_label:
+                    st.error("请填写样本组 ID、名称并选择对应行业。")
+                elif cohort_id.strip() in existing_ids:
+                    st.error("样本组 ID 已存在，请创建新的版本 ID。")
+                elif not fiscal_period.strip() or not selection_rule.strip():
+                    st.error("请填写样本报告期和入样规则。")
+                elif len(selected_companies) < 2:
+                    st.error("同行样本组至少需要两家企业。")
+                else:
+                    create_peer_cohort(
+                        database=database,
+                        cohort_id=cohort_id.strip(),
+                        industry_id=industry_options[industry_label],
+                        cohort_name=cohort_name.strip(),
+                        fiscal_period=fiscal_period.strip(),
+                        company_case_ids=tuple(company_options[label] for label in selected_companies),
+                        selection_rule=selection_rule.strip(),
+                    )
+                    st.success("同行样本组已创建，等待高级业务人员批准。")
+                    st.rerun()
+    else:
+        st.caption("当前身份只能查看已批准同行样本，不能创建或批准样本组。")
+
+    pending = [item for item in cohorts if item["review_status"] == "pending"]
+    if can_approve_results(role) and pending:
+        pending_options = {
+            f"{item['cohort_name']}（{item['cohort_id']}）": item["cohort_id"]
+            for item in pending
+        }
+        pending_label = st.selectbox(
+            "待批准同行样本组",
+            [""] + list(pending_options),
+            key="cohort_manage_pending",
+        )
+        pending_id = pending_options.get(pending_label, "")
+        if st.button(
+            "批准所选同行样本组",
+            disabled=not pending_id,
+            key="cohort_manage_approve",
+        ):
+            approve_peer_cohort(database=database, cohort_id=pending_id)
+            st.success("同行样本组已批准，可用于风险评级报告和排名。")
+            st.rerun()
+
+    if cohorts:
+        st.caption("当前同行样本组")
+        for cohort in cohorts:
+            status = {"approved": "已批准", "pending": "待审核"}.get(
+                cohort["review_status"], cohort["review_status"]
+            )
+            company_names = "、".join(
+                profile_names.get(case_id, case_id)
+                for case_id in cohort["company_case_ids"]
+            )
+            with st.expander(
+                f"{cohort['cohort_name']} · {status} · {len(cohort['company_case_ids'])} 家企业",
+                expanded=False,
+            ):
+                st.text(f"样本组 ID：{cohort['cohort_id']}")
+                st.text(f"行业：{cohort['industry_id']} · 报告期：{cohort['fiscal_period']}")
+                st.text(f"入样规则：{cohort['selection_rule']}")
+                st.text(f"企业：{company_names}")
 
 
 def _guideline_approval_workspace(database: str) -> None:
-    """按新手册提供授信指引方向报告和同方向排名入口。"""
-    st.caption("企业画像领域只作为输入，最终报告按授信审批指引方向组织。")
+    role = _current_role()
+    """按新手册提供风险评级方向报告和同方向排名入口。"""
+    st.caption("企业画像领域只作为输入，最终报告按风险评级指引方向组织。")
     rows = approval_workspace_rows(database)
     sections = guideline_section_rows()
     section_options = {
         f"{item['section_id']} · {item['title']}": item["section_id"]
         for item in sections
+        if can_run_approval_section(role, item["section_id"])
     }
     cohorts = [item for item in rows["cohorts"] if item["review_status"] == "approved"]
     cohort_options = {item["cohort_id"]: item for item in cohorts}
@@ -1329,17 +1141,27 @@ def _guideline_approval_workspace(database: str) -> None:
     ]
     industry_options = {item["profile_id"]: item for item in industries}
 
-    st.subheader("单企业分方向审批报告")
+    _peer_cohort_management(database, rows, profiles, industries, role)
+
+    st.subheader("单企业分方向风险评级报告")
+    report_mode = st.radio(
+        "分方向分析模式",
+        ["单企业分析", "同行增强分析"],
+        horizontal=True,
+        key="guideline_report_mode",
+    )
     section_label = st.selectbox(
-        "授信指引方向",
+        "风险评级指引方向",
         [""] + list(section_options),
         key="guideline_section_generate",
     )
-    cohort_id = st.selectbox(
-        "已批准同行样本",
-        [""] + list(cohort_options),
-        key="guideline_report_cohort",
-    )
+    cohort_id = ""
+    if report_mode == "同行增强分析":
+        cohort_id = st.selectbox(
+            "已批准同行样本",
+            [""] + list(cohort_options),
+            key="guideline_report_cohort",
+        )
     profile_label = st.selectbox(
         "已批准企业画像",
         [""] + list(profile_options),
@@ -1353,35 +1175,48 @@ def _guideline_approval_workspace(database: str) -> None:
     )
     report_id = st.text_input("分方向报告 ID", key="guideline_report_id")
     confirmed = st.checkbox(
-        "我确认生成授信指引报告将调用 DeepSeek 并可能产生费用",
+        "我确认生成风险评级指引报告将调用 DeepSeek 并可能产生费用",
         key="guideline_report_confirm",
     )
-    if st.button("生成待审核授信指引报告", key="guideline_report_generate"):
-        if not section_label or not cohort_id or not profile_id or not industry_profile_id:
-            st.error("请先选择方向、同行样本、企业画像和行业背景画像。")
+    if st.button("生成待审核风险评级指引报告", key="guideline_report_generate"):
+        if not section_label or not profile_id or not industry_profile_id:
+            st.error("请先选择方向、企业画像和行业背景画像。")
+        elif report_mode == "同行增强分析" and not cohort_id:
+            st.error("同行增强分析需要选择同行样本。")
         elif not report_id.strip():
             st.error("请填写分方向报告 ID。")
         elif not confirmed:
             st.error("请先确认模型调用费用。")
         else:
             try:
-                result = generate_guideline_section_review(
-                    database=database,
-                    report_id=report_id.strip(),
-                    cohort_id=cohort_id,
-                    profile_id=profile_id,
-                    industry_profile_id=industry_profile_id,
-                    section_id=section_options[section_label],
-                )
+                if report_mode == "单企业分析":
+                    result = generate_standalone_guideline_section_review(
+                        database=database,
+                        report_id=report_id.strip(),
+                        profile_id=profile_id,
+                        industry_profile_id=industry_profile_id,
+                        section_id=section_options[section_label],
+                        role=role,
+                    )
+                else:
+                    result = generate_guideline_section_review(
+                        database=database,
+                        report_id=report_id.strip(),
+                        cohort_id=cohort_id,
+                        profile_id=profile_id,
+                        industry_profile_id=industry_profile_id,
+                        section_id=section_options[section_label],
+                        role=role,
+                    )
                 st.session_state["guideline_last_section_report"] = result
-                st.success("已生成待审核授信指引分方向报告。")
+                st.success("已生成待审核风险评级指引分方向报告。")
             except Exception as exc:
-                st.error(f"授信指引报告生成失败：{exc}")
+                st.error(f"风险评级指引报告生成失败：{exc}")
     latest = st.session_state.get("guideline_last_section_report")
     if latest:
         st.markdown(latest["report_markdown"])
         st.download_button(
-            "下载授信指引分方向报告 Markdown",
+            "下载风险评级指引分方向报告 Markdown",
             latest["report_markdown"],
             file_name="guideline_section_report.md",
             mime="text/markdown",
@@ -1395,9 +1230,9 @@ def _guideline_approval_workspace(database: str) -> None:
     pending_reports = [item for item in guideline_reports if item["review_status"] == "pending"]
     pending_report_options = {
         (
-            f"{enterprise_names.get(item['case_id'], item['case_id'])} · "
-            f"{next(section['title'] for section in sections if section['section_id'] == item['domain_id'])} · "
-            f"{item['cohort_id']}"
+        f"{enterprise_names.get(item['case_id'], item['case_id'])} · "
+        f"{next(section['title'] for section in sections if section['section_id'] == item['domain_id'])} · "
+        f"{item['cohort_id'] or '单企业分析'}"
         ): item["report_id"]
         for item in pending_reports
     }
@@ -1407,16 +1242,16 @@ def _guideline_approval_workspace(database: str) -> None:
         key="guideline_report_pending",
     )
     pending_report = pending_report_options.get(pending_report_label, "")
-    if st.button("批准所选授信指引报告", disabled=not pending_report, key="guideline_report_approve"):
+    if can_approve_results(role) and st.button("批准所选风险评级指引报告", disabled=not pending_report, key="guideline_report_approve"):
         try:
             approve_domain_approval_review(database=database, report_id=pending_report)
-            st.success("授信指引分方向报告已批准。")
+            st.success("风险评级指引分方向报告已批准。")
             st.rerun()
         except Exception as exc:
-            st.error(f"授信指引报告批准失败：{exc}")
+            st.error(f"风险评级指引报告批准失败：{exc}")
 
     st.divider()
-    st.subheader("同一授信指引方向的企业排名")
+    st.subheader("同一风险评级指引方向的企业排名")
     rank_section_label = st.selectbox(
         "排名方向",
         [""] + list(section_options),
@@ -1448,6 +1283,7 @@ def _guideline_approval_workspace(database: str) -> None:
                     cohort_id=rank_cohort_id,
                     industry_profile_id=rank_industry_profile_id,
                     section_id=section_options[rank_section_label],
+                    role=role,
                 )
                 st.session_state["guideline_last_ranking"] = result
                 st.success("已生成待审核方向排名。")
@@ -1482,6 +1318,7 @@ def _guideline_approval_workspace(database: str) -> None:
                         cohort_id=rank_cohort_id,
                         industry_profile_id=basis_industry_profile_id,
                         section_id=section_options[rank_section_label],
+                        role=role,
                     )
                     if basis:
                         with st.expander("查看排名依据与企业比较卡", expanded=False):
@@ -1499,7 +1336,7 @@ def _guideline_approval_workspace(database: str) -> None:
                 mime="text/markdown",
                 key="guideline_saved_ranking_download",
             )
-            if ranking["ranking"]["review_status"] == "pending" and st.button(
+            if ranking["ranking"]["review_status"] == "pending" and can_approve_results(role) and st.button(
                 "批准当前方向排名",
                 key="guideline_ranking_approve",
             ):
@@ -1515,13 +1352,21 @@ def _guideline_approval_workspace(database: str) -> None:
                     st.error(f"方向排名批准失败：{exc}")
 
     st.divider()
-    st.subheader("最终授信审批报告")
-    st.caption("生成一份包含总体建议、强弱约束统计、综合等级和11个方向结论的最终报告。")
-    assessment_cohort_id = st.selectbox(
-        "最终报告同行样本",
-        [""] + list(cohort_options),
-        key="overall_assessment_cohort",
+    st.subheader("客户风险评级报告")
+    st.caption("单企业分析不要求同行排名；同行增强分析会将可用排名作为补充信息。")
+    assessment_mode = st.radio(
+        "最终评级模式",
+        ["单企业分析", "同行增强分析"],
+        horizontal=True,
+        key="overall_assessment_mode",
     )
+    assessment_cohort_id = ""
+    if assessment_mode == "同行增强分析":
+        assessment_cohort_id = st.selectbox(
+            "最终报告同行样本",
+            [""] + list(cohort_options),
+            key="overall_assessment_cohort",
+        )
     assessment_profile_label = st.selectbox(
         "最终报告企业",
         [""] + list(profile_options),
@@ -1533,30 +1378,39 @@ def _guideline_approval_workspace(database: str) -> None:
         "我确认生成最终报告将调用 DeepSeek 并可能产生费用",
         key="overall_assessment_confirm",
     )
-    if st.button("生成待审核最终授信审批报告", key="overall_assessment_generate"):
-        if not assessment_cohort_id or not assessment_profile_id or not assessment_id.strip():
-            st.error("请先选择同行样本、企业并填写最终报告 ID。")
+    if st.button("生成待审核客户风险评级报告", key="overall_assessment_generate"):
+        if not assessment_profile_id or not assessment_id.strip():
+            st.error("请先选择企业并填写最终报告 ID。")
+        elif assessment_mode == "同行增强分析" and not assessment_cohort_id:
+            st.error("同行增强分析需要选择同行样本。")
         elif not assessment_confirmed:
             st.error("请先确认模型调用费用。")
         else:
             try:
-                result = generate_enterprise_overall_assessment_review(
-                    database=database,
-                    assessment_id=assessment_id.strip(),
-                    cohort_id=assessment_cohort_id,
-                    profile_id=assessment_profile_id,
-                )
+                if assessment_mode == "单企业分析":
+                    result = generate_standalone_enterprise_overall_assessment_review(
+                        database=database,
+                        assessment_id=assessment_id.strip(),
+                        profile_id=assessment_profile_id,
+                    )
+                else:
+                    result = generate_enterprise_overall_assessment_review(
+                        database=database,
+                        assessment_id=assessment_id.strip(),
+                        cohort_id=assessment_cohort_id,
+                        profile_id=assessment_profile_id,
+                    )
                 st.session_state["overall_assessment_latest"] = result
-                st.success("已生成待审核最终授信审批报告。")
+                st.success("已生成待审核客户风险评级报告。")
             except Exception as exc:
                 st.error(f"最终报告生成失败：{exc}")
     latest_assessment = st.session_state.get("overall_assessment_latest")
     if latest_assessment:
         st.markdown(latest_assessment["assessment_markdown"])
         st.download_button(
-            "下载本次最终授信审批报告 Markdown",
+            "下载本次客户风险评级报告 Markdown",
             latest_assessment["assessment_markdown"],
-            file_name="final_approval_report.md",
+            file_name="customer_risk_rating_report.md",
             mime="text/markdown",
             key="overall_assessment_latest_download",
         )
@@ -1569,7 +1423,7 @@ def _guideline_approval_workspace(database: str) -> None:
     assessment_options = {
         (
             f"{enterprise_names.get(item['case_id'], item['case_id'])} · "
-            f"{item['cohort_id']} · {item['rating_level']}级 · {item['review_status']} · "
+            f"{item['cohort_id'] or '单企业分析'} · {item['rating_level']} · {item['review_status']} · "
             f"{item['assessment_id']}"
         ): item["assessment_id"]
         for item in assessment_rows
@@ -1594,7 +1448,7 @@ def _guideline_approval_workspace(database: str) -> None:
         [""] + [item["assessment_id"] for item in pending_assessments],
         key="overall_assessment_approve",
     )
-    if st.button(
+    if can_approve_results(role) and st.button(
         "批准所选最终报告",
         disabled=not pending_assessment,
         key="overall_assessment_approve_button",
@@ -1604,62 +1458,26 @@ def _guideline_approval_workspace(database: str) -> None:
                 database=database,
                 assessment_id=pending_assessment,
             )
-            st.success("最终授信审批报告已批准。")
+            st.success("客户风险评级报告已批准。")
             st.rerun()
         except Exception as exc:
             st.error(f"最终报告批准失败：{exc}")
 
 
-def _review_workspace(database: str) -> None:
-    st.header("相似案例与报告")
-    st.caption("先生成检索卡并召回历史企业，再对少量候选生成可读的辅助审查报告。")
-    cards, similar, report = st.tabs(["1. 准备检索", "2. 查看相似案例", "3. 生成辅助报告"])
-    with cards:
-        _comparison_cards(database)
-    with similar:
-        _similar(database)
-    with report:
-        _detailed_report(database)
-
-
-def _debug_tools(database: str) -> None:
-    st.header("开发调试")
-    st.caption("此区域保留原始数据和运行状态，默认不在业务工作区展示。")
-    profiles = profile_rows(database)
-    st.subheader("已入库企业画像")
-    st.dataframe(profiles, width="stretch", hide_index=True)
-    selected = st.selectbox("查看原始画像 JSON", [""] + [row["profile_id"] for row in profiles], key="debug_profile")
-    if selected:
-        st.json(profile_detail(database, selected), expanded=False)
-    st.subheader("运行状态")
-    state = {
-        key: value
-        for key, value in st.session_state.items()
-        if key.startswith("v5_")
-    }
-    st.json(state, expanded=False)
-
-
 def main() -> None:
     st.set_page_config(page_title="科技型企业风险辅助审查系统", layout="wide")
     st.title("科技型企业风险辅助审查系统")
-    database, page, _ = _sidebar()
+    database, page, _role = _sidebar()
     if page == "材料管理":
         _sources(database)
     elif page == "企业画像":
         _enterprise_workspace(database)
     elif page == "行业背景":
         _industry_workspace(database)
-    elif page == "授信审批报告":
+    elif page == "客户风险评级报告":
         _approval_workspace(database)
-    elif page == "历史案例":
-        _historical_case_analysis(database)
-    elif page == "相似案例与报告":
-        _review_workspace(database)
-    elif page == "审批配置（高级）":
-        _advanced_approval_workspace(database)
     else:
-        _debug_tools(database)
+        st.error("未找到对应工作区")
 
 
 if __name__ == "__main__":

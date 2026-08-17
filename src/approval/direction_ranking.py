@@ -8,6 +8,7 @@ from typing import Any
 
 from src.llm.deepseek_client import call_deepseek
 from src.llm.generation_config import GenerationConfig
+from src.prompts import load_prompt_section
 
 from .guideline_context import GuidelineSectionContext
 from .guideline_definitions import GuidelineSectionDefinition
@@ -169,21 +170,9 @@ def build_direction_ranking_messages(
         raise ValueError("direction ranking is disabled for this section")
     if len(cards) < 2:
         raise ValueError("direction ranking requires at least two comparison cards")
-    system = (
-        "你负责对同一同行样本内企业的同一授信审批方向进行相对比较。"
-        "只能使用输入的精简比较卡和固定比较标准，不得补充外部事实。"
-        "不要输出分数，不要重新计算数值指标。"
-        "只有材料严重缺失、统计范围冲突或无法建立同口径判断时，才放入 not_comparable_case_ids。"
-        "没有数值指标本身不是不可比理由；相同审批点下有企业事实或已批准判断时，应进行定性比较。"
-        "若只能判断为相近，可放入同一并列排名组，并说明信息边界。"
-        "输出必须是合法 JSON，不得包含 Markdown。"
-    )
+    system = load_prompt_section("logic/授信审批逻辑规则.md", "同行分方向排名")
     user = (
-        "输出字段 ranking_groups 和 not_comparable_case_ids。"
-        "ranking_groups 的每项包含 rank、case_ids、comparison_reason。"
-        "rank 从1开始，表现相同的企业放在同一组；只对可比较企业排序。"
-        "除非确实存在材料严重缺失或口径冲突，不要把全部企业列入不可比较；"
-        "comparison_reason 使用简短中文，必须基于输入材料。\n"
+        "当前方向比较卡如下，请按 system 规则输出完整 JSON：\n"
         f"{json.dumps({'section_id': section.section_id, 'section_title': section.title, 'comparison_criteria': section.comparison_criteria, 'cards': [card.to_payload() for card in cards]}, ensure_ascii=False)}"
     )
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]

@@ -11,6 +11,11 @@ from src.llm.deepseek_client import call_deepseek
 from src.llm.generation_config import GenerationConfig
 from src.ontology.registry import REGISTRY
 from src.ontology.schema import CONTENT_ROLES, INFORMATION_STATUSES, RELATION_TYPES
+from src.prompts import (
+    load_profile_dimension_mapping,
+    load_profile_domain_rules,
+    load_prompt_section,
+)
 
 from .candidates import filter_profile_candidates
 
@@ -21,131 +26,20 @@ class EvidenceSelectionResult:
     api_meta: dict[str, Any]
 
 
-PROFILE_DOMAINS = (
-    "enterprise_and_control",
-    "team",
-    "technology_and_ip",
-    "product_and_project",
-    "market_and_commercialization",
-    "customer_and_supplier",
-    "finance_and_funding",
-    "risk_matters",
-    "authoritative_findings",
-    "outcome_and_resolution",
-)
-
-PROFILE_DOMAIN_FIELDS: dict[str, frozenset[str]] = {
-    "enterprise_and_control": frozenset(
-        {
-            "enterprise.legal_name",
-            "enterprise.founded_date",
-            "enterprise.business_stage",
-            "enterprise.main_business",
-            "ownership.controller",
-        }
-    ),
-    "team": frozenset(
-        {
-            "ownership.controller",
-            "team.key_person",
-            "team.education_structure",
-            "team.professional_background",
-            "governance.equity_incentive_plan_status",
-        }
-    ),
-    "technology_and_ip": frozenset(
-        {
-            "technology.name",
-            "technology.source",
-            "technology.maturity_stage",
-            "technology.ownership_status",
-            "intellectual_property.name",
-            "intellectual_property.patent_application_count",
-            "intellectual_property.patent_grant_count",
-            "intellectual_property.ownership_status",
-            "intellectual_property.rights_restriction_status",
-        }
-    ),
-    "product_and_project": frozenset(
-        {"technology.name", "product.name", "product.commercialization_stage"}
-    ),
-    "market_and_commercialization": frozenset(
-        {"product.name", "product.commercialization_stage"}
-    ),
-    "customer_and_supplier": frozenset(
-        {
-            "customer_supplier.customer_concentration",
-            "customer_supplier.supplier_concentration",
-            "customer_supplier.counterparty_name",
-            "customer_supplier.transaction_amount",
-            "customer_supplier.transaction_ratio",
-            "customer_supplier.transaction_content",
-            "customer_supplier.related_party_status",
-        }
-    ),
-    "finance_and_funding": frozenset(
-        {
-            "finance.operating_revenue",
-            "finance.operating_cash_flow",
-            "finance.net_profit",
-            "finance.net_profit_attributable_to_parent",
-            "finance.adjusted_net_profit_attributable_to_parent",
-            "finance.research_expense",
-            "finance.research_expense_ratio",
-            "finance.cash_balance",
-            "finance.interest_bearing_debt",
-        }
-    ),
-    "risk_matters": frozenset({"risk.matter"}),
-    "authoritative_findings": frozenset({"risk.matter"}),
-    "outcome_and_resolution": frozenset({"risk.matter"}),
+_PROFILE_MAPPING = load_profile_dimension_mapping()
+_EXTRACTION_DOMAINS = _PROFILE_MAPPING["extraction_domains"]
+PROFILE_DOMAINS = tuple(item["id"] for item in _EXTRACTION_DOMAINS)
+PROFILE_DOMAIN_FIELDS = {
+    item["id"]: frozenset(item["field_ids"])
+    for item in _EXTRACTION_DOMAINS
 }
-
-PROFILE_DOMAIN_RELATIONS: dict[str, frozenset[str]] = {
-    "enterprise_and_control": frozenset({"controls", "owns", "claims_to_own"}),
-    "team": frozenset(
-        {
-            "holds_position_in",
-            "controls",
-        }
-    ),
-    "technology_and_ip": frozenset(
-        {"owns", "claims_to_own", "licenses", "develops", "uses_technology", "depends_on"}
-    ),
-    "product_and_project": frozenset(
-        {"develops", "uses_technology", "commercializes_as", "depends_on"}
-    ),
-    "market_and_commercialization": frozenset(
-        {"sells_to", "cooperates_with", "depends_on"}
-    ),
-    "customer_and_supplier": frozenset(
-        {"sells_to", "purchases_from", "cooperates_with", "depends_on"}
-    ),
-    "finance_and_funding": frozenset(
-        {"financed_by", "guarantees_for", "depends_on"}
-    ),
-    "risk_matters": frozenset(
-        {"involved_in", "depends_on", "supported_by", "contradicted_by"}
-    ),
-    "authoritative_findings": frozenset(
-        {"involved_in", "supported_by", "contradicted_by"}
-    ),
-    "outcome_and_resolution": frozenset(
-        {"involved_in", "supported_by", "contradicted_by"}
-    ),
+PROFILE_DOMAIN_RELATIONS = {
+    item["id"]: frozenset(item["relation_types"])
+    for item in _EXTRACTION_DOMAINS
 }
-
 PROFILE_DOMAIN_PURPOSES = {
-    "enterprise_and_control": "企业法定身份、成立信息、主营业务、发展阶段和控制关系",
-    "team": "实际控制人、关键人员、教育背景、职业经历、任职关系和股权激励计划",
-    "technology_and_ip": "核心技术名称、技术来源、成熟度、技术权属、核心知识产权、专利申请与授权总量以及外部技术依赖；不要选择仅讨论人员履历的材料",
-    "product_and_project": "产品、商业化阶段、研发项目、技术应用和产业化关系",
-    "market_and_commercialization": "产品市场、商业化、竞争和销售关系",
-    "customer_and_supplier": "主要客户和供应商、逐年交易金额与占比、交易内容、集中度、关联关系和外部依赖",
-    "finance_and_funding": "收入、净利润、现金流、研发费用、现金余额、有息负债、融资、担保和资金依赖",
-    "risk_matters": "已经披露的技术、经营、财务、合规和法律风险事项",
-    "authoritative_findings": "监管、行政、司法或其他权威来源的明确认定",
-    "outcome_and_resolution": "历史结果、处置、整改、赔偿、退市或风险事项结局",
+    item["id"]: item["purpose"]
+    for item in _EXTRACTION_DOMAINS
 }
 
 
@@ -261,13 +155,9 @@ def build_evidence_selection_messages(
         raise ValueError(f"调查领域非法：{domain!r}")
     if max_selected <= 0:
         raise ValueError("max_selected 必须是正整数。")
-    system = (
-        f"{guide_text}\n\n"
-        "你负责为科技型企业画像选择需要进一步阅读的证据单元。"
-        "当前输入只有证据目录，没有证据正文。\n"
-        "只输出 JSON 对象，不输出 Markdown 或解释。"
-        "只能选择目录中真实存在的 evidence_unit_id，不得创造 ID。"
-    )
+    system = load_prompt_section("data/企业画像数据规则.md", "固定流程证据选择")
+    if guide_text:
+        system = f"{system}\n\n{guide_text}"
     user = (
         "===== 材料基本信息 =====\n"
         f"{_catalog_material_context(catalog)}\n"
@@ -337,7 +227,7 @@ def build_profile_messages(
     allowed_fields = PROFILE_DOMAIN_FIELDS[domain]
     allowed_relations = PROFILE_DOMAIN_RELATIONS[domain]
     field_schema = "\n".join(
-        f"- {field.field_id}: section_id={field.section_id}, value_type={field.value_type}"
+        f"- {field.field_id}（{field.label}）: section_id={field.section_id}, value_type={field.value_type}"
         + (", reporting_period_required=true" if field.reporting_period_required else "")
         + (", unit_required=true" if field.currency_required else "")
         + (", value_scope_required=true" if field.value_scope_required else "")
@@ -354,124 +244,12 @@ def build_profile_messages(
         for relation, (sources, targets) in RELATION_TYPES.items()
         if relation in allowed_relations
     )
-    system = (
-        f"{guide_text}\n\n"
-        "你负责从给定证据中生成科技型企业画像候选。\n"
-        "只输出 JSON 对象，不输出 Markdown 或解释。\n"
-        "企业画像是有证据约束的事实底座，不是企业短评、相似度描述或风险评分。\n"
-        "不得创造 Ontology 类别或关系；每个 profile_item 和 profile_relation "
-        "必须引用输入中真实存在的 evidence_unit_id。\n"
-        "企业陈述、外部支持和权威认定必须区分；无法确定的内容放入 information_gaps 或 conflicts。\n"
-        "保留证据中的具体名称、数值、单位和期间，不要为了后续匹配而改写为宽泛标签。\n"
-        "只抽取当前调查领域，不得顺便补充其他领域的画像项、关系或信息缺口。"
-    )
-    domain_rule = {
-        "team": (
-            "输入是用于形成公司整体团队画像的团队证据包，不是要求为所有出现的人员逐一建档。"
-            "只把实际控制人、创始人、董事长、总经理、技术或研发负责人，以及材料明确标注的"
-            "核心技术人员作为关键人员；外部董事、独立董事、普通监事和一般管理人员不得仅因出现在"
-            "名单中就自动视为关键人员。team.key_person 只列支撑整体分析所必需的少量关键人员，"
-            "通常不超过10人。team.education_structure 只输出一项，概括核心团队可核验的学历层次、"
-            "专业构成或教育背景覆盖；team.professional_background 只输出一项，概括核心团队及"
-            "实控人的主要任职机构、岗位类型和从业经历覆盖。两项汇总均须引用支持其内容的多条人物证据，"
-            "不得复制完整简历，不得评价学历高低、团队优劣，也不得自行判断经历是否属于相关行业。"
-            "不要输出旧字段 team.education_background、team.professional_experience，也不要生成"
-            " has_education、has_professional_experience 关系。不得生成无证据的综合评分或优劣结论。"
-            "股权激励计划状态必须使用字段表列出的枚举值。"
-            "团队教育结构和职业背景如果引用多个 EvidenceUnit，必须为每个 EvidenceUnit 分别提供"
-            " evidence_quotes；每条摘录只支撑其对应人物或汇总数据，不得用一人的履历代替多人结论。"
-            "所有 evidence_quotes 必须是输入 EvidenceUnit 中连续、逐字可定位的原文；禁止使用省略号、"
-            "三个点、‘略’、‘等’或自行拼接的概括句。每个 team.key_person 候选至少提供一条包含该人员"
-            "完整姓名的连续原文摘录；无法提供时不要生成该候选。若教育结构值包含‘未披露’或‘未提供’，"
-            "information_status 必须使用 insufficient_evidence、not_disclosed 或 unknown。"
-        ),
-        "authoritative_findings": (
-            "本领域每项必须是监管、行政或司法材料明确认定的具体事实；"
-            "不同认定分别输出。content_role 只能使用 regulatory_finding 或 judicial_finding；"
-            "企业收到破产重整通知、申报债权等经营事件，若没有法院或监管机关的明确认定，不得标记为权威事项。"
-        ),
-        "outcome_and_resolution": (
-            "本领域每项必须是已经发生的具体处置或结果，并使用 content_role=outcome；"
-            "强制退市、处罚维持、赔偿和整改等不同结果必须分别输出，value 不得只写宽泛案件名称。"
-        ),
-        "technology_and_ip": (
-            "只有证据明确表达申请、提交申请或申请中，才能填写 intellectual_property.patent_application_count。"
-            "证据表达拥有专利权、取得授权或授权专利时，填写 intellectual_property.patent_grant_count。"
-            "软件著作权、商标、作品著作权等不是专利：不得填写 patent_application_count 或 patent_grant_count；"
-            "若 Ontology 没有对应数量字段，可保留为 intellectual_property.name 的原文类别与数量描述，"
-            "并在 value_scope 中逐字说明其统计类别。"
-            "所有专利数量必须填写 value_scope：总数使用“全部”，境内、境外、发明、实用新型等子集"
-            "必须逐字保留统计范围，不得把子集数量写成无范围总量。新增、本期、报告期内、当年或年度申请"
-            "必须保留为增量范围，不得写成“全部”。"
-            "同一证据同时披露期末总量、子集数量和本期新增量时，分别输出，不得只保留其中一项。"
-            "“在申专利”或“申请中专利”表示期末申请存量，填写 patent_application_count 且 value_scope=全部；"
-            "“新增专利申请”表示本期增量，填写同一字段但保留新增范围。逐一检查每个同时包含“专利”和数值的原文句子。"
-            "technology.maturity_stage 只用于具体技术：evidence_quotes 必须同时包含技术名称和已量产、生产开始时间或明确成熟度事实；"
-            "“量产或生产开始时间”“技术成熟度”等孤立表头不能生成成熟度候选。"
-            "质押、查封、冻结等属于 intellectual_property.rights_restriction_status，"
-            "不属于 intellectual_property.ownership_status。"
-        ),
-        "finance_and_funding": (
-            "直接数值必须在至少一条 evidence_quotes 原文摘录中逐字出现；不得把季度数相加、换算或估算后写成年度数值。"
-            "比例只有原文直接披露百分比时才输出；研发费用率等由 Python 根据已确认基础数值计算，不得由模型自行计算。"
-            "严格区分净利润、归属于母公司所有者的净利润、归属于上市公司股东的净利润、扣除非经常性损益后归属于母公司所有者的净利润。"
-            "“归属于上市公司股东的净利润”与归属于母公司所有者的净利润均使用 finance.net_profit_attributable_to_parent，"
-            "不得压缩为普通净利润。"
-            "finance.cash_balance 只表示期末现金及现金等价物余额，期初余额不得写入。"
-            "finance.interest_bearing_debt 只接受资产负债表、债务明细或文字明确披露的债务余额；"
-            "取得借款收到的现金、偿还债务支付的现金属于现金流，不得映射为债务余额。"
-        ),
-        "enterprise_and_control": (
-            "enterprise.main_business 只保留证据明确披露的主营产品、服务或业务类别；如果类别来自表格，"
-            "value 可以概括多个原文类别，但 evidence_quotes 必须分别引用包含各类别的连续原文行，"
-            "不得把多行表格拼接成一条不存在的摘录。企业发展阶段必须保留证据原文语气，不能把章程中的"
-            "分红条件或假设性表述当成企业经营事实；只有原文明确使用初创、成长、成熟、转型等阶段词时，"
-            "才可填写 enterprise.business_stage，不得根据成立或上市年限、业务范围或经营规模推断。"
-        ),
-        "product_and_project": (
-            "product.name 只填写材料明确称为产品、产品系列、型号或产品类别的对象。"
-            "研发项目、建设项目、募投项目、客户和供应商不是产品；没有匹配 Ontology 字段时写入 unmapped_items，"
-            "不得借用 product.name。核心技术、算法、模型和零部件只有在同一句原文中明确称为产品、型号或系列时，"
-            "才可填写 product.name；‘产品技术’只是技术属性描述，不是该技术名称属于产品的证明；"
-            "否则技术填写 technology.name，零部件写入 unmapped_items。"
-        ),
-        "market_and_commercialization": (
-            "product.name 只填写材料明确称为产品、产品系列、型号或产品类别的对象。"
-            "客户、供应商、研发项目、建设项目和交易对手不是产品；‘产品技术’不等于产品名称，不得写入 product.name。"
-        ),
-        "risk_matters": (
-            "只输出材料明确披露的潜在或已发生风险事项；不得把无风险结论写成风险事项。"
-            "“无重大诉讼”“未发生处罚”“不存在重大违法违规”等否定事实不是风险事项，不得输出。"
-            "司法裁判、行政监管认定和已经发生的处置结果分别留给 authoritative_findings 或"
-            " outcome_and_resolution，不在本领域使用 judicial_finding、regulatory_finding 或 outcome。"
-        ),
-        "customer_and_supplier": (
-            "必须逐行抽取输入证据中披露的前五大客户或前五大供应商，不能只输出集中度。"
-            "每个不同交易对手先输出一个 customer_supplier.counterparty_name，subject 和 value 都使用"
-            "原文名称或匿名代称；不得猜测匿名代称对应的真实企业。"
-            "每个年度表格行分别输出 customer_supplier.transaction_amount 和"
-            " customer_supplier.transaction_ratio，subject 必须与名称项完全一致。"
-            "客户 value_scope 使用“向主要客户销售金额”或“占营业收入比例”；"
-            "供应商 value_scope 使用“向主要供应商采购金额”或“占原材料采购总额比例”。"
-            "供应商表格逐行披露采购内容时，使用 customer_supplier.transaction_content，"
-            "不得把一名供应商的采购内容赋给其他供应商。"
-            "企业到客户使用 sells_to，企业到供应商使用 purchases_from；target_id 必须引用对应"
-            " counterparty_name 的 item_id。同一交易对手跨年度只输出一条关系并合并证据。"
-            "材料明确说明前五大客户或供应商不存在关联关系时，分别输出一项"
-            " customer_supplier.related_party_status=non_related，subject 使用 the_enterprise，"
-            "value_scope 说明前五大客户或前五大供应商。"
-            "只披露匿名代称时保留代称，并在 information_gaps 中说明真实法律主体名称未披露。"
-            "客户和供应商集中度必须填写 value_scope。客户范围应同时说明前五大客户及销售收入或营业收入分母；"
-            "供应商范围应同时说明前五大供应商及采购额分母。"
-            "每个集中度候选的 evidence_quotes 必须同时包含口径定义摘录和对应期间合计数据摘录；"
-            "两段原文来自同一 EvidenceUnit 时，可以在 evidence_quotes 中重复使用同一个 evidence_unit_id。"
-            "多年度表格的每个年度候选都必须重复引用口径定义，不能只在第一个年度候选中引用表头。"
-            "如果“前五大”和收入或采购分母分散在两段原文中，分别引用两段，再引用对应年度合计行。"
-            "交易行没有年份但同一 EvidenceUnit 的表头写明‘报告期’或‘年度’时，连续引用表头到交易行，"
-            "不得因为年份不在交易行而漏掉金额和比例。"
-        ),
-    }.get(domain, "")
+    system = load_prompt_section("data/企业画像数据规则.md", "结构化事实抽取")
+    if guide_text:
+        system = f"{system}\n\n{guide_text}"
+    domain_rule = load_profile_domain_rules(domain, allowed_fields)
     user = (
+        f"{load_prompt_section('data/企业画像数据规则.md', '结构化事实抽取')}\n\n"
         f"画像类型：{profile_type}\n调查领域：{domain}\n"
         f"{domain_rule}\n"
         "输出字段：profile_items、profile_relations、information_gaps、conflicts、unmapped_items。\n"
@@ -547,16 +325,7 @@ def build_relation_repair_messages(
 ) -> list[dict[str, str]]:
     """构造只处理失败关系的窄范围抽取提示词。"""
     evidence_text = "\n\n".join(_evidence_text(unit) for unit in evidence_units)
-    system = (
-        "你只负责核验企业画像中的失败关系候选。\n"
-        "只输出 JSON 对象，格式为 {\"relation_decisions\": []}。\n"
-        "只处理给定请求中的关系，不生成 profile_relations、profile_items、information_gaps 或其他关系。\n"
-        "每条判定只填写 candidate_id、supported、evidence_unit_ids、evidence_quotes；不要填写关系 ID、主体、对象或类型。\n"
-        "evidence_quotes 的每一项必须是 {\"evidence_unit_id\": \"...\", \"excerpt\": \"...\"} 对象，不得只输出摘录字符串。\n"
-        "判断关系谓词在原文中的语法作用范围。只有目标对象被谓词直接作用，或明确属于该谓词统领的并列、列举范围时，supported 才能为 true；"
-        "目标对象仅与谓词共现但不在其作用范围内，或无法确定对应关系时，supported=false。\n"
-        "evidence_quotes 必须逐字复制输入 EvidenceUnit 的连续原文，不得省略、拼接或改写。"
-    )
+    system = load_prompt_section("data/企业画像数据规则.md", "关系核验")
     user = (
         f"调查领域：{domain}\n"
         "失败关系请求：\n"

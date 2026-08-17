@@ -10,21 +10,18 @@ from typing import Any
 
 from src.evidence.models import EvidenceUnit
 from src.ontology.loader import load_manifest
+from src.prompts import load_profile_dimension_mapping
 
 from .models import EnterpriseProfile, ProfileItem
 
 
-CARD_DIMENSIONS = (
-    ("enterprise_and_team", "企业治理与团队", ("basic_information", "ownership_governance_team")),
-    ("technology_and_ip", "技术与知识产权", ("technology_ip",)),
+CARD_DIMENSIONS = tuple(
     (
-        "product_and_commercialization",
-        "产品、研发与商业化",
-        ("product_research_commercialization", "market_competition", "operations_delivery"),
-    ),
-    ("customer_supplier", "客户、供应商与合作方", ("customer_supplier_partners",)),
-    ("finance_and_funding", "财务与融资", ("finance_capital",)),
-    ("risk_and_compliance", "风险、合规与证据质量", ("compliance_legal_risk", "evidence_quality_gaps")),
+        item["id"],
+        item["label"],
+        tuple(item["fact_section_ids"]),
+    )
+    for item in load_profile_dimension_mapping()["portrait_dimensions"]
 )
 
 ROLE_LABELS = {

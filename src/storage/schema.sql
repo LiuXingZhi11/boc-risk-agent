@@ -278,14 +278,13 @@ CREATE TABLE IF NOT EXISTS metric_profile_field_bindings (
 
 CREATE TABLE IF NOT EXISTS domain_approval_reports (
     report_id TEXT PRIMARY KEY,
-    cohort_id TEXT NOT NULL,
+    cohort_id TEXT,
     case_id TEXT NOT NULL,
     domain_id TEXT NOT NULL,
     one_sentence_summary TEXT NOT NULL,
     approval_points_json TEXT NOT NULL,
     review_status TEXT NOT NULL DEFAULT 'pending'
-        CHECK (review_status IN ('pending', 'approved', 'rejected')),
-    FOREIGN KEY (cohort_id) REFERENCES peer_cohorts(cohort_id) ON DELETE CASCADE
+        CHECK (review_status IN ('pending', 'approved', 'rejected'))
 );
 
 CREATE INDEX IF NOT EXISTS idx_domain_approval_reports_lookup
@@ -343,9 +342,9 @@ CREATE INDEX IF NOT EXISTS idx_composite_approval_reports_lookup
 
 CREATE TABLE IF NOT EXISTS enterprise_overall_assessments (
     assessment_id TEXT PRIMARY KEY,
-    cohort_id TEXT NOT NULL,
+    cohort_id TEXT,
     case_id TEXT NOT NULL,
-    rating_level TEXT NOT NULL CHECK (rating_level IN ('A', 'B', 'C', 'D')),
+    rating_level TEXT NOT NULL CHECK (rating_level IN ('AAA', 'AA', 'A', 'BBB', 'BB', 'B', 'CCC', 'CC', 'C')),
     overall_judgment TEXT NOT NULL,
     rating_rationale_json TEXT NOT NULL,
     core_risks_json TEXT NOT NULL DEFAULT '[]',
@@ -356,14 +355,13 @@ CREATE TABLE IF NOT EXISTS enterprise_overall_assessments (
     source_direction_ranking_sections_json TEXT NOT NULL DEFAULT '[]',
     evidence_refs_json TEXT NOT NULL,
     recommendation TEXT NOT NULL DEFAULT 'conditional_proceed'
-        CHECK (recommendation IN ('proceed_with_caution', 'conditional_proceed', 'do_not_proceed')),
+        CHECK (recommendation IN ('proceed_with_caution', 'proceed_with_review', 'conditional_proceed', 'do_not_proceed')),
     strong_constraint_failed_count INTEGER NOT NULL DEFAULT 0,
     weak_constraint_failed_count INTEGER NOT NULL DEFAULT 0,
     direction_results_json TEXT NOT NULL DEFAULT '[]',
     is_experimental INTEGER NOT NULL DEFAULT 0 CHECK (is_experimental IN (0, 1)),
     review_status TEXT NOT NULL DEFAULT 'pending'
-        CHECK (review_status IN ('pending', 'approved', 'rejected')),
-    FOREIGN KEY (cohort_id) REFERENCES peer_cohorts(cohort_id) ON DELETE CASCADE
+        CHECK (review_status IN ('pending', 'approved', 'rejected'))
 );
 
 CREATE INDEX IF NOT EXISTS idx_overall_assessments_lookup

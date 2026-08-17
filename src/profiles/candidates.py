@@ -62,6 +62,9 @@ _GAP_FIELD_TERMS: dict[str, tuple[str, ...]] = {
 
 _LEGAL_NAME_GAP_TERMS = ("企业法定名称", "法定企业名称", "法定名称")
 
+# DeepSeek 偶尔将模型抽取写成 direct_extraction；本体中的统一业务值是 llm。
+_EXTRACTION_METHOD_ALIASES = {"direct_extraction": "llm"}
+
 
 def is_cross_domain_legal_name_gap(value: str, *, domain: str | None = None) -> bool:
     """判断法定名称缺口是否被错误放入其他调查领域。"""
@@ -708,7 +711,10 @@ def build_profile_from_candidates(
             reporting_period=item.get("reporting_period"),
             event_date=item.get("event_date"),
             effective_date=item.get("effective_date"),
-            extraction_method=item.get("extraction_method", "llm"),
+            extraction_method=_EXTRACTION_METHOD_ALIASES.get(
+                item.get("extraction_method", "llm"),
+                item.get("extraction_method", "llm"),
+            ),
             ontology_version=item.get("ontology_version", ONTOLOGY_VERSION),
         )
         for item in data.get("profile_items", [])

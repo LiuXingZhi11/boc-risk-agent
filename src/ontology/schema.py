@@ -12,12 +12,6 @@ RELATION_TYPES = {
 CONTENT_ROLES = frozenset(_MANIFEST["content_role"])
 INFORMATION_STATUSES = frozenset(_MANIFEST["information_status"])
 EXTRACTION_METHODS = frozenset(_MANIFEST["extraction_methods"])
-COMPARISON_DIMENSION_SECTIONS = {
-    item["id"]: tuple(item["section_ids"])
-    for item in _MANIFEST.get("comparison_dimensions", [])
-}
-
-
 def validate_relation(relation_type: str, source_type: str, target_type: str) -> None:
     try:
         expected_sources, expected_targets = RELATION_TYPES[relation_type]

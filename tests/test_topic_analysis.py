@@ -14,6 +14,7 @@ from src.profiles import (
     build_domain_analysis_packet,
     build_enterprise_visual_card,
     build_topic_fact_payload,
+    normalize_topic_analysis_result,
     validate_topic_analysis_result,
 )
 from src.profiles.topic_analysis_repository import ProfileTopicAnalysisRepository
@@ -58,6 +59,66 @@ def test_topic_fact_payload_can_read_all_facts_in_pages():
     assert first["has_more"] is True
     assert [item["fact_id"] for item in first["facts"] + second["facts"]] == [
         fact.item_id for fact in topic.facts
+    ]
+
+
+def test_normalize_topic_analysis_result_accepts_common_summary_aliases():
+    result = normalize_topic_analysis_result(
+        {"topics": [{"topic_id": "topic-1", "summary": "主题结论"}]}
+    )
+
+    assert result["topic_analyses"][0]["conclusion"] == "主题结论"
+    assert result["domain_summary"] == "主题结论"
+
+
+def test_normalize_topic_analysis_result_converts_topic_mapping_to_list():
+    result = normalize_topic_analysis_result(
+        {"topic_analyses": {"topic-1": {"summary": "主题结论"}}}
+    )
+
+    assert result["topic_analyses"] == [
+        {"topic_id": "topic-1", "summary": "主题结论", "conclusion": "主题结论"}
+    ]
+
+
+def test_normalize_topic_analysis_result_handles_empty_summary_and_aliases():
+    result = normalize_topic_analysis_result(
+        {
+            "domain_summary": "",
+            "topic_analyses": [
+                {
+                    "topic_id": "topic-1",
+                    "topic_summary": "技术体系已有明确布局。",
+                }
+            ],
+        }
+    )
+
+    assert result["domain_summary"] == "技术体系已有明确布局。"
+    assert result["topic_analyses"][0]["conclusion"] == "技术体系已有明确布局。"
+
+
+def test_normalize_topic_analysis_result_uses_neutral_boundary_when_no_summary():
+    result = normalize_topic_analysis_result(
+        {"domain_summary": None, "topic_analyses": [{"topic_id": "topic-1"}]}
+    )
+
+    assert result["domain_summary"].startswith("基于当前已读取事实")
+
+
+def test_normalize_topic_analysis_result_accepts_nested_and_chinese_topic_aliases():
+    result = normalize_topic_analysis_result(
+        {
+            "领域总结": "技术领域总体稳定。",
+            "主题分析": {
+                "technology_system": "形成核心技术体系。",
+            },
+        }
+    )
+
+    assert result["domain_summary"] == "技术领域总体稳定。"
+    assert result["topic_analyses"] == [
+        {"topic_id": "technology_system", "conclusion": "形成核心技术体系。"}
     ]
 
 
@@ -234,3 +295,62 @@ def test_controlled_topic_analysis_reads_and_validates_all_topics():
     )
     assert run.status == "completed"
     assert run.read_topic_ids == (dimension.topics[0].topic_id,)
+
+
+def test_controlled_topic_analysis_uses_json_synthesis_when_agent_reply_is_plain_text():
+    card = _card()
+    dimension = next(item for item in card.dimensions if item.dimension_id == "technology_and_ip")
+
+    def agent_factory(*, model, tools, system_prompt, limits):
+        class FakeAgent:
+            def invoke(self, state):
+                reader = tools[0]
+                for topic in dimension.topics:
+                    reader.invoke({"topic_id": topic.topic_id, "start": 0})
+                return {"messages": [{"content": "分析已完成。"}]}
+
+        return FakeAgent()
+
+    def final_generator(messages, config):
+        return {
+            "topic_analyses": [
+                {
+                    "topic_id": topic.topic_id,
+                    "conclusion": "基于已读取事实形成的分析。",
+                    "key_signals": [],
+                    "information_boundaries": [],
+                    "fact_refs": [fact.item_id for fact in topic.facts],
+                    "evidence_refs": list(
+                        dict.fromkeys(
+                            evidence.evidence_unit_id
+                            for fact in topic.facts
+                            for evidence in fact.evidence
+                        )
+                    ),
+                }
+                for topic in dimension.topics
+            ],
+            "information_boundaries": [],
+            "evidence_refs": list(
+                dict.fromkeys(
+                    evidence.evidence_unit_id
+                    for topic in dimension.topics
+                    for fact in topic.facts
+                    for evidence in fact.evidence
+                )
+            ),
+        }
+
+    workflow = ControlledReactTopicAnalysisWorkflow(
+        model_factory=lambda config: object(),
+        agent_factory=agent_factory,
+        final_generator=final_generator,
+    )
+    run = workflow.run(
+        card=card,
+        dimension_id="technology_and_ip",
+        config=GenerationConfig(model="deepseek-v4-flash"),
+    )
+
+    assert run.status == "completed"
+    assert run.result["domain_summary"] == "基于已读取事实形成的分析。"

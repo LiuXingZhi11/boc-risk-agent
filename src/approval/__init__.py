@@ -29,6 +29,7 @@ from .guideline_context import (
     GuidelineSectionContext,
     build_guideline_metric_comparisons,
     build_guideline_section_context,
+    build_standalone_guideline_section_context,
 )
 from .guideline_reporting import (
     build_guideline_section_report_messages,
@@ -60,6 +61,11 @@ from .overall_assessment import (
     generate_overall_assessment,
     overall_assessment_to_markdown,
     validate_overall_assessment_output,
+)
+from .action_recommendations import (
+    build_action_recommendation_messages,
+    generate_action_recommendations,
+    validate_action_recommendations,
 )
 from .reporting import (
     approve_composite_approval_report,
@@ -101,6 +107,7 @@ __all__ = [
     "GuidelineSectionContext",
     "build_guideline_metric_comparisons",
     "build_guideline_section_context",
+    "build_standalone_guideline_section_context",
     "build_guideline_section_report_messages",
     "generate_guideline_section_report",
     "DirectionComparisonCard",
@@ -128,5 +135,8 @@ __all__ = [
     "validate_overall_assessment_output",
     "approve_overall_assessment",
     "overall_assessment_to_markdown",
+    "build_action_recommendation_messages",
+    "generate_action_recommendations",
+    "validate_action_recommendations",
     "validate_domain_industry_mapping",
 ]

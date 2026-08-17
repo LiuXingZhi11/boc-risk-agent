@@ -185,6 +185,16 @@ def test_approval_repository_round_trip(tmp_path) -> None:
     assert repository.get_domain_report(report.report_id) == report
     assert repository.list_domain_reports(case_id="company-a") == [report]
 
+    standalone_report = replace(
+        report,
+        report_id="company-a-standalone-finance-2025",
+        cohort_id=None,
+        review_status="pending",
+    )
+    repository.save_domain_report(standalone_report)
+    assert repository.get_domain_report(standalone_report.report_id) == standalone_report
+    assert repository.list_domain_reports(case_id="company-a") == [report, standalone_report]
+
     repository.save_metric_definition(replace(definition, review_status="pending"))
 
     assert repository.get_metric_binding(definition.metric_id) == binding
