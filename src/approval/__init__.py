@@ -14,6 +14,7 @@ from .models import (
     OverallAssessmentRationale,
     PeerCohort,
     RankingResult,
+    RATING_LEVEL_ORDER,
 )
 from .candidates import build_metric_value_candidates
 from .guideline_definitions import (
@@ -95,6 +96,7 @@ __all__ = [
     "MetricComparison",
     "PeerCohort",
     "RankingResult",
+    "RATING_LEVEL_ORDER",
     "rank_metric_values",
     "build_metric_value_candidates",
     "GuidelineApprovalPointDefinition",

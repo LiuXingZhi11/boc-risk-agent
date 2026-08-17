@@ -32,15 +32,27 @@ ASSESSMENT_DIMENSIONS = (
 )
 
 RATING_RULES = {
-    "AAA": "无强约束或弱约束不通过，且没有非量化关键信息不足。",
-    "AA": "无强约束或弱约束不通过，但存在非量化关键信息不足。",
-    "A": "存在 1 条弱约束不通过。",
-    "BBB": "存在 2 条弱约束不通过。",
-    "BB": "存在 3 条弱约束不通过，但未达到规范性与财务组合门槛。",
-    "B": "存在 4 条弱约束不通过，但未达到规范性与财务组合门槛。",
-    "CCC": "存在 5 条及以上弱约束不通过，但未达到 CC 的组合门槛。",
-    "CC": "至少 3 条弱约束不通过，同时覆盖企业规范性和财务情况。",
-    "C": "存在任一强约束不通过。",
+    "AAA1": "无强弱约束不通过且无非量化信息不足，非量化有条件通过方向为 0-1 条。",
+    "AAA2": "无强弱约束不通过且无非量化信息不足，非量化有条件通过方向为 2-4 条。",
+    "AAA3": "无强弱约束不通过且无非量化信息不足，非量化有条件通过方向为 5 条及以上。",
+    "AA1": "无强弱约束不通过，但存在非量化信息不足；不确定方向为 0-1 条。",
+    "AA2": "无强弱约束不通过，但存在非量化信息不足；不确定方向为 2-4 条。",
+    "AA3": "无强弱约束不通过，但存在非量化信息不足；不确定方向为 5 条及以上。",
+    "A1": "1 条弱约束不通过，其余非量化不确定方向为 0-1 条。",
+    "A2": "1 条弱约束不通过，其余非量化不确定方向为 2-4 条。",
+    "A3": "1 条弱约束不通过，其余非量化不确定方向为 5 条及以上。",
+    "BBB1": "2 条弱约束不通过，其余非量化不确定方向为 0-1 条。",
+    "BBB2": "2 条弱约束不通过，其余非量化不确定方向为 2-4 条。",
+    "BBB3": "2 条弱约束不通过，其余非量化不确定方向为 5 条及以上。",
+    "BB1": "3 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向为 0-1 条。",
+    "BB2": "3 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向为 2-4 条。",
+    "BB3": "3 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向为 5 条及以上。",
+    "B1": "4 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向不超过 2 条。",
+    "B2": "4 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向超过 2 条。",
+    "CCC1": "5 条及以上弱约束不通过，但未达到 CC 组合门槛。",
+    "CC1": "至少 3 条弱约束不通过，同时覆盖企业规范性和财务情况。",
+    "C1": "恰有 1 条强约束不通过。",
+    "D1": "至少 2 条强约束不通过。",
 }
 
 RECOMMENDATION_LABELS = {
@@ -465,6 +477,15 @@ def _validate_rating_boundary(
     direction_results: tuple[FinalDirectionResult, ...],
     recommendation: str,
 ) -> None:
+    expected = expected_rating_level(direction_results)
+    if rating_level != expected:
+        raise ValueError("rating_level does not match fixed quality boundary")
+
+
+def expected_rating_level(
+    direction_results: tuple[FinalDirectionResult, ...],
+) -> str:
+    """按已校验的方向状态计算 21 级评级，不调用模型。"""
     weak_failed = {
         item.section_id
         for item in direction_results
@@ -472,33 +493,50 @@ def _validate_rating_boundary(
         and item.section_id != "quantitative_assessment"
         and item.status == "failed"
     }
-    non_methodology_information_gap = any(
+    strong_failed_count = sum(
+        item.constraint_level == "strong" and item.status == "failed"
+        for item in direction_results
+    )
+    uncertain_count = sum(
+        item.section_id != "quantitative_assessment"
+        and item.status in {"conditional_passed", "insufficient_information"}
+        for item in direction_results
+    )
+    information_gap_count = sum(
         item.section_id != "quantitative_assessment"
         and item.status == "insufficient_information"
         for item in direction_results
     )
-    if recommendation == "do_not_proceed" and any(
-        item.constraint_level == "strong" and item.status == "failed"
-        for item in direction_results
-    ):
-        expected = "C"
-    elif {
+    if strong_failed_count >= 2:
+        return "D1"
+    if strong_failed_count == 1:
+        return "C1"
+    if {
         "enterprise_norms",
         "financial_position",
     }.issubset(weak_failed) and len(weak_failed) >= 3:
-        expected = "CC"
-    elif len(weak_failed) >= 5:
-        expected = "CCC"
-    else:
-        expected = {
-            4: "B",
-            3: "BB",
-            2: "BBB",
-            1: "A",
-            0: "AA" if non_methodology_information_gap else "AAA",
-        }[len(weak_failed)]
-    if rating_level != expected:
-        raise ValueError("rating_level does not match fixed quality boundary")
+        return "CC1"
+    if len(weak_failed) >= 5:
+        return "CCC1"
+    if len(weak_failed) == 4:
+        return "B1" if uncertain_count <= 2 else "B2"
+    if len(weak_failed) == 3:
+        return f"BB{_three_level(uncertain_count)}"
+    if len(weak_failed) == 2:
+        return f"BBB{_three_level(uncertain_count)}"
+    if len(weak_failed) == 1:
+        return f"A{_three_level(uncertain_count)}"
+    if information_gap_count:
+        return f"AA{_three_level(uncertain_count)}"
+    return f"AAA{_three_level(uncertain_count)}"
+
+
+def _three_level(uncertain_count: int) -> int:
+    if uncertain_count <= 1:
+        return 1
+    if uncertain_count <= 4:
+        return 2
+    return 3
 
 
 def _peer_position(

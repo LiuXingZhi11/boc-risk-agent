@@ -19,7 +19,7 @@ from src.approval.overall_assessment import (
 )
 from src.llm.generation_config import GenerationConfig
 from src.approval.models import DomainApprovalReport
-from src.approval.models import PeerCohort
+from src.approval.models import PeerCohort, RATING_LEVEL_ORDER
 from src.profiles.models import EvidenceReference
 
 
@@ -84,7 +84,7 @@ def _package(*, experimental: bool = False) -> dict:
     )
 
 
-def _raw(package: dict, *, rating_level: str = "AAA") -> dict:
+def _raw(package: dict, *, rating_level: str = "AAA3") -> dict:
     reports = package["direction_cards"]
     evidence_ids = [
         card["approval_points"][0]["key_evidence_unit_ids"][0]
@@ -134,12 +134,21 @@ def test_overall_assessment_validates_full_direction_inputs_and_markdown():
         "assessment-a", package, _reports(), _rankings(), _raw(package)
     )
 
-    assert assessment.rating_level == "AAA"
+    assert assessment.rating_level == "AAA3"
     assert len(assessment.rating_rationale) == 5
     assert len(assessment.source_direction_report_ids) == 11
     assert assessment.recommendation == "proceed_with_caution"
     assert len(assessment.direction_results) == 11
-    assert "客户风险评级：AAA" in overall_assessment_to_markdown(assessment)
+    assert "客户风险评级：AAA3" in overall_assessment_to_markdown(assessment)
+
+
+def test_rating_level_order_contains_requested_21_levels():
+    assert len(RATING_LEVEL_ORDER) == 21
+    assert RATING_LEVEL_ORDER == (
+        "AAA1", "AAA2", "AAA3", "AA1", "AA2", "AA3",
+        "A1", "A2", "A3", "BBB1", "BBB2", "BBB3",
+        "BB1", "BB2", "BB3", "B1", "B2", "CCC1", "CC1", "C1", "D1",
+    )
 
 
 def test_overall_assessment_can_run_without_peer_rankings():
@@ -181,7 +190,7 @@ def test_overall_assessment_rejects_unknown_rating_and_derives_source_references
 
 def test_final_report_strong_constraint_failure_requires_hard_trigger_evidence():
     package = _package()
-    raw = _raw(package, rating_level="C")
+    raw = _raw(package, rating_level="C1")
     target = next(
         item for item in raw["direction_results"] if item["section_id"] == "aml_sanctions"
     )
@@ -203,7 +212,7 @@ def test_final_report_strong_constraint_failure_requires_hard_trigger_evidence()
 
 def test_final_report_weak_constraint_failure_is_not_a_veto():
     package = _package()
-    raw = _raw(package, rating_level="A")
+    raw = _raw(package, rating_level="A3")
     target = next(
         item for item in raw["direction_results"] if item["section_id"] == "financial_position"
     )
@@ -218,7 +227,7 @@ def test_final_report_weak_constraint_failure_is_not_a_veto():
 
 def test_quantitative_assessment_does_not_fail_or_count_as_enterprise_risk():
     package = _package()
-    raw = _raw(package, rating_level="AAA")
+    raw = _raw(package, rating_level="AAA3")
     target = next(
         item
         for item in raw["direction_results"]
@@ -231,7 +240,7 @@ def test_quantitative_assessment_does_not_fail_or_count_as_enterprise_risk():
         )
 
     experimental_package = _package(experimental=True)
-    experimental_raw = _raw(experimental_package, rating_level="AAA")
+    experimental_raw = _raw(experimental_package, rating_level="AAA3")
     quantitative = next(
         item
         for item in experimental_raw["direction_results"]
@@ -250,25 +259,25 @@ def test_quantitative_assessment_does_not_fail_or_count_as_enterprise_risk():
 
 def test_final_report_rating_boundaries_cover_aa_and_cc():
     package = _package()
-    raw = _raw(package, rating_level="AA")
+    raw = _raw(package, rating_level="AA3")
     next(
         item for item in raw["direction_results"] if item["section_id"] == "core_team"
     )["status"] = "insufficient_information"
     assert validate_overall_assessment_output(
         "assessment-b", package, _reports(), _rankings(), raw
-    ).rating_level == "AA"
+    ).rating_level == "AA3"
 
-    raw = _raw(package, rating_level="CC")
+    raw = _raw(package, rating_level="CC1")
     for section_id in ("enterprise_norms", "financial_position", "market_space"):
         next(
             item for item in raw["direction_results"] if item["section_id"] == section_id
         )["status"] = "failed"
     assert validate_overall_assessment_output(
         "assessment-d", package, _reports(), _rankings(), raw
-    ).rating_level == "CC"
+    ).rating_level == "CC1"
 
 
-def test_final_report_rating_boundaries_split_weak_failures_into_nine_levels():
+def test_final_report_rating_boundaries_split_weak_failures_into_twenty_one_levels():
     package = _package()
     weak_sections = [
         section.section_id
@@ -276,7 +285,7 @@ def test_final_report_rating_boundaries_split_weak_failures_into_nine_levels():
         if section.constraint_level == "weak"
         and section.section_id != "quantitative_assessment"
     ]
-    expected = {1: "A", 2: "BBB", 3: "BB", 4: "B", 5: "CCC"}
+    expected = {1: "A3", 2: "BBB3", 3: "BB3", 4: "B2", 5: "CCC1"}
     for count, rating in expected.items():
         raw = _raw(package, rating_level=rating)
         for section_id in weak_sections[:count]:
@@ -297,7 +306,7 @@ def test_final_report_recommendations_follow_a_to_d_boundaries():
         "assessment-a", package, _reports(), _rankings(), raw
     ).recommendation == "proceed_with_caution"
 
-    raw = _raw(package, rating_level="AA")
+    raw = _raw(package, rating_level="AA3")
     next(
         item for item in raw["direction_results"] if item["section_id"] == "core_team"
     )["status"] = "insufficient_information"
@@ -305,7 +314,7 @@ def test_final_report_recommendations_follow_a_to_d_boundaries():
         "assessment-b", package, _reports(), _rankings(), raw
     ).recommendation == "proceed_with_review"
 
-    raw = _raw(package, rating_level="A")
+    raw = _raw(package, rating_level="A3")
     next(
         item
         for item in raw["direction_results"]
@@ -315,7 +324,7 @@ def test_final_report_recommendations_follow_a_to_d_boundaries():
         "assessment-c", package, _reports(), _rankings(), raw
     ).recommendation == "conditional_proceed"
 
-    raw = _raw(package, rating_level="CC")
+    raw = _raw(package, rating_level="CC1")
     for section_id in ("enterprise_norms", "financial_position", "market_space"):
         next(
             item for item in raw["direction_results"] if item["section_id"] == section_id
@@ -426,5 +435,5 @@ def test_overall_assessment_repairs_one_invalid_model_format(monkeypatch):
         _rankings(),
         config=GenerationConfig(mode="thinking"),
     )
-    assert assessment.rating_level == "AAA"
+    assert assessment.rating_level == "AAA3"
     assert len(calls) == 2

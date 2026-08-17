@@ -344,7 +344,7 @@ CREATE TABLE IF NOT EXISTS enterprise_overall_assessments (
     assessment_id TEXT PRIMARY KEY,
     cohort_id TEXT,
     case_id TEXT NOT NULL,
-    rating_level TEXT NOT NULL CHECK (rating_level IN ('AAA', 'AA', 'A', 'BBB', 'BB', 'B', 'CCC', 'CC', 'C')),
+    rating_level TEXT NOT NULL CHECK (rating_level IN ('AAA1', 'AAA2', 'AAA3', 'AA1', 'AA2', 'AA3', 'A1', 'A2', 'A3', 'BBB1', 'BBB2', 'BBB3', 'BB1', 'BB2', 'BB3', 'B1', 'B2', 'CCC1', 'CC1', 'C1', 'D1')),
     overall_judgment TEXT NOT NULL,
     rating_rationale_json TEXT NOT NULL,
     core_risks_json TEXT NOT NULL DEFAULT '[]',

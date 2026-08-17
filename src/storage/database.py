@@ -29,6 +29,7 @@ def init_database(db_path: str | Path) -> None:
     with connect_database(db_path) as connection:
         connection.executescript(schema)
         _migrate_rating_levels(connection)
+        _migrate_to_21_rating_levels(connection)
         _migrate_optional_cohort_ids(connection)
         columns = {row[1] for row in connection.execute("PRAGMA table_info(profile_items)")}
         for name, definition in (
@@ -66,7 +67,7 @@ def init_database(db_path: str | Path) -> None:
 
 
 def _migrate_rating_levels(connection: sqlite3.Connection) -> None:
-    """将旧 A-D 综合评定表迁移到九级客户风险评级。"""
+    """将旧 A-D 综合评定表迁移到兼容的中间评级表。"""
     legacy_exists = connection.execute(
         "SELECT 1 FROM sqlite_master WHERE type = 'table' "
         "AND name = 'enterprise_overall_assessments_legacy'"
@@ -98,7 +99,7 @@ def _migrate_rating_levels(connection: sqlite3.Connection) -> None:
         "WHERE type = 'table' AND name = 'enterprise_overall_assessments'"
     ).fetchone()
     table_sql = (row[0] or "") if row else ""
-    if "'AAA'" in table_sql and "'proceed_with_review'" in table_sql:
+    if ("'AAA'" in table_sql or "'AAA1'" in table_sql) and "'proceed_with_review'" in table_sql:
         return
 
     connection.execute("DROP INDEX IF EXISTS idx_overall_assessments_lookup")
@@ -164,6 +165,79 @@ def _migrate_rating_levels(connection: sqlite3.Connection) -> None:
     )
 
 
+def _migrate_to_21_rating_levels(connection: sqlite3.Connection) -> None:
+    """将旧评级表升级为 21 级，保留报告内容和方向状态。"""
+    row = connection.execute(
+        "SELECT sql FROM sqlite_master "
+        "WHERE type = 'table' AND name = 'enterprise_overall_assessments'"
+    ).fetchone()
+    table_sql = (row[0] or "") if row else ""
+    if "'AAA1'" in table_sql and "'D1'" in table_sql:
+        return
+
+    connection.execute("DROP INDEX IF EXISTS idx_overall_assessments_lookup")
+    connection.execute(
+        "ALTER TABLE enterprise_overall_assessments "
+        "RENAME TO enterprise_overall_assessments_legacy_9_levels"
+    )
+    connection.executescript(
+        """
+        CREATE TABLE enterprise_overall_assessments (
+            assessment_id TEXT PRIMARY KEY,
+            cohort_id TEXT,
+            case_id TEXT NOT NULL,
+            rating_level TEXT NOT NULL CHECK (rating_level IN ('AAA1', 'AAA2', 'AAA3', 'AA1', 'AA2', 'AA3', 'A1', 'A2', 'A3', 'BBB1', 'BBB2', 'BBB3', 'BB1', 'BB2', 'BB3', 'B1', 'B2', 'CCC1', 'CC1', 'C1', 'D1')),
+            overall_judgment TEXT NOT NULL,
+            rating_rationale_json TEXT NOT NULL,
+            core_risks_json TEXT NOT NULL DEFAULT '[]',
+            mitigating_factors_json TEXT NOT NULL DEFAULT '[]',
+            rating_boundaries_json TEXT NOT NULL DEFAULT '[]',
+            verification_priorities_json TEXT NOT NULL DEFAULT '[]',
+            source_direction_report_ids_json TEXT NOT NULL,
+            source_direction_ranking_sections_json TEXT NOT NULL DEFAULT '[]',
+            evidence_refs_json TEXT NOT NULL,
+            recommendation TEXT NOT NULL DEFAULT 'conditional_proceed'
+                CHECK (recommendation IN ('proceed_with_caution', 'proceed_with_review', 'conditional_proceed', 'do_not_proceed')),
+            strong_constraint_failed_count INTEGER NOT NULL DEFAULT 0,
+            weak_constraint_failed_count INTEGER NOT NULL DEFAULT 0,
+            direction_results_json TEXT NOT NULL DEFAULT '[]',
+            is_experimental INTEGER NOT NULL DEFAULT 0 CHECK (is_experimental IN (0, 1)),
+            review_status TEXT NOT NULL DEFAULT 'pending'
+                CHECK (review_status IN ('pending', 'approved', 'rejected'))
+        );
+        INSERT INTO enterprise_overall_assessments (
+            assessment_id, cohort_id, case_id, rating_level, overall_judgment,
+            rating_rationale_json, core_risks_json, mitigating_factors_json,
+            rating_boundaries_json, verification_priorities_json,
+            source_direction_report_ids_json, source_direction_ranking_sections_json,
+            evidence_refs_json, recommendation, strong_constraint_failed_count,
+            weak_constraint_failed_count, direction_results_json, is_experimental,
+            review_status
+        )
+        SELECT assessment_id, cohort_id, case_id,
+            CASE rating_level
+                WHEN 'AAA' THEN 'AAA1' WHEN 'AA' THEN 'AA1'
+                WHEN 'A' THEN 'A1' WHEN 'BBB' THEN 'BBB1'
+                WHEN 'BB' THEN 'BB1' WHEN 'B' THEN 'B1'
+                WHEN 'CCC' THEN 'CCC1' WHEN 'CC' THEN 'CC1'
+                WHEN 'C' THEN 'C1' WHEN 'D' THEN 'D1'
+                ELSE 'AAA1'
+            END,
+            overall_judgment, rating_rationale_json, core_risks_json,
+            mitigating_factors_json, rating_boundaries_json,
+            verification_priorities_json, source_direction_report_ids_json,
+            source_direction_ranking_sections_json, evidence_refs_json,
+            recommendation, strong_constraint_failed_count,
+            weak_constraint_failed_count, direction_results_json,
+            is_experimental, review_status
+        FROM enterprise_overall_assessments_legacy_9_levels;
+        DROP TABLE enterprise_overall_assessments_legacy_9_levels;
+        CREATE INDEX idx_overall_assessments_lookup
+            ON enterprise_overall_assessments(cohort_id, case_id, review_status);
+        """
+    )
+
+
 def _migrate_optional_cohort_ids(connection: sqlite3.Connection) -> None:
     """让单企业报告可以不绑定同行样本，同时保留旧报告。"""
     domain_columns = {
@@ -214,7 +288,7 @@ def _migrate_optional_cohort_ids(connection: sqlite3.Connection) -> None:
                 assessment_id TEXT PRIMARY KEY,
                 cohort_id TEXT,
                 case_id TEXT NOT NULL,
-                rating_level TEXT NOT NULL CHECK (rating_level IN ('AAA', 'AA', 'A', 'BBB', 'BB', 'B', 'CCC', 'CC', 'C')),
+                rating_level TEXT NOT NULL CHECK (rating_level IN ('AAA1', 'AAA2', 'AAA3', 'AA1', 'AA2', 'AA3', 'A1', 'A2', 'A3', 'BBB1', 'BBB2', 'BBB3', 'BB1', 'BB2', 'BB3', 'B1', 'B2', 'CCC1', 'CC1', 'C1', 'D1')),
                 overall_judgment TEXT NOT NULL,
                 rating_rationale_json TEXT NOT NULL,
                 core_risks_json TEXT NOT NULL DEFAULT '[]',

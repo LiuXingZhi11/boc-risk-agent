@@ -251,7 +251,15 @@ class CompositeApprovalReport:
         _validate_review_status(self.review_status)
 
 
-RATING_LEVELS = {"AAA", "AA", "A", "BBB", "BB", "B", "CCC", "CC", "C"}
+RATING_LEVEL_ORDER = (
+    "AAA1", "AAA2", "AAA3",
+    "AA1", "AA2", "AA3",
+    "A1", "A2", "A3",
+    "BBB1", "BBB2", "BBB3",
+    "BB1", "BB2", "BB3",
+    "B1", "B2", "CCC1", "CC1", "C1", "D1",
+)
+RATING_LEVELS = frozenset(RATING_LEVEL_ORDER)
 FINAL_DIRECTION_STATUSES = {
     "passed",
     "conditional_passed",
@@ -327,7 +335,7 @@ class EnterpriseOverallAssessment:
         if self.cohort_id is not None:
             _require_text(self.cohort_id, "cohort_id")
         if self.rating_level not in RATING_LEVELS:
-            raise ValueError("rating_level must be one of AAA, AA, A, BBB, BB, B, CCC, CC, C")
+            raise ValueError("rating_level must be one of the 21 configured levels")
         if self.recommendation not in FINAL_RECOMMENDATIONS:
             raise ValueError("invalid final recommendation")
         if self.strong_constraint_failed_count < 0 or self.weak_constraint_failed_count < 0:

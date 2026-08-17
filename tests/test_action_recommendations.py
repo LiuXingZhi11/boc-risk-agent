@@ -13,7 +13,7 @@ def _assessment() -> EnterpriseOverallAssessment:
         assessment_id="a",
         cohort_id="c",
         case_id="e",
-        rating_level="AA",
+        rating_level="AA1",
         overall_judgment="需要补充资料。",
         rating_rationale=(OverallAssessmentRationale("d", "维度", "判断。"),),
         core_risks=("客户主体待核验。",),
