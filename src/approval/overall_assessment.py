@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import replace
 from typing import Any
 
@@ -304,8 +305,24 @@ def overall_assessment_to_markdown(assessment: EnterpriseOverallAssessment) -> s
     ):
         if values:
             lines.extend(["", f"## {title}", ""])
-            lines.extend(f"- {report_text(value)}" for value in values)
+            if title == "后续行动建议":
+                for index, value in enumerate(values, start=1):
+                    lines.extend(_action_recommendation_lines(report_text(value), index))
+            else:
+                lines.extend(f"- {report_text(value)}" for value in values)
     return "\n".join(lines) + "\n"
+
+
+def _action_recommendation_lines(value: str, index: int) -> list[str]:
+    """将新旧格式的行动建议统一渲染为编号和字段子项。"""
+    parts = [part.strip() for part in re.split(r"[；;]\s*", value) if part.strip()]
+    lines = [f"### {index}. 行动建议", ""]
+    if len(parts) > 1:
+        lines.extend(f"- {part}" for part in parts)
+    else:
+        lines.append(f"- {value}")
+    lines.append("")
+    return lines
 
 
 def _validate_assessment_inputs(

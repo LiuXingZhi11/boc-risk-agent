@@ -4,6 +4,7 @@ from src.approval.action_recommendations import (
     validate_action_recommendations,
 )
 from src.approval.models import EnterpriseOverallAssessment, OverallAssessmentRationale
+from src.approval.overall_assessment import overall_assessment_to_markdown
 from src.profiles.models import EvidenceReference
 
 
@@ -37,3 +38,20 @@ def test_action_prompt_contains_rating_and_direction_context():
     assert "客户风险评级报告" in messages[1]["content"]
     assert "财务情况" in messages[1]["content"] or "direction_results" in messages[1]["content"]
     assert "行动建议" in messages[0]["content"]
+
+
+def test_action_recommendations_are_rendered_as_subitems():
+    assessment = _assessment()
+    markdown = overall_assessment_to_markdown(
+        EnterpriseOverallAssessment(
+            **{
+                **assessment.__dict__,
+                "verification_priorities": (
+                    "行动类型：事实核验；优先级：高；行动：补充材料；原因：主体待核验；关联方向：企业治理；所需材料或核验对象：工商资料；建议时点：提交报告前；完成标准/升级条件：主体一致。",
+                ),
+            }
+        )
+    )
+    assert "### 1. 行动建议" in markdown
+    assert "- 行动类型：事实核验" in markdown
+    assert "- 完成标准/升级条件：主体一致。" in markdown
