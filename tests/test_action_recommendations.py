@@ -54,4 +54,5 @@ def test_action_recommendations_are_rendered_as_subitems():
     )
     assert "### 1. 补充材料" in markdown
     assert "- 行动类型：事实核验" in markdown
+    assert "- 行动：补充材料" not in markdown
     assert "- 完成标准/升级条件：主体一致。" in markdown

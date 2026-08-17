@@ -324,9 +324,10 @@ def _action_recommendation_lines(value: str, index: int) -> list[str]:
         ),
         f"行动建议 {index}",
     )
+    body_parts = [part for part in parts if not part.startswith("行动：")]
     lines = [f"### {index}. {title}", ""]
-    if len(parts) > 1:
-        lines.extend(f"- {part}" for part in parts)
+    if body_parts:
+        lines.extend(f"- {part}" for part in body_parts)
     else:
         lines.append(f"- {value}")
     lines.append("")

@@ -646,8 +646,9 @@ def _render_action_recommendations(values: list[str] | tuple[str, ...]) -> None:
             f"行动建议 {index}",
         )
         st.markdown(f"**{index}. {title}**")
-        if len(parts) > 1:
-            for part in parts:
+        body_parts = [part for part in parts if not part.startswith("行动：")]
+        if body_parts:
+            for part in body_parts:
                 st.markdown(f"- {part}")
         else:
             st.markdown(f"- {_business_text(value)}")
