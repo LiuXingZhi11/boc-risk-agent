@@ -628,6 +628,23 @@ def _business_text(text: str) -> str:
     ).replace("授信审批", "风险评级")
 
 
+def _render_action_recommendations(values: list[str] | tuple[str, ...]) -> None:
+    """将行动建议按编号和字段子项展示，兼容旧的长字符串。"""
+    st.markdown("**后续行动建议**")
+    for index, value in enumerate(values, start=1):
+        parts = [
+            part.strip()
+            for part in re.split(r"[；;]\s*", _business_text(value))
+            if part.strip()
+        ]
+        st.markdown(f"**{index}. 行动建议**")
+        if len(parts) > 1:
+            for part in parts:
+                st.markdown(f"- {part}")
+        else:
+            st.markdown(f"- {_business_text(value)}")
+
+
 def _render_final_approval_report(database: str, detail: dict[str, object]) -> None:
     """展示一份面向业务人员的最终报告，并折叠其分方向依据。"""
     role = _current_role()
@@ -670,7 +687,10 @@ def _render_final_approval_report(database: str, detail: dict[str, object]) -> N
         ("后续行动建议", assessment["verification_priorities"]),
     ):
         if values:
-            st.markdown(f"**{title}**：" + "；".join(_business_text(value) for value in values))
+            if title == "后续行动建议":
+                _render_action_recommendations(values)
+            else:
+                st.markdown(f"**{title}**：" + "；".join(_business_text(value) for value in values))
 
     st.subheader("风险评级指引逐条结论")
     for result in direction_results:
