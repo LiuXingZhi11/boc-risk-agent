@@ -24,6 +24,7 @@ _LEGACY_RATING_MENTION = re.compile(
     r"(客户风险评级|评级)(为|：|:)(AAA|BBB|CCC|AA|CC|A|B|C|D)(?![A-Z0-9])"
 )
 def _rewrite_legacy_rating_mentions(value: str, rating_level: str) -> str:
+    value = value.replace("九级固定边界", "21级固定边界")
     return _LEGACY_RATING_MENTION.sub(
         lambda match: f"{match.group(1)}{match.group(2)}{rating_level}",
         value,
