@@ -316,7 +316,15 @@ def overall_assessment_to_markdown(assessment: EnterpriseOverallAssessment) -> s
 def _action_recommendation_lines(value: str, index: int) -> list[str]:
     """将新旧格式的行动建议统一渲染为编号和字段子项。"""
     parts = [part.strip() for part in re.split(r"[；;]\s*", value) if part.strip()]
-    lines = [f"### {index}. 行动建议", ""]
+    title = next(
+        (
+            part.split("：", 1)[1].strip()
+            for part in parts
+            if part.startswith("行动：")
+        ),
+        f"行动建议 {index}",
+    )
+    lines = [f"### {index}. {title}", ""]
     if len(parts) > 1:
         lines.extend(f"- {part}" for part in parts)
     else:

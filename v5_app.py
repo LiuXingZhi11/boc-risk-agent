@@ -637,7 +637,15 @@ def _render_action_recommendations(values: list[str] | tuple[str, ...]) -> None:
             for part in re.split(r"[；;]\s*", _business_text(value))
             if part.strip()
         ]
-        st.markdown(f"**{index}. 行动建议**")
+        title = next(
+            (
+                part.split("：", 1)[1].strip()
+                for part in parts
+                if part.startswith("行动：")
+            ),
+            f"行动建议 {index}",
+        )
+        st.markdown(f"**{index}. {title}**")
         if len(parts) > 1:
             for part in parts:
                 st.markdown(f"- {part}")
