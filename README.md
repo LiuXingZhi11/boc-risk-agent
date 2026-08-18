@@ -52,7 +52,7 @@ streamlit run v5_app.py
 常用命令：
 
 ```powershell
-python -m pytest -q
+python -m pytest -q -p no:cacheprovider --ignore=tests\test_app.py --ignore=tests\test_streamlit_app.py
 ```
 
 ## 主要目录
