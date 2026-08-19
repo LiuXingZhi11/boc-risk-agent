@@ -280,6 +280,7 @@ class FinalDirectionResult:
     constraint_level: str
     status: str
     summary: str
+    score: int = 0
     strong_constraint_trigger_code: str | None = None
     strong_constraint_trigger_evidence_unit_ids: tuple[str, ...] = field(default_factory=tuple)
 
@@ -290,6 +291,8 @@ class FinalDirectionResult:
             raise ValueError("constraint_level must be strong or weak")
         if self.status not in FINAL_DIRECTION_STATUSES:
             raise ValueError("invalid final direction status")
+        if not isinstance(self.score, int) or isinstance(self.score, bool) or self.score < 0:
+            raise ValueError("direction score must be a non-negative integer")
         if self.strong_constraint_trigger_code is not None:
             _require_text(self.strong_constraint_trigger_code, "strong_constraint_trigger_code")
         for evidence_unit_id in self.strong_constraint_trigger_evidence_unit_ids:
@@ -322,6 +325,7 @@ class EnterpriseOverallAssessment:
     source_direction_report_ids: tuple[str, ...]
     source_direction_ranking_sections: tuple[str, ...]
     evidence_refs: tuple[EvidenceReference, ...]
+    total_score: int = 0
     recommendation: str = "conditional_proceed"
     strong_constraint_failed_count: int = 0
     weak_constraint_failed_count: int = 0
@@ -334,8 +338,12 @@ class EnterpriseOverallAssessment:
             _require_text(getattr(self, field_name), field_name)
         if self.cohort_id is not None:
             _require_text(self.cohort_id, "cohort_id")
-        if self.rating_level not in RATING_LEVELS:
-            raise ValueError("rating_level must be one of the 21 configured levels")
+        if self.rating_level and self.rating_level not in RATING_LEVELS:
+            raise ValueError("legacy rating_level must be one of the configured levels")
+        if not isinstance(self.total_score, int) or isinstance(self.total_score, bool):
+            raise ValueError("total_score must be an integer")
+        if not 0 <= self.total_score <= 100:
+            raise ValueError("total_score must be between 0 and 100")
         if self.recommendation not in FINAL_RECOMMENDATIONS:
             raise ValueError("invalid final recommendation")
         if self.strong_constraint_failed_count < 0 or self.weak_constraint_failed_count < 0:
@@ -344,6 +352,8 @@ class EnterpriseOverallAssessment:
             section_ids = [item.section_id for item in self.direction_results]
             if len(section_ids) != len(set(section_ids)):
                 raise ValueError("final direction results must not repeat sections")
+            if self.total_score != sum(item.score for item in self.direction_results):
+                raise ValueError("total_score must equal the sum of direction scores")
         if not self.rating_rationale:
             raise ValueError("an overall assessment requires rating rationale")
         report_ids = self.source_direction_report_ids

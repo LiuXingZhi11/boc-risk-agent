@@ -31,28 +31,13 @@ ASSESSMENT_DIMENSIONS = (
     ("compliance_and_uncertainty", "合规与重大不确定性"),
 )
 
-RATING_RULES = {
-    "AAA1": "无强弱约束不通过且无非量化信息不足，非量化有条件通过方向为 0-1 条。",
-    "AAA2": "无强弱约束不通过且无非量化信息不足，非量化有条件通过方向为 2-4 条。",
-    "AAA3": "无强弱约束不通过且无非量化信息不足，非量化有条件通过方向为 5 条及以上。",
-    "AA1": "无强弱约束不通过，但存在非量化信息不足；不确定方向为 0-1 条。",
-    "AA2": "无强弱约束不通过，但存在非量化信息不足；不确定方向为 2-4 条。",
-    "AA3": "无强弱约束不通过，但存在非量化信息不足；不确定方向为 5 条及以上。",
-    "A1": "1 条弱约束不通过，其余非量化不确定方向为 0-1 条。",
-    "A2": "1 条弱约束不通过，其余非量化不确定方向为 2-4 条。",
-    "A3": "1 条弱约束不通过，其余非量化不确定方向为 5 条及以上。",
-    "BBB1": "2 条弱约束不通过，其余非量化不确定方向为 0-1 条。",
-    "BBB2": "2 条弱约束不通过，其余非量化不确定方向为 2-4 条。",
-    "BBB3": "2 条弱约束不通过，其余非量化不确定方向为 5 条及以上。",
-    "BB1": "3 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向为 0-1 条。",
-    "BB2": "3 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向为 2-4 条。",
-    "BB3": "3 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向为 5 条及以上。",
-    "B1": "4 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向不超过 2 条。",
-    "B2": "4 条弱约束不通过且未达到 CC 组合门槛，其余非量化不确定方向超过 2 条。",
-    "CCC1": "5 条及以上弱约束不通过，但未达到 CC 组合门槛。",
-    "CC1": "至少 3 条弱约束不通过，同时覆盖企业规范性和财务情况。",
-    "C1": "恰有 1 条强约束不通过。",
-    "D1": "至少 2 条强约束不通过。",
+SCORE_RULES = {
+    section.section_id: {
+        "title": section.title,
+        "constraint_level": section.constraint_level,
+        "max_score": section.score_weight,
+    }
+    for section in GUIDELINE_SECTION_DEFINITIONS
 }
 
 RECOMMENDATION_LABELS = {
@@ -85,6 +70,11 @@ def build_overall_assessment_package(
                 "section_id": report.domain_id,
                 "constraint_level": next(
                     section.constraint_level
+                    for section in GUIDELINE_SECTION_DEFINITIONS
+                    if section.section_id == report.domain_id
+                ),
+                "max_score": next(
+                    section.score_weight
                     for section in GUIDELINE_SECTION_DEFINITIONS
                     if section.section_id == report.domain_id
                 ),
@@ -124,7 +114,7 @@ def build_overall_assessment_package(
             "cohort_selection_rule": cohort_selection_rule,
             "is_experimental": is_experimental,
         },
-        "rating_rules": RATING_RULES,
+        "score_rules": SCORE_RULES,
         "strong_constraint_trigger_codes": STRONG_CONSTRAINT_TRIGGER_CODES,
         "assessment_dimensions": [
             {"dimension_id": dimension_id, "title": title}
@@ -218,11 +208,7 @@ def validate_overall_assessment_output(
     rationale = _build_rationale(raw.get("rating_rationale"))
     direction_results = _build_direction_results(raw.get("direction_results"), package)
     strong_failed_count, weak_failed_count, recommendation = _recommendation(direction_results)
-    _validate_rating_boundary(
-        _required_text(raw.get("rating_level"), "rating_level"),
-        direction_results,
-        recommendation,
-    )
+    total_score = sum(item.score for item in direction_results)
     allowed_evidence = {
         reference.evidence_unit_id
         for report in reports
@@ -242,7 +228,7 @@ def validate_overall_assessment_output(
         assessment_id=assessment_id,
         cohort_id=reports[0].cohort_id,
         case_id=reports[0].case_id,
-        rating_level=_required_text(raw.get("rating_level"), "rating_level"),
+        rating_level="",
         overall_judgment=_required_text(raw.get("overall_judgment"), "overall_judgment"),
         rating_rationale=rationale,
         core_risks=_text_list(raw.get("core_risks"), "core_risks"),
@@ -254,6 +240,7 @@ def validate_overall_assessment_output(
         source_direction_report_ids=source_report_ids,
         source_direction_ranking_sections=ranking_sections,
         evidence_refs=tuple(EvidenceReference(evidence_unit_id=item) for item in evidence_ids),
+        total_score=total_score,
         recommendation=recommendation,
         strong_constraint_failed_count=strong_failed_count,
         weak_constraint_failed_count=weak_failed_count,
@@ -279,7 +266,7 @@ def overall_assessment_to_markdown(assessment: EnterpriseOverallAssessment) -> s
         "# 客户风险评级报告",
         "",
         f"- 推进建议：{RECOMMENDATION_LABELS[assessment.recommendation]}",
-        f"- 客户风险评级：{assessment.rating_level}",
+        f"- 客户风险总分：{assessment.total_score}/100",
         f"- 强约束不通过：{assessment.strong_constraint_failed_count} 条",
         f"- 弱约束不通过：{assessment.weak_constraint_failed_count} 条",
         f"- 审核状态：{status}",
@@ -302,6 +289,7 @@ def overall_assessment_to_markdown(assessment: EnterpriseOverallAssessment) -> s
                     f"### {titles[item.section_id]}",
                     f"- 约束类型：{constraint_labels[item.constraint_level]}",
                     f"- 状态：{status_labels[item.status]}",
+                    f"- 方向分数：{item.score}/{SCORE_RULES[item.section_id]['max_score']}",
                     f"- 结论：{report_text(item.summary)}",
                     "",
                 )
@@ -397,6 +385,7 @@ def _build_direction_results(
     for section in GUIDELINE_SECTION_DEFINITIONS:
         item = by_section[section.section_id]
         status = _required_text(item.get("status"), "direction result status")
+        score = _score_value(item.get("score"), section.score_weight)
         trigger_code = item.get("strong_constraint_trigger_code")
         trigger_evidence_ids = item.get("strong_constraint_trigger_evidence_unit_ids", [])
         if trigger_code is not None and not isinstance(trigger_code, str):
@@ -437,6 +426,7 @@ def _build_direction_results(
                 constraint_level=section.constraint_level,
                 status=status,
                 summary=_required_text(item.get("summary"), "direction result summary"),
+                score=score,
                 strong_constraint_trigger_code=trigger_code,
                 strong_constraint_trigger_evidence_unit_ids=tuple(trigger_evidence_ids),
             )
@@ -472,71 +462,12 @@ def _recommendation(
     return strong_failed_count, weak_failed_count, "proceed_with_caution"
 
 
-def _validate_rating_boundary(
-    rating_level: str,
-    direction_results: tuple[FinalDirectionResult, ...],
-    recommendation: str,
-) -> None:
-    expected = expected_rating_level(direction_results)
-    if rating_level != expected:
-        raise ValueError("rating_level does not match fixed quality boundary")
-
-
-def expected_rating_level(
-    direction_results: tuple[FinalDirectionResult, ...],
-) -> str:
-    """按已校验的方向状态计算 21 级评级，不调用模型。"""
-    weak_failed = {
-        item.section_id
-        for item in direction_results
-        if item.constraint_level == "weak"
-        and item.section_id != "quantitative_assessment"
-        and item.status == "failed"
-    }
-    strong_failed_count = sum(
-        item.constraint_level == "strong" and item.status == "failed"
-        for item in direction_results
-    )
-    uncertain_count = sum(
-        item.section_id != "quantitative_assessment"
-        and item.status in {"conditional_passed", "insufficient_information"}
-        for item in direction_results
-    )
-    information_gap_count = sum(
-        item.section_id != "quantitative_assessment"
-        and item.status == "insufficient_information"
-        for item in direction_results
-    )
-    if strong_failed_count >= 2:
-        return "D1"
-    if strong_failed_count == 1:
-        return "C1"
-    if {
-        "enterprise_norms",
-        "financial_position",
-    }.issubset(weak_failed) and len(weak_failed) >= 3:
-        return "CC1"
-    if len(weak_failed) >= 5:
-        return "CCC1"
-    if len(weak_failed) == 4:
-        return "B1" if uncertain_count <= 2 else "B2"
-    if len(weak_failed) == 3:
-        return f"BB{_three_level(uncertain_count)}"
-    if len(weak_failed) == 2:
-        return f"BBB{_three_level(uncertain_count)}"
-    if len(weak_failed) == 1:
-        return f"A{_three_level(uncertain_count)}"
-    if information_gap_count:
-        return f"AA{_three_level(uncertain_count)}"
-    return f"AAA{_three_level(uncertain_count)}"
-
-
-def _three_level(uncertain_count: int) -> int:
-    if uncertain_count <= 1:
-        return 1
-    if uncertain_count <= 4:
-        return 2
-    return 3
+def _score_value(value: Any, maximum: int) -> int:
+    if not isinstance(value, int) or isinstance(value, bool):
+        raise ValueError("direction score must be an integer")
+    if not 0 <= value <= maximum:
+        raise ValueError(f"direction score must be between 0 and {maximum}")
+    return value
 
 
 def _peer_position(

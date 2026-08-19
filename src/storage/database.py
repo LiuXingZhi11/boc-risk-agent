@@ -62,12 +62,20 @@ def init_database(db_path: str | Path) -> None:
                 ("strong_constraint_failed_count", "INTEGER NOT NULL DEFAULT 0"),
                 ("weak_constraint_failed_count", "INTEGER NOT NULL DEFAULT 0"),
                 ("direction_results_json", "TEXT NOT NULL DEFAULT '[]'"),
+                ("total_score", "INTEGER NOT NULL DEFAULT 0"),
             ),
         )
+        _migrate_to_score_rating(connection)
 
 
 def _migrate_rating_levels(connection: sqlite3.Connection) -> None:
     """将旧 A-D 综合评定表迁移到兼容的中间评级表。"""
+    assessment_columns = {
+        row[1]
+        for row in connection.execute("PRAGMA table_info(enterprise_overall_assessments)")
+    }
+    if "total_score" in assessment_columns:
+        return
     legacy_exists = connection.execute(
         "SELECT 1 FROM sqlite_master WHERE type = 'table' "
         "AND name = 'enterprise_overall_assessments_legacy'"
@@ -167,75 +175,82 @@ def _migrate_rating_levels(connection: sqlite3.Connection) -> None:
 
 def _migrate_to_21_rating_levels(connection: sqlite3.Connection) -> None:
     """将旧评级表升级为 21 级，保留报告内容和方向状态。"""
+    assessment_columns = {
+        row[1]
+        for row in connection.execute("PRAGMA table_info(enterprise_overall_assessments)")
+    }
+    if "total_score" in assessment_columns:
+        return
+    # 旧的 9/21 级表统一在后续的总分迁移中重建，避免先后两次改表。
+    return
+
+
+def _migrate_to_score_rating(connection: sqlite3.Connection) -> None:
+    """将 21 级评级列改为可兼容总分的结构，保留旧等级作为历史字段。"""
     row = connection.execute(
         "SELECT sql FROM sqlite_master "
         "WHERE type = 'table' AND name = 'enterprise_overall_assessments'"
     ).fetchone()
     table_sql = (row[0] or "") if row else ""
-    if "'AAA1'" in table_sql and "'D1'" in table_sql:
+    if "total_score" in table_sql and "CHECK (rating_level IN" not in table_sql:
         return
-
-    connection.execute("DROP INDEX IF EXISTS idx_overall_assessments_lookup")
-    connection.execute(
-        "ALTER TABLE enterprise_overall_assessments "
-        "RENAME TO enterprise_overall_assessments_legacy_9_levels"
-    )
-    connection.executescript(
-        """
-        CREATE TABLE enterprise_overall_assessments (
-            assessment_id TEXT PRIMARY KEY,
-            cohort_id TEXT,
-            case_id TEXT NOT NULL,
-            rating_level TEXT NOT NULL CHECK (rating_level IN ('AAA1', 'AAA2', 'AAA3', 'AA1', 'AA2', 'AA3', 'A1', 'A2', 'A3', 'BBB1', 'BBB2', 'BBB3', 'BB1', 'BB2', 'BB3', 'B1', 'B2', 'CCC1', 'CC1', 'C1', 'D1')),
-            overall_judgment TEXT NOT NULL,
-            rating_rationale_json TEXT NOT NULL,
-            core_risks_json TEXT NOT NULL DEFAULT '[]',
-            mitigating_factors_json TEXT NOT NULL DEFAULT '[]',
-            rating_boundaries_json TEXT NOT NULL DEFAULT '[]',
-            verification_priorities_json TEXT NOT NULL DEFAULT '[]',
-            source_direction_report_ids_json TEXT NOT NULL,
-            source_direction_ranking_sections_json TEXT NOT NULL DEFAULT '[]',
-            evidence_refs_json TEXT NOT NULL,
-            recommendation TEXT NOT NULL DEFAULT 'conditional_proceed'
-                CHECK (recommendation IN ('proceed_with_caution', 'proceed_with_review', 'conditional_proceed', 'do_not_proceed')),
-            strong_constraint_failed_count INTEGER NOT NULL DEFAULT 0,
-            weak_constraint_failed_count INTEGER NOT NULL DEFAULT 0,
-            direction_results_json TEXT NOT NULL DEFAULT '[]',
-            is_experimental INTEGER NOT NULL DEFAULT 0 CHECK (is_experimental IN (0, 1)),
-            review_status TEXT NOT NULL DEFAULT 'pending'
-                CHECK (review_status IN ('pending', 'approved', 'rejected'))
-        );
-        INSERT INTO enterprise_overall_assessments (
-            assessment_id, cohort_id, case_id, rating_level, overall_judgment,
-            rating_rationale_json, core_risks_json, mitigating_factors_json,
-            rating_boundaries_json, verification_priorities_json,
-            source_direction_report_ids_json, source_direction_ranking_sections_json,
-            evidence_refs_json, recommendation, strong_constraint_failed_count,
-            weak_constraint_failed_count, direction_results_json, is_experimental,
-            review_status
+    if "total_score" not in table_sql or "CHECK (rating_level IN" in table_sql:
+        connection.execute("DROP INDEX IF EXISTS idx_overall_assessments_lookup")
+        connection.execute(
+            "ALTER TABLE enterprise_overall_assessments "
+            "RENAME TO enterprise_overall_assessments_legacy_score"
         )
-        SELECT assessment_id, cohort_id, case_id,
-            CASE rating_level
-                WHEN 'AAA' THEN 'AAA1' WHEN 'AA' THEN 'AA1'
-                WHEN 'A' THEN 'A1' WHEN 'BBB' THEN 'BBB1'
-                WHEN 'BB' THEN 'BB1' WHEN 'B' THEN 'B1'
-                WHEN 'CCC' THEN 'CCC1' WHEN 'CC' THEN 'CC1'
-                WHEN 'C' THEN 'C1' WHEN 'D' THEN 'D1'
-                ELSE 'AAA1'
-            END,
-            overall_judgment, rating_rationale_json, core_risks_json,
-            mitigating_factors_json, rating_boundaries_json,
-            verification_priorities_json, source_direction_report_ids_json,
-            source_direction_ranking_sections_json, evidence_refs_json,
-            recommendation, strong_constraint_failed_count,
-            weak_constraint_failed_count, direction_results_json,
-            is_experimental, review_status
-        FROM enterprise_overall_assessments_legacy_9_levels;
-        DROP TABLE enterprise_overall_assessments_legacy_9_levels;
-        CREATE INDEX idx_overall_assessments_lookup
-            ON enterprise_overall_assessments(cohort_id, case_id, review_status);
-        """
-    )
+        connection.executescript(
+            """
+            CREATE TABLE enterprise_overall_assessments (
+                assessment_id TEXT PRIMARY KEY,
+                cohort_id TEXT,
+                case_id TEXT NOT NULL,
+                rating_level TEXT NOT NULL DEFAULT '',
+                total_score INTEGER NOT NULL DEFAULT 0 CHECK (total_score BETWEEN 0 AND 100),
+                overall_judgment TEXT NOT NULL,
+                rating_rationale_json TEXT NOT NULL,
+                core_risks_json TEXT NOT NULL DEFAULT '[]',
+                mitigating_factors_json TEXT NOT NULL DEFAULT '[]',
+                rating_boundaries_json TEXT NOT NULL DEFAULT '[]',
+                verification_priorities_json TEXT NOT NULL DEFAULT '[]',
+                source_direction_report_ids_json TEXT NOT NULL,
+                source_direction_ranking_sections_json TEXT NOT NULL DEFAULT '[]',
+                evidence_refs_json TEXT NOT NULL,
+                recommendation TEXT NOT NULL DEFAULT 'conditional_proceed'
+                    CHECK (recommendation IN ('proceed_with_caution', 'proceed_with_review', 'conditional_proceed', 'do_not_proceed')),
+                strong_constraint_failed_count INTEGER NOT NULL DEFAULT 0,
+                weak_constraint_failed_count INTEGER NOT NULL DEFAULT 0,
+                direction_results_json TEXT NOT NULL DEFAULT '[]',
+                is_experimental INTEGER NOT NULL DEFAULT 0 CHECK (is_experimental IN (0, 1)),
+                review_status TEXT NOT NULL DEFAULT 'pending'
+                    CHECK (review_status IN ('pending', 'approved', 'rejected'))
+            );
+            INSERT INTO enterprise_overall_assessments (
+                assessment_id, cohort_id, case_id, rating_level, total_score,
+                overall_judgment, rating_rationale_json, core_risks_json,
+                mitigating_factors_json, rating_boundaries_json,
+                verification_priorities_json, source_direction_report_ids_json,
+                source_direction_ranking_sections_json, evidence_refs_json,
+                recommendation, strong_constraint_failed_count,
+                weak_constraint_failed_count, direction_results_json,
+                is_experimental, review_status
+            )
+            SELECT assessment_id, cohort_id, case_id, rating_level, total_score,
+                overall_judgment, rating_rationale_json, core_risks_json,
+                mitigating_factors_json, rating_boundaries_json,
+                verification_priorities_json, source_direction_report_ids_json,
+                source_direction_ranking_sections_json, evidence_refs_json,
+                recommendation, strong_constraint_failed_count,
+                weak_constraint_failed_count, direction_results_json,
+                is_experimental, review_status
+            FROM enterprise_overall_assessments_legacy_score;
+            DROP TABLE enterprise_overall_assessments_legacy_score;
+            CREATE INDEX idx_overall_assessments_lookup
+                ON enterprise_overall_assessments(cohort_id, case_id, review_status);
+            """
+        )
+        return
 
 
 def _migrate_optional_cohort_ids(connection: sqlite3.Connection) -> None:

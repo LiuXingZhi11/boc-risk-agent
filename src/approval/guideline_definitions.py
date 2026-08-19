@@ -72,6 +72,7 @@ class GuidelineSectionDefinition:
     max_comparison_card_chars: int = 2400
     review_status: str = "approved"
     constraint_level: str = "weak"
+    score_weight: int = 10
 
     def __post_init__(self) -> None:
         for name in ("section_id", "title"):
@@ -87,6 +88,8 @@ class GuidelineSectionDefinition:
             raise ValueError(f"invalid review_status: {self.review_status!r}")
         if self.constraint_level not in CONSTRAINT_LEVELS:
             raise ValueError(f"invalid constraint_level: {self.constraint_level!r}")
+        if not isinstance(self.score_weight, int) or self.score_weight <= 0:
+            raise ValueError("score_weight must be a positive integer")
 
 
 def _point(
@@ -344,24 +347,28 @@ GUIDELINE_SECTION_DEFINITIONS: tuple[GuidelineSectionDefinition, ...] = (
         "行业市场空间",
         ("market_size", "market_penetration"),
         ("市场规模和增长空间", "企业产品所处阶段和市场认可度", "替代或出海空间"),
+        score_weight=10,
     ),
     GuidelineSectionDefinition(
         "competition_landscape",
         "行业竞争格局",
         ("competition_barriers", "value_chain_position"),
         ("进退壁垒", "先发或后发优势", "上下游关系和竞争稳定性"),
+        score_weight=10,
     ),
     GuidelineSectionDefinition(
         "enterprise_norms",
         "企业规范性",
         ("governance_norms", "financial_norms"),
         ("治理和内部控制", "财务与管理规范", "法律和监管风险"),
+        score_weight=10,
     ),
     GuidelineSectionDefinition(
         "technology_strength",
         "技术实力",
         ("technology_advancedness", "technology_stability", "technology_commercialization"),
         ("技术先进性", "技术稳定性", "技术转化为商业利益的可行性"),
+        score_weight=15,
     ),
     GuidelineSectionDefinition(
         "equity_structure",
@@ -369,30 +376,35 @@ GUIDELINE_SECTION_DEFINITIONS: tuple[GuidelineSectionDefinition, ...] = (
         ("equity_control",),
         ("控制权稳定性", "股东关系和后续变动风险"),
         constraint_level="strong",
+        score_weight=10,
     ),
     GuidelineSectionDefinition(
         "transformation",
         "企业转型发展情况",
         ("transformation_support",),
         ("技术和产品积累", "资金、供应链和客户等配套支撑"),
+        score_weight=8,
     ),
     GuidelineSectionDefinition(
         "core_team",
         "核心团队",
         ("core_team",),
         ("核心创始人和关键人员", "团队背景与稳定性"),
+        score_weight=8,
     ),
     GuidelineSectionDefinition(
         "equity_financing",
         "股权融资影响",
         ("financing_valuation_and_pace", "investment_institutions_and_agreements"),
         ("估值和融资节奏", "投资机构专业性", "投资协议约束"),
+        score_weight=8,
     ),
     GuidelineSectionDefinition(
         "financial_position",
         "财务情况",
         ("financial_position",),
         ("经营规模", "盈利和现金流", "债务和持续经营基础"),
+        score_weight=12,
     ),
     GuidelineSectionDefinition(
         "quantitative_assessment",
@@ -400,6 +412,7 @@ GUIDELINE_SECTION_DEFINITIONS: tuple[GuidelineSectionDefinition, ...] = (
         ("quantitative_assessment",),
         ("指标口径", "样本范围", "排名适用性和局限"),
         ranking_enabled=False,
+        score_weight=4,
     ),
     GuidelineSectionDefinition(
         "aml_sanctions",
@@ -407,6 +420,7 @@ GUIDELINE_SECTION_DEFINITIONS: tuple[GuidelineSectionDefinition, ...] = (
         ("aml_and_sanctions",),
         ("客户和交易对手识别", "监管与制裁暴露", "已披露合规事项"),
         constraint_level="strong",
+        score_weight=5,
     ),
 )
 
@@ -443,6 +457,8 @@ def validate_guideline_definitions() -> None:
             raise ValueError(f"point {point.point_id} references unknown section")
         if point.review_status != "approved":
             raise ValueError(f"point {point.point_id} is not approved")
+    if sum(section.score_weight for section in GUIDELINE_SECTION_DEFINITIONS) != 100:
+        raise ValueError("guideline score weights must sum to 100")
 
 
 validate_guideline_definitions()

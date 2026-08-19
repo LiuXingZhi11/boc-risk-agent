@@ -33,7 +33,7 @@ def build_action_recommendation_messages(
     """只向模型提供已经形成的评级结论和方向摘要。"""
     package: dict[str, Any] = {
         "enterprise_name": enterprise_name,
-        "rating_level": assessment.rating_level,
+        "total_score": assessment.total_score,
         "recommendation": assessment.recommendation,
         "strong_constraint_failed_count": assessment.strong_constraint_failed_count,
         "weak_constraint_failed_count": assessment.weak_constraint_failed_count,

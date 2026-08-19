@@ -14,6 +14,8 @@
 
 历史案例、相似案例、旧金融风险案例结构化流程和本地 Embedding RAG 不属于当前系统。
 
+审批指引的图片转写参考位于 `docs/business/授信审批图片文字提取.md`；它不是运行时提示词。运行时审批规则由 `src/approval/guideline_definitions.py` 和 `prompts/logic/授信审批逻辑规则.md` 提供。
+
 ## 二、主要数据流
 
 ```text

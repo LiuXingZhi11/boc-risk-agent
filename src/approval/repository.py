@@ -416,7 +416,7 @@ class ApprovalRepository:
             connection.execute(
                 """
                 INSERT OR REPLACE INTO enterprise_overall_assessments (
-                    assessment_id, cohort_id, case_id, rating_level, overall_judgment,
+                    assessment_id, cohort_id, case_id, rating_level, total_score, overall_judgment,
                     rating_rationale_json, core_risks_json, mitigating_factors_json,
                     rating_boundaries_json, verification_priorities_json,
                     source_direction_report_ids_json,
@@ -424,13 +424,14 @@ class ApprovalRepository:
                     recommendation, strong_constraint_failed_count,
                     weak_constraint_failed_count, direction_results_json,
                     is_experimental, review_status
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     assessment.assessment_id,
                     assessment.cohort_id,
                     assessment.case_id,
                     assessment.rating_level,
+                    assessment.total_score,
                     assessment.overall_judgment,
                     json.dumps(
                         [item.__dict__ for item in assessment.rating_rationale],
@@ -628,6 +629,7 @@ def _overall_assessment_from_row(row) -> EnterpriseOverallAssessment:
         cohort_id=row["cohort_id"],
         case_id=row["case_id"],
         rating_level=row["rating_level"],
+        total_score=row["total_score"] if "total_score" in row.keys() else 0,
         overall_judgment=row["overall_judgment"],
         rating_rationale=tuple(
             OverallAssessmentRationale(**item)

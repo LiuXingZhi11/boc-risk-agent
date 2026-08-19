@@ -94,6 +94,7 @@ def _raw(package: dict, *, rating_level: str = "AAA3") -> dict:
         {
             "section_id": section.section_id,
             "status": "conditional_passed",
+            "score": section.score_weight,
             "summary": f"{section.title}当前材料支持审慎判断。",
             "strong_constraint_trigger_code": None,
             "strong_constraint_trigger_evidence_unit_ids": [],
@@ -134,21 +135,17 @@ def test_overall_assessment_validates_full_direction_inputs_and_markdown():
         "assessment-a", package, _reports(), _rankings(), _raw(package)
     )
 
-    assert assessment.rating_level == "AAA3"
+    assert assessment.rating_level == ""
+    assert assessment.total_score == 100
     assert len(assessment.rating_rationale) == 5
     assert len(assessment.source_direction_report_ids) == 11
     assert assessment.recommendation == "proceed_with_caution"
     assert len(assessment.direction_results) == 11
-    assert "客户风险评级：AAA3" in overall_assessment_to_markdown(assessment)
+    assert "客户风险总分：100/100" in overall_assessment_to_markdown(assessment)
 
 
-def test_rating_level_order_contains_requested_21_levels():
-    assert len(RATING_LEVEL_ORDER) == 21
-    assert RATING_LEVEL_ORDER == (
-        "AAA1", "AAA2", "AAA3", "AA1", "AA2", "AA3",
-        "A1", "A2", "A3", "BBB1", "BBB2", "BBB3",
-        "BB1", "BB2", "BB3", "B1", "B2", "CCC1", "CC1", "C1", "D1",
-    )
+def test_direction_score_weights_sum_to_100():
+    assert sum(section.score_weight for section in GUIDELINE_SECTION_DEFINITIONS) == 100
 
 
 def test_overall_assessment_can_run_without_peer_rankings():
@@ -172,11 +169,13 @@ def test_overall_assessment_can_run_without_peer_rankings():
     assert assessment.source_direction_ranking_sections == ()
 
 
-def test_overall_assessment_rejects_unknown_rating_and_derives_source_references():
+def test_overall_assessment_rejects_out_of_range_score_and_derives_source_references():
     package = _package()
-    with pytest.raises(ValueError, match="rating_level"):
+    raw = _raw(package)
+    raw["direction_results"][0]["score"] = GUIDELINE_SECTION_DEFINITIONS[0].score_weight + 1
+    with pytest.raises(ValueError, match="direction score"):
         validate_overall_assessment_output(
-            "assessment-a", package, _reports(), _rankings(), _raw(package, rating_level="E")
+            "assessment-a", package, _reports(), _rankings(), raw
         )
     raw = _raw(package)
     raw["source_direction_report_ids"] = []
@@ -257,27 +256,18 @@ def test_quantitative_assessment_does_not_fail_or_count_as_enterprise_risk():
         )
 
 
-def test_final_report_rating_boundaries_cover_aa_and_cc():
+def test_direction_scores_are_preserved_and_totalled():
     package = _package()
-    raw = _raw(package, rating_level="AA3")
-    next(
-        item for item in raw["direction_results"] if item["section_id"] == "core_team"
-    )["status"] = "insufficient_information"
-    assert validate_overall_assessment_output(
+    raw = _raw(package)
+    raw["direction_results"][0]["score"] = 3
+    assessment = validate_overall_assessment_output(
         "assessment-b", package, _reports(), _rankings(), raw
-    ).rating_level == "AA3"
-
-    raw = _raw(package, rating_level="CC1")
-    for section_id in ("enterprise_norms", "financial_position", "market_space"):
-        next(
-            item for item in raw["direction_results"] if item["section_id"] == section_id
-        )["status"] = "failed"
-    assert validate_overall_assessment_output(
-        "assessment-d", package, _reports(), _rankings(), raw
-    ).rating_level == "CC1"
+    )
+    assert assessment.direction_results[0].score == 3
+    assert assessment.total_score == 93
 
 
-def test_final_report_rating_boundaries_split_weak_failures_into_twenty_one_levels():
+def test_direction_score_changes_do_not_change_recommendation_rules():
     package = _package()
     weak_sections = [
         section.section_id
@@ -285,17 +275,15 @@ def test_final_report_rating_boundaries_split_weak_failures_into_twenty_one_leve
         if section.constraint_level == "weak"
         and section.section_id != "quantitative_assessment"
     ]
-    expected = {1: "A3", 2: "BBB3", 3: "BB3", 4: "B2", 5: "CCC1"}
-    for count, rating in expected.items():
-        raw = _raw(package, rating_level=rating)
-        for section_id in weak_sections[:count]:
-            next(
-                item for item in raw["direction_results"]
-                if item["section_id"] == section_id
-            )["status"] = "failed"
-        assert validate_overall_assessment_output(
-            f"assessment-{rating}", package, _reports(), _rankings(), raw
-        ).rating_level == rating
+    raw = _raw(package)
+    for section_id in weak_sections[:3]:
+        next(
+            item for item in raw["direction_results"]
+            if item["section_id"] == section_id
+        )["status"] = "failed"
+    assert validate_overall_assessment_output(
+        "assessment-low", package, _reports(), _rankings(), raw
+    ).recommendation == "do_not_proceed"
 
 
 def test_final_report_recommendations_follow_a_to_d_boundaries():
@@ -349,7 +337,7 @@ def test_final_report_repair_prompt_restates_strong_constraint_and_rating_rules(
 
     prompt = _build_format_repair_messages(_package(), _raw(_package()), ValueError("test"))[-1]["content"]
     assert "hard trigger code" in prompt
-    assert "CCC" in prompt and "CC" in prompt
+    assert "total_score" in prompt and "max_score" in prompt
 
 
 def test_experimental_assessment_cannot_be_approved_and_persists(tmp_path):
@@ -435,5 +423,5 @@ def test_overall_assessment_repairs_one_invalid_model_format(monkeypatch):
         _rankings(),
         config=GenerationConfig(mode="thinking"),
     )
-    assert assessment.rating_level == "AAA3"
+    assert assessment.total_score == 100
     assert len(calls) == 2

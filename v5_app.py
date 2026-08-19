@@ -683,7 +683,7 @@ def _render_final_approval_report(database: str, detail: dict[str, object]) -> N
     }
     columns = st.columns(4)
     columns[0].metric("推进建议", recommendation_labels[assessment["recommendation"]])
-    columns[1].metric("客户风险评级", assessment["rating_level"])
+    columns[1].metric("客户风险总分", f"{assessment['total_score']}/100")
     columns[2].metric("强约束不通过", f"{assessment['strong_constraint_failed_count']} 条")
     columns[3].metric("弱约束不通过", f"{assessment['weak_constraint_failed_count']} 条")
     st.caption(f"审核状态：{assessment['review_status']}")
@@ -1452,7 +1452,7 @@ def _guideline_approval_workspace(database: str) -> None:
     assessment_options = {
         (
             f"{enterprise_names.get(item['case_id'], item['case_id'])} · "
-            f"{item['cohort_id'] or '单企业分析'} · {item['rating_level']} · {item['review_status']} · "
+            f"{item['cohort_id'] or '单企业分析'} · {item['total_score']}/100 · {item['review_status']} · "
             f"{item['assessment_id']}"
         ): item["assessment_id"]
         for item in assessment_rows
