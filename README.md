@@ -19,7 +19,7 @@ PDF / HTML
 
 所有生产模型调用默认使用 `deepseek-v4-flash`。模型生成的画像和报告均为 `pending`，不能自动成为正式结论。
 
-DeepSeek 的模型名、API 地址和密钥统一维护在本地 `config/model_config.yaml`；该文件不会提交到 Git。新环境按同样字段创建该文件后填写。
+DeepSeek 的模型名、API 地址和密钥统一维护在 `config/model_config.yaml`。该文件会随项目提交；部署到公开仓库前请确认其中没有真实密钥，运行环境再填写 `api_key`。
 
 ## 目标流程
 

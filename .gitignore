@@ -1,7 +1,6 @@
 # Local secrets
 .env
 .streamlit/secrets.toml
-config/model_config.yaml
 
 # Python caches and test output
 __pycache__/

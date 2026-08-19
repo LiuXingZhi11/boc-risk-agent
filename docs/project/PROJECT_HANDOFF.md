@@ -78,7 +78,7 @@ data/current_project.db   当前工作数据库
 config/model_config.yaml
 ```
 
-该文件被 `.gitignore` 忽略，不能提交到 Git。当前默认模型为 `deepseek-v4-flash`；事实抽取使用 `sampling`，检索、主题分析、审批、排名和报告使用 `thinking`。MCP 的 QCC 密钥仍由 MCP 配置中的 `auth_env` 指定。
+该文件会随项目提交，但公开仓库中不得填写真实密钥，运行环境需要配置 `api_key`。当前默认模型为 `deepseek-v4-flash`；事实抽取使用 `sampling`，检索、主题分析、审批、排名和报告使用 `thinking`。MCP 的 QCC 密钥仍由 MCP 配置中的 `auth_env` 指定。
 
 ## 五、运行命令
 
