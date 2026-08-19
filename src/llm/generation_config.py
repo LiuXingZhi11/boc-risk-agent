@@ -3,8 +3,10 @@
 from __future__ import annotations
 
 import math
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
+
+from src.config.settings import get_settings
 
 
 VALID_MODES = {"thinking", "sampling"}
@@ -14,7 +16,7 @@ REQUEST_TIMEOUT_SECONDS = 180
 
 @dataclass(frozen=True)
 class GenerationConfig:
-    model: str = "deepseek-v4-flash"
+    model: str = field(default_factory=lambda: get_settings().model)
     mode: str = "thinking"
     temperature: float = 0.2
     reasoning_effort: str = "high"

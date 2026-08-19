@@ -19,6 +19,8 @@ PDF / HTML
 
 所有生产模型调用默认使用 `deepseek-v4-flash`。模型生成的画像和报告均为 `pending`，不能自动成为正式结论。
 
+DeepSeek 的模型名、API 地址和密钥统一维护在本地 `config/model_config.yaml`；该文件不会提交到 Git。新环境按同样字段创建该文件后填写。
+
 ## 目标流程
 
 当前以风险评级指引方向为主线：
@@ -52,7 +54,7 @@ streamlit run v5_app.py
 常用命令：
 
 ```powershell
-python -m pytest -q -p no:cacheprovider --ignore=tests\test_app.py --ignore=tests\test_streamlit_app.py
+python -m pytest -q -p no:cacheprovider
 ```
 
 ## 主要目录
@@ -64,15 +66,21 @@ src/evidence/             EvidenceUnit 存储与查询
 src/profiles/             企业画像、主题分析和报告
 src/industry/             行业背景画像
 src/ontology/             Ontology 加载与校验
+src/ui/                   Streamlit 页面服务，按工作区拆分
 prompts/data/             企业画像本体与数据层模型协议
 prompts/logic/            分析、排名和审批模型协议
 prompts/action/           审批后的人工跟进规则
 scripts/                  命令行入口
 materials/                企业 PDF、行业研报与审批指引图片
-docs/                     项目、业务与审查手册
-data/                     SQLite 数据库、报告、审查记录与运行日志
-eval_data/                测试和评估产物，不是架构文档
+config/                   模型、MCP 和 Skill 配置
+authorization/            身份与字段可见性配置
+skills/                   Skill 清单和示例
+docs/                     当前项目、业务与技术手册
+data/                     当前 SQLite 数据库和上传材料
+eval_data/                当前自动化测试样例
 ```
+
+根目录 `skills/` 存放 Skill 定义文件；`src/platform/skills/` 和 `src/platform/mcp/` 存放对应的 Python 运行代码。配置和定义与运行代码分离，业务规则不需要写入 Python。
 
 ## 使用边界
 

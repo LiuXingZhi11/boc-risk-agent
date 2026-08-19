@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""初始化金融风险案例 SQLite 数据库。"""
+"""初始化科技型企业风险评级 SQLite 数据库。"""
 
 from __future__ import annotations
 
@@ -15,12 +15,12 @@ from src.storage.database import init_database
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="初始化风险案例 SQLite 数据库")
+    parser = argparse.ArgumentParser(description="初始化科技型企业风险评级 SQLite 数据库")
     parser.add_argument(
         "--database",
         type=Path,
-        default=PROJECT_ROOT / "data" / "risk_cases.db",
-        help="数据库文件路径，默认使用 data/risk_cases.db。",
+        default=PROJECT_ROOT / "data" / "current_project.db",
+        help="数据库文件路径，默认使用 data/current_project.db。",
     )
     return parser
 

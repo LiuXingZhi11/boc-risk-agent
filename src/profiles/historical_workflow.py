@@ -1,4 +1,4 @@
-"""历史案例固定调查领域的画像候选流程。"""
+"""兼容旧 profile_type 的固定调查领域画像候选流程。"""
 
 from __future__ import annotations
 

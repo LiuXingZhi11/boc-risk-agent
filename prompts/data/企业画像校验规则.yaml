@@ -1,0 +1,17 @@
+# 企业画像校验规则
+#
+# 本文件记录跨字段、跨事实的通用校验约束。
+# 具体字段的类型、枚举和必填要求仍保存在企业画像本体.yaml的字段定义中。
+
+constraints:
+  - accepted_profile_item_requires_evidence
+  - enterprise_claim_cannot_be_confirmed_automatically
+  - regulatory_finding_requires_regulatory_evidence
+  - judicial_finding_requires_judicial_evidence
+  - ratio_must_be_between_zero_and_one
+  - integer_count_must_be_non_negative
+  - money_requires_currency
+  - financial_metric_requires_reporting_period
+  - conflicting_values_must_coexist
+  - unknown_must_not_be_guessed
+  - historical_result_cannot_transfer_to_current_profile

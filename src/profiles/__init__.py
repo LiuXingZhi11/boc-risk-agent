@@ -1,4 +1,4 @@
-"""历史企业画像和当前企业画像。"""
+"""企业画像候选、分析和审核模块。"""
 
 from .models import (
     CurrentEnterpriseProfile,

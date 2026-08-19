@@ -1,0 +1,9 @@
+cases:
+  - id: basic
+    description: 最小运行验证
+    input:
+      company_name: 示例企业
+    expect:
+      must_load_tools:
+        - fake-company:get_company_registration_info
+      max_tool_calls: 3

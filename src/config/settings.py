@@ -1,4 +1,4 @@
-"""从环境变量和项目根目录的 .env 读取运行配置。"""
+"""读取统一模型配置及其他运行参数。"""
 
 from __future__ import annotations
 
@@ -6,8 +6,11 @@ import os
 from dataclasses import dataclass, field
 from pathlib import Path
 
+import yaml
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+MODEL_CONFIG_PATH = PROJECT_ROOT / "config" / "model_config.yaml"
 
 
 def _load_dotenv_fallback(path: Path) -> None:
@@ -36,6 +39,22 @@ def _load_dotenv() -> None:
         load_dotenv(env_path, override=False)
 
 
+def load_model_config(path: str | Path | None = None) -> dict[str, str]:
+    """读取统一的模型配置文件。"""
+    config_path = Path(path) if path is not None else MODEL_CONFIG_PATH
+    if not config_path.exists():
+        return {}
+    with config_path.open("r", encoding="utf-8") as handle:
+        raw = yaml.safe_load(handle) or {}
+    if not isinstance(raw, dict):
+        raise ValueError("模型配置文件顶层必须是对象")
+    return {
+        str(key): str(value).strip()
+        for key, value in raw.items()
+        if value is not None
+    }
+
+
 @dataclass(frozen=True)
 class Settings:
     """模型和外部服务运行配置。"""
@@ -43,17 +62,18 @@ class Settings:
     api_key: str | None = field(default=None, repr=False)
     base_url: str = "https://api.deepseek.com"
     model: str = "deepseek-v4-flash"
-    embedding_model: str = "BAAI/bge-base-zh-v1.5"
-    model_cache_dir: str = str(PROJECT_ROOT / "models")
 
 
 def get_settings() -> Settings:
     """读取当前进程环境；调用时读取以便测试和 CLI 覆盖环境变量。"""
     _load_dotenv()
+    model_config = load_model_config()
     return Settings(
-        api_key=os.getenv("DEEPSEEK_API_KEY"),
-        base_url=os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com"),
-        model=os.getenv("DEEPSEEK_MODEL", "deepseek-v4-flash"),
-        embedding_model=os.getenv("EMBEDDING_MODEL", "BAAI/bge-base-zh-v1.5"),
-        model_cache_dir=os.getenv("MODEL_CACHE_DIR", str(PROJECT_ROOT / "models")),
+        api_key=model_config.get("api_key") or os.getenv("DEEPSEEK_API_KEY"),
+        base_url=model_config.get("base_url") or os.getenv(
+            "DEEPSEEK_BASE_URL", "https://api.deepseek.com"
+        ),
+        model=model_config.get("model") or os.getenv(
+            "DEEPSEEK_MODEL", "deepseek-v4-flash"
+        ),
     )

@@ -1,6 +1,7 @@
 # Local secrets
 .env
 .streamlit/secrets.toml
+config/model_config.yaml
 
 # Python caches and test output
 __pycache__/
@@ -8,15 +9,13 @@ __pycache__/
 .pytest_cache/
 
 # Local databases and generated runtime data
-data/
+/data/
 
 # Source materials and local model files are not versioned
 materials/
-models/
 *.pdf
 *.jpg
 *.jpeg
-risk_ontology_source_pack_v1/downloaded_sources_zijing/
 
 # Editor and operating-system files
 .vscode/

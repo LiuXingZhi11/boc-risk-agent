@@ -1,0 +1,41 @@
+schema_version: 1
+
+id: my_skill_id
+name: 我的 Skill
+version: 0.1.0
+description: >
+  描述这个 Skill 的业务目的。
+owners:
+  - team-example
+
+enabled: false
+priority: 100
+
+applies_to:
+  - profile.discovery
+
+activation:
+  mode: explicit
+
+prompt:
+  file: SKILL.md
+
+tools:
+  - server: fake-company
+    name: get_company_registration_info
+
+limits:
+  max_tool_calls: 3
+  timeout_seconds: 60
+
+context:
+  required:
+    - company_name
+  optional:
+    - unified_social_credit_code
+
+output:
+  type: advisory
+
+persistence:
+  external_tool_results: trace_only

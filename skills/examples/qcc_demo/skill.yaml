@@ -1,0 +1,39 @@
+schema_version: 1
+
+id: qcc_demo
+name: 企查查平台演示 Skill
+version: 0.1.0
+description: >
+  仅用于验证 MCP/Skill 平台的加载、Tool allowlist 和审计接口，不是正式风控 Skill。
+owners:
+  - platform-demo
+
+enabled: false
+priority: 100
+
+applies_to:
+  - profile.discovery
+
+activation:
+  mode: explicit
+
+prompt:
+  file: SKILL.md
+
+tools:
+  - server: fake-company
+    name: get_company_registration_info
+
+limits:
+  max_tool_calls: 3
+  timeout_seconds: 60
+
+context:
+  required:
+    - company_name
+
+output:
+  type: advisory
+
+persistence:
+  external_tool_results: trace_only

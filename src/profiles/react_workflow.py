@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import re
-from collections.abc import Callable, Iterable
+from collections.abc import Callable, Iterable, Sequence
 from typing import Any
 
 from langchain.agents import create_agent
@@ -19,6 +19,8 @@ from src.evidence.service import EvidenceQueryService
 from src.llm.deepseek_client import call_deepseek
 from src.llm.generation_config import GenerationConfig, REQUEST_TIMEOUT_SECONDS
 from src.prompts import render_prompt_section
+from src.platform.skills.agent_adapter import AgentSkillAdapter
+from src.platform.skills.runtime import SkillRuntimeContext
 from .extraction import (
     PROFILE_DOMAINS,
     PROFILE_DOMAIN_PURPOSES,
@@ -150,11 +152,13 @@ class ControlledReactProfileWorkflow:
         model_factory: Callable[[GenerationConfig], BaseChatModel] = build_deepseek_chat_model,
         agent_factory: Callable[..., Any] = build_react_agent,
         extractor: Callable[..., dict[str, Any]] = extract_profile_candidates,
+        skill_adapter: AgentSkillAdapter | None = None,
     ) -> None:
         self.evidence_service = evidence_service
         self.model_factory = model_factory
         self.agent_factory = agent_factory
         self.extractor = extractor
+        self.skill_adapter = skill_adapter
 
     def run_current_domain(
         self,
@@ -167,6 +171,7 @@ class ControlledReactProfileWorkflow:
         query: str = "",
         limits: ReactLimits = ReactLimits(),
         guide_text: str = "",
+        skill_ids: Sequence[str] = (),
     ) -> ReactProfileRun:
         if domain not in REACT_SUPPORTED_DOMAINS:
             raise ValueError(
@@ -191,6 +196,23 @@ class ControlledReactProfileWorkflow:
             query=query,
             limits=limits,
         )
+        skill_metadata: dict[str, Any] | None = None
+        if skill_ids:
+            if self.skill_adapter is None:
+                raise ValueError("显式使用 Skill 时必须提供 skill_adapter")
+            extension = self.skill_adapter.build_extension_sync(
+                agent_scope="profile.discovery",
+                skill_ids=tuple(skill_ids),
+                runtime_context=SkillRuntimeContext(
+                    run_id=f"profile:{case_id}:{domain}",
+                    case_id=case_id,
+                    domain=domain,
+                    agent_scope="profile.discovery",
+                ),
+            )
+            tools.extend(extension.tools)
+            system_prompt = f"{system_prompt}\n\n{extension.system_prompt_suffix}"
+            skill_metadata = extension.metadata
         agent = self.agent_factory(
             model=model,
             tools=tools,
@@ -211,6 +233,8 @@ class ControlledReactProfileWorkflow:
             }
         )
         api_meta = collect_agent_api_meta(state.get("messages", []))
+        if skill_metadata is not None:
+            api_meta.append({"stage": "skill_runtime", **skill_metadata})
         for record in api_meta:
             record["stage"] = "react_evidence_discovery"
         if not session.read_units:

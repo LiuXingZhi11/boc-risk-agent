@@ -1,66 +1,5 @@
 PRAGMA foreign_keys = ON;
 
-CREATE TABLE IF NOT EXISTS cases (
-    case_id TEXT PRIMARY KEY,
-    case_name TEXT NOT NULL,
-    raw_text TEXT NOT NULL,
-    source TEXT,
-    case_type TEXT,
-    target_fact_id TEXT,
-    target_uncertainty TEXT,
-    review_status TEXT NOT NULL DEFAULT 'pending'
-        CHECK (review_status IN ('pending', 'approved', 'rejected')),
-    created_at TEXT NOT NULL,
-    updated_at TEXT NOT NULL
-);
-
-CREATE TABLE IF NOT EXISTS facts (
-    fact_id TEXT NOT NULL,
-    case_id TEXT NOT NULL,
-    statement TEXT NOT NULL,
-    source_excerpt TEXT NOT NULL,
-    category TEXT NOT NULL,
-    assertion_type TEXT NOT NULL,
-    event_time TEXT,
-    knowledge_status TEXT NOT NULL,
-    uncertainty TEXT,
-    PRIMARY KEY (case_id, fact_id),
-    FOREIGN KEY (case_id) REFERENCES cases(case_id) ON DELETE CASCADE
-);
-
-CREATE TABLE IF NOT EXISTS rule_hypotheses (
-    rule_id TEXT NOT NULL,
-    case_id TEXT NOT NULL,
-    rule_hypothesis TEXT NOT NULL,
-    supporting_fact_ids_json TEXT NOT NULL,
-    uncertainty TEXT,
-    generalization_status TEXT NOT NULL,
-    review_status TEXT NOT NULL DEFAULT 'pending'
-        CHECK (review_status IN ('pending', 'approved', 'rejected')),
-    PRIMARY KEY (case_id, rule_id),
-    FOREIGN KEY (case_id) REFERENCES cases(case_id) ON DELETE CASCADE
-);
-
-CREATE TABLE IF NOT EXISTS processing_runs (
-    run_id TEXT PRIMARY KEY,
-    case_id TEXT,
-    stage TEXT NOT NULL,
-    model TEXT,
-    generation_mode TEXT,
-    reasoning_effort TEXT,
-    temperature REAL,
-    prompt_tokens INTEGER,
-    completion_tokens INTEGER,
-    total_tokens INTEGER,
-    status TEXT NOT NULL,
-    error_message TEXT,
-    created_at TEXT NOT NULL
-);
-
-CREATE INDEX IF NOT EXISTS idx_facts_case_id ON facts(case_id);
-CREATE INDEX IF NOT EXISTS idx_rules_case_id ON rule_hypotheses(case_id);
-CREATE INDEX IF NOT EXISTS idx_runs_case_id ON processing_runs(case_id);
-
 CREATE TABLE IF NOT EXISTS sources (
     source_id TEXT PRIMARY KEY,
     case_id TEXT NOT NULL,
@@ -140,52 +79,6 @@ CREATE TABLE IF NOT EXISTS profile_relations (
     PRIMARY KEY (profile_id, relation_id),
     FOREIGN KEY (profile_id) REFERENCES profiles(profile_id) ON DELETE CASCADE
 );
-
-CREATE TABLE IF NOT EXISTS comparison_cards (
-    card_id TEXT PRIMARY KEY,
-    profile_id TEXT NOT NULL,
-    case_id TEXT NOT NULL,
-    enterprise_name TEXT NOT NULL,
-    profile_type TEXT NOT NULL CHECK (profile_type IN ('historical', 'current')),
-    ontology_version TEXT NOT NULL,
-    profile_hash TEXT NOT NULL,
-    dimensions_json TEXT NOT NULL,
-    generation_method TEXT NOT NULL DEFAULT 'llm',
-    model TEXT,
-    review_status TEXT NOT NULL DEFAULT 'pending'
-        CHECK (review_status IN ('pending', 'approved', 'rejected')),
-    FOREIGN KEY (profile_id) REFERENCES profiles(profile_id) ON DELETE CASCADE
-);
-
-CREATE INDEX IF NOT EXISTS idx_comparison_cards_profile
-    ON comparison_cards(profile_id);
-CREATE INDEX IF NOT EXISTS idx_comparison_cards_lookup
-    ON comparison_cards(profile_type, review_status);
-
-CREATE TABLE IF NOT EXISTS historical_case_analyses (
-    analysis_id TEXT PRIMARY KEY,
-    profile_id TEXT NOT NULL,
-    case_id TEXT NOT NULL,
-    enterprise_name TEXT NOT NULL,
-    ontology_version TEXT NOT NULL,
-    profile_hash TEXT NOT NULL,
-    case_summary TEXT NOT NULL,
-    outcome_status TEXT NOT NULL CHECK (outcome_status IN ('disclosed', 'partially_disclosed', 'not_disclosed')),
-    outcomes_json TEXT NOT NULL DEFAULT '[]',
-    factors_json TEXT NOT NULL DEFAULT '[]',
-    review_directions_json TEXT NOT NULL DEFAULT '[]',
-    applicability_limits_json TEXT NOT NULL DEFAULT '[]',
-    information_gaps_json TEXT NOT NULL DEFAULT '[]',
-    generation_method TEXT NOT NULL DEFAULT 'llm',
-    model TEXT,
-    review_status TEXT NOT NULL DEFAULT 'pending' CHECK (review_status IN ('pending', 'approved', 'rejected')),
-    api_meta_json TEXT NOT NULL DEFAULT '{}',
-    debug_json TEXT NOT NULL DEFAULT '{}',
-    FOREIGN KEY (profile_id) REFERENCES profiles(profile_id) ON DELETE CASCADE
-);
-
-CREATE INDEX IF NOT EXISTS idx_case_analyses_profile ON historical_case_analyses(profile_id);
-CREATE INDEX IF NOT EXISTS idx_case_analyses_review ON historical_case_analyses(review_status);
 
 CREATE TABLE IF NOT EXISTS profile_topic_analyses (
     profile_id TEXT NOT NULL,

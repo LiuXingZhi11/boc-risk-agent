@@ -1,0 +1,293 @@
+# 企业画像字段语义
+#
+# 本文件是业务人员可维护文件。只维护字段的中文名称、业务解释、同义词和抽取边界。
+# 不要在这里新增或修改字段 ID、字段类型、枚举值、关系或数据库接口。
+
+fields:
+  enterprise.legal_name:
+    label: 法定名称
+    description: 报告所涉企业的完整法定注册名称，用于确认画像主体。
+    synonyms: [法定名称, 注册名称, 公司全称, 发行人全称]
+    include_when: [报告封面、发行人基本情况或工商信息明确给出的完整名称]
+    exclude_when: [本公司, 发行人, 公司, 企业等代称；未经原文确认的简称]
+    extraction_notes: [必须逐字保留完整名称，不要把报告中的代称当作企业名称]
+  enterprise.founded_date:
+    label: 成立时间
+    description: 企业依法设立或注册成立的日期。
+    synonyms: [成立日期, 成立于, 注册成立日期, 设立日期]
+    include_when: [原文明确说明企业设立或成立日期]
+    exclude_when: [上市日期, 改制日期, 注册资本变更日期, 报告发布日期]
+    extraction_notes: [保留原文日期；无法确定具体日期时不要自行补全]
+  enterprise.business_stage:
+    label: 企业发展阶段
+    description: 原文明确使用的企业发展阶段，不根据规模或成立年限推断。
+    synonyms: [初创期, 成长期, 成熟期, 转型期, 发展阶段]
+    include_when: [原文直接使用初创、成长、成熟、转型等阶段表述]
+    exclude_when: [根据成立年限、收入规模、上市年限或业务描述推断的阶段]
+    extraction_notes: [仅保留原文明确的阶段词，不能把模型判断写成事实]
+  enterprise.main_business:
+    label: 主营业务
+    description: 企业主要提供的产品、服务或业务类别，用于说明经营内容。
+    synonyms: [主营业务, 主要业务, 业务范围, 主要产品和服务, 经营范围]
+    include_when: [原文明确披露的主营产品、服务或业务类别]
+    exclude_when: [单一客户, 供应商, 研发项目, 募投项目, 仅作为技术属性出现的词语]
+    extraction_notes: [多项业务可以概括，但每项都必须有原文证据]
+  ownership.controller:
+    label: 实际控制人
+    description: 依法或依披露材料能够认定对企业实施实际控制的个人或组织。
+    synonyms: [实际控制人, 控制人, 控制关系, 控制权]
+    include_when: [原文明确认定的实际控制人或控制关系]
+    exclude_when: [仅作为股东、董事或创始人出现且没有控制认定]
+    extraction_notes: [必须保留控制主体名称和原文认定性质]
+  team.key_person:
+    label: 关键人员
+    description: 对企业治理、核心技术或经营结果具有关键作用的少量人员。
+    synonyms: [核心人员, 关键人员, 核心技术人员, 创始人, 董事长, 总经理, 研发负责人]
+    include_when: [原文明确标注为核心或关键人员，以及实际控制人和核心技术负责人]
+    exclude_when: [外部董事, 独立董事, 普通监事, 一般管理人员，除非原文明确其为关键人员]
+    extraction_notes: [用于形成整体团队画像，不要把所有出现的人员逐一建档]
+  team.education_background:
+    label: 关键人员教育背景
+    description: 已停用的单个人员教育背景字段，仅为历史数据兼容保留。
+    synonyms: [学历, 教育经历, 教育背景]
+    include_when: [仅在兼容历史数据时使用]
+    exclude_when: [新的企业画像抽取]
+    extraction_notes: [新抽取优先使用 team.education_structure]
+  team.professional_experience:
+    label: 关键人员职业经历
+    description: 已停用的单个人员职业经历字段，仅为历史数据兼容保留。
+    synonyms: [职业经历, 工作经历, 任职经历]
+    include_when: [仅在兼容历史数据时使用]
+    exclude_when: [新的企业画像抽取]
+    extraction_notes: [新抽取优先使用 team.professional_background]
+  team.education_structure:
+    label: 核心团队教育结构
+    description: 核心团队的学历层次、专业构成或教育背景总体情况。
+    synonyms: [团队学历结构, 教育结构, 学历构成, 教育背景分布]
+    include_when: [原文对核心团队教育背景进行总体统计或概括]
+    exclude_when: [逐人复制完整简历, 对学历高低作价值判断]
+    extraction_notes: [通常形成一项团队概况；多人物概括必须分别有证据]
+  team.professional_background:
+    label: 核心团队职业背景概况
+    description: 核心团队主要任职机构、岗位类型和从业经历的总体覆盖情况。
+    synonyms: [团队职业背景, 任职经历, 从业经历, 专业背景]
+    include_when: [原文对核心人员主要机构、岗位或行业经历进行总体说明]
+    exclude_when: [逐人复制完整简历, 自行判断经历优劣或行业相关性]
+    extraction_notes: [应突出团队构成，不应变成零散人员名单]
+  governance.equity_incentive_plan_status:
+    label: 股权激励计划状态
+    description: 企业股权激励计划在报告期内的实施、批准或终止状态。
+    synonyms: [股权激励, 员工持股计划, 激励计划, 股权激励方案]
+    include_when: [原文明确说明已实施、已批准、拟实施、完成或终止]
+    exclude_when: [仅提及员工激励但没有计划状态]
+    extraction_notes: [批准但未实施应保留 approved_not_started，不得写成 active]
+  technology.name:
+    label: 核心技术
+    description: 原文明确称为核心技术、技术体系、算法或技术能力的对象。
+    synonyms: [核心技术, 关键技术, 技术体系, 算法, 技术能力]
+    include_when: [原文明确将对象称为技术、技术体系、算法或技术能力]
+    exclude_when: [仅出现的产品名称, 项目名称, 零部件名称或业务类别]
+    extraction_notes: [必须保留技术的原文名称，不根据产品或业务反推技术名称]
+  technology.source:
+    label: 技术来源
+    description: 技术由企业自行研发、受让、许可使用或合作开发等来源性质。
+    synonyms: [技术来源, 自主研发, 自研, 受让, 许可, 合作开发, 联合开发]
+    include_when: [原文明确说明自研、研发形成、受让、许可或合作开发来源]
+    exclude_when: [仅因企业拥有产品或销售产品就推断为自研]
+    extraction_notes: [技术来源必须与具体技术对象绑定]
+  technology.maturity_stage:
+    label: 技术成熟阶段
+    description: 某项具体技术已达到的研发、验证、试制或量产阶段。
+    synonyms: [技术成熟度, 成熟阶段, 验证阶段, 量产, 批量生产, 试制]
+    include_when: [同一证据中同时有技术名称和明确的成熟度、验证、生产开始时间或量产表述]
+    exclude_when: [孤立的量产表头, 产品销量, 公司整体产能, 与技术名称无对应关系的阶段词]
+    extraction_notes: [不能把公司整体量产能力直接归给每一项技术]
+  technology.ownership_status:
+    label: 技术权属
+    description: 企业对具体技术拥有、共有或仅获许可使用的权利状态。
+    synonyms: [技术权属, 技术所有权, 自有技术, 共有技术, 许可使用]
+    include_when: [原文明确说明技术自有、共有、受让或许可使用]
+    exclude_when: [仅说明技术来源但没有权属状态]
+    extraction_notes: [技术来源与技术权属是不同字段，不要混用]
+  intellectual_property.name:
+    label: 核心知识产权
+    description: 企业拥有、申请或使用的具体知识产权对象，例如专利或软件著作权。
+    synonyms: [知识产权, 专利, 软件著作权, 商标, 著作权, 核心知识产权]
+    include_when: [原文明确列出的知识产权名称、类型或编号对应对象]
+    exclude_when: [一般技术名称、产品名称或没有知识产权性质的项目名称]
+    extraction_notes: [对象名称和权利类型应保留，不能把不同权利类型混成一项]
+  intellectual_property.patent_application_count:
+    label: 专利申请数量
+    description: 在指定期间或截止日已经提出申请、正在审查或处于申请状态的专利数量。
+    synonyms: [专利申请, 提交申请, 在审专利, 申请中专利, 申请数量]
+    include_when: [原文直接表示专利申请数量或申请存量]
+    exclude_when: [已授权专利, 有效专利, 软件著作权, 商标, 作品著作权]
+    extraction_notes: [本期新增、累计申请和期末申请存量必须通过 value_scope 区分]
+  intellectual_property.patent_grant_count:
+    label: 专利授权或拥有数量
+    description: 在指定期间或截止日已经取得专利授权或专利权的数量。
+    synonyms: [已授权专利, 获得专利权, 授权专利, 有效专利, 拥有专利]
+    include_when: [原文直接表示已经授权、取得专利权或拥有专利的数量]
+    exclude_when: [专利申请, 在审专利, 软件著作权, 商标]
+    extraction_notes: [发明、实用新型、外观设计和境内外范围必须保留，不能把子项当作无范围总数]
+  intellectual_property.ownership_status:
+    label: 知识产权权属
+    description: 知识产权属于企业自有、共有或通过许可取得的权属状态。
+    synonyms: [知识产权权属, 自有知识产权, 共有, 许可使用, 权利归属]
+    include_when: [原文明确说明知识产权自有、共有、受让或许可]
+    exclude_when: [质押, 查封, 冻结等权利限制状态]
+    extraction_notes: [权属状态和权利限制状态必须分别记录]
+  intellectual_property.rights_restriction_status:
+    label: 知识产权权利限制状态
+    description: 知识产权是否存在质押、查封、冻结或其他权利行使限制。
+    synonyms: [权利限制, 质押, 查封, 冻结, 受限知识产权]
+    include_when: [原文明确说明无权利限制、部分受限或存在限制]
+    exclude_when: [知识产权属于自有、共有或许可等权属描述]
+    extraction_notes: [未披露限制不能直接写成 unrestricted]
+  product.name:
+    label: 产品或服务
+    description: 企业对外提供或销售的具体产品、产品系列、型号或服务对象。
+    synonyms: [产品, 产品系列, 产品型号, 服务, 解决方案]
+    include_when: [材料明确称为产品、产品系列、型号或服务的对象]
+    exclude_when: [研发项目, 建设项目, 募投项目, 客户, 供应商, 技术名称或零部件]
+    extraction_notes: [产品技术不等于产品名称；没有对应字段时写入 unmapped_items]
+  product.commercialization_stage:
+    label: 产品商业化阶段
+    description: 具体产品从研发、试制、验证到小批量、量产和销售的商业化阶段。
+    synonyms: [商业化阶段, 研发阶段, 试制, 验证, 小批量, 量产, 销售]
+    include_when: [同一产品对象有原文直接披露的研发、试制、验证、量产或销售阶段]
+    exclude_when: [企业整体发展阶段, 收入规模, 订单数量或宣传性描述]
+    extraction_notes: [阶段必须绑定到具体产品，不能用公司整体产能替代]
+  customer_supplier.customer_concentration:
+    label: 客户集中度
+    description: 前五大或其他明确范围客户占销售收入或营业收入的比例。
+    synonyms: [客户集中度, 前五大客户占比, 前五名客户收入占比, 客户集中风险]
+    include_when: [原文同时给出客户范围、收入分母、报告期和占比]
+    exclude_when: [单一客户交易占比, 供应商集中度, 没有分母的客户金额]
+    extraction_notes: [必须保留客户范围、收入分母、报告期和合计口径]
+  customer_supplier.supplier_concentration:
+    label: 供应商集中度
+    description: 前五大或其他明确范围供应商占采购金额的比例。
+    synonyms: [供应商集中度, 前五大供应商占比, 前五名供应商采购占比]
+    include_when: [原文同时给出供应商范围、采购金额分母、报告期和占比]
+    exclude_when: [客户集中度, 单个供应商交易金额, 没有采购分母的比例]
+    extraction_notes: [必须保留供应商范围、采购金额分母、报告期和合计口径]
+  customer_supplier.counterparty_name:
+    label: 材料披露的交易对手名称或代称
+    description: 材料中披露的客户、供应商或其他交易对手名称或匿名代称。
+    synonyms: [客户名称, 供应商名称, 交易对手, 客户A, 供应商一]
+    include_when: [原文逐行披露的客户、供应商或交易对手名称或代称]
+    exclude_when: [根据匿名代称猜测真实企业名称]
+    extraction_notes: [匿名名称必须原样保留，并与对应金额、占比和交易内容绑定]
+  customer_supplier.transaction_amount:
+    label: 交易金额
+    description: 某一客户、供应商或交易对手在指定期间和统计口径下的交易金额。
+    synonyms: [交易金额, 销售金额, 采购金额, 交易额, 采购额]
+    include_when: [原文明确列出交易对手、期间、金额和交易口径]
+    exclude_when: [没有对应交易对手或期间的企业总收入、采购总额]
+    extraction_notes: [金额必须绑定交易对手、期间、币种和统计口径]
+  customer_supplier.transaction_ratio:
+    label: 交易占比
+    description: 某一交易对手的交易金额占销售收入、营业收入或采购金额的比例。
+    synonyms: [交易占比, 销售占比, 采购占比, 收入占比]
+    include_when: [原文明确给出交易对手、分母和占比]
+    exclude_when: [没有明确分母的比例或将客户占比用于供应商]
+    extraction_notes: [客户使用销售或营业收入分母，供应商使用采购额分母]
+  customer_supplier.transaction_content:
+    label: 交易内容
+    description: 企业与指定交易对手发生的销售、采购、合作或其他交易内容。
+    synonyms: [交易内容, 采购内容, 销售产品, 供应内容, 合作内容]
+    include_when: [原文明确说明交易对手提供或购买的产品、服务或材料]
+    exclude_when: [无法对应具体交易对手的一般业务描述]
+    extraction_notes: [交易内容必须与同一交易对手、期间和表格口径绑定]
+  customer_supplier.related_party_status:
+    label: 主要交易对手关联关系状态
+    description: 指定主要交易对手与企业是否存在关联关系及其披露范围。
+    synonyms: [关联交易, 关联方, 关联关系, 非关联方, 关联交易对手]
+    include_when: [原文明确说明存在、不存在或部分存在关联关系]
+    exclude_when: [未披露关联关系时自行判断为 non_related]
+    extraction_notes: [必须绑定交易对手和报告期；未披露不等于非关联]
+  finance.operating_revenue:
+    label: 营业收入
+    description: 企业在指定报告期内确认的营业收入金额。
+    synonyms: [营业收入, 主营业务收入, 营业总收入, 销售收入]
+    include_when: [财务报表或审计披露中的营业收入及明确口径]
+    exclude_when: [订单金额, 合同金额, 单一客户交易金额, 含税销售额但未说明口径]
+    extraction_notes: [必须保留报告期、合并或单体口径、币种和原表单位]
+  finance.operating_cash_flow:
+    label: 经营活动产生的现金流量净额
+    description: 企业在指定报告期内经营活动产生的现金流量净额。
+    synonyms: [经营活动现金流量净额, 经营现金流, 经营活动产生的现金流量净额]
+    include_when: [现金流量表中明确列示的经营活动产生的现金流量净额]
+    exclude_when: [投资活动现金流, 筹资活动现金流, 期末现金余额]
+    extraction_notes: [保留正负号、报告期、合并或单体口径和单位]
+  finance.net_profit:
+    label: 净利润
+    description: 企业在指定报告期内实现的净利润。
+    synonyms: [净利润, 利润总额, 归母净利润前利润]
+    include_when: [利润表中明确列示的净利润]
+    exclude_when: [归属于母公司所有者的净利润, 扣除非经常性损益后的归母净利润, 毛利]
+    extraction_notes: [不得将归母净利润或扣非净利润替代本字段]
+  finance.net_profit_attributable_to_parent:
+    label: 归属于母公司所有者的净利润
+    description: 归属于母公司所有者的净利润，通常为合并利润表中的归母净利润。
+    synonyms: [归母净利润, 归属于母公司股东的净利润, 归属于母公司所有者的净利润]
+    include_when: [合并利润表明确列示的归属于母公司所有者的净利润]
+    exclude_when: [净利润, 扣除非经常性损益后的归母净利润]
+    extraction_notes: [保留报告期和合并口径，不与净利润合并]
+  finance.adjusted_net_profit_attributable_to_parent:
+    label: 扣除非经常性损益后归属于母公司所有者的净利润
+    description: 扣除非经常性损益后归属于母公司所有者的净利润。
+    synonyms: [扣非归母净利润, 扣除非经常性损益后的净利润, 扣非净利润]
+    include_when: [原文明确列示扣除非经常性损益后的归母净利润]
+    exclude_when: [普通归母净利润, 净利润, 营业利润]
+    extraction_notes: [不得用普通归母净利润替代扣非口径]
+  finance.research_expense:
+    label: 研发费用
+    description: 企业在指定报告期内计入损益或财务报表披露的研发费用金额。
+    synonyms: [研发费用, 研发支出, 研究与开发费用]
+    include_when: [利润表、研发投入表或审计披露明确列示的研发费用]
+    exclude_when: [研发投入率, 研发人员数量, 研发项目预算]
+    extraction_notes: [保留费用化或资本化口径和报告期，不自行相加]
+  finance.research_expense_ratio:
+    label: 研发费用率
+    description: 研发费用或研发投入占营业收入的比例。
+    synonyms: [研发费用率, 研发投入占比, 研发强度, 研发费用占比]
+    include_when: [原文明确给出研发费用或研发投入与营业收入的比例]
+    exclude_when: [研发费用金额, 研发人员占比, 技术人员占比]
+    extraction_notes: [保留分子定义和营业收入分母；按 ratio 规则保存为 0 至 1]
+  finance.customer_concentration:
+    label: 客户集中度
+    description: 已停用的历史客户集中度字段，仅为旧数据兼容保留。
+    synonyms: [客户集中度, 前五大客户占比]
+    include_when: [仅在兼容历史数据时使用]
+    exclude_when: [新的企业画像抽取]
+    extraction_notes: [新抽取使用 customer_supplier.customer_concentration]
+  finance.cash_balance:
+    label: 期末现金及现金等价物余额
+    description: 报告期末企业持有的现金及现金等价物余额。
+    synonyms: [期末现金, 现金及现金等价物, 货币资金余额, 现金余额]
+    include_when: [资产负债表或现金流量表明确列示的期末现金及现金等价物]
+    exclude_when: [经营现金流净额, 受限资金但未说明是否包含]
+    extraction_notes: [必须保留期末日期、合并或单体口径和单位]
+  finance.interest_bearing_debt:
+    label: 有息负债余额
+    description: 报告期末需要支付利息的借款或债务余额。
+    synonyms: [有息负债, 带息负债, 银行借款, 借款余额, 有息债务]
+    include_when: [原文明确列示有息负债或可确认的借款余额]
+    exclude_when: [应付账款, 合同负债, 无息经营性负债]
+    extraction_notes: [保留债务构成、期末日期、合并或单体口径和单位]
+  risk.matter:
+    label: 风险事项
+    description: 企业涉及的诉讼、处罚、监管、担保、违约或其他明确风险事项。
+    synonyms: [风险事项, 诉讼, 仲裁, 行政处罚, 监管措施, 违约, 担保风险]
+    include_when: [原文明确记载的法律、监管、司法或经营风险事项]
+    exclude_when: [模型根据财务指标自行推断的风险, 没有原文支持的可能性描述]
+    extraction_notes: [保留事项性质、主体、金额、状态、日期和原文认定来源]
+  evidence.missing_material:
+    label: 缺失材料
+    description: 当前调查领域中，判断某项事实所需但材料没有提供的关键文件或信息。
+    synonyms: [未披露, 材料缺失, 信息缺口, 无法核实]
+    include_when: [明确说明判断所需材料缺失或披露不足]
+    exclude_when: [仅因为模型没有搜索到就断言原始材料不存在]
+    extraction_notes: [必须说明缺少什么材料以及影响哪个判断，不得把缺失写成负面事实]

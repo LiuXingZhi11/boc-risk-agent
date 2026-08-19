@@ -37,7 +37,7 @@ def _create_client(config: GenerationConfig) -> Any:
 
     settings = get_settings()
     if not settings.api_key:
-        raise RuntimeError("未设置环境变量 DEEPSEEK_API_KEY。")
+        raise RuntimeError("未在 config/model_config.yaml 中设置 api_key。")
 
     kwargs: dict[str, Any] = {
         "api_key": settings.api_key,

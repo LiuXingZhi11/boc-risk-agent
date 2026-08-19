@@ -1,0 +1,8 @@
+cases:
+  - id: basic
+    description: 平台演示最小用例
+    input:
+      company_name: 示例企业
+    expect:
+      must_load_tools:
+        - fake-company:get_company_registration_info

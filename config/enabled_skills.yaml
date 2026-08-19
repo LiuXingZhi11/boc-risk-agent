@@ -1,0 +1,2 @@
+# Skill 安装与启用分离。平台管理员审核后再把 skill id 写入此列表。
+enabled_skills: []
