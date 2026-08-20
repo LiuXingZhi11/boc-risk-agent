@@ -45,6 +45,8 @@ DeepSeek 的模型名、API 地址和密钥统一维护在 `config/model_config.
 - [客户风险评级报告生成工作手册](docs/business/客户风险评级报告生成工作手册.md)
 - [项目交接说明](docs/project/PROJECT_HANDOFF.md)
 
+项目整体说明见：[项目整体说明手册](项目整体说明手册.md)。
+
 审批指引图片的文字转写保存在 `docs/business/授信审批图片文字提取.md`，仅作为人工参考；运行时由审批方向配置和逻辑提示词提供规则，不会把整份参考文件直接发送给模型。
 
 ## 启动
